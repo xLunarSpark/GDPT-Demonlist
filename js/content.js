@@ -127,37 +127,3 @@ export async function fetchLeaderboard() {
     // Sort by total score
     return [res.sort((a, b) => b.total - a.total), errs];
 }
-
-// Agora definindo o componente React para o perfil do jogador
-import React from 'react';
-
-function PlayerProfile({ profile }) {
-    return (
-        <div>
-            <h1>#{profile.rank} {profile.name}</h1>
-            <div>{profile.score}</div>
-
-            <h2>Completed ({profile.completed.length})</h2>
-            <ul>
-                {profile.completed.map((level, index) => (
-                    <li key={index}>
-                        #{level.rank} {level.name}
-                        <span>{level.score}</span>
-                    </li>
-                ))}
-            </ul>
-
-            <h2>Progressed ({profile.progressed.length})</h2>
-            <ul>
-                {profile.progressed.map((level, index) => (
-                    <li key={index}>
-                        #{level.rank} {level.name} ({level.percent}%)
-                        <span>{level.score}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
-
-export default PlayerProfile;
