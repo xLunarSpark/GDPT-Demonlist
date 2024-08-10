@@ -1,0 +1,30 @@
+{
+    "id": 60978746,
+    "name": "The Golden",
+    "author": "BoBoBoBoBoBoBo",
+    "creators": ["rWoomy", "Gooseam", "BoBoBoBoBoBoBo", "EyeOfTheStorm", "Geemi", "Eridani", "El3ctr0", "BySelling"],
+    "verifier": "nSwish",
+    "verification": "https://www.youtube.com/watch?v=wpS5PSHmji0",
+    "percentToQualify": 50,
+    "password": "886988",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=B9Qp5eTzsIU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Ramldq4pvlY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=pTMQBIBrRrI",
+            "percent": 100,
+            "hz": 2.1 // 240
+        }
+    ]
+}
