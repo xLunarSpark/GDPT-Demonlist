@@ -73,9 +73,6 @@ export async function fetchLeaderboard() {
             score: score(rank + 1, 100, level.percentToQualify),
             link: level.verification,
         });
-        if level.verifier;
-        score = 0
-        
 
         // Records
         level.records.forEach((record) => {
