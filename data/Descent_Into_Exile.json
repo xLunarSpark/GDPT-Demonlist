@@ -1,0 +1,18 @@
+{
+    "id": 77518059,
+    "name": "Descent Into Exile",
+    "author": "GrenadeOfTacos",
+    "creators": ["Cersia", "Artos", "Loogiah", "spcreat", "Riot", "weoweoteo", "icedcave", "GrenadeOfTacos", "maxfs", "Deadlox", "Vermillion", "Awedsy", "Realvet", "Pokechatt", "ViPriN", "ewop", "Theorical"],
+    "verifier": "BGram",
+    "verification": "https://www.youtube.com/watch?v=whtt_WkG_20",
+    "percentToQualify": "59",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=uztUKrWQjVE",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
