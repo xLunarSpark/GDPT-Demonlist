@@ -1,0 +1,18 @@
+{
+    "id": 68353244,
+    "name": "Nhelv",
+    "author": "SrGuillester",
+    "creators": ["SrGuillester", "notlsa", "Dienid"],
+    "verifier": "SrGuillester",
+    "verification": "https://www.youtube.com/watch?v=29hRhhqQTLc",
+    "percentToQualify": "57",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=gckFPbVgtqo",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
