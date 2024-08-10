@@ -5,6 +5,9 @@ import { round, score } from './score.js';
  */
 const dir = '/data';
 
+// Lista de verificadores permitidos
+const whitelist = ["Taiago", "LunarSpark", "Ka1sa"];
+
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
     try {
@@ -57,22 +60,24 @@ export async function fetchLeaderboard() {
             return;
         }
 
-        // Verification
-        const verifier = Object.keys(scoreMap).find(
-            (u) => u.toLowerCase() === level.verifier.toLowerCase(),
-        ) || level.verifier;
-        scoreMap[verifier] ??= {
-            verified: [],
-            completed: [],
-            progressed: [],
-        };
-        const { verified } = scoreMap[verifier];
-        verified.push({
-            rank: rank + 1,
-            level: level.name,
-            score: score(rank + 1, 100, level.percentToQualify),
-            link: level.verification,
-        }); 
+        // Verificação e filtro por whitelist
+        if (whitelist.includes(level.verifier)) {
+            const verifier = Object.keys(scoreMap).find(
+                (u) => u.toLowerCase() === level.verifier.toLowerCase(),
+            ) || level.verifier;
+            scoreMap[verifier] ??= {
+                verified: [],
+                completed: [],
+                progressed: [],
+            };
+            const { verified } = scoreMap[verifier];
+            verified.push({
+                rank: rank + 1,
+                level: level.name,
+                score: score(rank + 1, 100, level.percentToQualify),
+                link: level.verification,
+            });
+        }
 
         // Records
         level.records.forEach((record) => {
