@@ -124,6 +124,13 @@ export async function fetchLeaderboard() {
         };
     });
 
+    // Sort by total score
+    return [res.sort((a, b) => b.total - a.total), errs];
+}
+
+// Agora definindo o componente React para o perfil do jogador
+import React from 'react';
+
 function PlayerProfile({ profile }) {
     return (
         <div>
@@ -153,6 +160,4 @@ function PlayerProfile({ profile }) {
     );
 }
 
-    // Sort by total score
-    return [res.sort((a, b) => b.total - a.total), errs];
-}
+export default PlayerProfile;
