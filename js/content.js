@@ -104,7 +104,7 @@ export async function fetchLeaderboard() {
                 rank: rank + 1,
                 level: level.name,
                 percent: record.percent,
-                score: score(rank + 1, level.percentToQualify, record.percent),
+                score: score(rank + 1, record.percent, level.percentToQualify),
                 link: record.link,
             });
         });
