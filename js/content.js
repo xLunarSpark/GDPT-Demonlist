@@ -79,35 +79,36 @@ export async function fetchLeaderboard() {
             });
         }
 
-       // Records
-level.records.forEach((record) => {
-    const user = Object.keys(scoreMap).find(
-        (u) => u.toLowerCase() === record.user.toLowerCase(),
-    ) || record.user;
-    scoreMap[user] ??= {
-        verified: [],
-        completed: [],
-        progressed: [],
-    };
-    const { completed, progressed } = scoreMap[user];
-    if (record.percent === 100) {
-        completed.push({
-            rank: rank + 1,
-            level: level.name,
-            score: score(rank + 1, 100, level.percentToQualify),
-            link: record.link,
-        });
-        return;
-    }
+        // Records
+        level.records.forEach((record) => {
+            const user = Object.keys(scoreMap).find(
+                (u) => u.toLowerCase() === record.user.toLowerCase(),
+            ) || record.user;
+            scoreMap[user] ??= {
+                verified: [],
+                completed: [],
+                progressed: [],
+            };
+            const { completed, progressed } = scoreMap[user];
+            if (record.percent === 100) {
+                completed.push({
+                    rank: rank + 1,
+                    level: level.name,
+                    score: score(rank + 1, 100, level.percentToQualify),
+                    link: record.link,
+                });
+                return;
+            }
 
-    progressed.push({
-        rank: rank + 1,
-        level: level.name + " (" + record.percent + "%)",  // Mantém a percentagem apenas entre parênteses após o nome do nível
-        score: score(rank + 1, record.percent, level.percentToQualify),
-        link: record.link,
+            progressed.push({
+                rank: rank + 1,
+                level: level.name,
+                score: score(rank + 1, record.percent, level.percentToQualify),
+                link: record.link,
+            });
+        });
     });
-});
-        
+
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
         const { verified, completed, progressed } = scores;
