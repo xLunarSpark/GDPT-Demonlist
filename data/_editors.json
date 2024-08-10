@@ -20,13 +20,18 @@
         "link": "https://www.youtube.com/@Castro13GD"
     },
     {
-        "role": "trial",
-        "name": "Trial List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "role": "helper",
+        "name": "Drema",
+        "link": "https://www.youtube.com/@drema2519"
+    },
+    {
+        "role": "helper",
+        "name": "Landet",
+        "link": "https://www.youtube.com/@LandetGD"
     },
     {
         "role": "dev",
-        "name": "List Coder",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "Darion123",
+        "link": "https://www.youtube.com/@darion1238"
     }
 ]
