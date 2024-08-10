@@ -1,1 +1,24 @@
-
+{
+    "id": 59800588,
+    "name": "Kappa",
+    "author": "Armadeus",
+    "creators": ["Endlevel", "benji8080"],
+    "verifier": "nSwish",
+    "verification": "https://www.youtube.com/watch?v=eIfc1zUuOPU",
+    "percentToQualify": 50,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=GhENhNlMzV0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=WxZWFI0DS4s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
