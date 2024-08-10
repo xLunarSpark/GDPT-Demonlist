@@ -103,7 +103,6 @@ export async function fetchLeaderboard() {
             progressed.push({
                 rank: rank + 1,
                 level: level.name + " (" + record.percent + "%)",
-                percent: record.percent,
                 score: score(rank + 1, record.percent, level.percentToQualify),
                 link: record.link,
             });
