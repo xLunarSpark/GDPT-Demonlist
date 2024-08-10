@@ -1,0 +1,18 @@
+{
+    "id": 75286957,
+    "name": "Shukketsu",
+    "author": "zYuko",
+    "creators": ["Gablor", "arekushi14", "zYuko", "Zentraa", "Duke"],
+    "verifier": "Baeru",
+    "verification": "https://www.youtube.com/watch?v=nkG4hKJIz2g",
+    "percentToQualify": "45",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=j5xVmRM--hY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
