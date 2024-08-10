@@ -1,0 +1,18 @@
+{
+    "id": 39832454,
+    "name": "Gamma",
+    "author": "MindCap",
+    "creators": ["Pennutoh", "Lemons", "HequinoX", "Mactanow", "Ferox242", "Djoxy", "Metalface221", "iNighti", "Lithifusion", "MindCap", "Angryboy", "MichealH"],
+    "verifier": "Technical",
+    "verification": "https://www.youtube.com/watch?v=HTXRWzS2aw8",
+    "percentToQualify": "56",
+    "password": "772002",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ZLnF19qETXw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
