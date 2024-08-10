@@ -1,0 +1,18 @@
+{
+    "id": 80966089,
+    "name": "CITRA",
+    "author": "VARSE",
+    "creators": ["VARSE"],
+    "verifier": "VARSE",
+    "verification": "https://www.youtube.com/watch?v=I8M1OOhub9w",
+    "percentToQualify": "68",
+    "password": "No Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=08LUuX8BOCI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
