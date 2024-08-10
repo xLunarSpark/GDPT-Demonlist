@@ -1,0 +1,18 @@
+{
+    "id": 88611404,
+    "name": "NEUTRA",
+    "author": "Jenkins",
+    "creators": ["Marwec", "Jenkins", "ILRELL"],
+    "verifier": "AeonAir",
+    "verification": "https://www.youtube.com/watch?v=0fNBFwNS1qg",
+    "percentToQualify": "49",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Viwi",
+            "link": "https://www.youtube.com/watch?v=zivasXV_gK8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
