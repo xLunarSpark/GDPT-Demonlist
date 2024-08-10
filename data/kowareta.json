@@ -1,0 +1,36 @@
+{
+    "id": 46763581,
+    "name": "kowareta",
+    "author": "Gablor",
+    "creators": ["Gablor", "Endlevel", "Minaxa"],
+    "verifier": "Gablor",
+    "verification": "https://www.youtube.com/watch?v=wxWBFaZYHPM",
+    "percentToQualify": 56,
+    "password": "474969",
+    "records": [
+        {
+            "user": "Tetrys",
+            "link": "https://www.youtube.com/watch?v=4m-QrdVrjV8",
+            "percent": 100,
+            "hz": 180
+        },
+        {
+            "user": "Karmatas",
+            "link": "https://www.youtube.com/watch?v=pH8ESYHDKWU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=7wFBj9HjzAA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=s5w8YqcvpWY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
