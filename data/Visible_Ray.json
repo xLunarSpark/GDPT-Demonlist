@@ -1,0 +1,24 @@
+{
+    "id": 48267315,
+    "name": "Visible Ray",
+    "author": "Krampux",
+    "creators": ["HaNavi", "LioLeo", "KeiAs", "Soulsand", "1234", "Ekko4", "Hobbyboat", "Krampux", "Dominator", "DarkBoshy", "Maybee", "Ticky", "Renovatio", "MoonlightEVE", "Spica", "C4rpediem", "Dister K", "Senousia", "Mulpan", "ThorMode", "Nonamed", "Vismuth", "DEMN"],
+    "verifier": "Seturan",
+    "verification": "https://www.youtube.com/watch?v=hHpaB752peM",
+    "percentToQualify": 59,
+    "password": "147963",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=IzQiPpPIvVU",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=aQzsAhpB3xY",
+            "percent": 100,
+            "hz": 330
+        }
+    ]
+}
