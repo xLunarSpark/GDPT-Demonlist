@@ -72,7 +72,7 @@ export async function fetchLeaderboard() {
             level: level.name,
             score: score(rank + 1, 100, level.percentToQualify),
             link: level.verification,
-            if level.verifier score < 50 or "NaN"
+            if level.verifier score < 50
                 score: 0
         }); 
 
