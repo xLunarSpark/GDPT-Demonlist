@@ -1,0 +1,18 @@
+{
+    "id": 55624478,
+    "name": "Ragnarok",
+    "author": "knobbelboy",
+    "creators": ["Gaero", "Platnuu", "Th04", "Rustam", "Enlex", "BIANOX", "knobbelboy", "Davphla", "Panman", "Tob24", "Xaro", "Ji", "Darwin", "ZephiroX"],
+    "verifier": "Technical",
+    "verification": "https://www.youtube.com/watch?v=aGtXqn9HL2o",
+    "percentToQualify": "63",
+    "password": "153426",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=i2Y2JldDM28",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
