@@ -1,11 +1,6 @@
 [
     {
         "role": "owner",
-        "name": "Diogan",
-        "link": "https://www.youtube.com/@Diogann"
-    },
-    {
-        "role": "owner",
         "name": "Ktunn",
         "link": "https://www.youtube.com/@xKtunn"
     },
@@ -16,13 +11,13 @@
     },
     {
         "role": "admin",
-        "name": "List Admin",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "Diogan",
+        "link": "https://www.youtube.com/@Diogann"
     },
     {
         "role": "helper",
-        "name": "List Helper",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "Castro 13GD",
+        "link": "https://www.youtube.com/@Castro13GD"
     },
     {
         "role": "trial",
