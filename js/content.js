@@ -6,7 +6,7 @@ import { round, score } from './score.js';
 const dir = '/data';
 
 // Lista de verificadores permitidos
-const whitelist = ["VerificadorPT1", "VerificadorPT2", "OutroVerificadorPT"];
+const whitelist = ["Taiago", "LunarSpark", "Ka1sa"];
 
 export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
