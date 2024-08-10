@@ -99,7 +99,7 @@ export async function fetchLeaderboard() {
         });
     } else {
         // Remover qualquer '%' no início do nome do nível
-        let cleanLevelName = level.name.replace(/^\d+% /, '').trim(); // Remove a percentagem no início
+        let cleanLevelName = level.name.replace("%" /, "").trim(); // Remove a percentagem no início
 
         // Adicionar a percentagem correta entre parênteses no final
         progressed.push({
@@ -108,7 +108,7 @@ export async function fetchLeaderboard() {
             score: score(rank + 1, record.percent, level.percentToQualify),
             link: record.link,
         });
-    }
+    });
 });
         
     // Wrap in extra Object containing the user and total score
