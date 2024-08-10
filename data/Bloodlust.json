@@ -1,0 +1,42 @@
+{
+    "id": 42584142,
+    "name": "Bloodlust",
+    "author": "knobbelboy",
+    "creators": ["VARSE"],
+    "verifier": "knobbelboy",
+    "verification": "https://www.youtube.com/watch?v=5SzKetF2btw",
+    "percentToQualify": "56",
+    "password": "121296",
+    "records": [
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=qIcVovPLg20",
+            "percent": 100,
+            "hz": 300 
+        },
+        {
+            "user": "Plutz",
+            "link": "https://www.youtube.com/watch?v=RKYKM48snrg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=nBS3y2iudoY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=cE7tExnYCmI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=UP5ZmGY-7os",
+            "percent": 100,
+            "hz": 200
+        }
+    ]
+}
