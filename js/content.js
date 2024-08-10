@@ -90,24 +90,25 @@ export async function fetchLeaderboard() {
                 progressed: [],
             };
             const { completed, progressed } = scoreMap[user];
-               if (record.percent === 100) {
-        completed.push({
-            rank: rank + 1,
-            level: level.name, // Não modificar aqui para completados
-            score: score(rank + 1, 100, level.percentToQualify),
-            link: record.link,
+            if (record.percent === 100) {
+                completed.push({
+                    rank: rank + 1,
+                    level: level.name,
+                    score: score(rank + 1, 100, level.percentToQualify),
+                    link: record.link,
+                });
+                return;
+            }
+
+            progressed.push({
+                rank: rank + 1,
+                level: level.name + " (" + record.percent + "%)",
+                percent: record.percent,
+                score: score(rank + 1, record.percent, level.percentToQualify),
+                link: record.link,
+            });
         });
-    } else {
-        // Mover a percentagem que estava à frente para a posição correta
-        const cleanLevelName = level.name.replace('%', ''); // Remover '%' adicional se houver
-        progressed.push({
-            rank: rank + 1,
-            level: cleanLevelName + ` (${record.percent}%)`, // Adicionar a percentagem no final entre parênteses
-            score: score(rank + 1, record.percent, level.percentToQualify),
-            link: record.link,
-        });
-    }
-});
+    });
         
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
