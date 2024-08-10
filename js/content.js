@@ -79,36 +79,33 @@ export async function fetchLeaderboard() {
             });
         }
 
-        // Records
-        level.records.forEach((record) => {
-            const user = Object.keys(scoreMap).find(
-                (u) => u.toLowerCase() === record.user.toLowerCase(),
-            ) || record.user;
-            scoreMap[user] ??= {
-                verified: [],
-                completed: [],
-                progressed: [],
-            };
-            const { completed, progressed } = scoreMap[user];
-            if (record.percent === 100) {
-                completed.push({
-                    rank: rank + 1,
-                    level: level.name, // Manter inalterado para completos
-                    score: score(rank + 1, 100, level.percentToQualify),
-                    link: record.link,
-                });
-    } else {
-        // Remover qualquer '%' no início do nome do nível
-        let cleanLevelName = level.name.replace("%" /, "").trim(); // Remove a percentagem no início
-
-        // Adicionar a percentagem correta entre parênteses no final
-        progressed.push({
+       // Records
+level.records.forEach((record) => {
+    const user = Object.keys(scoreMap).find(
+        (u) => u.toLowerCase() === record.user.toLowerCase(),
+    ) || record.user;
+    scoreMap[user] ??= {
+        verified: [],
+        completed: [],
+        progressed: [],
+    };
+    const { completed, progressed } = scoreMap[user];
+    if (record.percent === 100) {
+        completed.push({
             rank: rank + 1,
-            level: cleanLevelName + " (" + record.percent + "%)", // Percentagem apenas no final
-            score: score(rank + 1, record.percent, level.percentToQualify),
+            level: level.name,
+            score: score(rank + 1, 100, level.percentToQualify),
             link: record.link,
         });
-    };
+        return;
+    }
+
+    progressed.push({
+        rank: rank + 1,
+        level: `${level.name} (${record.percent}%)`,  // Percentagem só é mostrada aqui, após o nome do nível
+        score: score(rank + 1, record.percent, level.percentToQualify),
+        link: record.link,
+    });
 });
         
     // Wrap in extra Object containing the user and total score
