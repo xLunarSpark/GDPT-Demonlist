@@ -1,0 +1,36 @@
+{
+    "id": 38655495,
+    "name": "Plasma Pulse Finale",
+    "author": "xSmokes",
+    "creators": ["xSmokes", "Giron"],
+    "verifier": "xSmokes",
+    "verification": "https://www.youtube.com/watch?v=xqzx9cu6XoA",
+    "percentToQualify": 57,
+    "password": "356987",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=DbTf8E4NzhA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=nvUuVQsAGrE",
+            "percent": 100,
+            "hz": 330
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=gexahE3PE9c",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Ferox242",
+            "link": "https://www.youtube.com/watch?v=jrGhaAy7YL0",
+            "percent": 89,
+            "hz": 144
+        }
+    ]
+}
