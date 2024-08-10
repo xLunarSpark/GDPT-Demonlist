@@ -1,5 +1,17 @@
-INACABADO
-
-Notas: saul goodman
-entre firework e unknown
-list pode ser 54
+    "id": 90477539,
+    "name": "Saul_Goodman",
+    "author": "Renn241",
+    "creators": ["joojmiguel", "NukeIIX", "DreamTide", "Loltad", "MercuryDT", "GhostVandalf", "Renn241", "QuacDuc"],
+    "verifier": "Jori",
+    "verification": "https://www.youtube.com/watch?v=hjs5PjUaw9k",
+    "percentToQualify": "54",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=-_omUcQl5fA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
