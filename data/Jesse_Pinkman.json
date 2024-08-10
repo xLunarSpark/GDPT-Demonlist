@@ -1,0 +1,17 @@
+{
+    "id": 79918576,
+    "name": "Jesse Pinkman",
+    "author": "Renn241",
+    "creators": ["Renn241"],
+    "verifier": "Comlayze",
+    "verification": "https://www.youtube.com/watch?v=fYcBtp4X8GA",
+    "percentToQualify": 65,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=5uLVJyaifIk",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
