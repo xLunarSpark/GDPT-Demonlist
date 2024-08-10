@@ -1,8 +1,18 @@
 [
     {
         "role": "owner",
-        "name": "List Owner",
-        "link": "https://www.youtube.com/@Prometheus_Alt"
+        "name": "Diogan",
+        "link": "https://www.youtube.com/@Diogann"
+    },
+    {
+        "role": "owner",
+        "name": "Ktunn",
+        "link": "https://www.youtube.com/@xKtunn"
+    },
+    {
+        "role": "owner",
+        "name": "LunarSpark",
+        "link": "https://www.youtube.com/@xLunarSpark"
     },
     {
         "role": "admin",
