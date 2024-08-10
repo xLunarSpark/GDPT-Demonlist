@@ -1,1 +1,30 @@
-
+{
+    "id": 27690100,
+    "name": "Slaughterhouse",
+    "author": "icedcave",
+    "creators": ["Endlevel", "GD Iris", "icedcave", "River", "Brittank88", "DrCuber", "CDMusic"],
+    "verifier": "Doggie",
+    "verification": "https://www.youtube.com/watch?v=kpcF1-QAHQc",
+    "percentToQualify": "58",
+    "password": "No Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=IR9zDULGdDU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Viwi",
+            "link": "https://www.youtube.com/watch?v=tO8zBvV2oX0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ktunn",
+            "link": "https://www.youtube.com/watch?v=8dcsPorYqO4",
+            "percent": 81,
+            "hz": 360
+        }
+    ]
+}
