@@ -1,0 +1,24 @@
+{
+    "id": 69685815,
+    "name": "Sonic Wave Infinity",
+    "author": "APTeamOfficial",
+    "creators": ["Zimnior12", "Requiem", "Destez", "TeslaX", "playerwombat", "Brittank88", "Tribar", "Incakola", "GD Endy", "Salamander", "pocke", "Days of Thunder", "Luisluigi", "Davphla", "Cyclic", "Creeper4", "Nahuel", "Nickalopogas", "Cynik", "Lilium11", "ZeroSR", "Cybronaut", "ViPriN", "Reunomi"],
+    "verifier": "Xanii",
+    "verification": "https://www.youtube.com/watch?v=wpS5PSHmji0",
+    "percentToQualify": 57,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=MzEDb8-zA1w",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=eHY1_asCp1Y",
+            "percent": 61,
+            "hz": 240
+        }
+    ]
+}
