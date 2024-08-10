@@ -1,0 +1,30 @@
+{
+    "id": 51657783,
+    "name": "Sigma",
+    "author": "MindCap",
+    "creators": ["rWoomy", "Gooseam", "BoBoBoBoBoBoBo", "EyeOfTheStorm", "Geemi", "Eridani", "El3ctr0", "BySelling"],
+    "verifier": "Technical",
+    "verification": "https://www.youtube.com/watch?v=3INdO0esQRw",
+    "percentToQualify": 57,
+    "password": "772002",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=XE_Y_vrhvsY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=v1JVaHmGDy0",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=dNUExFXxiZI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
