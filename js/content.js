@@ -91,12 +91,12 @@ export async function fetchLeaderboard() {
             };
             const { completed, progressed } = scoreMap[user];
             if (record.percent === 100) {
-        completed.push({
-            rank: rank + 1,
-            level: level.name, // Manter inalterado para completos
-            score: score(rank + 1, 100, level.percentToQualify),
-            link: record.link,
-        });
+                completed.push({
+                    rank: rank + 1,
+                    level: level.name, // Manter inalterado para completos
+                    score: score(rank + 1, 100, level.percentToQualify),
+                    link: record.link,
+                });
     } else {
         // Remover qualquer '%' no início do nome do nível
         let cleanLevelName = level.name.replace("%" /, "").trim(); // Remove a percentagem no início
@@ -108,7 +108,7 @@ export async function fetchLeaderboard() {
             score: score(rank + 1, record.percent, level.percentToQualify),
             link: record.link,
         });
-    });
+    };
 });
         
     // Wrap in extra Object containing the user and total score
