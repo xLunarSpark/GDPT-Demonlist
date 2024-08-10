@@ -1,0 +1,18 @@
+{
+    "id": 59539361,
+    "name": "Eternal Moment",
+    "author": "Rainstorm",
+    "creators": ["iEstia", "ZelLink", "TheCdPre", "Rainstorm"],
+    "verifier": "nSwish",
+    "verification": "https://www.youtube.com/watch?v=FbPJ2fclXHQ",
+    "percentToQualify": "62",
+    "password": "086400",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=W8mNrOuh-TU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
