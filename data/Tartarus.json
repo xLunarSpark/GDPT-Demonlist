@@ -1,16 +1,22 @@
 {
-    "id": 73667628,
-    "name": "Acheron",
-    "author": "ryamu",
-    "creators": ["Cersia", "Endlevel", "Riot", "icedcave", "LimeTime313", "silver", "ryamu", "Metalface221", "GrenadeOfTacos", "Deadlox", "Goob", "AZuLer4", "Komp", "ewop"],
-    "verifier": "Zoink",
-    "verification": "https://www.youtube.com/watch?v=sBKR6aUorzA",
-    "percentToQualify": 49,
-    "password": "Free to Copy",
+    "id": 59075347,
+    "name": "Tartarus",
+    "author": "Dolphy",
+    "creators": ["Hinds", "Endlevel", "Riot", "Cyclic", "Vermillion", "Aurorus", "AZuLer4", "Salaxium", "Rek3dge", "Komp", "Aquatias"],
+    "verifier": "Dolphy",
+    "verification": "https://www.youtube.com/watch?v=9YYQBbrsV5Y",
+    "percentToQualify": 47,
+    "password": "061742",
     "records": [
         {
             "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=xtpDCz4ubG0",
+            "link": "https://www.youtube.com/watch?v=KAYqnGCpLrw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Plutz",
+            "link": "https://www.youtube.com/watch?v=6jKtax3t2h0",
             "percent": 100,
             "hz": 360
         }
