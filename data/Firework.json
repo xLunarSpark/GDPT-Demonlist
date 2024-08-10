@@ -1,1 +1,18 @@
-
+{
+    "id": 75206202,
+    "name": "Firework",
+    "author": "Trick",
+    "creators": [Crouley, Desumari, Vernam, Itami, Lekvid, Orte, lillium, 00Zero, Hantein, Buragoz, Realvet, Konsi],
+    "verifier": "Trick",
+    "verification": "https://www.youtube.com/watch?v=QBe5x2o9v2w",
+    "percentToQualify": "59",
+    "password": "234000",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=52PVHk_49hU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
