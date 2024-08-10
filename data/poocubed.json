@@ -1,1 +1,18 @@
-
+{
+    "id": 85133223,
+    "name": "poocubed",
+    "author": "btLisp",
+    "creators": ["Aespha", "ph0", "btLisp", "Aranda", "Earthum", "Faraox", "TypicalGMD"],
+    "verifier": "Kyass",
+    "verification": "https://youtu.be/fzL31vai1ms",
+    "percentToQualify": "??",
+    "password": "688255",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=52PVHk_49hU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
