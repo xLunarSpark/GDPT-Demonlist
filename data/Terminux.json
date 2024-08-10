@@ -1,0 +1,30 @@
+{
+    "id": 76865589,
+    "name": "Terminux",
+    "author": "Aerae",
+    "creators": ["iEstia", "Flosia", "Aerae", "1374", "ZenthicAlpha", "SyQual", "Inex", "TheCdPre", "Mintjelly", "Rainstorm"],
+    "verifier": "Laniakea",
+    "verification": "https://www.youtube.com/watch?v=I8M1OOhub9w",
+    "percentToQualify": "55",
+    "password": "271828",
+    "records": [
+        {
+            "user": "Ktunn",
+            "link": "https://www.youtube.com/watch?v=y0VcAMoNwHA",
+            "percent": 100,
+            "hz": 360 
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ggk9mk5rhKg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "TyS",
+            "link": "https://www.youtube.com/watch?v=KXvnDtEuG3c",
+            "percent": 88,
+            "hz": 360
+        }
+    ]
+}
