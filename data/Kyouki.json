@@ -7,6 +7,11 @@
     "verification": "https://www.youtube.com/watch?v=KDa5c0CJTHs",
     "percentToQualify": "50",
     "password": "Free To Copy",
-    "records": [
+    "records": [{
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=xtpDCz4ubG0",
+            "percent": 100,
+            "hz": 360
+        }
     ]
 }
