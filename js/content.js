@@ -102,11 +102,12 @@ level.records.forEach((record) => {
 
     progressed.push({
         rank: rank + 1,
-        level: `${level.name} (${record.percent}%)`,  // Percentagem só é mostrada aqui, após o nome do nível
+        level: level.name + " (" + record.percent + "%)",  // Mantém a percentagem apenas entre parênteses após o nome do nível
         score: score(rank + 1, record.percent, level.percentToQualify),
         link: record.link,
     });
 });
+
         
     // Wrap in extra Object containing the user and total score
     const res = Object.entries(scoreMap).map(([user, scores]) => {
