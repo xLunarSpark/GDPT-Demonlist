@@ -100,12 +100,9 @@ export async function fetchLeaderboard() {
                 return;
             }
             
-    const percentText = `(${record.percent}%)`;
-    const levelText = `${level.name} ${percentText}`;
-            
             progressed.push({
                 rank: rank + 1,
-                level: levelText,  // Usa a string formatada
+                level: `${level.name} (${record.percent}%)`,
                 score: score(rank + 1, record.percent, level.percentToQualify),
                 link: record.link,
             });
