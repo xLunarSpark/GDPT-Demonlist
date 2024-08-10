@@ -1,0 +1,18 @@
+{
+    "id": 68908396,
+    "name": "Frozen Cave",
+    "author": "TheParadoxTeam",
+    "creators": ["FlashWings576", "TyakyoFyai", "AlexOris", "Vornickon", "Aqualime", "Sleynt", "Quicklen", "DimaCrut"],
+    "verifier": "khrizmass",
+    "verification": "https://www.youtube.com/watch?v=BFaqgkw-Hg0",
+    "percentToQualify": "59",
+    "password": "060521",
+    "records": [
+        {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=kwnLuZH-fEQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
