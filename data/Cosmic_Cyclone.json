@@ -1,0 +1,24 @@
+{
+    "id": 76159410,
+    "name": "Cosmic Cyclone",
+    "author": "APTeamOfficial",
+    "creators": ["Zimnior12", "Meox", "Sunix", "Requiem", "Avati", "Heso", "Zipixbox", "Riot", "Tribar", "GD Endy", "KrazyGFX", "Zuku", "CuLuC", "Cyclic", "Nickalopogas", "AppleCr", "FiryTheGoat", "Realvet", "Lambda", "Zhander", "Reunomi", "Shant", "Uriun"],
+    "verifier": "DoSh7t",
+    "verification": "https://www.youtube.com/watch?v=C3-l_fFikpQ",
+    "percentToQualify": 58,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=c6nDg5bszSA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ypnyqwZB1jU",
+            "percent": 72,
+            "hz": 240
+        }
+    ]
+}
