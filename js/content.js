@@ -70,7 +70,7 @@ export async function fetchLeaderboard() {
         verified.push({
             rank: rank + 1,
             level: level.name,
-            score: score(0),
+            score: score(rank + 1, 100, level.percentToQualify),
             link: level.verification,
         }); 
 
