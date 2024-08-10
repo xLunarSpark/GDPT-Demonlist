@@ -1,0 +1,24 @@
+{
+    "id": 60740290,
+    "name": "Aquatic Auroras",
+    "author": "Endlevel",
+    "creators": ["Endlevel", "LimeTime313", "El3ctr0"],
+    "verifier": "kyoto",
+    "verification": "https://www.youtube.com/watch?v=mEXGlrNMyR4",
+    "percentToQualify": 51,
+    "password": "789123",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=drRZJyn_byI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=K1QxVDHBBec",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
