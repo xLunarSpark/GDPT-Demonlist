@@ -1,0 +1,42 @@
+{
+    "id": 52919433,
+    "name": "Arctic Lights",
+    "author": "Metalface221",
+    "creators": ["iIiViRuZiIi", "Endlevel", "Hantein"],
+    "verifier": "Metalface221",
+    "verification": "https://www.youtube.com/watch?v=iHf2nanWjvE",
+    "percentToQualify": "52",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=zfLmfkg79I8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karmatas",
+            "link": "https://www.youtube.com/watch?v=iOAKyer_TV0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=h_6NU1DUQFQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=K1-P5dekZbQ",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=hUim9xNUaIA",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
