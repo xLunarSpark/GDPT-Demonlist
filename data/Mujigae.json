@@ -1,0 +1,24 @@
+{
+    "id": 38765979,
+    "name": "Mujigae",
+    "author": "YGYoshi",
+    "creators": ["YGYoshi"],
+    "verifier": "Hotball1",
+    "verification": "https://www.youtube.com/watch?v=H2-uD1jNZCw",
+    "percentToQualify": "100",
+    "password": "758942",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=lr88AMtJVII",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=geuLVQ2-45M",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
