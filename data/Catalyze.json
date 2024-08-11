@@ -1,0 +1,24 @@
+{
+    "id": 50333567,
+    "name": "Catalyze",
+    "author": "ZephiroX",
+    "creators": ["MrSpaghetti"],
+    "verifier": "Dolphy",
+    "verification": "https://www.youtube.com/watch?v=hF-TVX8wakc",
+    "percentToQualify": "100",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Sf1QHWNi10c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=5kcsaq_Pfdw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
