@@ -1,0 +1,18 @@
+{
+    "id": 91019161,
+    "name": "the wiener",
+    "author": "Rynoxious",
+    "creators": ["Linear", "AlrexX", "CDMusic", "Rynoxious"],
+    "verifier": "Taiago",
+    "verification": "https://www.youtube.com/watch?v=rgMruLorH1c",
+    "percentToQualify": "51",
+    "password": "No Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=rgMruLorH1c",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
