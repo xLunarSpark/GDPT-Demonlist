@@ -1,0 +1,41 @@
+{
+    "id": 68688849,
+    "name": "Sonic Wave Rebirth",
+    "author": "Serponge",
+    "creators": ["Serponge", "Funnygame", "Cyclic"],
+    "verifier": "Moosh",
+    "verification": "https://www.youtube.com/watch?v=wXxPNaqTZKU",
+    "percentToQualify": "55",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=Bxg6G6Ferxk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Z8m9gjfgHwo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Plutz",
+            "link": "https://www.youtube.com/watch?v=BQ8O4HHIQAE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Corepic",
+            "link": "https://www.youtube.com/watch?v=vXGcKzxPZDE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=CEFQ5coDduk",
+            "percent": 70,
+            "hz": 300
+    ]
+}
