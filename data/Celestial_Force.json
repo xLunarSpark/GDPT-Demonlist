@@ -1,0 +1,24 @@
+{
+    "id": 47237400,
+    "name": "Celestial Force",
+    "author": "MindCap",
+    "creators": ["Wless", "Soulax", "GeometryTom", "Elayad", "JustBasic", "Auntex", "Djoxy", "Helpegasus", "Stormy97", "Hoshikido", "Jihn", "Manheadrambo", "MindCap", "Zafkiel", "GaidenHertuny", "MrLorenzo", "Xyriak"],
+    "verifier": "a n t",
+    "verification": "https://www.youtube.com/watch?v=bW8JOt8s7CI",
+    "percentToQualify": "100",
+    "password": "772002",
+    "records": [
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=Aa_IVc774dw",
+            "percent": 100,
+            "hz": 90 
+        },
+        {
+            "user": "Plutz",
+            "link": "https://www.youtube.com/watch?v=jarUw12e9KU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
