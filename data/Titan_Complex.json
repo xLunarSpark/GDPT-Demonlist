@@ -1,0 +1,24 @@
+{
+    "id": 44022701,
+    "name": "Titan Complex",
+    "author": "TCTeam",
+    "creators": ["LordDelta", "Ryumazaki", "Kllnex", "PeroXide01", "xyLteK", "Arceus", "CheeseSlayer", "Vapen", "GeometryTom", "Brittank88", "Scott", "MistFix", "jdfr03", "BubShish", "Mactanow", "CarlozZz", "Licentious", "Astion", "Sebquero11", "Zafkiel", "Marpha", "GaidenHertuny", "AutumnLotus", "Maxin", "Nitro", "Rexter", "CesDroid", "KeybladeMaster"],
+    "verifier": "MrDash",
+    "verification": "https://www.youtube.com/watch?v=nI7AvT0qUks",
+    "percentToQualify": 100,
+    "password": "666666",
+    "records": [
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=hTzY11rmNTk",
+            "percent": 100,
+            "hz": 300
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=skYEohrYtbg",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
