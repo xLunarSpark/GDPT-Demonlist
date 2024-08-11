@@ -1,0 +1,36 @@
+{
+    "id": 28220417,
+    "name": "Yatagarasu",
+    "author": "TrusTa",
+    "creators": ["Hinds", "Loogiah", "Michigun", "Aeidux", "Csx42gaming", "Jeyzor", "Luneth", "Riot", "AncientAnubis", "weoweoteo", "AbstractDark", "WOOGI1411", "Giron", "Funnygame", "Zelda", "Findexi", "Anthrax", "Vermillion", "Rek3dge", "xcy7", "ViPriN", "Evasium"],
+    "verifier": "Dragoon",
+    "verification": "https://www.youtube.com/watch?v=GrGFFPhtAFc",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=8MHi1Eg204Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=_hTvlTET_AE",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=6t0j6u1EMyI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "TrueJumpy",
+            "link": "https://www.youtube.com/watch?v=0J-T7PSzHjY",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
