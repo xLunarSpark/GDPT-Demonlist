@@ -1,0 +1,24 @@
+{
+    "id": 61531210,
+    "name": "Hyper Paradox",
+    "author": "ItsHybrid",
+    "creators": ["Avati", "Temp", "ViralDL", "El3ctr0", "SyQual", "Realvet", "ItsHybrid", "Connected"],
+    "verifier": "Kapinapi",
+    "verification": "https://www.youtube.com/watch?v=ucmMMjeTOjc",
+    "percentToQualify": 100,
+    "password": "251326",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=cZPQSHWNinE",
+            "percent": 100,
+            "hz": 288
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=yfOM-NYL2ck",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
