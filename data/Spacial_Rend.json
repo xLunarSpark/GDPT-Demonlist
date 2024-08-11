@@ -1,0 +1,18 @@
+{
+    "id": 40292513,
+    "name": "Spacial Rend",
+    "author": "Eclipsed",
+    "creators": ["YakobNugget", "AlexPG", "BananaMuffin", "Vapen", "Lqah", "123ev4n", "Nahuel2998", "SlimJim", "Spade", "Logic", "Nemphis", "CreatorSruj", "Tsukifuto", "MaxiKD", "Eclipsed", "Splash", "WHErwin", "Cyber"],
+    "verifier": "DiamondSplash",
+    "verification": "https://www.youtube.com/watch?v=VgiRJRBzacM",
+    "percentToQualify": 100,
+    "password": "417236",
+    "records": [
+        {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=F1DYdaX68B8",
+            "percent": 100,
+            "hz": 300
+        }
+    ]
+}
