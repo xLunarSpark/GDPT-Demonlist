@@ -1,0 +1,24 @@
+{
+    "id": 59331091,
+    "name": "Infinite Iniquity",
+    "author": "Flukester",
+    "creators": ["Jghost217", "nampac", "Enzore", "xStar7", "Pleoslim", "Waffl3x", "Zoroa GD", "Flukester", "MrPPs", "Stamina", "Victorinox", "Kookie Monster", "DreamTide", "Helpegasus", "PrivateChaos", "Nico99", "MrMeurick", "Hyenaedon", "SirZaiss", "CreatorDino", "Jood", "DrSlurrp"],
+    "verifier": "swiborg",
+    "verification": "https://www.youtube.com/watch?v=mL_An0vv8T0",
+    "percentToQualify": 100,
+    "password": "200356",
+    "records": [
+        {
+            "user": "Kerfuffles",
+            "link": "https://www.youtube.com/watch?v=XEfJhq3vthU",
+            "percent": 100,
+            "hz": 288
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=IsnGnxAtHlg",
+            "percent": 100,
+            "hz": 144
+        }
+    ]
+}
