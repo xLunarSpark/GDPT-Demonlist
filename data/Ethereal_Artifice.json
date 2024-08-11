@@ -1,0 +1,54 @@
+{
+    "id": 58252259,
+    "name": "Ethereal Artifice",
+    "author": "Zeroya",
+    "creators": ["Cyclic"],
+    "verifier": "Mycrafted",
+    "verification": "GDSpeed", "Xaren", "Platnuu", "Isane", "Geo", "Helpegasus", "Majkomar", "Masu", "Enixy", "voltex", "Spectral", "Zeroya",
+    "percentToQualify": "100",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=qysnHE5-L-Y",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://youtube.com/watch?v=8yt971Pogr4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "david_varela_pt",
+            "link": "https://www.youtube.com/watch?v=hDhSERpZoaw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Kerfuffles",
+            "link": "https://www.youtube.com/watch?v=ONP2Li04c3w",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=PABkcqghRYU",
+            "percent": 100,
+            "hz": 330
+        },
+        {
+            "user": "Karmatas",
+            "link": "https://www.youtube.com/watch?v=Iwd6K3IUmHI",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
