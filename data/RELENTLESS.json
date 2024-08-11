@@ -1,0 +1,18 @@
+{
+    "id": 74361921,
+    "name": "RELENTLESS",
+    "author": "SurJaco",
+    "creators": ["Handexx", "SurJaco", "Titoalper", "Rall", "Spezix", "Crowley", "Septa", "Boii", "Shebam", "nCylix"],
+    "verifier": "FieRcE7",
+    "verification": "https://www.youtube.com/watch?v=8qQZ0n_R7Ec",
+    "percentToQualify": 100,
+    "password": "103105",
+    "records": [
+        {
+            "user": "TyS",
+            "link": "https://www.youtube.com/watch?v=q5rb0T9iuUY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
