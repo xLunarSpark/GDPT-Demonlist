@@ -1,0 +1,18 @@
+{
+    "id": 52303420,
+    "name": "REQUIEM",
+    "author": "Zylenox",
+    "creators": ["Lithifusion"],
+    "verifier": "Zylenox",
+    "verification": "https://www.youtube.com/watch?v=sRCQ1JjhBq4",
+    "percentToQualify": "54",
+    "password": "No Copy",
+    "records": [
+        {
+            "user": "BernaX",
+            "link": "https://www.youtube.com/watch?v=iwrn4e8h7OM",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
