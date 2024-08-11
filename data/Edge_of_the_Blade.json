@@ -1,0 +1,24 @@
+{
+    "id": 61366470,
+    "name": "Edge of the Blade",
+    "author": "eiruni",
+    "creators": ["Onnikonna", "GDSpeed", "Vlacc", "RpgRaketti", "Uneskladovae", "Rustam", "Edge", "Metalface221", "Masu", "knobbelboy", "Ryder", "Findexi", "SlimJim", "Juhou", "TehTactiq", "Jaipes", "Terron", "ChaSe", "Zeroya",],
+    "verifier": "eiruni",
+    "verification": "https://www.youtube.com/watch?v=YhT4_FgeAbk",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=eo6BoMhB8Qg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=tqkZUIFPnZI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
