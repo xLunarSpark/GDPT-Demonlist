@@ -1,0 +1,18 @@
+{
+    "id": 62869408,
+    "name": "Chromatic Haze",
+    "author": "Cirtrax",
+    "creators": ["Gizbro", "Cirtrax"],
+    "verifier": "RevoltZy",
+    "verification": "https://www.youtube.com/watch?v=J-qEOHy-IIA",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=eD-5pxg99vU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
