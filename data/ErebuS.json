@@ -1,0 +1,36 @@
+{
+    "id": 65860142,
+    "name": "ErebuS",
+    "author": "Platnuu",
+    "creators": ["Platnuu", "ILRELL"],
+    "verifier": "Ozzy",
+    "verification": "https://www.youtube.com/watch?v=p877rT5gxNA",
+    "percentToQualify": "100",
+    "password": "231846",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=SHl32Z9nHEg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=ruNJLfdea6s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "JonikLindo",
+            "link": "https://www.youtube.com/watch?v=bXhkhMmVchE",
+            "percent": 100,
+            "hz": 288
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=3RcA5ni2Rp4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
