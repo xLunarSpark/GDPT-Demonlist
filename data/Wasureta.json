@@ -1,0 +1,48 @@
+{
+    "id": 64658786,
+    "name": "Wasureta",
+    "author": "Helpegasus",
+    "creators": ["Isane", "LimeTime313", "XLSpiral", "Helpegasus", "Deadlox", "BelonziK", "El3ctr0", "Crazen", "augi", "Splash"],
+    "verifier": "VaporWubz",
+    "verification": "https://www.youtube.com/watch?v=9jkCtNDbDt0",
+    "percentToQualify": "100",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Ktunn",
+            "link": "https://www.youtube.com/watch?v=As09ItioP8Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karmatas",
+            "link": "https://www.youtube.com/watch?v=HdHCoL6eFFw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=bk-z5vjDJFc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=5S58PLWwIqg",
+            "percent": 100,
+            "hz": 330
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=IXg57KtM5bE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=no_kOGC5EuY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
