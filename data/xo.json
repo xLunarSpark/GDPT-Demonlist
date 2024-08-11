@@ -1,0 +1,30 @@
+{
+    "id": 58825144,
+    "name": "xo",
+    "author": "KrmaL",
+    "creators": ["KrmaL"],
+    "verifier": "KrmaL",
+    "verification": "https://www.youtube.com/watch?v=vcAdWah55Z4",
+    "percentToQualify": "100",
+    "password": "000007",
+    "records": [
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=xJGeUjNzS0s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=amVyCt5-NGs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=jK_IdBrcVvI",
+            "percent": 100,
+            "hz": 200
+        }
+    ]
+}
