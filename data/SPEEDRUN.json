@@ -1,0 +1,24 @@
+{
+    "id": 58507437,
+    "name": "SPEEDRUN",
+    "author": "Kaito",
+    "creators": ["Kaito"],
+    "verifier": "Cinci",
+    "verification": "https://www.youtube.com/watch?v=Z0Ge4G1oPmk",
+    "percentToQualify": "100",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=bPrT_srZrp4",
+            "percent": 100,
+            "hz": 180
+        },
+        {
+            "user": "BrunoDosFrangos",
+            "link": "https://www.youtube.com/watch?v=WBIZl1IHZTQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
