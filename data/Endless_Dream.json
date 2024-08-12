@@ -1,28 +1,22 @@
 {
-    "id": 33387622,
-    "name": "SubSonic",
-    "author": "ViPriN",
-    "creators": ["Jeyzor", "Rustam", "TheDevon", "Dudex", "GgB0y", "Panman", "Sumsar", "xcy7", "Terron", "ViPriN", "Evasium"],
-    "verifier": "combi",
-    "verification": "https://www.youtube.com/watch?v=F-AfSPnjIcM",
+    "id": 70484097,
+    "name": "Endless Dream",
+    "author": "DreamTide",
+    "creators": ["DreamTide"],
+    "verifier": "DreamTide",
+    "verification": "https://www.youtube.com/watch?v=byjnOPX6s2k",
     "percentToQualify": "100",
-    "password": "Free to Copy",
+    "password": "002019",
     "records": [
         {
-            "user": "BernaX",
-            "link": "https://www.youtube.com/watch?v=F15kQ23vdPE",
-            "percent": 100,
-            "hz": 144
-        },
-        {
-            "user": "Landet",
-            "link": "https://www.youtube.com/watch?v=DlF6PQRAtbM",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=-Iods_erVL0",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=_Uif2peGYyo",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=waOKAngnO7o",
             "percent": 100,
             "hz": 360
         }
