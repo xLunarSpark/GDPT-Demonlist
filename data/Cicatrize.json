@@ -1,0 +1,18 @@
+{
+    "id": 93941971,
+    "name": "Cicatrize",
+    "author": "Wintter",
+    "creators": ["OrhiD", "Wodka", "AlaskaFX", "Wintter"],
+    "verifier": "Bleamer",
+    "verification": "https://www.youtube.com/watch?v=QfF3jgPQZk0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=uV7hXKLR2FA",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
