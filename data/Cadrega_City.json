@@ -1,0 +1,18 @@
+{
+    "id": 37255449,
+    "name": "Cadrega City",
+    "author": "Pennutoh",
+    "creators": ["Pennutoh", "Berke423"],
+    "verifier": "Sunix",
+    "verification": "https://www.youtube.com/watch?v=cHEGAqOgddA",
+    "percentToQualify": 100,
+    "password": "210317",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=drRZJyn_byI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
