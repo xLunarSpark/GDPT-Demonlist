@@ -1,0 +1,18 @@
+{
+    "id": 81535535,
+    "name": "Shmarley Ville",
+    "author": "Renn241",
+    "creators": ["DrCuber", "GhostVandalf", "Renn241"],
+    "verifier": "Zipi",
+    "verification": "https://www.youtube.com/watch?v=a2SMT-dapYE",
+    "percentToQualify": 100,
+    "password": "No Copy",
+    "records": [
+        {
+            "user": "Drema",
+            "link": "https://www.youtube.com/watch?v=0BzSHr2w6gI",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
