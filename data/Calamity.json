@@ -1,0 +1,18 @@
+{
+    "id": 64766514,
+    "name": "Calamity",
+    "author": "Awedsy",
+    "creators": ["Awedsy"],
+    "verifier": "Kurumi",
+    "verification": "https://www.youtube.com/watch?v=2u4xxNUtJLI",
+    "percentToQualify": 59,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=xVAd66i3UEM",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
