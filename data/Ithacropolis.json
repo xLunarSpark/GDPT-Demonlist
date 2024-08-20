@@ -1,0 +1,24 @@
+{
+    "id": 41149984,
+    "name": "Ithacropolis",
+    "author": "BIGMAC77",
+    "creators": ["00Zero", "Jowinator19", "BIGMAC77", "Joltic"],
+    "verifier": "Skulzi",
+    "verification": "https://www.youtube.com/watch?v=shWugJFvwOc",
+    "percentToQualify": 100,
+    "password": "159357",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=ytW6cx9GbFs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=fbhhA9omn_E",
+            "percent": 100,
+            "hz": 720
+        }
+    ]
+}
