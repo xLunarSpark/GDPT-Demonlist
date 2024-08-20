@@ -1,0 +1,18 @@
+{
+    "id": 71216292,
+    "name": "Kuzureta",
+    "author": "Teno",
+    "creators": ["Zetalock", "ARWooly", "Kyhros", "cxli", "Cybertron", "River", "DiamondSkull", "DrCuber", "SrKiwi", "Genoxide", "GhostVandalf", "Renn241", "Mystic", "El3ctr0", "Realvet", "Nicor77", "zGod", "augi", "Teno"],
+    "verifier": "Cursed",
+    "verification": "https://www.youtube.com/watch?v=Q5LqZ9aKn78",
+    "percentToQualify": 61,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karmatas",
+            "link": "https://www.youtube.com/watch?v=8CIJEWdwd_Y",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
