@@ -1,0 +1,18 @@
+{
+    "id": 94390380,
+    "name": "CRIDIUM",
+    "author": "4yoet",
+    "creators": ["Khelado", "Mitho", "Synage", "Galliard", "yarle", "CTRX", "Stotch", "Octane", "Mag", "Galvam", "Arax", "Superioxx"],
+    "verifier": "teraaa",
+    "verification": "https://www.youtube.com/watch?v=IS3AcckWUT8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ZZZjvzqHYog",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
