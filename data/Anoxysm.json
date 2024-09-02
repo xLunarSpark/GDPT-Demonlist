@@ -19,6 +19,12 @@
             "link": "https://www.youtube.com/watch?v=3BryFoV07zE",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Drema",
+            "link": "https://www.youtube.com/watch?v=W18RnsPE3Y4",
+            "percent": 100,
+            "hz": 240
         }
     ]
 }
