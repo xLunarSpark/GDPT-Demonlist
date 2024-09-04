@@ -26,14 +26,6 @@ export function score(rank, percent, minPercent, isForLeaderboard = true) {
     // Cálculo Base da Pontuação
     let baseScore = (-25 * Math.pow(rank - 1, 0.4) + 200);  // Base score calculation
 
-    // Percent Completion Factor
-    let percentCompletionFactor = ((percent - minPercent) / (100 - minPercent));
-
-    // Se percent for undefined (ex: página de nível), usar o factor 1.0 para calcular a pontuação base
-    if (percent === undefined) {
-        percentCompletionFactor = 1.0;  // Assume 100% completion for base score display
-    }
-
     // Half points for 99%
     if (percent === 99) {
         percentCompletionFactor = 0.5;
