@@ -27,11 +27,6 @@ export function score(rank, percent, minPercent) {
     // Garantir que o fator não é negativo
     percentCompletionFactor = Math.max(0, percentCompletionFactor);
 
-    // Aplicação de metade dos pontos para 99%
-    if (percent === 99) {
-        percentCompletionFactor = 0.5;
-    }
-
     // Pontuação ajustada com o fator de completude
     let score = baseScore * percentCompletionFactor;
 
@@ -40,7 +35,7 @@ export function score(rank, percent, minPercent) {
 
     // Se a percentagem não for 100%, reduzir a pontuação em um terço
     if (percent !== 100) {
-        return round(score - score / 4);
+        return round(score - score / 3);
     }
 
     return round(score);
