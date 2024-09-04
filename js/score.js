@@ -31,9 +31,6 @@ export function score(rank, percent, minPercent, isForLeaderboard = true) {
     if (minPercent === 100) {
         // Somente 100% dá pontos
         percentCompletionFactor = (percent === 100) ? 1 : 0;
-    } else {
-        // Calcular o fator de conclusão normal
-        percentCompletionFactor = ((percent - minPercent) / (100 - minPercent));
     }
 
     // Half points for 99%
