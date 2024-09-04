@@ -12,29 +12,38 @@ const scale = 3;
  */
 export function score(rank, percent, minPercent) {
     if (rank > 150) {
-        return 0;
+        return 0;  // No points for ranks beyond 150
     }
     if (rank > 75 && percent < 100) {
-        return 0;
+        return 0;  // Levels above rank 75 only get points if completed 100%
     }
 
-    // Old formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // New formula
-    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+    // Cálculo Base da Pontuação
+    let baseScore = (-24.9975 * Math.pow(rank - 1, 0.4) + 200);
 
+    // Fator de completude da percentagem, ajustando para ser mais gradual
+    let percentCompletionFactor = (percent - (minPercent - 1)) / (100 - (minPercent - 1));
     
+    // Garantir que o fator não é negativo
+    percentCompletionFactor = Math.max(0, percentCompletionFactor);
+
+    // Aplicação de metade dos pontos para 99%
+    if (percent === 99) {
+        percentCompletionFactor = 0.5;
+    }
+
+    // Pontuação ajustada com o fator de completude
+    let score = baseScore * percentCompletionFactor;
+
+    // Assegurar que a pontuação é positiva
     score = Math.max(0, score);
 
-    if (percent != 100) {
+    // Se a percentagem não for 100%, reduzir a pontuação em um terço
+    if (percent !== 100) {
         return round(score - score / 3);
     }
 
-    return Math.max(round(score), 0);
+    return round(score);
 }
 
 export function round(num) {
