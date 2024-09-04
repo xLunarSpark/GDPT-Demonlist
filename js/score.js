@@ -26,6 +26,16 @@ export function score(rank, percent, minPercent, isForLeaderboard = true) {
     // Cálculo Base da Pontuação
     let baseScore = (-25 * Math.pow(rank - 1, 0.4) + 200);  // Base score calculation
 
+    // Verificar se minPercent é 100%
+    let percentCompletionFactor;
+    if (minPercent === 100) {
+        // Somente 100% dá pontos
+        percentCompletionFactor = (percent === 100) ? 1 : 0;
+    } else {
+        // Calcular o fator de conclusão normal
+        percentCompletionFactor = ((percent - minPercent) / (100 - minPercent));
+    }
+
     // Half points for 99%
     if (percent === 99) {
         percentCompletionFactor = 0.5;
