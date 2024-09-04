@@ -6,25 +6,33 @@ const scale = 3;
 /**
  * Calculate the score awarded when having a certain percentage on a list level
  * @param {Number} rank Position on the list
- * @param {Number} percent Percentage of completion
+ * @param {Number} percent Percentage of completion (optional)
  * @param {Number} minPercent Minimum percentage required
+ * @param {Boolean} isForLeaderboard Flag to indicate if the calculation is for leaderboard
  * @returns {Number}
  */
-export function score(rank, percent, minPercent) {
+export function score(rank, percent, minPercent, isForLeaderboard = true) {
     if (rank > 150) {
         return 0;  // No points for ranks beyond 150
     }
 
-    // Restrição corrigida: Apenas aplicar se o rank for acima de 75 e a percentagem < 100
-    if (rank > 75 && percent < 100) {
-        return 0;  // No points for levels above rank 75 unless it's 100%
+    // Para a leaderboard: Níveis de 76 a 150 só recebem pontos para 100%
+    if (isForLeaderboard && rank > 75) {
+        if (percent < 100) {
+            return 0;  // Níveis acima de 75 só recebem pontos se for 100%
+        }
     }
 
-    // New adjusted formula
+    // Cálculo Base da Pontuação
     let baseScore = (-25 * Math.pow(rank - 1, 0.4) + 200);  // Base score calculation
 
-    // Calculate adjusted percentage weight
+    // Percent Completion Factor
     let percentCompletionFactor = ((percent - minPercent) / (100 - minPercent));
+
+    // Se percent for undefined (ex: página de nível), usar o factor 1.0 para calcular a pontuação base
+    if (percent === undefined) {
+        percentCompletionFactor = 1.0;  // Assume 100% completion for base score display
+    }
 
     // Half points for 99%
     if (percent === 99) {
@@ -33,11 +41,11 @@ export function score(rank, percent, minPercent) {
 
     let score = baseScore * percentCompletionFactor;
 
-    // Ensure score is non-negative
+    // Assegurar que a pontuação é positiva
     score = Math.max(0, score);
 
-    // If not 100%, reduce by one third
-    if (percent !== 100) {
+    // Para leaderboard: se não for 100%, reduzir a pontuação em um terço
+    if (isForLeaderboard && percent !== 100) {
         return round(score - score / 3);
     }
 
