@@ -18,37 +18,28 @@ export function score(rank, percent, minPercent) {
         return 0;
     }
 
-    // Old formula
-    /*
-    let score = (100 / Math.sqrt((rank - 1) / 50 + 0.444444) - 50) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
-    // New formula
-    /*let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
-        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
-    */
- // Teste nova formula
+    // New adjusted formula
+    let baseScore = (-25 * Math.pow(rank - 1, 0.4) + 200);  // Base score calculation
 
-    def points(percent,rank,minPercent):
-	score = 256.65243*Math.pow(0.97408,placement)
-	result = 0.0
-	if placement > 150:
-		return 0
-	if percent == 100:
-		result = score
-	elif percent == 99:
-		result = score / 2
-	elif percent >= minPercent:
-		result = score / 5 * (minPercent/100-0.2)
-	return result
-    
+    // Calculate adjusted percentage weight
+    let percentCompletionFactor = ((percent - minPercent) / (100 - minPercent));
+
+    // Half points for 99%
+    if (percent === 99) {
+        percentCompletionFactor = 0.5;
+    }
+
+    let score = baseScore * percentCompletionFactor;
+
+    // Ensure score is non-negative
     score = Math.max(0, score);
 
-    if (percent != 100) {
+    // If not 100%, reduce by one third
+    if (percent !== 100) {
         return round(score - score / 3);
     }
 
-    return Math.max(round(score), 0);
+    return round(score);
 }
 
 export function round(num) {
