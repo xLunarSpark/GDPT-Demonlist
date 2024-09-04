@@ -12,7 +12,12 @@ const scale = 3;
  */
 export function score(rank, percent, minPercent) {
     if (rank > 150) {
-        return 0;
+        return 0;  // No points for ranks beyond 150
+    }
+
+    // Restrição corrigida: Apenas aplicar se o rank for acima de 75 e a percentagem < 100
+    if (rank > 75 && percent < 100) {
+        return 0;  // No points for levels above rank 75 unless it's 100%
     }
 
     // New adjusted formula
