@@ -1,0 +1,18 @@
+{
+    "id": 82544060,
+    "name": "Mayhem",
+    "author": "LordVaderCraft",
+    "creators": ["Vernam", "Enely", "Synd", "Thrasher", "vit12", "Vitchrose", "Sauzzeth", "Konsi", "DMSD"],
+    "verifier": "LordVaderCraft",
+    "verification": "https://www.youtube.com/watch?v=U6e6DD32noM",
+    "percentToQualify": "39",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=qfc6XneWTXI",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
