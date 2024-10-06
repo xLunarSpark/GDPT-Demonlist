@@ -1,1 +1,18 @@
-
+{
+    "id": 76962930,
+    "name": "Sakupen Circles",
+    "author": "TDiamond",
+    "creators": ["Nick24, DrCuber, korewa, Muffy450, Renn241, endevvor, Mzero, NineDice, GhostVandalf"],
+    "verifier": "Diamond",
+    "verification": "https://youtu.be/ofG2mJi9kEA",
+    "percentToQualify": "100",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://youtu.be/LEF-Gq4pDjA?si=V0M7tqjHS5MVb_Lh",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
