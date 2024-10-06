@@ -1,0 +1,18 @@
+{
+    "id": 94156085,
+    "name": "Shimmer",
+    "author": "Amplitron",
+    "creators": ["Amplitron"],
+    "verifier": "Amplitron",
+    "verification": "https://youtu.be/J89j-_l7ezg",
+    "percentToQualify": 65,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karmatas",
+            "link": "https://youtu.be/wETzV1y7XO0?si=TR2KQkN0FWWmXgaX",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
