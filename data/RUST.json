@@ -19,6 +19,12 @@
             "link": "https://www.youtube.com/watch?v=IQRLxIi6k18",
             "percent": 100,
             "hz": 360
-        }
+        },
+        {
+            "user": "Karmatas",
+            "link": "https://youtu.be/gfFB6pj5fh4?si=BUt6J-k9a4-8wr4U",
+            "percent": 100,
+            "hz": 240
+        }        
     ]
 }
