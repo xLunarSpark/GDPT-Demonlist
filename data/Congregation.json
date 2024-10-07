@@ -1,0 +1,18 @@
+{
+    "id": 68668045,
+    "name": "Congregation",
+    "author": "Presta",
+    "creators": ["Presta"],
+    "verifier": "Floofle",
+    "verification": "https://youtu.be/KVlcdvGYcj0",
+    "percentToQualify": 50,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Manugrk",
+            "link": "https://youtu.be/IWGpgK8_JTE?si=qg0D17k19JL4Mmix",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
