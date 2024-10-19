@@ -1,0 +1,18 @@
+{
+    "id": 77681476,
+    "name": "ATOMIC CANNON",
+    "author": "Lieb",
+    "creators": ["Lieb"],
+    "verifier": "Zeronium",
+    "verification": "https://youtu.be/t2SzULMyAkg",
+    "percentToQualify": 72,
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "Karmatas",
+            "link": "https://youtu.be/t2SzULMyAkg",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
