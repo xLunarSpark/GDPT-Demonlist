@@ -28,7 +28,7 @@ export function score(rank, percent, minPercent) {
        baseScore = (-5 * rank + 310 );
     } if (rank > 115 && rank <= 150) {  // Use 'else' to avoid redundant checks
        baseScore = (-0.486 * rank + 77.79 );
-    } if (rank > 85 && rank <= 114) {  // Use 'else' to avoid redundant checks
+    } if (rank > 85 && rank <= 115) {  // Use 'else' to avoid redundant checks
        baseScore = (-0.367 * rank + 65.195 );
     } if (rank > 75 && rank <= 85) {  // Use 'else' to avoid redundant checks
        baseScore = (-0.556 * rank + 82.256  );
