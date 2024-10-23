@@ -17,7 +17,7 @@ export function score(rank, percent, minPercent) {
         return 0;  // Levels above rank 75 only get points if completed 100%
     }
     // Cálculo Base da Pontuação
-    let baseScore = (-40 * Math.pow(rank - 1, 0.45) + 350);
+    let baseScore = (-45 * Math.pow(rank - 1, 0.5) + 350);
     // Fator de completude da percentagem, ajustando para ser mais gradual
     let percentCompletionFactor = (percent - (minPercent - 1)) / (100 - (minPercent - 1));
     // Garantir que o fator não é negativo
