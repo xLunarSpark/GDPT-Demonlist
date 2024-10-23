@@ -18,11 +18,12 @@ export function score(rank, percent, minPercent) {
     }
     // Cálculo Base da Pontuação
 
+    let baseScore;
+
     if (rank <= 20) {
-         let baseScore = (-33 * Math.pow(rank - 1, 0.65) + 350);
-    }
-    if (rank > 20) {
-        let baseScore = (-40 * Math.pow(rank - 1, 0.423) + 350);
+       baseScore = (-33 * Math.pow(rank - 1, 0.65) + 350);
+    } else {  // Use 'else' to avoid redundant checks
+       baseScore = (-40 * Math.pow(rank - 1, 0.423) + 350);
     }
     // Fator de completude da percentagem, ajustando para ser mais gradual
     let percentCompletionFactor = (percent - (minPercent - 1)) / (100 - (minPercent - 1));
