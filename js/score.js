@@ -26,6 +26,8 @@ export function score(rank, percent, minPercent) {
        baseScore = (-14.44 * rank +466.64);
     } if (rank > 15 && rank <= 30) {  // Use 'else' to avoid redundant checks
        baseScore = (-5 * rank + 310 );
+    } if (rank > 115 && rank <= 150) {  // Use 'else' to avoid redundant checks
+       baseScore = (-0.486x + 77.79 );
     }
     // Fator de completude da percentagem, ajustando para ser mais gradual
     let percentCompletionFactor = (percent - (minPercent - 1)) / (100 - (minPercent - 1));
