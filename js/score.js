@@ -21,7 +21,7 @@ export function score(rank, percent, minPercent) {
     let baseScore;
 
     if (rank <= 5) {
-       baseScore = (-33 * Math.pow(rank - 1, 0.65) + 350);
+       baseScore = (-33 * Math.pow(rank - 1, 0.65) + 500);
     } else {  // Use 'else' to avoid redundant checks
        baseScore = (-40 * Math.pow(rank - 1, 0.423) + 350);
     }
