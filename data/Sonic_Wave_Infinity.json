@@ -19,6 +19,12 @@
             "link": "https://www.youtube.com/watch?v=eHY1_asCp1Y",
             "percent": 61,
             "hz": 240
-        }
+        },
+        {
+            "user": "Ktunn",
+            "link": "https://www.youtube.com/watch?v=GZNULiuFn2s",
+            "percent": 100,
+            "hz": 480
+        },
     ]
 }
