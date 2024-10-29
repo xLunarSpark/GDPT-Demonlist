@@ -1,0 +1,18 @@
+{
+    "id": 63996127,
+    "name": "Cold Sweat",
+    "author": "Para",
+    "creators": ["Para", "Sminx", "Wulzy"],
+    "verifier": "Kapinapi",
+    "verification": "https://youtu.be/foUJl0dYxwc",
+    "percentToQualify": 60,
+    "password": "Free to copy",
+    "records": [
+        {
+            "user": "Karmatas",
+            "link": "https://youtu.be/foUJl0dYxwc",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
