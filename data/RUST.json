@@ -26,12 +26,17 @@
             "percent": 100,
             "hz": 240
         },
+        {
+            "user": "Ktunn",
+            "link": "https://youtube.com/live/DBWCqJp-jK4",
+            "percent": 100,
+            "hz": 720
+        },
          {
             "user": "Manugrk",
             "link": "https://www.youtube.com/watch?v=DX_C3bXbtVY",
             "percent": 71,
             "hz": 240
-        }        
-        
+        }           
     ]
 }
