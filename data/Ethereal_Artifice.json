@@ -49,6 +49,12 @@
             "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "LNP15",
+            "link": "https://youtu.be/hEHcOWy8zaE",
+            "percent": 100,
+            "hz": 240
         }
     ]
 }
