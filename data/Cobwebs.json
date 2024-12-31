@@ -1,0 +1,18 @@
+{
+    "id": 82172844,
+    "name": "Cobwebs",
+    "author": "NineDice",
+    "creators": ["NineDice", "Taika"],
+    "verifier": "Cursed",
+    "verification": "https://youtu.be/mYPpnUSpxlE?si=cmYWDFGwYWo6hD3_",
+    "percentToQualify": 62,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karmatas",
+            "link": "https://youtu.be/mYPpnUSpxlE?si=cmYWDFGwYWo6hD3_",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
