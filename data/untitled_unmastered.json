@@ -1,0 +1,18 @@
+{
+    "id": 82217720,
+    "name": "untitled unmastered",
+    "author": "para",
+    "creators": ["para"],
+    "verifier": "vinny",
+    "verification": "https://youtu.be/PZYjghseKBs",
+    "percentToQualify": 65,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://youtu.be/PZYjghseKBs",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
