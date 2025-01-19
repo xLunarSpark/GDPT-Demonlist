@@ -13,6 +13,12 @@
             "link": "https://www.youtube.com/watch?v=z3hZSYEtF_4",
             "percent": 100,
             "hz": 220
+        },
+        {
+            "user": "Landet",
+            "link": "https://drive.google.com/file/d/1I8TaCD0uKb1SgR6_sLc3q8Gi1zg2tYHq/view?usp=drivesdk",
+            "percent": 100,
+            "hz": 240
         }
     ]
 }
