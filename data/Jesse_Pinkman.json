@@ -13,6 +13,12 @@
             "link": "https://www.youtube.com/watch?v=5uLVJyaifIk",
             "percent": 100,
             "hz": 360
-            }
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://youtu.be/pCbt23PW3tg?si=krLU8bTVwVEO8-On",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
