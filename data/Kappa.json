@@ -19,6 +19,12 @@
             "link": "https://www.youtube.com/watch?v=WxZWFI0DS4s",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://youtu.be/yMMokEc830w?si=59fXq50cOajwx5My",
+            "percent": 100,
+            "hz": 240
         }
     ]
 }
