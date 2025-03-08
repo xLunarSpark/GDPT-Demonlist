@@ -1,0 +1,18 @@
+{
+    "id": 103373693,
+    "name": "FARBIDI THEORY",
+    "author": "TMco",
+    "creators": ["Zipixbox", "Wespdx", "Iris", "Nikrodox", "Connected", "ItsHybrid", "pla"],
+    "verifier": "WatchPiggy",
+    "verification": "https://www.youtube.com/watch?v=MQD6klwhcsM",
+    "percentToQualify": "80",
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "manu",
+            "link": "https://www.youtube.com/watch?v=v6h77c0iDyE",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
