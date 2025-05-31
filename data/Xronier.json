@@ -1,0 +1,18 @@
+{
+    "id": 88913586,
+    "name": "Xronier",
+    "author": "JinoBeats",
+    "creators": ["JinoBeats"],
+    "verifier": "JinoBeats",
+    "verification": "https://youtu.be/1Xbj9KOQnAU?si=5wh3n7nTeSALAq51",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Landet",
+            "link": "https://youtu.be/1Xbj9KOQnAU?si=5wh3n7nTeSALAq51",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
