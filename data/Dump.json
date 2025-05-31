@@ -1,0 +1,18 @@
+{
+    "id": 88913586,
+    "name": "Dump",
+    "author": "GiggsRH",
+    "creators": ["GiggsRH", "Koopazu"],
+    "verifier": "ZeusGD",
+    "verification": "https://youtu.be/bp0kvkRgQP8?si=u2cjUXmpvL9VfMbX",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Landet",
+            "link": "https://youtu.be/bp0kvkRgQP8?si=u2cjUXmpvL9VfMbX",
+            "percent": 100,
+            "hz": 240
+        }
+    ]
+}
