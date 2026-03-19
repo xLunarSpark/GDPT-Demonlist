@@ -1,0 +1,66 @@
+{
+    "id": 23262780,
+    "name": "Sakupen Hell",
+    "author": "TrusTa",
+    "creators": [],
+    "verifier": "TrusTa",
+    "verification": "https://www.youtube.com/watch?v=svyOjwLCErg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=Nzf8_oQt2eI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=ytMEQithEW8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=5L5xHr6szL4&t=2s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=A5tyPE0wPl8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Viwi",
+            "link": "https://www.youtube.com/watch?v=qcEpDxUakAQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=gmF89CCCiko",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=B23WDku35g0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=wh_0suyK2Wo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=cA2PPMcGGPc",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

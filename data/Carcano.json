@@ -1,0 +1,42 @@
+{
+    "id": 64148732,
+    "name": "Carcano",
+    "author": "Asuith",
+    "creators": [],
+    "verifier": "kvvv",
+    "verification": "https://www.youtube.com/watch?v=vqhitBHhsTo",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=Qsns6VJV7Dw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=N8l2Z3Irt7k",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=G0qqr_EPMfA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=ul90PthNH9w",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=k5jqFYhRwKY&t=28",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

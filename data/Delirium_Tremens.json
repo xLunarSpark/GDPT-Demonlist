@@ -1,0 +1,18 @@
+{
+    "id": 73289291,
+    "name": "Delirium Tremens",
+    "author": "Vadi",
+    "creators": [],
+    "verifier": "Drewch",
+    "verification": "https://www.youtube.com/watch?v=xMx1EHmmzxc",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=tOqMelnX5zw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

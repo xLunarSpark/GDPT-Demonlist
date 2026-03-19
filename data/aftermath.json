@@ -1,0 +1,72 @@
+{
+    "id": 25610878,
+    "name": "aftermath",
+    "author": "Exenity",
+    "creators": [],
+    "verifier": "DaMeister",
+    "verification": "https://www.youtube.com/watch?v=iLCcJyh5c5k",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=izpmuZeipmw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=-iATEWZ6nwc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Viwi",
+            "link": "https://www.youtube.com/watch?v=jGhG8BO0Wms",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=gA4BugAjFAs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=mTjAUouMY_8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=a86dZF6GAbM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=AOD9vCkOKA4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=OLB8Q2K_oRA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=ExnWd7wZsgQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "JooPozo",
+            "link": "https://www.youtube.com/watch?v=moPPSTsHpeo",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

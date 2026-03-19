@@ -2,7 +2,31 @@
     "id": 76159410,
     "name": "Cosmic Cyclone",
     "author": "APTeamOfficial",
-    "creators": ["Zimnior12", "Meox", "Sunix", "Requiem", "Avati", "Heso", "Zipixbox", "Riot", "Tribar", "GD Endy", "KrazyGFX", "Zuku", "CuLuC", "Cyclic", "Nickalopogas", "AppleCr", "FiryTheGoat", "Realvet", "Lambda", "Zhander", "Reunomi", "Shant", "Uriun"],
+    "creators": [
+        "Zimnior12",
+        "Meox",
+        "Sunix",
+        "Requiem",
+        "Avati",
+        "Heso",
+        "Zipixbox",
+        "Riot",
+        "Tribar",
+        "GD Endy",
+        "KrazyGFX",
+        "Zuku",
+        "CuLuC",
+        "Cyclic",
+        "Nickalopogas",
+        "AppleCr",
+        "FiryTheGoat",
+        "Realvet",
+        "Lambda",
+        "Zhander",
+        "Reunomi",
+        "Shant",
+        "Uriun"
+    ],
     "verifier": "DoSh7t",
     "verification": "https://www.youtube.com/watch?v=c6nDg5bszSA",
     "percentToQualify": 58,
@@ -15,16 +39,16 @@
             "hz": 360
         },
         {
-            "user": "klaraa",
-            "link": "https://www.youtube.com/watch?v=O22dxJWWGgk&t=11s",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=91iTN5pA0aw",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "LunarSpark",
-            "link": "https://youtu.be/91iTN5pA0aw",
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=O22dxJWWGgk&t=140s",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

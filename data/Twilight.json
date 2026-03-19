@@ -2,17 +2,19 @@
     "id": 90193093,
     "name": "Twilight",
     "author": "zYuko",
-    "creators": ["zYuko"],
+    "creators": [
+        "zYuko"
+    ],
     "verifier": "nei",
     "verification": "https://www.youtube.com/watch?v=dm283aHBiuk",
     "percentToQualify": 63,
     "password": "Free to copy",
     "records": [
         {
-            "user": "Karmatas",
+            "user": "Karma",
             "link": "https://www.youtube.com/watch?v=dm283aHBiuk",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

@@ -1,0 +1,18 @@
+{
+    "id": 95049815,
+    "name": "Climax",
+    "author": "HushLC",
+    "creators": [],
+    "verifier": "Wain",
+    "verification": "https://www.youtube.com/watch?v=E4ppq2WeAAs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=jyKva4-4tik",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

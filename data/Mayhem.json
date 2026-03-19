@@ -2,7 +2,17 @@
     "id": 82544060,
     "name": "Mayhem",
     "author": "LordVaderCraft",
-    "creators": ["Vernam", "Enely", "Synd", "Thrasher", "vit12", "Vitchrose", "Sauzzeth", "Konsi", "DMSD"],
+    "creators": [
+        "Vernam",
+        "Enely",
+        "Synd",
+        "Thrasher",
+        "vit12",
+        "Vitchrose",
+        "Sauzzeth",
+        "Konsi",
+        "DMSD"
+    ],
     "verifier": "LordVaderCraft",
     "verification": "https://www.youtube.com/watch?v=qfc6XneWTXI",
     "percentToQualify": "39",
@@ -12,12 +22,6 @@
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=qfc6XneWTXI",
             "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "klaraa",
-            "link": "https://www.youtube.com/watch?v=YsK7bgSkZ5w",
-            "percent": 40,
             "hz": 240
         }
     ]

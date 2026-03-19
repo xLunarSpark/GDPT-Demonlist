@@ -1,0 +1,24 @@
+{
+    "id": 85242343,
+    "name": "White Album",
+    "author": "Javp",
+    "creators": [],
+    "verifier": "Javp",
+    "verification": "https://youtu.be/kDveL5z1Kjs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=mtlTuPLLPZI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=OTrgG3h0J80",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

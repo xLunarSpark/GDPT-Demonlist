@@ -1,0 +1,18 @@
+{
+    "id": 83098728,
+    "name": "TORNADO",
+    "author": "BIANOX",
+    "creators": [],
+    "verifier": "SpeedyMuffin",
+    "verification": "https://www.youtube.com/watch?v=xC8Emqk5t18",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=r9HrjFRgAUg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

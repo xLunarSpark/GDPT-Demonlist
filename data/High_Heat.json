@@ -1,0 +1,18 @@
+{
+    "id": 91782999,
+    "name": "High Heat",
+    "author": "Bibox",
+    "creators": [],
+    "verifier": "Bibox",
+    "verification": "https://www.youtube.com/watch?v=0U1vr82Djfg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=_IQ9bavRvAw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

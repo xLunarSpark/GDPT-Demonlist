@@ -2,7 +2,19 @@
     "id": 59075347,
     "name": "Tartarus",
     "author": "Dolphy",
-    "creators": ["Hinds", "Endlevel", "Riot", "Cyclic", "Vermillion", "Aurorus", "AZuLer4", "Salaxium", "Rek3dge", "Komp", "Aquatias"],
+    "creators": [
+        "Hinds",
+        "Endlevel",
+        "Riot",
+        "Cyclic",
+        "Vermillion",
+        "Aurorus",
+        "AZuLer4",
+        "Salaxium",
+        "Rek3dge",
+        "Komp",
+        "Aquatias"
+    ],
     "verifier": "Dolphy",
     "verification": "https://www.youtube.com/watch?v=KAYqnGCpLrw",
     "percentToQualify": 47,
@@ -15,22 +27,16 @@
             "hz": 360
         },
         {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=6jKtax3t2h0",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=8YYcoQl8-zs",
             "percent": 100,
             "hz": 360
         },
         {
             "user": "LunarSpark",
-            "link": "https://youtu.be/Wby7X_xkhX0?si=KTILhJ4DI4Xx6whO",
+            "link": "https://www.youtube.com/watch?v=Wby7X_xkhX0",
             "percent": 100,
             "hz": 240
-        },
-        {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=Nr8G_KRyWWk",
-            "percent": 67,
-            "hz": 360
         }
     ]
 }

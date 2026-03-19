@@ -2,7 +2,12 @@
     "id": 93941971,
     "name": "Cicatrize",
     "author": "Wintter",
-    "creators": ["OrhiD", "Wodka", "AlaskaFX", "Wintter"],
+    "creators": [
+        "OrhiD",
+        "Wodka",
+        "AlaskaFX",
+        "Wintter"
+    ],
     "verifier": "Bleamer",
     "verification": "https://www.youtube.com/watch?v=uV7hXKLR2FA",
     "percentToQualify": 43,

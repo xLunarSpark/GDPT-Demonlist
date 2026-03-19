@@ -2,7 +2,10 @@
     "id": 37255449,
     "name": "Cadrega City",
     "author": "Pennutoh",
-    "creators": ["Pennutoh", "Berke423"],
+    "creators": [
+        "Pennutoh",
+        "Berke423"
+    ],
     "verifier": "Sunix",
     "verification": "https://www.youtube.com/watch?v=yKNNCJjnur8",
     "percentToQualify": 100,

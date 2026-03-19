@@ -1,0 +1,24 @@
+{
+    "id": 100485888,
+    "name": "STRATUS",
+    "author": "Woom",
+    "creators": [],
+    "verifier": "YakobNugget",
+    "verification": "https://www.youtube.com/watch?v=3VQww22jJG0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Gamer_BernaX",
+            "link": "https://www.youtube.com/watch?v=b3dijLxMkcA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=RpxkguMDtig",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

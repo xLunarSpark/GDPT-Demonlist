@@ -1,0 +1,24 @@
+{
+    "id": 110027124,
+    "name": "Voluto",
+    "author": "Sruj",
+    "creators": [],
+    "verifier": "devastation19",
+    "verification": "https://www.youtube.com/watch?v=G63L2aTQ2vA",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=rUxAADfef9s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=xxhm-GkQsBI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

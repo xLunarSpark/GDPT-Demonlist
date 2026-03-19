@@ -1,0 +1,42 @@
+{
+    "id": 81148582,
+    "name": "Sweater Weather",
+    "author": "VelYT",
+    "creators": [],
+    "verifier": "xfire",
+    "verification": "https://www.youtube.com/watch?v=y3Kk0ZvDqUM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=BlYJhyvSuEU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=BoZ753MGkQE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=roz3LKBuvyE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=h3CiKUAFrjo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=OgtI2q_80X4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

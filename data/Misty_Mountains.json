@@ -1,0 +1,30 @@
+{
+    "id": 60708767,
+    "name": "Misty Mountains",
+    "author": "We4therMan",
+    "creators": [],
+    "verifier": "We4therMan",
+    "verification": "https://www.youtube.com/watch?v=LiJaBftzL2k",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=m09IHDxKKjY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=GzZZzTfkXZY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=LThDqhBbIcc",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

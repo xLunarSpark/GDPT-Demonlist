@@ -1,0 +1,18 @@
+{
+    "id": 48591102,
+    "name": "Ancestral Calamity",
+    "author": "MrSpaghetti",
+    "creators": [],
+    "verifier": "MrSpaghetti",
+    "verification": "https://www.youtube.com/watch?v=L2cyjYUYeXM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=0BusjMvKRYo&t=192s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

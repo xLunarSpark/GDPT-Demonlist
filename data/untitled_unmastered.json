@@ -2,7 +2,9 @@
     "id": 82217720,
     "name": "untitled unmastered",
     "author": "para",
-    "creators": ["para"],
+    "creators": [
+        "para"
+    ],
     "verifier": "vinny",
     "verification": "https://youtu.be/PZYjghseKBs",
     "percentToQualify": 65,
@@ -10,7 +12,7 @@
     "records": [
         {
             "user": "LunarSpark",
-            "link": "https://youtu.be/PZYjghseKBs",
+            "link": "https://www.youtube.com/watch?v=PZYjghseKBs",
             "percent": 100,
             "hz": 240
         }

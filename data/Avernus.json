@@ -2,7 +2,22 @@
     "id": 89496627,
     "name": "Avernus",
     "author": "PockeWindfish",
-    "creators": ["Woom", "Kyhros", "deactive", "Zipixbox", "GD Iris", "TriplasH", "Zenn", "BoBoBoBoBoBoBo", "El3ctr0", "SyQual", "Realvet", "Nidro", "Deadlox", "Loolycat"],
+    "creators": [
+        "Woom",
+        "Kyhros",
+        "deactive",
+        "Zipixbox",
+        "GD Iris",
+        "TriplasH",
+        "Zenn",
+        "BoBoBoBoBoBoBo",
+        "El3ctr0",
+        "SyQual",
+        "Realvet",
+        "Nidro",
+        "Deadlox",
+        "Loolycat"
+    ],
     "verifier": "Zoink",
     "verification": "www.youtube.com/watch?v=nSSr_W9CUFs",
     "percentToQualify": 59,
@@ -10,7 +25,7 @@
     "records": [
         {
             "user": "Taiago",
-            "link": "www.youtube.com/watch?v=nSSr_W9CUFs",
+            "link": "https://www.youtube.com/watch?v=nSSr_W9CUFs",
             "percent": 100,
             "hz": 480
         }

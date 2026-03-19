@@ -2,18 +2,14 @@
     "id": 80966089,
     "name": "CITRA",
     "author": "VARSE",
-    "creators": ["VARSE"],
+    "creators": [
+        "VARSE"
+    ],
     "verifier": "VARSE",
     "verification": "https://www.youtube.com/watch?v=08LUuX8BOCI",
     "percentToQualify": "68",
     "password": "No Copy",
     "records": [
-        {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=08LUuX8BOCI",
-            "percent": 100,
-            "hz": 360 
-        },
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=BGAVOq1G-Nk",
@@ -21,8 +17,8 @@
             "hz": 360
         },
         {
-            "user": "TyS",
-            "link": "https://www.youtube.com/watch?v=_NcNXJcoXFY",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=08LUuX8BOCI",
             "percent": 100,
             "hz": 360
         }

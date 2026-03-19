@@ -2,17 +2,29 @@
     "id": 110913375,
     "name": "Judgement Knights",
     "author": "HangerLord",
-    "creators": ["HangerLord", "Insxne97", "Farlayy", "Fusion425", "kngstn"],
+    "creators": [
+        "HangerLord",
+        "Insxne97",
+        "Farlayy",
+        "Fusion425",
+        "kngstn"
+    ],
     "verifier": "Helix",
     "verification": "https://youtu.be/m5JhH6m7gFY?si=WB77ig5tOzQfzQdu",
     "percentToQualify": "61",
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/m5JhH6m7gFY?si=WB77ig5tOzQfzQdu",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=m5JhH6m7gFY",
             "percent": 100,
-            "hz": 240
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=SiK8tUzVLPM",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

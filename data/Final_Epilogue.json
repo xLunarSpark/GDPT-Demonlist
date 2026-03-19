@@ -1,0 +1,24 @@
+{
+    "id": 28231603,
+    "name": "Final Epilogue",
+    "author": "Pennutoh",
+    "creators": [],
+    "verifier": "Eggnog",
+    "verification": "https://www.youtube.com/watch?v=5pIUGaJzfhw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=zzu5HueOvr4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=RRqR8kK5x6w",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

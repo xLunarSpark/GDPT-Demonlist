@@ -2,24 +2,16 @@
     "id": 51791710,
     "name": "Auditory Breaker",
     "author": "LazerBlitz",
-    "creators": ["Manix648", "Cyclic", "LazerBlitz"],
+    "creators": [
+        "Manix648",
+        "Cyclic",
+        "LazerBlitz"
+    ],
     "verifier": "Gabs",
     "verification": "https://www.youtube.com/watch?v=cu7Z5-XcKsI",
     "percentToQualify": "100",
     "password": "Free to Copy",
     "records": [
-        {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=cu7Z5-XcKsI",
-            "percent": 100,
-            "hz": 300
-        },
-        {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=VBBLFq66ZUY",
-            "percent": 100,
-            "hz": 360
-        },
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=kVUG0COi-bI",
@@ -27,22 +19,28 @@
             "hz": 360
         },
         {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=Sofb_zh8Ib8",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=cu7Z5-XcKsI&t=4s",
+            "percent": 100,
+            "hz": 300
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=V3dq8X9ESgw",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Corepic",
-            "link": "https://www.youtube.com/watch?v=6ObcAAOHafc",
+            "user": "JooPozo",
+            "link": "https://www.youtube.com/watch?v=Kd9hdPbDTiE",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "TrueJumpy",
-            "link": "https://youtu.be/NypX_wf5pWE?si=lS4GYuWV0apzC9tg",
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=hXVI0RKZbgg",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

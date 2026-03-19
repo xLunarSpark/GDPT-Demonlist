@@ -1,0 +1,24 @@
+{
+    "id": 96083028,
+    "name": "Midnight",
+    "author": "MadisonYuko",
+    "creators": [],
+    "verifier": "nei",
+    "verification": "https://www.youtube.com/watch?v=NhkN_a9cNi8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=M8hjOf2ZWfg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=rJAwUz_35i0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

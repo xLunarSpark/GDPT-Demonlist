@@ -1,0 +1,18 @@
+{
+    "id": 119259720,
+    "name": "Without U",
+    "author": "NoobyPro27",
+    "creators": [],
+    "verifier": "Zeronium",
+    "verification": "https://www.youtube.com/watch?v=63cb6Rm3XJU",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=MF21cR_KCD4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

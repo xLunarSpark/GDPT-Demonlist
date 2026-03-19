@@ -2,7 +2,9 @@
     "id": 50333567,
     "name": "Catalyze",
     "author": "ZephiroX",
-    "creators": ["ZephiroX"],
+    "creators": [
+        "ZephiroX"
+    ],
     "verifier": "MrSpaghetti",
     "verification": "https://www.youtube.com/watch?v=Sf1QHWNi10c",
     "percentToQualify": "100",
@@ -15,20 +17,14 @@
             "hz": 360
         },
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=5kcsaq_Pfdw",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=TkTDWeafjTs",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://www.youtube.com/watch?v=7Ikbd-7HfJk&t=2s",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "zHexya",
-            "link": "https://youtu.be/X5PFD-OIOo0?si=-T1IRVLjzEBlE-uz",
+            "link": "https://www.youtube.com/watch?v=X5PFD-OIOo0",
             "percent": 100,
             "hz": 240
         }

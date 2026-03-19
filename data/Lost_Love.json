@@ -1,0 +1,24 @@
+{
+    "id": 85933508,
+    "name": "Lost Love",
+    "author": "TheBlackHell",
+    "creators": [],
+    "verifier": "Aespha",
+    "verification": "https://www.youtube.com/watch?v=KGh4Fe5SmXc",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=-XF5ctLLXtg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=xwrREAFrrDA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "id": 44706787,
+    "name": "ATMarbl",
+    "author": "Pennutoh",
+    "creators": [],
+    "verifier": "Golden",
+    "verification": "https://www.youtube.com/watch?v=PanlasFe7ow",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=6TIPOt_cf18",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=EB1j3PPNupk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=yfAapJP72SE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=CDhsimbhUYs",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

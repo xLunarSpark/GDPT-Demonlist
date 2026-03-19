@@ -1,0 +1,18 @@
+{
+    "id": 60257058,
+    "name": "Just DANCE",
+    "author": "Texic",
+    "creators": [],
+    "verifier": "Kapinapi",
+    "verification": "https://www.youtube.com/watch?v=FZBB1QgDE-Y",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=65b3JZu7Htw&t=0s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": 33748382,
+    "name": "Novalis",
+    "author": "Gryllex",
+    "creators": [],
+    "verifier": "GrylleX",
+    "verification": "https://www.youtube.com/watch?v=yq58ZQI4zPM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=ygAs_Xvv2-c",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

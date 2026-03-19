@@ -1,0 +1,48 @@
+{
+    "id": 48175126,
+    "name": "Idols",
+    "author": "Zafkiel7",
+    "creators": [],
+    "verifier": "Dorami",
+    "verification": "https://www.youtube.com/watch?v=EsKfImKvaFc",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=KiYAu4-tca4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=eyLRgxxn9nY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=b4tlTXxrWhY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=xQCwod69pZk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=0Uvj0nT0Ttk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=kbwytmbUQ2M",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": 88946497,
+    "name": "Last Stop",
+    "author": "Cejelost",
+    "creators": [],
+    "verifier": "cat597",
+    "verification": "https://www.youtube.com/watch?v=2mD-x_pMuhs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ejhx4GdIO_E",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=3IBKeU5M7-w",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

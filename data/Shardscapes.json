@@ -2,17 +2,25 @@
     "id": 79997992,
     "name": "Shardscapes",
     "author": "ItzKiba",
-    "creators": ["ItzKiba"],
+    "creators": [
+        "ItzKiba"
+    ],
     "verifier": "kiseta",
     "verification": "https://youtu.be/Uu1QsRZHc-E?si=xWf5EIZlO9S5err1",
     "percentToQualify": 56,
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Manugrk",
-            "link": "https://youtu.be/Uu1QsRZHc-E?si=xWf5EIZlO9S5err1",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=FuUgk5JQtDM",
             "percent": 100,
-            "hz": 240
+            "hz": 360
+        },
+        {
+            "user": "Manu",
+            "link": "https://www.youtube.com/watch?v=Uu1QsRZHc-E",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

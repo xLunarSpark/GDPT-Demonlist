@@ -2,7 +2,9 @@
     "id": 72315402,
     "name": "arcturus",
     "author": "maxfs",
-    "creators": ["maxfs"],
+    "creators": [
+        "maxfs"
+    ],
     "verifier": "ultrakawaHD",
     "verification": "https://www.youtube.com/watch?v=WL4-aR9Y2K0",
     "percentToQualify": "44",
@@ -15,10 +17,10 @@
             "hz": 360
         },
         {
-            "user": "Karmatas",
+            "user": "Karma",
             "link": "https://www.youtube.com/watch?v=F49DcsmCYSk",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

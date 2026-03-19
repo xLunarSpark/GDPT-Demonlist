@@ -2,7 +2,18 @@
     "id": 94578424,
     "name": "Trotil",
     "author": "CherryTeam",
-    "creators": ["SpritZ", "Ani", "Lit", "postcodeFF", "Inex", "CHILLI", "Feron", "Vonxi", "Val'GO", "eggephant"],
+    "creators": [
+        "SpritZ",
+        "Ani",
+        "Lit",
+        "postcodeFF",
+        "Inex",
+        "CHILLI",
+        "Feron",
+        "Vonxi",
+        "Val'GO",
+        "eggephant"
+    ],
     "verifier": "ItzTayfun",
     "verification": "https://www.youtube.com/watch?v=PnvWeukXdDc",
     "percentToQualify": "65",
@@ -10,9 +21,21 @@
     "records": [
         {
             "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=PnvWeukXdDc",
+            "link": "https://www.youtube.com/watch?v=PnvWeukXdDc&t=28s",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=2jx2aAH1vFI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=bT91sBSMLcU",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

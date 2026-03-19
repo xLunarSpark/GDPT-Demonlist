@@ -1,0 +1,24 @@
+{
+    "id": 25241513,
+    "name": "Breakout",
+    "author": "Surv",
+    "creators": [],
+    "verifier": "Technical",
+    "verification": "https://www.youtube.com/watch?v=foEA5hS1aUw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=vY7JsjziPAU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "JonikLindo",
+            "link": "https://www.youtube.com/watch?v=sKQjRcoMOPw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

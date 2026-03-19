@@ -1,0 +1,24 @@
+{
+    "id": 61997741,
+    "name": "Biohazard (ARtu)",
+    "author": "Artu",
+    "creators": [],
+    "verifier": "Artu",
+    "verification": "https://www.youtube.com/watch?v=x2JOy3owBU8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=dYLte-ilrPY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=4z3PEC3zfoc",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

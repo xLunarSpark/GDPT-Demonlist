@@ -1,0 +1,24 @@
+{
+    "id": 87489628,
+    "name": "Universe on fire",
+    "author": "Tim1K",
+    "creators": [],
+    "verifier": "DarkTD",
+    "verification": "https://www.youtube.com/watch?v=YybvCO_AbLE&t=2s",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=OwcvJHwTDqk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=WsCxdDsIukM",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

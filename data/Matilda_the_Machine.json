@@ -1,0 +1,18 @@
+{
+    "id": 30157581,
+    "name": "Matilda the Machine",
+    "author": "Jeyzor",
+    "creators": [],
+    "verifier": "Jeyzor",
+    "verification": "https://www.youtube.com/watch?v=_ICKNhOQ4Tw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=GNgnP9MrQk8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

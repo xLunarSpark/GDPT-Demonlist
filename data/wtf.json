@@ -1,0 +1,24 @@
+{
+    "id": 93570042,
+    "name": "wtf",
+    "author": "madamEllyza",
+    "creators": [],
+    "verifier": "madamEllyza",
+    "verification": "https://www.youtube.com/watch?v=qKwzwgEFqCs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=SE3V_lAOFAw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=4qCemJEypwY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

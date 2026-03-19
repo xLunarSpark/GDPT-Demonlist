@@ -1,0 +1,18 @@
+{
+    "id": 125040851,
+    "name": "Monitor",
+    "author": "REDACTED",
+    "creators": [],
+    "verifier": "REDACTED",
+    "verification": "https://www.youtube.com/watch?v=ebP5-2SfFZw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Docaedro",
+            "link": "https://www.youtube.com/watch?v=SAq15roEbMo",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

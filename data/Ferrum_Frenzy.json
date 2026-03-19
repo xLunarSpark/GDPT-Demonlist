@@ -1,0 +1,18 @@
+{
+    "id": 64239577,
+    "name": "Ferrum Frenzy",
+    "author": "XinpA",
+    "creators": [],
+    "verifier": "Miro",
+    "verification": "https://www.youtube.com/watch?v=Qt6EVbWC8uA",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=11bbJNQlk9w",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

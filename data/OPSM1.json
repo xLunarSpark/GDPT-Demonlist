@@ -1,0 +1,24 @@
+{
+    "id": 68193306,
+    "name": "OPSM1",
+    "author": "VARSE",
+    "creators": [],
+    "verifier": "12Kelvin",
+    "verification": "https://www.youtube.com/watch?v=tRhJf0NXUSw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=BXbC_i6nx74",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=h_uBFcKIPpw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

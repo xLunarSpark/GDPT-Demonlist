@@ -2,18 +2,17 @@
     "id": 69333212,
     "name": "Promethean",
     "author": "Endlevel",
-    "creators": ["Endlevel", "River", "Realvet", "Connected"],
+    "creators": [
+        "Endlevel",
+        "River",
+        "Realvet",
+        "Connected"
+    ],
     "verifier": "RicoLP",
     "verification": "https://www.youtube.com/watch?v=dFmfT1abBAc",
     "percentToQualify": "67",
     "password": "789123",
     "records": [
-        {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=dFmfT1abBAc",
-            "percent": 100,
-            "hz": 360
-        },
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=cfH8y9z3mxE",
@@ -21,10 +20,16 @@
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/8dpB1HMIjOM?si=ttlEysbriyfxcC5a",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=8dpB1HMIjOM&t=4s",
             "percent": 100,
-            "hz": 240
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=IpGolqhn8sw",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

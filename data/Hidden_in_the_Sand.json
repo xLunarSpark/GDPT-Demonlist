@@ -1,0 +1,24 @@
+{
+    "id": 87481937,
+    "name": "Hidden in the Sand",
+    "author": "ASBCHazel",
+    "creators": [],
+    "verifier": "chloechu",
+    "verification": "https://www.youtube.com/watch?v=IKa7NlT0AUQ",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=5lPPOo7Fzs0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=2PwPkQCAtoc",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

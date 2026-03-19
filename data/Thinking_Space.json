@@ -2,7 +2,9 @@
     "id": 54953085,
     "name": "Thinking Space",
     "author": "HidekiX",
-    "creators": ["HidekiX"],
+    "creators": [
+        "HidekiX"
+    ],
     "verifier": "Atomic",
     "verification": "https://www.youtube.com/watch?v=MwT6JOR39d8",
     "percentToQualify": "75",
@@ -15,16 +17,28 @@
             "hz": 360
         },
         {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=kC5sPXf6SuI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Castro 13GD",
             "link": "https://www.youtube.com/watch?v=YOtsoZ5AeMg",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/kC5sPXf6SuI?si=co93sR7_H1rW81p4",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=yjj06-EwMgI",
             "percent": 100,
-            "hz": 240
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=2U0mNDPp9VU",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

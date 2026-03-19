@@ -2,21 +2,24 @@
     "id": 56782662,
     "name": "Macabre",
     "author": "ZephiroX",
-    "creators": ["Requiem", "ZephiroX"],
+    "creators": [
+        "Requiem",
+        "ZephiroX"
+    ],
     "verifier": "MrSpaghetti",
     "verification": "https://www.youtube.com/watch?v=q4lF31q8Tk8",
     "percentToQualify": 100,
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=q4lF31q8Tk8",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=WtrYANEqNjk",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://www.youtube.com/watch?v=WtrYANEqNjk",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=q4lF31q8Tk8",
             "percent": 100,
             "hz": 360
         },

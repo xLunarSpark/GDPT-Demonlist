@@ -1,0 +1,30 @@
+{
+    "id": 74924716,
+    "name": "GLISTEN",
+    "author": "Squizaaard",
+    "creators": [],
+    "verifier": "Solus",
+    "verification": "https://www.youtube.com/watch?v=xL_0WkFxKeM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=WPZ0H1M-7ZE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=YPI8DlFhV4E&list=PLVuVL2aJSn9NBhFtr1609CO59uS33kJ7Z",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=BAbZAXg43-I",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

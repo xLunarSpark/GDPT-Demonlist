@@ -2,7 +2,13 @@
     "id": 38235367,
     "name": "Quantum Processing",
     "author": "Riot",
-    "creators": ["Hinds", "Riot", "Zobros", "RobTop", "Sil3nce"],
+    "creators": [
+        "Hinds",
+        "Riot",
+        "Zobros",
+        "RobTop",
+        "Sil3nce"
+    ],
     "verifier": "rampage",
     "verification": "https://www.youtube.com/watch?v=SWBgqrLLxbo",
     "percentToQualify": 100,
@@ -15,16 +21,16 @@
             "hz": 360
         },
         {
-            "user": "liziuri",
-            "link": "https://www.youtube.com/watch?v=NIvDl4dMQMg",
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=vp3EXi6CUj4",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         },
         {
-            "user": "Taiago",
-            "link": "https://youtu.be/qu1CzD7SY4w?si=ycHt8Ge6cq7pfZzG",
+            "user": "DYT",
+            "link": "https://www.youtube.com/watch?v=P8FzzhrrSqk",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

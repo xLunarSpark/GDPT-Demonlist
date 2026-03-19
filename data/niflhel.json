@@ -1,0 +1,24 @@
+{
+    "id": 90197147,
+    "name": "niflhel",
+    "author": "Shard",
+    "creators": [],
+    "verifier": "Elia Soverini",
+    "verification": "https://www.youtube.com/watch?v=VfvJ40Pbdps",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=Bcj2rscSeV4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=GqB-JNm5gQw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

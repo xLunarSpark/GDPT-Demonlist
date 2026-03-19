@@ -1,0 +1,18 @@
+{
+    "id": 102352215,
+    "name": "Ion",
+    "author": "shmigels",
+    "creators": [],
+    "verifier": "Hypno",
+    "verification": "https://www.youtube.com/watch?v=XOorv-ZPnh0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=Da4lkM64Gv4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

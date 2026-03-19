@@ -2,7 +2,30 @@
     "id": 58355141,
     "name": "Calculator Core",
     "author": "Walroose",
-    "creators": ["Chuckgamer1", "Sheep", "Xaren", "Zest", "Cytokinesis", "StarkytheSalad", "Cryo", "Isane", "Acnologia", "Brittank88", "Zylenox", "Voltrix", "Sedgehog", "tolstyh", "Helpegasus", "CairoX", "Walroose", "Zero", "Realvet", "CrankytheHuman", "Yoonsr", "Spectex"],
+    "creators": [
+        "Chuckgamer1",
+        "Sheep",
+        "Xaren",
+        "Zest",
+        "Cytokinesis",
+        "StarkytheSalad",
+        "Cryo",
+        "Isane",
+        "Acnologia",
+        "Brittank88",
+        "Zylenox",
+        "Voltrix",
+        "Sedgehog",
+        "tolstyh",
+        "Helpegasus",
+        "CairoX",
+        "Walroose",
+        "Zero",
+        "Realvet",
+        "CrankytheHuman",
+        "Yoonsr",
+        "Spectex"
+    ],
     "verifier": "swiborg",
     "verification": "https://www.youtube.com/watch?v=dnyuRisoA7M",
     "percentToQualify": "52",
@@ -10,7 +33,7 @@
     "records": [
         {
             "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=dnyuRisoA7M",
+            "link": "https://www.youtube.com/watch?v=dnyuRisoA7M&t=189s",
             "percent": 100,
             "hz": 240
         }

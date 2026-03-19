@@ -1,0 +1,18 @@
+{
+    "id": 129561693,
+    "name": "Carbon Fiber",
+    "author": "xSlendy",
+    "creators": [],
+    "verifier": "notd4n1",
+    "verification": "https://www.youtube.com/watch?v=doCS2keLRhE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Tqp_SdjCXdw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

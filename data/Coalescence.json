@@ -1,0 +1,18 @@
+{
+    "id": 108708033,
+    "name": "Coalescence",
+    "author": "Amplitron",
+    "creators": [],
+    "verifier": "Amplitron",
+    "verification": "https://www.youtube.com/watch?v=do-a2EzZ4R8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=bhOWaEU5on8&t=7s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

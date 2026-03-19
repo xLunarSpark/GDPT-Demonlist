@@ -1,0 +1,18 @@
+{
+    "id": 110227780,
+    "name": "milo",
+    "author": "xSlendy",
+    "creators": [],
+    "verifier": "murderrr",
+    "verification": "https://www.youtube.com/watch?v=ek4sUIdl5pc&t=0s",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=uJW4zOI6qLo",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

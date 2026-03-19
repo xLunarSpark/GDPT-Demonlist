@@ -1,0 +1,30 @@
+{
+    "id": 31462941,
+    "name": "Erebus (BoldStep)",
+    "author": "Bold",
+    "creators": [],
+    "verifier": "Bold",
+    "verification": "https://www.youtube.com/watch?v=8csWDx6C2YI",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=uD6QlDeRrLo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Drema",
+            "link": "https://www.youtube.com/watch?v=SD9GUk4RuvI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=Y1npO6WmZU0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

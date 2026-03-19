@@ -1,0 +1,18 @@
+{
+    "id": 96512076,
+    "name": "UNG",
+    "author": "An Gyung",
+    "creators": [],
+    "verifier": "InterChange",
+    "verification": "https://www.youtube.com/watch?v=ICvVhGHLFYA",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=U1AJ7PiYk9o",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

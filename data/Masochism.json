@@ -1,0 +1,30 @@
+{
+    "id": 79665466,
+    "name": "Masochism",
+    "author": "XinpA",
+    "creators": [],
+    "verifier": "ked",
+    "verification": "https://www.youtube.com/watch?v=favcBHWsuxo",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=9IA_B1B37DQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=-ewWVO11XYo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=ajYj_H-Kz9U",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

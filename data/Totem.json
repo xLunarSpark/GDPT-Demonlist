@@ -1,0 +1,18 @@
+{
+    "id": 83570278,
+    "name": "Totem",
+    "author": "kivvvi",
+    "creators": [],
+    "verifier": "Bleamer",
+    "verification": "https://www.youtube.com/watch?v=zjuHxSal16g",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=S89ZnJjmYo4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

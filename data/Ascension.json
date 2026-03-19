@@ -2,7 +2,9 @@
     "id": 107743292,
     "name": "Ascension",
     "author": "Kolros716",
-    "creators": ["Kolros716"],
+    "creators": [
+        "Kolros716"
+    ],
     "verifier": "Kolros716",
     "verification": "https://www.youtube.com/watch?v=GTb2EO_P4HI",
     "percentToQualify": "100",
@@ -10,7 +12,7 @@
     "records": [
         {
             "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=GTb2EO_P4HI",
+            "link": "https://www.youtube.com/watch?v=GTb2EO_P4HI&t=256s",
             "percent": 100,
             "hz": 240
         }

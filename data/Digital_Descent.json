@@ -2,7 +2,26 @@
     "id": 37456092,
     "name": "Digital Descent",
     "author": "ViPriN",
-    "creators": ["Hinds", "Loogiah", "Vlacc", "Samifying", "KrmaL", "Kips", "G4lvatron", "AbstractDark", "Rustam", "TheDevon", "Etzer", "Serponge", "Manix648", "Codex", "LazerBlitz", "Terron", "ViPriN", "nasgubb"],
+    "creators": [
+        "Hinds",
+        "Loogiah",
+        "Vlacc",
+        "Samifying",
+        "KrmaL",
+        "Kips",
+        "G4lvatron",
+        "AbstractDark",
+        "Rustam",
+        "TheDevon",
+        "Etzer",
+        "Serponge",
+        "Manix648",
+        "Codex",
+        "LazerBlitz",
+        "Terron",
+        "ViPriN",
+        "nasgubb"
+    ],
     "verifier": "combi",
     "verification": "https://www.youtube.com/watch?v=0GaAXgdLT3k",
     "percentToQualify": "100",
@@ -15,34 +34,16 @@
             "hz": 288
         },
         {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=CUxy3zqV_5I",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=NwH51diLPrU",
-            "percent": 100,
-            "hz": 300
-        },
-        {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=60OkQm0pQXY",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=866tfgfeWxA",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "Karmatas",
-            "link": "https://www.youtube.com/watch?v=-T8pSOJiwNk",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=NwH51diLPrU",
             "percent": 100,
-            "hz": 240
+            "hz": 300
         },
         {
             "user": "zHexya",
@@ -52,9 +53,15 @@
         },
         {
             "user": "RedMurder",
-            "link": "https://youtu.be/5fT749uRLW4",
+            "link": "https://www.youtube.com/watch?v=5fT749uRLW4",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=AKlCQzlxns8",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

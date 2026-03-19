@@ -2,18 +2,15 @@
     "id": 57600307,
     "name": "Cognition",
     "author": "Endlevel",
-    "creators": ["Endlevel", "benji8080"],
+    "creators": [
+        "Endlevel",
+        "benji8080"
+    ],
     "verifier": "nSwish",
     "verification": "https://www.youtube.com/watch?v=YWoWKawgEk4",
     "percentToQualify": 53,
     "password": "789123",
     "records": [
-        {
-            "user": "Karmatas",
-            "link": "https://www.youtube.com/watch?v=YWoWKawgEk4",
-            "percent": 100,
-            "hz": 360
-        },
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=3daqlLTnD6k",
@@ -21,10 +18,22 @@
             "hz": 360
         },
         {
-           "user": "LunarSpark",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=Qrtp_f7c2Fs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=R1MI_CC2Lks",
             "percent": 100,
-            "hz": 240 
+            "hz": 240
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=opfLpk-579I",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

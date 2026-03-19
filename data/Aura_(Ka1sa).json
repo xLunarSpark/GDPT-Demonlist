@@ -1,0 +1,24 @@
+{
+    "id": 73988608,
+    "name": "Aura (Ka1sa)",
+    "author": "Ka1sa",
+    "creators": [],
+    "verifier": "Zeronium",
+    "verification": "https://www.youtube.com/watch?v=AsqOXZMvqnc",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=tBq0k_BvCK4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=gsE-Kr4oTLQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

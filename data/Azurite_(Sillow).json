@@ -1,0 +1,54 @@
+{
+    "id": 62214792,
+    "name": "Azurite (Sillow)",
+    "author": "Sillow",
+    "creators": [],
+    "verifier": "Sillow",
+    "verification": "https://www.youtube.com/watch?v=yQRMhKruCPw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=gzmM1NhcwoA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Qf9J_emObxw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=s1MW9eNerec",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=X7iV4R6lAGE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=KOyIvl7ZuL4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=1afaiZXgoi8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=KUxoo-eI3L0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

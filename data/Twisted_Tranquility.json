@@ -1,0 +1,24 @@
+{
+    "id": 32920197,
+    "name": "Twisted Tranquility",
+    "author": "Flukester",
+    "creators": [],
+    "verifier": "Bold",
+    "verification": "https://www.youtube.com/watch?v=TiaOm9j36Pg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=bGqbyiUWq3U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=TG-atOjECFs",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

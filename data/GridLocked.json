@@ -1,0 +1,18 @@
+{
+    "id": 50226022,
+    "name": "GridLocked",
+    "author": "Eclipsed",
+    "creators": [],
+    "verifier": "WormFodder",
+    "verification": "https://www.youtube.com/watch?v=SAWPCkxMBgs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=sJt180LT9MQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

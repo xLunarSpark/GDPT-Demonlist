@@ -1,0 +1,18 @@
+{
+    "id": 71136146,
+    "name": "Acrozis",
+    "author": "Renedi",
+    "creators": [],
+    "verifier": "BlackBird552",
+    "verification": "https://www.youtube.com/watch?v=0s0bp9oYW3k",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=VD_QiQKr7P0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

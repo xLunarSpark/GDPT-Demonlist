@@ -1,0 +1,30 @@
+{
+    "id": 112412828,
+    "name": "Clarity",
+    "author": "Hypno",
+    "creators": [],
+    "verifier": "Hypno",
+    "verification": "https://www.youtube.com/watch?v=N2s11DsgL64",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=R9KsicKb0mY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Flangoooooooo",
+            "link": "https://www.youtube.com/watch?v=TpuWzfVdoGE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Rick",
+            "link": "https://www.youtube.com/watch?v=aAkgTtcQhbU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

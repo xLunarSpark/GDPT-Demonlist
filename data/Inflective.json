@@ -1,0 +1,18 @@
+{
+    "id": 61591522,
+    "name": "Inflective",
+    "author": "Mojitoz",
+    "creators": [],
+    "verifier": "Vorgogne",
+    "verification": "https://www.youtube.com/watch?v=JR2Y8jIwLNk",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=aWfbKR3Phx0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

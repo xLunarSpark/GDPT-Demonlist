@@ -1,0 +1,30 @@
+{
+    "id": 88172786,
+    "name": "Robi",
+    "author": "robianny",
+    "creators": [],
+    "verifier": "Lcultist",
+    "verification": "https://www.youtube.com/watch?v=fDY3Z7VEUng&t=0s",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=djdH7PdfFqY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=iea2nwcJ0Wk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=_mPke_cG_u0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

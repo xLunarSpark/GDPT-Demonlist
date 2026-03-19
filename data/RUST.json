@@ -2,18 +2,14 @@
     "id": 71912451,
     "name": "RUST",
     "author": "neigefeu",
-    "creators": ["neigefeu"],
+    "creators": [
+        "neigefeu"
+    ],
     "verifier": "Keir",
     "verification": "https://www.youtube.com/watch?v=SdkRzip_pDg",
     "percentToQualify": 57,
     "password": "Free to Copy",
     "records": [
-        {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=SdkRzip_pDg",
-            "percent": 100,
-            "hz": 360
-        },
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=IQRLxIi6k18",
@@ -21,20 +17,26 @@
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/gfFB6pj5fh4?si=BUt6J-k9a4-8wr4U",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=gfFB6pj5fh4",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         },
         {
-            "user": "Manugrk",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=SdkRzip_pDg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Manu",
             "link": "https://www.youtube.com/watch?v=mdwAcwGyJng",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         },
         {
             "user": "RedMurder",
-            "link": "https://youtu.be/3L73dW7y9uI?si=ExVSXM93RIqPkPp0",
+            "link": "https://www.youtube.com/watch?v=3L73dW7y9uI",
             "percent": 100,
             "hz": 240
         }

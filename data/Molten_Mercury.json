@@ -1,0 +1,30 @@
+{
+    "id": 64066032,
+    "name": "Molten Mercury",
+    "author": "ItsHybrid",
+    "creators": [],
+    "verifier": "Kapinapi",
+    "verification": "https://www.youtube.com/watch?v=X8FcOkvi4SU",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=ucZ1bCjxlaY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=DX1JJEkD0r8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Civ5PFf4Up4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
