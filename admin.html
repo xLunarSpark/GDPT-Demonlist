@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1024" />
+        <title>GDPT Demonlist - Admin</title>
+
+        <link rel="icon" href="/list_icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&display=swap" rel="stylesheet" />
+        
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
+        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
+        
+        <style>
+            html, body { height: 100%; margin: 0; display: flex; flex-direction: column; background: var(--color-background, white); color: var(--color-on-background, black); }
+            
+            .dark { 
+                color-scheme: dark; 
+                --color-background: #1c1b1f; 
+                --color-on-background: white; 
+                --color-background-hover: #27262c; 
+                --color-on-background-hover: white; 
+                --color-primary: #FF0000; 
+                --color-on-primary: white; 
+                --color-error: #de0000; 
+                --color-on-error: white;
+            }
+
+            .admin-wrapper {
+                grid-column: 2;
+                padding: 2rem 0;
+                width: 100%;
+            }
+
+            .admin-card {
+                background-color: var(--color-background-hover, #f0f0f0) !important;
+                border-radius: 8px;
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .admin-card .type-title-sm {
+                color: var(--color-on-background, black);
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--color-primary, #000);
+                margin-bottom: 1.5rem;
+                display:inline-block;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                color: var(--color-on-background, black);
+                font-weight: bold;
+            }
+
+            input, textarea {
+                width: 100%;
+                background: var(--color-background, #fff);
+                color: var(--color-on-background, black);
+                border: 2px solid var(--color-background-hover, #ccc);
+                padding: 1rem;
+                border-radius: 4px;
+                font-family: 'Lexend Deca', sans-serif;
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+                box-sizing: border-box;
+                transition: border-color 0.2s;
+            }
+
+            input:focus, textarea:focus {
+                outline: none;
+                border-color: var(--color-primary);
+            }
+
+            .flex-row { display: flex; gap: 1rem; }
+            .flex-row > * { flex: 1; }
+            
+            .hint-text {
+                font-size: 0.85em;
+                color: #aaa;
+                margin-top: -1.2rem;
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+
+            .hidden { display: none !important; }
+
+            #status-msg {
+                margin-top: 1rem;
+                padding: 1rem;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .status-info { background: #3b82f633; color: #60a5fa; }
+            .status-success { background: #22c55e33; color: #4ade80; }
+            .status-error { background: #ef444433; color: #f87171; }
+            
+        </style>
+    </head>
+    <body id="app">
+        <header id="header">
+            <div class="logo">
+                <h2>GDPT Demonlist</h2>
+                <p>Admin</p>
+            </div>
+            <nav class="nav">
+                <a class="nav__tab" href="/">
+                    <span class="type-label-lg">Back to List</span>
+                </a>
+                <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
+                    <span class="type-label-lg">Logout</span>
+                </a>
+                <div class="nav__actions">
+                    <button class="nav__icon" onclick="toggleTheme()" style="background: none; border: none; cursor: pointer;">
+                        <img id="theme-icon" src="/assets/dark.svg" alt="Toggle Theme" />
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <div style="grid-column: 1"></div>
+            <div class="admin-wrapper">
+                
+                <div class="board">
+                    <h2 class="type-title-md" style="margin-bottom:2rem; text-align:center;">Admin Dashboard</h2>
+                    <div id="login-section" class="admin-card">
+                        <span class="type-title-sm">Authentication</span>
+                        <p class="type-body-md" style="margin-bottom: 1.5rem;">Please authorize with Discord to fetch permissions.</p>
+                        <button class="btn" style="width:100%; justify-content:center; background-color:#5865F2; color:white; border-color:#5865F2;" onclick="window.location.href='/functions/auth/login'">
+                            Login with Discord
+                        </button>
+                    </div>
+                    <div id="user-section" class="admin-card hidden" style="border-left: 4px solid var(--color-error);">
+                        <span class="type-title-sm" style="color:var(--color-error); border-color:var(--color-error);">Access Denied</span>
+                        <p class="type-body-md" style="margin-bottom: 1rem;">Welcome, <span id="user-name" style="color:var(--color-primary); font-weight:bold;"></span>.</p>
+                        <p class="type-body-md">You are successfully logged in, but you do not possess administrator rights.</p>
+                    </div>
+                    <div id="admin-section" class="hidden">
+                        <p class="type-body-md" style="text-align:center; margin-bottom: 2rem;">
+                            Authenticated as <span id="admin-name" style="font-weight:bold; color:var(--color-primary);"></span>
+                        </p>
+
+                        <div class="admin-card">
+                            <span class="type-title-sm">1. Add / Update Level</span>
+                            
+                            <label class="type-label-lg">Search Target</label>
+                            <div class="flex-row" style="margin-bottom:1.5rem;">
+                                <input type="text" id="d-id" placeholder="Level Name, GD ID, or #Pos" style="margin-bottom:0;" required>
+                                <button type="button" class="btn" onclick="fetchAredl()" style="width: auto;">Auto-Fill</button>
+                            </div>
+                            
+                            <form id="demon-form">
+                                <label class="type-label-lg">Target Position</label>
+                                <input type="number" id="d-position" placeholder="e.g. 1" required>
+                                <span class="hint-text">Shifts everything else down safely</span>
+                                
+                                <label class="type-label-lg">Level JSON Data</label>
+                                <textarea id="d-json" rows="12" placeholder='{"id": 12345, "name": "Bloodbath", "records": []}' required></textarea>
+                                
+                                <button type="submit" class="btn" style="width:100%; justify-content:center; background:var(--color-primary); color:white;">
+                                    Push to Repository
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="admin-card" style="border-left: 4px solid var(--color-error);">
+                            <span class="type-title-sm" style="color:var(--color-error); border-color:var(--color-error);">2. Delete a Level</span>
+                            <form onsubmit="event.preventDefault(); deleteDemon();">
+                                <label class="type-label-lg">Internal Slug / Filename</label>
+                                <div class="flex-row">
+                                    <input type="text" id="del-id" placeholder="e.g. Bloodbath" style="margin-bottom:0;" required>
+                                    <button type="submit" class="btn" style="width: auto; background:var(--color-error); color:white; border-color:var(--color-error);">
+                                        Delete Forever
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="status-msg" class="hidden type-label-lg"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="grid-column: 3"></div>
+        </main>
+
+        <script>
+            let isDark = false;
+            
+            function toggleTheme() {
+                isDark = !isDark;
+                const els = [document.body, document.getElementById('header'), document.getElementById('main')];
+                els.forEach(el => isDark ? el.classList.add('dark') : el.classList.remove('dark'));
+                document.getElementById('theme-icon').src = isDark ? '/assets/light.svg' : '/assets/dark.svg';
+                localStorage.setItem('admin-theme', isDark ? 'dark' : 'light');
+            }
+
+            if (localStorage.getItem('admin-theme') === 'dark') {
+                toggleTheme();
+            }
+
+            function getCookie(name) {
+                const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                return match ? decodeURIComponent(match[2]) : null;
+            }
+
+            const username = getCookie('discord_username');
+            const isAdmin = getCookie('is_admin') === 'true';
+
+            if (username) {
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('logout-btn').style.display = 'flex';
+                if (isAdmin) {
+                    document.getElementById('admin-section').classList.remove('hidden');
+                    document.getElementById('admin-name').textContent = username;
+                } else {
+                    document.getElementById('user-section').classList.remove('hidden');
+                    document.getElementById('user-name').textContent = username;
+                }
+            }
+
+            function logout() {
+                document.cookie = "session=; Max-Age=0; path=/";
+                document.cookie = "discord_username=; Max-Age=0; path=/";
+                document.cookie = "is_admin=; Max-Age=0; path=/";
+                window.location.reload();
+            }
+
+            const statusMsg = document.getElementById('status-msg');
+
+            function setStatus(msg, type) {
+                statusMsg.textContent = msg;
+                statusMsg.className = `type-label-lg status-${type}`;
+                statusMsg.classList.remove('hidden');
+            }
+
+            async function fetchAredl() {
+                let val = document.getElementById('d-id').value.trim();
+                if(!val) return alert("Search field is empty");
+                setStatus("Searching AREDL API...", "info");
+                
+                try {
+                    let targetAredlLevel = null;
+                    const listRes = await fetch("https://api.aredl.net/v2/api/aredl/levels");
+                    if (!listRes.ok) throw new Error("Could not fetch AREDL list");
+                    const levels = await listRes.json();
+                    
+                    const isNumeric = /^\d+$/.test(val);
+                    if (isNumeric) {
+                        const numVal = parseInt(val);
+                        targetAredlLevel = levels.find(l => l.level_id === numVal || l.position === numVal);
+                    } else {
+                        const lowerVal = val.toLowerCase().replace(/_/g, " ");
+                        targetAredlLevel = levels.find(l => l.name.toLowerCase() === lowerVal);
+                        if(!targetAredlLevel) targetAredlLevel = levels.find(l => l.name.toLowerCase().includes(lowerVal));
+                    }
+
+                    if (!targetAredlLevel) throw new Error("Could not match input to an AREDL level");
+
+                    setStatus(`Located "${targetAredlLevel.name}". Compiling data...`, "info");
+
+                    const res = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}`);
+                    if (!res.ok) throw new Error("Network error fetching Level");
+                    const data = await res.json();
+                    
+                    const demonData = {
+                        id: data.level_id,
+                        name: data.name,
+                        author: data.publisher ? data.publisher.global_name : "Unknown",
+                        creators: [],
+                        verifier: data.verifications && data.verifications.length > 0 ? data.verifications[0].submitted_by.global_name : "Unknown",
+                        verification: data.verifications && data.verifications.length > 0 ? data.verifications[0].video_url : "",
+                        percentToQualify: 100,
+                        password: "Free to Copy",
+                        records: []
+                    };
+
+                    document.getElementById('d-json').value = JSON.stringify(demonData, null, 4);
+                    document.getElementById('d-id').value = data.name.replace(/ /g, "_"); 
+                    document.getElementById('d-position').value = data.position || ""; 
+                    setStatus(`Successfully compiled JSON for ${data.name}! Ready to push.`, "success");
+                } catch(e) {
+                    setStatus(e.message, "error");
+                }
+            }
+
+            document.getElementById('demon-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                setStatus("Connecting to GitHub API...", "info");
+                
+                try {
+                    const fileId = document.getElementById('d-id').value.trim();
+                    const pos = document.getElementById('d-position').value;
+                    const demonData = JSON.parse(document.getElementById('d-json').value);
+
+                    const payload = { id: fileId, position: pos, demonData: demonData };
+
+                    const res = await fetch('/api/edit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (res.ok) {
+                        setStatus(`Success! Moved to #${pos}. Site is rebuilding.`, "success");
+                    } else {
+                        setStatus("Error: " + await res.text(), "error");
+                    }
+                } catch(err) {
+                    setStatus("JSON Parse Error: " + err.message, "error");
+                }
+            });
+
+            async function deleteDemon() {
+                const id = document.getElementById('del-id').value.trim();
+                if(!id) return;
+                if(!confirm(`WARNING: Deleting ${id}.json from GitHub and removing from Placements! Are you sure?`)) return;
+
+                setStatus(`Sending DELETE request for ${id}...`, "info");
+                const res = await fetch(`/api/edit?id=${id}`, { method: 'DELETE' });
+
+                if (res.ok) {
+                    setStatus(`Successfully deleted ${id}. Site rebuilding...`, "success");
+                } else {
+                    setStatus("Delete Error: " + await res.text(), "error");
+                }
+            }
+        </script>
+    </body>
+</html>
