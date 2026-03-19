@@ -109,11 +109,20 @@
         <header id="header">
             <div class="logo">
                 <h2>GDPT Demonlist</h2>
-                <p>Admin</p>
+                <p>v1.0.0</p>
             </div>
             <nav class="nav">
                 <a class="nav__tab" href="/">
-                    <span class="type-label-lg">Back to List</span>
+                    <span class="type-label-lg">List</span>
+                </a>
+                <a class="nav__tab" href="/leaderboard">
+                    <span class="type-label-lg">Leaderboard</span>
+                </a>
+                <a class="nav__tab" href="/roulette">
+                    <span class="type-label-lg">Roulette</span>
+                </a>
+                <a class="nav__tab router-link-active" href="/admin">
+                    <span class="type-label-lg">Admin</span>
                 </a>
                 <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
                     <span class="type-label-lg">Logout</span>
@@ -122,6 +131,16 @@
                     <button class="nav__icon" onclick="toggleTheme()" style="background: none; border: none; cursor: pointer;">
                         <img id="theme-icon" src="/assets/dark.svg" alt="Toggle Theme" />
                     </button>
+                    <!-- Discord Link -->
+                    <a class="nav__icon" href="https://discord.gg/9agBPJnFy4">  
+                        <img src="/assets/discord.svg" alt="Discord Logo" />    
+                    </a>
+                    <!-- Submit Record Button -->
+                    <a
+                        class="nav__cta type-label-lg"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeMJMp8sPtr44t8rTf3hCgQ8sfOfkl_LzMA2EX_XMifP5wWAw/viewform?usp=sf_link"
+                        target="_blank"
+                    >Submit Record</a>
                 </div>
             </nav>
         </header>
@@ -134,7 +153,7 @@
                     <div id="login-section" class="admin-card">
                         <span class="type-title-sm">Authentication</span>
                         <p class="type-body-md" style="margin-bottom: 1.5rem;">Please authorize with Discord to fetch permissions.</p>
-                        <button class="btn" style="width:100%; justify-content:center; background-color:#5865F2; color:white; border-color:#5865F2;" onclick="window.location.href='/functions/auth/login'">
+                        <button class="btn" style="width:100%; justify-content:center; background-color:#5865F2; color:white; border-color:#5865F2;" onclick="window.location.href='/auth/login'">
                             Login with Discord
                         </button>
                     </div>
