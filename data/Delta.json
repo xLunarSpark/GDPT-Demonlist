@@ -2,15 +2,53 @@
     "id": 93917362,
     "name": "Delta",
     "author": "Drakosa",
-    "creators": ["Consuno", "Loogiah", "Zanna83", "Artsi", "crumche", "DreamZoneGD", "Novaach", "12Kelvin", "AppleCr", "Tamori", "npesta", "DiamondSplash", "Doggie", "UltraCharge", "Drakosa", "MercuryDT", "enzollz", "Goob", "Ryder", "Gizbro", "DTDom", "CDMusic", "Rynoxious", "Blitzer", "ked"],
+    "creators": [
+        "Consuno",
+        "Loogiah",
+        "Zanna83",
+        "Artsi",
+        "crumche",
+        "DreamZoneGD",
+        "Novaach",
+        "12Kelvin",
+        "AppleCr",
+        "Tamori",
+        "npesta",
+        "DiamondSplash",
+        "Doggie",
+        "UltraCharge",
+        "Drakosa",
+        "MercuryDT",
+        "enzollz",
+        "Goob",
+        "Ryder",
+        "Gizbro",
+        "DTDom",
+        "CDMusic",
+        "Rynoxious",
+        "Blitzer",
+        "ked"
+    ],
     "verifier": "Doggie",
     "verification": "https://youtu.be/KIRDNfm57LU",
     "percentToQualify": 58,
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=D0uQb8YkwJ0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=faSV0Ex2D2s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Drema",
-            "link": "https://youtu.be/KIRDNfm57LU",
+            "link": "https://www.youtube.com/watch?v=KIRDNfm57LU",
             "percent": 100,
             "hz": 240
         }

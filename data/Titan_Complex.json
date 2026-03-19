@@ -2,17 +2,46 @@
     "id": 44022701,
     "name": "Titan Complex",
     "author": "TCTeam",
-    "creators": ["LordDelta", "Ryumazaki", "Kllnex", "PeroXide01", "xyLteK", "Arceus", "CheeseSlayer", "Vapen", "GeometryTom", "Brittank88", "Scott", "MistFix", "jdfr03", "BubShish", "Mactanow", "CarlozZz", "Licentious", "Astion", "Sebquero11", "Zafkiel", "Marpha", "GaidenHertuny", "AutumnLotus", "Maxin", "Nitro", "Rexter", "CesDroid", "KeybladeMaster"],
+    "creators": [
+        "LordDelta",
+        "Ryumazaki",
+        "Kllnex",
+        "PeroXide01",
+        "xyLteK",
+        "Arceus",
+        "CheeseSlayer",
+        "Vapen",
+        "GeometryTom",
+        "Brittank88",
+        "Scott",
+        "MistFix",
+        "jdfr03",
+        "BubShish",
+        "Mactanow",
+        "CarlozZz",
+        "Licentious",
+        "Astion",
+        "Sebquero11",
+        "Zafkiel",
+        "Marpha",
+        "GaidenHertuny",
+        "AutumnLotus",
+        "Maxin",
+        "Nitro",
+        "Rexter",
+        "CesDroid",
+        "KeybladeMaster"
+    ],
     "verifier": "MrDash",
     "verification": "https://www.youtube.com/watch?v=hTzY11rmNTk",
     "percentToQualify": 100,
     "password": "666666",
     "records": [
         {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=hTzY11rmNTk",
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=E6BHBdWzUPI&t=127s",
             "percent": 100,
-            "hz": 300
+            "hz": 144
         },
         {
             "user": "Ka1sa",
@@ -21,14 +50,14 @@
             "hz": 240
         },
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=E6BHBdWzUPI",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=hTzY11rmNTk",
             "percent": 100,
-            "hz": 144
+            "hz": 300
         },
         {
             "user": "zHexya",
-            "link": "https://youtu.be/fqFbwJ8Fk7I?si=RxG653pJEubkQu2J",
+            "link": "https://www.youtube.com/watch?v=fqFbwJ8Fk7I",
             "percent": 100,
             "hz": 240
         }

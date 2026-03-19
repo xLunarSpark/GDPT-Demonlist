@@ -2,7 +2,16 @@
     "id": 60978746,
     "name": "The Golden",
     "author": "BoBoBoBoBoBoBo",
-    "creators": ["rWoomy", "Gooseam", "BoBoBoBoBoBoBo", "EyeOfTheStorm", "Geemi", "Eridani", "El3ctr0", "BySelling"],
+    "creators": [
+        "rWoomy",
+        "Gooseam",
+        "BoBoBoBoBoBoBo",
+        "EyeOfTheStorm",
+        "Geemi",
+        "Eridani",
+        "El3ctr0",
+        "BySelling"
+    ],
     "verifier": "nSwish",
     "verification": "https://www.youtube.com/watch?v=B9Qp5eTzsIU",
     "percentToQualify": 50,
@@ -15,8 +24,8 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=Ramldq4pvlY",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=uE88Vgf4Dz0",
             "percent": 100,
             "hz": 360
         },
@@ -27,10 +36,10 @@
             "hz": 240
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/uE88Vgf4Dz0",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Ramldq4pvlY",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

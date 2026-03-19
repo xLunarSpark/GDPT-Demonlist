@@ -1,0 +1,24 @@
+{
+    "id": 74986585,
+    "name": "Betelgeuse",
+    "author": "Zanna83",
+    "creators": [],
+    "verifier": "MrSpaghetti",
+    "verification": "https://www.youtube.com/watch?v=aNfO1Uu7oCk",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=Ni3VSVR1fug",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=Gl3WIQo7sXk",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

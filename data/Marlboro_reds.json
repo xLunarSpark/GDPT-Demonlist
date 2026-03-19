@@ -1,0 +1,18 @@
+{
+    "id": 103953282,
+    "name": "Marlboro reds",
+    "author": "xSlendy",
+    "creators": [],
+    "verifier": "Lingherr",
+    "verification": "https://www.youtube.com/watch?v=tWI2dfkCXys",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=uDACt3JcxoA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

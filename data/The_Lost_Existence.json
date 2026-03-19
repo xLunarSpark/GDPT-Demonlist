@@ -1,0 +1,18 @@
+{
+    "id": 45239692,
+    "name": "The Lost Existence",
+    "author": "JonathanGD",
+    "creators": [],
+    "verifier": "Luqualizer",
+    "verification": "https://www.youtube.com/watch?v=XztPxRuKPi4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=eRJEWJJW8Ls",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -2,14 +2,22 @@
     "id": 52303420,
     "name": "Requiem",
     "author": "Zylenox",
-    "creators": ["Lithifusion"],
+    "creators": [
+        "Lithifusion"
+    ],
     "verifier": "Zylenox",
     "verification": "https://www.youtube.com/watch?v=iwrn4e8h7OM",
     "percentToQualify": "100",
     "password": "No Copy",
     "records": [
         {
-            "user": "BernaX",
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=00Z0hw-9ux0&t=28s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gamer_BernaX",
             "link": "https://www.youtube.com/watch?v=iwrn4e8h7OM",
             "percent": 100,
             "hz": 360

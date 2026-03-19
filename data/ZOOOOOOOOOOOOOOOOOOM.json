@@ -1,0 +1,24 @@
+{
+    "id": 95228237,
+    "name": "ZOOOOOOOOOOOOOOOOOOM",
+    "author": "AWESOMEME360",
+    "creators": [],
+    "verifier": "Rqd",
+    "verification": "https://www.youtube.com/watch?v=Rxb5iRPh_Gw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=ml8KiJPMQUI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=3e7ol1d2HMg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": 77765367,
+    "name": "Sparkling",
+    "author": "MzeroGD",
+    "creators": [],
+    "verifier": "Johnfree",
+    "verification": "https://www.youtube.com/watch?v=4r9hkMxpiQw",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=OLTd8LQQK-M",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

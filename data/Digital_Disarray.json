@@ -1,0 +1,24 @@
+{
+    "id": 57390806,
+    "name": "Digital Disarray",
+    "author": "Giron",
+    "creators": [],
+    "verifier": "Giron",
+    "verification": "https://www.youtube.com/watch?v=y7SZZqOH2Ug",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=QE8eE27-lTI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=bE5OmqvuoL8&t=3s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

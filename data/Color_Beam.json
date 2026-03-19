@@ -1,0 +1,18 @@
+{
+    "id": 121243106,
+    "name": "Color Beam",
+    "author": "Bizaare",
+    "creators": [],
+    "verifier": "Bizaare",
+    "verification": "https://www.youtube.com/watch?v=n7dk8R4eE20",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Docaedro",
+            "link": "https://www.youtube.com/watch?v=Ios8Rs2Kd_I",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

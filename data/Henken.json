@@ -1,0 +1,18 @@
+{
+    "id": 80714349,
+    "name": "Henken",
+    "author": "Plolek",
+    "creators": [],
+    "verifier": "Gokill",
+    "verification": "https://www.youtube.com/watch?v=M--2oQKrV68",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=o33RpZ-ltSQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

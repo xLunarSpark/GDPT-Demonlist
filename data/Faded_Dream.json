@@ -2,7 +2,9 @@
     "id": 86233175,
     "name": "Faded Dream",
     "author": "DreamTide",
-    "creators": ["DreamTide"],
+    "creators": [
+        "DreamTide"
+    ],
     "verifier": "DreamTide",
     "verification": "https://www.youtube.com/watch?v=LC9ZHZaf0QI",
     "percentToQualify": "100",

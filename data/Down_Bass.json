@@ -1,0 +1,24 @@
+{
+    "id": 8147005,
+    "name": "Down Bass",
+    "author": "Spectruh",
+    "creators": [],
+    "verifier": "Kevelia",
+    "verification": "https://www.youtube.com/watch?v=glrcPc_ObAQ",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=7Ikbd-7HfJk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=BCtQrqhCGNg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

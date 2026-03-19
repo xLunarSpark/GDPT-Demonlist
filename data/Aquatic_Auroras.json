@@ -2,7 +2,11 @@
     "id": 60740290,
     "name": "Aquatic Auroras",
     "author": "Endlevel",
-    "creators": ["Endlevel", "LimeTime313", "El3ctr0"],
+    "creators": [
+        "Endlevel",
+        "LimeTime313",
+        "El3ctr0"
+    ],
     "verifier": "kyoto",
     "verification": "https://www.youtube.com/watch?v=drRZJyn_byI",
     "percentToQualify": 51,

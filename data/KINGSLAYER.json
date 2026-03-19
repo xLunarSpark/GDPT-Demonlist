@@ -1,0 +1,30 @@
+{
+    "id": 84813026,
+    "name": "KINGSLAYER",
+    "author": "MothEye",
+    "creators": [],
+    "verifier": "Baeru",
+    "verification": "https://www.youtube.com/watch?v=exSJrLme6so",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ztsqOMHMF9E",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=1yppg1zSH4U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=Tp42Hysb5mI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

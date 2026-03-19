@@ -2,7 +2,9 @@
     "id": 86412942,
     "name": "Knights of Thunder",
     "author": "Hangerlord",
-    "creators": ["Hangerlord"],
+    "creators": [
+        "Hangerlord"
+    ],
     "verifier": "Helix",
     "verification": "https://www.youtube.com/watch?v=A9tVVqPSuBg",
     "percentToQualify": "62",
@@ -15,21 +17,15 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=t6ge2zEn7D4",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Karmatas",
+            "user": "Karma",
             "link": "https://www.youtube.com/watch?v=8dghdI8Vecc",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=rwilSrSyrA8",
-            "percent": 83,
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=t6ge2zEn7D4",
+            "percent": 100,
             "hz": 360
         }
     ]

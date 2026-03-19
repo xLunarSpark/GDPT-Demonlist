@@ -1,0 +1,18 @@
+{
+    "id": 108558924,
+    "name": "Maths",
+    "author": "oleki",
+    "creators": [],
+    "verifier": "oleki",
+    "verification": "https://www.youtube.com/watch?v=-Nj1KrAUhTo",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=VIuVaPLxifM&t=0s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

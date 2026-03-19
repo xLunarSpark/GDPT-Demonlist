@@ -2,7 +2,9 @@
     "id": 57430694,
     "name": "Anoxysm",
     "author": "Lemons",
-    "creators": ["Lemons"],
+    "creators": [
+        "Lemons"
+    ],
     "verifier": "Mix991",
     "verification": "https://www.youtube.com/watch?v=z6c4amBeC6w",
     "percentToQualify": "100",
@@ -15,16 +17,16 @@
             "hz": 360
         },
         {
-            "user": "Diogan",
-            "link": "https://www.youtube.com/watch?v=3BryFoV07zE",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Drema",
-            "link": "https://www.youtube.com/watch?v=W18RnsPE3Y4",
+            "link": "https://www.youtube.com/watch?v=W18RnsPE3Y4&t=38s",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=0TZ7Tc-eoFE",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

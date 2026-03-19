@@ -1,0 +1,30 @@
+{
+    "id": 36449129,
+    "name": "NecropoliX",
+    "author": "Namtar",
+    "creators": [],
+    "verifier": "TrusTa",
+    "verification": "https://www.youtube.com/watch?v=oV9Oj7YyhpQ",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=17U2JqfazPg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=R7zbdXC2QqU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=rnKrsvgdG5Y",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

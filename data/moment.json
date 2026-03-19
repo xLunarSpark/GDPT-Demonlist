@@ -1,0 +1,60 @@
+{
+    "id": 68848817,
+    "name": "moment",
+    "author": "Lexycat",
+    "creators": [],
+    "verifier": "Johnfree",
+    "verification": "https://www.youtube.com/watch?v=HBQhYLRgdvE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=d9OPoRoOZxg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=_yWdNYrKl2o",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=gt5S4FuXAGQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=sq6ikyoA1n0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=koXGdCJJF8Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=t1TGD4WEjwg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=ovswsggvNVI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=XKlyy7yjU0w",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

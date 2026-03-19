@@ -1,0 +1,60 @@
+{
+    "id": 18697406,
+    "name": "Retention",
+    "author": "WOOGI1411",
+    "creators": [],
+    "verifier": "WOOGI1411",
+    "verification": "https://www.youtube.com/watch?v=3VUfd7jRt5U",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=C_JVh5suy_E&t=3s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=icX8QNh-NHo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=y3zM_daBuCs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=lwVEBROTccI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gamer_BernaX",
+            "link": "https://www.youtube.com/watch?v=o08K8d9sy70",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=KMhQytFRmkY&t=1s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=C6KBVb4fG4A",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=RKyLVfBc9c0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

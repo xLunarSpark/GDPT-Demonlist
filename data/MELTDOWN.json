@@ -1,0 +1,24 @@
+{
+    "id": 52527538,
+    "name": "MELTDOWN",
+    "author": "Darwin",
+    "creators": [],
+    "verifier": "Nexus",
+    "verification": "https://www.youtube.com/watch?v=mAfwv6zvxCU",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=9Iz1HgKOjJ8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=Jd356oQWT-A",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

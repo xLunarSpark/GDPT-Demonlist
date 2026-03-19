@@ -2,14 +2,18 @@
     "id": 90853661,
     "name": "Fog",
     "author": "notesxd",
-    "creators": ["notesxd", "slayerkirb", "pixll1"],
+    "creators": [
+        "notesxd",
+        "slayerkirb",
+        "pixll1"
+    ],
     "verifier": "slayerkirb",
     "verification": "https://www.youtube.com/watch?v=YYxhGTvacj8",
     "percentToQualify": "55",
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karmatas",
+            "user": "Karma",
             "link": "https://www.youtube.com/watch?v=YYxhGTvacj8",
             "percent": 100,
             "hz": 360

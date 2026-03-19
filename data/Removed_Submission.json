@@ -1,0 +1,24 @@
+{
+    "id": 52113279,
+    "name": "Removed Submission",
+    "author": "WHErwin",
+    "creators": [],
+    "verifier": "Gablor",
+    "verification": "https://www.youtube.com/watch?v=AAzRmUKMnOk",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=0qP2bLNdufo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=ljadQAoNtVU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -2,24 +2,32 @@
     "id": 27122654,
     "name": "Artificial Ascent",
     "author": "ViPriN",
-    "creators": ["GDSpeed", "Hinds", "Loogiah", "Michigun", "G4lvatron", "AbstractDark", "Etzer", "lmAnubis", "Serponge", "Zobros", "Manix648", "Anthrax", "Codex", "ZenthicAlpha", "Sanic", "Terron", "ViPriN", "wamiq8", "nasgubb"],
+    "creators": [
+        "GDSpeed",
+        "Hinds",
+        "Loogiah",
+        "Michigun",
+        "G4lvatron",
+        "AbstractDark",
+        "Etzer",
+        "lmAnubis",
+        "Serponge",
+        "Zobros",
+        "Manix648",
+        "Anthrax",
+        "Codex",
+        "ZenthicAlpha",
+        "Sanic",
+        "Terron",
+        "ViPriN",
+        "wamiq8",
+        "nasgubb"
+    ],
     "verifier": "combi",
     "verification": "https://www.youtube.com/watch?v=vgR-aiFtBCE",
     "percentToQualify": "100",
     "password": "Free to Copy",
     "records": [
-        {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=vgR-aiFtBCE",
-            "percent": 100,
-            "hz": 300
-        },
-        {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=OaEdRIr-MVA",
-            "percent": 100,
-            "hz": 300
-        },
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=dGyXZMdsi5M",
@@ -27,20 +35,20 @@
             "hz": 360
         },
         {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=34zCRpKlVQk",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=vgR-aiFtBCE&t=32s",
             "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Kerfuffles",
-            "link": "https://www.youtube.com/watch?v=-ph6sPXGOkk",
-            "percent": 100,
-            "hz": 360
+            "hz": 300
         },
         {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=wvFji-dtS0Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=-mrmRyywStQ",
             "percent": 100,
             "hz": 360
         }

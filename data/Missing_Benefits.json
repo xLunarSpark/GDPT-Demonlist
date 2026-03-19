@@ -2,7 +2,16 @@
     "id": 47043002,
     "name": "Missing Benefits",
     "author": "TGI",
-    "creators": ["Cersia", "Fexus", "Antares", "Brittank88", "noice", "DarkGhostX", "Crystal PG", "Logiking"],
+    "creators": [
+        "Cersia",
+        "Fexus",
+        "Antares",
+        "Brittank88",
+        "noice",
+        "DarkGhostX",
+        "Crystal PG",
+        "Logiking"
+    ],
     "verifier": "TGI",
     "verification": "https://www.youtube.com/watch?v=fjkIsrbQEQI",
     "percentToQualify": 100,

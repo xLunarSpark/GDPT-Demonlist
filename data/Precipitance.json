@@ -1,0 +1,48 @@
+{
+    "id": 60197839,
+    "name": "Precipitance",
+    "author": "Extravagon",
+    "creators": [],
+    "verifier": "Extravagon",
+    "verification": "https://www.youtube.com/watch?v=_W9xA5lqmLs",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=Cm9xjaxXEcM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=t2b962iRDuU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=LohNt_bNt24",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=5gHgNbEgEwk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=Kqzw0sXuyXM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Docaedro",
+            "link": "https://www.youtube.com/watch?v=guhf5i59F-o",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

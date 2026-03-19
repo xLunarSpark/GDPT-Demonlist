@@ -1,0 +1,72 @@
+{
+    "id": 69491632,
+    "name": "Crowd Control",
+    "author": "Deadlox",
+    "creators": [],
+    "verifier": "xander",
+    "verification": "https://www.youtube.com/watch?v=-q0iBUZti9s",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=kVhr-9V2rTo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=Lz7rwwTUKkM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=3DoBTi85-U0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=wJbavscvf4I",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=jktYpGPF7yM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=hJpNS_4ghtc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=TnXXL55OX3U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=UDxvqUmDOXE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=1AlRiJcVI2Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=foMQgF-PjMg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

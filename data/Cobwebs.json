@@ -2,23 +2,32 @@
     "id": 82172844,
     "name": "Cobwebs",
     "author": "NineDice",
-    "creators": ["NineDice", "Taika"],
+    "creators": [
+        "NineDice",
+        "Taika"
+    ],
     "verifier": "Cursed",
     "verification": "https://youtu.be/mYPpnUSpxlE?si=cmYWDFGwYWo6hD3_",
     "percentToQualify": 62,
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/mYPpnUSpxlE?si=cmYWDFGwYWo6hD3_",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=mYPpnUSpxlE",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         },
         {
-            "user": "klaraa",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=2Q0pngDoMms",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
             "link": "https://www.youtube.com/watch?v=-AqlBkyY_y8",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

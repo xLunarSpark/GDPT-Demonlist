@@ -1,0 +1,18 @@
+{
+    "id": 110233055,
+    "name": "Treatment Facility",
+    "author": "MMANH",
+    "creators": [],
+    "verifier": "mratomic",
+    "verification": "https://www.youtube.com/watch?v=1X1-YpSrYFM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=Ft_Ql_atJU0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

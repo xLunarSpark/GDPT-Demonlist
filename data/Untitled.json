@@ -1,0 +1,30 @@
+{
+    "id": 68731559,
+    "name": "Untitled",
+    "author": "iiLuna",
+    "creators": [],
+    "verifier": "s3batr0nic",
+    "verification": "https://www.youtube.com/watch?v=arG9DaacSLw&t=0s",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=7Ikbd-7HfJk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=JBJ6m5sU7og",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=DDh1U5C0z4g",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

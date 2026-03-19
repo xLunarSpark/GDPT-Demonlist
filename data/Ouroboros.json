@@ -2,7 +2,21 @@
     "id": 56703691,
     "name": "Ouroboros",
     "author": "ViPriN",
-    "creators": ["TrusTa", "G4lvatron", "AbstractDark", "Rustam", "TheDevon", "FerdeFunky", "DesTicY", "Darwin", "Loserchik67", "Osiris GD", "Terron", "ChaSe", "ViPriN"],
+    "creators": [
+        "TrusTa",
+        "G4lvatron",
+        "AbstractDark",
+        "Rustam",
+        "TheDevon",
+        "FerdeFunky",
+        "DesTicY",
+        "Darwin",
+        "Loserchik67",
+        "Osiris GD",
+        "Terron",
+        "ChaSe",
+        "ViPriN"
+    ],
     "verifier": "Technical",
     "verification": "https://www.youtube.com/watch?v=bMh8ZHk6OlI",
     "percentToQualify": 48,
@@ -19,6 +33,12 @@
             "link": "https://www.youtube.com/watch?v=QRsZfg4C3Cg",
             "percent": 100,
             "hz": 330
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=sY6PaPycmwE",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

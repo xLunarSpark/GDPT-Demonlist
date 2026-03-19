@@ -2,7 +2,9 @@
     "id": 90390075,
     "name": "Terminal Rampancy",
     "author": "Xyriak",
-    "creators": ["Xyriak"],
+    "creators": [
+        "Xyriak"
+    ],
     "verifier": "Bigthunder556",
     "verification": "https://www.youtube.com/watch?v=s7KfwPA3vPg",
     "percentToQualify": "66",
@@ -11,6 +13,12 @@
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=s7KfwPA3vPg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=wNNrsj7EsZ8",
             "percent": 100,
             "hz": 360
         }

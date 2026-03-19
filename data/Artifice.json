@@ -2,23 +2,46 @@
     "id": 57520174,
     "name": "Artifice",
     "author": "f3lixsram",
-    "creators": ["Desumari", "Enzore", "Pennutoh", "Marwec", "f3lixsram", "Erdyuri", "Thomartin", "Victorinox", "Kurokawa", "Nahuel", "JacobRoso", "BloodStorm", "DesTicY", "Yakimaru", "Rafer", "Darwin", "Angryboy", "Osiris GD", "ChaSe", "Elegy", "Gigamix", "Reunomi"],
+    "creators": [
+        "Desumari",
+        "Enzore",
+        "Pennutoh",
+        "Marwec",
+        "f3lixsram",
+        "Erdyuri",
+        "Thomartin",
+        "Victorinox",
+        "Kurokawa",
+        "Nahuel",
+        "JacobRoso",
+        "BloodStorm",
+        "DesTicY",
+        "Yakimaru",
+        "Rafer",
+        "Darwin",
+        "Angryboy",
+        "Osiris GD",
+        "ChaSe",
+        "Elegy",
+        "Gigamix",
+        "Reunomi"
+    ],
     "verifier": "f3lixsram",
     "verification": "https://www.youtube.com/watch?v=JlUUaQ4B9cg",
     "percentToQualify": "100",
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=bhqRUGKxZaE&t=130s",
+            "percent": 100,
+            "hz": 240
+        },
+        {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=JlUUaQ4B9cg",
             "percent": 100,
             "hz": 360
-        },
-        {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=bhqRUGKxZaE",
-            "percent": 100,
-            "hz": 240
         },
         {
             "user": "RedMurder",
@@ -27,16 +50,16 @@
             "hz": 240
         },
         {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=STatAjgkOis&t=16s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Landet",
             "link": "https://www.youtube.com/watch?v=Fv2kPdyHfPI",
             "percent": 100,
             "hz": 288
-        },
-        {
-            "user": "Voltrux",
-            "link": "https://www.youtube.com/watch?v=jWjqpXX958g",
-            "percent": 100,
-            "hz": 360
         }
     ]
 }

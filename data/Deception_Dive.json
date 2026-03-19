@@ -1,0 +1,30 @@
+{
+    "id": 34379100,
+    "name": "Deception Dive",
+    "author": "Rustam",
+    "creators": [],
+    "verifier": "Berke423",
+    "verification": "https://www.youtube.com/watch?v=jJIcx44_4-8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=vfxBYuvR3lQ&t=2s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=HpRNF_o1O04",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=xi92e0AwSdY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

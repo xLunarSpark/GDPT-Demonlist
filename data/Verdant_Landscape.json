@@ -2,7 +2,9 @@
     "id": 76543324,
     "name": "Verdant Landscape",
     "author": "Nisha",
-    "creators": ["Nisha"],
+    "creators": [
+        "Nisha"
+    ],
     "verifier": "Nisha",
     "verification": "https://www.youtube.com/watch?v=7E_6nDukXPI",
     "percentToQualify": "53",
@@ -16,7 +18,7 @@
         },
         {
             "user": "LunarSpark",
-            "link": "https://youtu.be/35kRp5-dZOg?si=wtJdeL8YIVNTlbEG",
+            "link": "https://www.youtube.com/watch?v=35kRp5-dZOg",
             "percent": 100,
             "hz": 240
         }

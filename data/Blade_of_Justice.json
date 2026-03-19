@@ -1,0 +1,78 @@
+{
+    "id": 35448603,
+    "name": "Blade of Justice",
+    "author": "Manix648",
+    "creators": [],
+    "verifier": "RicoLP",
+    "verification": "https://www.youtube.com/watch?v=6018CbEjA-4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=w6bb8OtjdA8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=cB-Bx4NH8HE&t=89s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=jrXy6MPAOHw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=k1GFHk0iJQU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=CpDvuy5Mk1Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=0qiMCal9yZE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=uDRfuabzUuY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=ciCkp8hm4QA&t=31",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=cmV6HVJTLko",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=Ru5f9cjWRtw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=N1N3iKPjByw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

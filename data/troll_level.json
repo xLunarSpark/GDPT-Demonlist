@@ -1,0 +1,36 @@
+{
+    "id": 76196489,
+    "name": "troll level",
+    "author": "Lexycat",
+    "creators": [],
+    "verifier": "Johnfree",
+    "verification": "https://www.youtube.com/watch?v=eqYr6MLwJE4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=1Rn26aReVAw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=i-gZYkM4mSU&t=49",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=IsITbUVHKqA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=cn2T6p2cgcA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

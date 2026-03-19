@@ -2,7 +2,10 @@
     "id": 91351939,
     "name": "Tunnel of Despair",
     "author": "Exen",
-    "creators": ["Exen", "ImMaxX1"],
+    "creators": [
+        "Exen",
+        "ImMaxX1"
+    ],
     "verifier": "Zoink",
     "verification": "https://youtu.be/SVYYripWUrk?si=aNKHQVdWAQcJkG9R",
     "percentToQualify": 65,
@@ -10,7 +13,7 @@
     "records": [
         {
             "user": "Taiago",
-            "link": "https://youtu.be/SVYYripWUrk?si=aNKHQVdWAQcJkG9R",
+            "link": "https://www.youtube.com/watch?v=SVYYripWUrk",
             "percent": 100,
             "hz": 360
         }

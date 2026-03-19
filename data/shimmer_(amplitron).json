@@ -1,0 +1,30 @@
+{
+    "id": 94156085,
+    "name": "shimmer (amplitron)",
+    "author": "Amplitron",
+    "creators": [],
+    "verifier": "Amplitron",
+    "verification": "https://www.youtube.com/watch?v=J89j-_l7ezg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=wETzV1y7XO0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=nxUbwmWkw5s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=G-S2Z99GrqI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

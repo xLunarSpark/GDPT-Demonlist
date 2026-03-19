@@ -1,0 +1,18 @@
+{
+    "id": 88822041,
+    "name": "Neon Skyline",
+    "author": "reshiria",
+    "creators": [],
+    "verifier": "joe",
+    "verification": "https://www.youtube.com/watch?v=HvGjIAeLv_8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Manu",
+            "link": "https://www.youtube.com/watch?v=R0eg6FLDBNk",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

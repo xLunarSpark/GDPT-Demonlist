@@ -2,7 +2,10 @@
     "id": 60130895,
     "name": "Berserk",
     "author": "TrusTa",
-    "creators": ["TrusTa", "Zylenox"],
+    "creators": [
+        "TrusTa",
+        "Zylenox"
+    ],
     "verifier": "Darkswe",
     "verification": "https://www.youtube.com/watch?v=fiTCMjduIxg",
     "percentToQualify": 100,
@@ -11,6 +14,18 @@
         {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=fiTCMjduIxg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=vUw2Z_YkonM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=72rSf9mmpR4",
             "percent": 100,
             "hz": 360
         }

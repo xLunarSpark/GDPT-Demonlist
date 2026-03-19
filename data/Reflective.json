@@ -1,0 +1,24 @@
+{
+    "id": 78831233,
+    "name": "Reflective",
+    "author": "Mojitoz",
+    "creators": [],
+    "verifier": "Vorgogne",
+    "verification": "https://www.youtube.com/watch?v=1fzhBT_7Fos",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=9VV7BxXa_NU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=XWxJ6HAaCo8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

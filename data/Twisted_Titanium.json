@@ -1,0 +1,18 @@
+{
+    "id": 121267216,
+    "name": "Twisted Titanium",
+    "author": "ItsHybrid",
+    "creators": [],
+    "verifier": "spcreat",
+    "verification": "https://www.youtube.com/watch?v=ueBAKyJONmg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Qxa6hCzY1Wg",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

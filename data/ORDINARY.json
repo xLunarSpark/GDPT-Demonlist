@@ -1,0 +1,18 @@
+{
+    "id": 105593215,
+    "name": "ORDINARY",
+    "author": "vit12",
+    "creators": [],
+    "verifier": "wPopoff",
+    "verification": "https://www.youtube.com/watch?v=4QiHP3jpGnk",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=BYXjo1uB_dY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

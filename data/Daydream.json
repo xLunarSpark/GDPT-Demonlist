@@ -1,0 +1,30 @@
+{
+    "id": 65633532,
+    "name": "Daydream",
+    "author": "Yendis",
+    "creators": [],
+    "verifier": "Yendis",
+    "verification": "https://www.youtube.com/watch?v=5HXK3TFG1H4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=xUl7ZfTYvfw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=83sV9rCYiOE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=DuCASJ4GfiQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

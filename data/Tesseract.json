@@ -1,0 +1,24 @@
+{
+    "id": 52289646,
+    "name": "Tesseract",
+    "author": "iiLuna",
+    "creators": [],
+    "verifier": "xTetra",
+    "verification": "https://www.youtube.com/watch?v=f_LSQNUOe9k",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=dSlu7b5R2kU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=743qycV4riU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

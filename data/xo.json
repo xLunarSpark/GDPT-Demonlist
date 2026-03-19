@@ -2,17 +2,19 @@
     "id": 58825144,
     "name": "xo",
     "author": "KrmaL",
-    "creators": ["KrmaL"],
+    "creators": [
+        "KrmaL"
+    ],
     "verifier": "KrmaL",
     "verification": "https://www.youtube.com/watch?v=xJGeUjNzS0s",
     "percentToQualify": "100",
     "password": "000007",
     "records": [
         {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=xJGeUjNzS0s",
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=jK_IdBrcVvI",
             "percent": 100,
-            "hz": 360
+            "hz": 200
         },
         {
             "user": "LunarSpark",
@@ -21,10 +23,10 @@
             "hz": 360
         },
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=jK_IdBrcVvI",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=xJGeUjNzS0s",
             "percent": 100,
-            "hz": 200
+            "hz": 360
         }
     ]
 }

@@ -1,0 +1,54 @@
+{
+    "id": 48454650,
+    "name": "Penombre",
+    "author": "ZephiroX",
+    "creators": [],
+    "verifier": "MrSpaghetti",
+    "verification": "https://www.youtube.com/watch?v=9PXrwNR7R0g",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=jxlwqdQfmoE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=ikUCZNsUf7c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=AoBAer-8fIk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=Fj-A4hKnr3s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=FRVIoVwR8ws",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=K_xnVRXaSwo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=IsITbUVHKqA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

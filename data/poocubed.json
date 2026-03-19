@@ -2,7 +2,15 @@
     "id": 85133223,
     "name": "poocubed",
     "author": "btLisp",
-    "creators": ["Aespha", "ph0", "btLisp", "Aranda", "Earthum", "Faraox", "TypicalGMD"],
+    "creators": [
+        "Aespha",
+        "ph0",
+        "btLisp",
+        "Aranda",
+        "Earthum",
+        "Faraox",
+        "TypicalGMD"
+    ],
     "verifier": "Kyass",
     "verification": "https://www.youtube.com/watch?v=WU6ntlugMpM",
     "percentToQualify": "58",

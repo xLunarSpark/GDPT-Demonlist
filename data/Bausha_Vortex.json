@@ -2,7 +2,9 @@
     "id": 30380566,
     "name": "Bausha Vortex",
     "author": "Pennutoh",
-    "creators": ["Pennutoh"],
+    "creators": [
+        "Pennutoh"
+    ],
     "verifier": "JakeSJ",
     "verification": "https://www.youtube.com/watch?v=KBHLG7N0FRI",
     "percentToQualify": 100,
@@ -22,7 +24,7 @@
         },
         {
             "user": "zHexya",
-            "link": "https://youtu.be/YmPnvNeK-Gc?si=tYfSzrsn_oYg1SHq",
+            "link": "https://www.youtube.com/watch?v=YmPnvNeK-Gc",
             "percent": 100,
             "hz": 240
         }

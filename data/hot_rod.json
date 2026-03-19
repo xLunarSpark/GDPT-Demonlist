@@ -1,0 +1,36 @@
+{
+    "id": 95355264,
+    "name": "hot rod",
+    "author": "stcubing",
+    "creators": [],
+    "verifier": "DozenthLeaf",
+    "verification": "https://www.youtube.com/watch?v=FSNGDwv_8N0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=wXmKbpdVG5s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=eigPCG91cuI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=t2EkEIdBvOE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=d1C2a3PuV1Y",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

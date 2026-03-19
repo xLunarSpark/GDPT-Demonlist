@@ -1,0 +1,48 @@
+{
+    "id": 69108628,
+    "name": "Broken Signal",
+    "author": "REDACTED",
+    "creators": [],
+    "verifier": "REDACTED",
+    "verification": "https://www.youtube.com/watch?v=3xo1b5kMTbE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=OFzLBUmibGE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=wE8kciAvYUU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=E20wn2yc4dc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=wcvmEE-oenY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=bjj_PueX6hM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=iYVyXtXmf0s",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "id": 92729757,
+    "name": "robotchief exposal",
+    "author": "Madeliene",
+    "creators": [],
+    "verifier": "robotchief",
+    "verification": "https://www.youtube.com/watch?v=7cSsPB6sdGE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=IU85dPRImhc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=v2GRKnTVFH8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=bfyvEd8CYHM",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

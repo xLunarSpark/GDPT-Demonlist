@@ -2,27 +2,57 @@
     "id": 33387622,
     "name": "SubSonic",
     "author": "ViPriN",
-    "creators": ["Jeyzor", "Rustam", "TheDevon", "Dudex", "GgB0y", "Panman", "Sumsar", "xcy7", "Terron", "ViPriN", "Evasium"],
+    "creators": [
+        "Jeyzor",
+        "Rustam",
+        "TheDevon",
+        "Dudex",
+        "GgB0y",
+        "Panman",
+        "Sumsar",
+        "xcy7",
+        "Terron",
+        "ViPriN",
+        "Evasium"
+    ],
     "verifier": "combi",
     "verification": "https://www.youtube.com/watch?v=F15kQ23vdPE",
     "percentToQualify": "100",
     "password": "Free to Copy",
     "records": [
         {
-            "user": "BernaX",
-            "link": "https://www.youtube.com/watch?v=F15kQ23vdPE",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=_FSumWpCzig",
             "percent": 100,
-            "hz": 144
+            "hz": 360
         },
         {
-            "user": "Landet",
-            "link": "https://www.youtube.com/watch?v=DlF6PQRAtbM",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=aM70aM28xOU",
             "percent": 100,
             "hz": 360
         },
         {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=_Uif2peGYyo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gamer_BernaX",
+            "link": "https://www.youtube.com/watch?v=F15kQ23vdPE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Flangoooooooo",
+            "link": "https://www.youtube.com/watch?v=7mDIEm1K3bM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=DlF6PQRAtbM",
             "percent": 100,
             "hz": 360
         }

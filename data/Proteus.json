@@ -1,0 +1,30 @@
+{
+    "id": 88943354,
+    "name": "Proteus",
+    "author": "SpergQuos",
+    "creators": [],
+    "verifier": "SleyGD",
+    "verification": "https://www.youtube.com/watch?v=yHtq-kONTY8",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=WoFpP38KKlo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=UCOPezU6xuc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=-ZtytJinzHw",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

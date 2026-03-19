@@ -2,24 +2,14 @@
     "id": 26681070,
     "name": "Sonic Wave",
     "author": "Sunix",
-    "creators": ["Cyclic"],
+    "creators": [
+        "Cyclic"
+    ],
     "verifier": "Sunix",
     "verification": "https://www.youtube.com/watch?v=YIqZoYdFbkg",
     "percentToQualify": "100",
     "password": "Free to Copy",
     "records": [
-        {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=YIqZoYdFbkg",
-            "percent": 100,
-            "hz": 300
-        },
-        {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=ZdipC-kpOEM",
-            "percent": 100,
-            "hz": 360
-        },
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=mVPNm6lrU7U",
@@ -27,16 +17,10 @@
             "hz": 360
         },
         {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=vpww7mjIyBY",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=YIqZoYdFbkg",
             "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Corepic",
-            "link": "https://www.youtube.com/watch?v=_sH2X6H5eNM",
-            "percent": 100,
-            "hz": 360
+            "hz": 300
         },
         {
             "user": "zHexya",
@@ -45,16 +29,10 @@
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/eed3wfLSfGI",
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=Os0Hw7Cx-Ro",
             "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "TrueJumpy",
-            "link": "https://youtu.be/SZxzJ-Mizlg?si=-MOmC9D-M-_IZhKQ",
-            "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

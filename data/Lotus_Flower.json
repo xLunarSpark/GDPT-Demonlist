@@ -1,0 +1,18 @@
+{
+    "id": 75813671,
+    "name": "Lotus Flower",
+    "author": "StarkytheSalad",
+    "creators": [],
+    "verifier": "BrianTheBurger",
+    "verification": "https://www.youtube.com/watch?v=pTgOHcwJhd0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Manu",
+            "link": "https://www.youtube.com/watch?v=iXz4xhzaqV4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

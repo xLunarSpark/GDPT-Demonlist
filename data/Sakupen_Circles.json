@@ -2,7 +2,17 @@
     "id": 76962930,
     "name": "Sakupen Circles",
     "author": "TDiamond",
-    "creators": ["Nick24", "DrCuber", "korewa", "Muffy450", "Renn241", "endevvor", "Mzero", "NineDice", "GhostVandalf"],
+    "creators": [
+        "Nick24",
+        "DrCuber",
+        "korewa",
+        "Muffy450",
+        "Renn241",
+        "endevvor",
+        "Mzero",
+        "NineDice",
+        "GhostVandalf"
+    ],
     "verifier": "Diamond",
     "verification": "https://youtu.be/LEF-Gq4pDjA?si=V0M7tqjHS5MVb_Lh",
     "percentToQualify": "59",
@@ -10,7 +20,13 @@
     "records": [
         {
             "user": "Taiago",
-            "link": "https://youtu.be/LEF-Gq4pDjA?si=V0M7tqjHS5MVb_Lh",
+            "link": "https://www.youtube.com/watch?v=LEF-Gq4pDjA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=VtHbYwj_AWg",
             "percent": 100,
             "hz": 360
         }

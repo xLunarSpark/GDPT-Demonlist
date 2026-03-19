@@ -1,0 +1,24 @@
+{
+    "id": 95061038,
+    "name": "9blue",
+    "author": "Sardina",
+    "creators": [],
+    "verifier": "\u0423\u043b\u044b\u0431\u043e\u0447\u043a\u0443",
+    "verification": "https://www.youtube.com/watch?v=90vj8BdelkY",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=743qycV4riU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=NoyMz8KEKaE",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

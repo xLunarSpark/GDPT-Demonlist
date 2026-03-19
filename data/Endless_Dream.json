@@ -2,12 +2,20 @@
     "id": 70484097,
     "name": "Endless Dream",
     "author": "DreamTide",
-    "creators": ["DreamTide"],
+    "creators": [
+        "DreamTide"
+    ],
     "verifier": "DreamTide",
     "verification": "https://www.youtube.com/watch?v=-Iods_erVL0",
     "percentToQualify": "100",
     "password": "002019",
     "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=waOKAngnO7o",
+            "percent": 100,
+            "hz": 360
+        },
         {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=-Iods_erVL0",
@@ -15,8 +23,14 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=waOKAngnO7o",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=W0pdXvksJD0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=WQhycY3B_wk",
             "percent": 100,
             "hz": 360
         }

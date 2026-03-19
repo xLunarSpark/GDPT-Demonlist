@@ -1,0 +1,24 @@
+{
+    "id": 117862884,
+    "name": "Diamond Disco",
+    "author": "Zeronium",
+    "creators": [],
+    "verifier": "Zeronium",
+    "verification": "https://www.youtube.com/watch?v=7zi8X8uInHE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=QhtF7upyKDg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=mst7Rp0YBjI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

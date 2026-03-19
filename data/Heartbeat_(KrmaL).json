@@ -1,0 +1,18 @@
+{
+    "id": 20321297,
+    "name": "Heartbeat (KrmaL)",
+    "author": "KrmaL",
+    "creators": [],
+    "verifier": "KrmaL",
+    "verification": "https://www.youtube.com/watch?v=UDVbmaJGlKQ",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=JXY5h0WCMJQ",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

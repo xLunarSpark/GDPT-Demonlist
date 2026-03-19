@@ -1,0 +1,18 @@
+{
+    "id": 35680614,
+    "name": "Hydraulic Overdrive",
+    "author": "Xyriak",
+    "creators": [],
+    "verifier": "GDBrad",
+    "verification": "https://www.youtube.com/watch?v=8zHlJz2Gl8Y",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=qm6bLX1ndsA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

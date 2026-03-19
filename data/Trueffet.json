@@ -2,7 +2,10 @@
     "id": 71434979,
     "name": "Trueffet",
     "author": "SyQual",
-    "creators": ["SyQual", "Rainstorm"],
+    "creators": [
+        "SyQual",
+        "Rainstorm"
+    ],
     "verifier": "Baeru",
     "verification": "https://www.youtube.com/watch?v=fOPYCV9Urrc",
     "percentToQualify": "47",
@@ -15,22 +18,16 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://youtu.be/hl71NFN_vT4?si=jwcQvb9L1l5KUF1g",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=NV0ImdTogkE",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Karmatas",
-            "link": "https://youtu.be/NV0ImdTogkE?si=QygWYZe62EMpzrpT",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=hl71NFN_vT4",
             "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "TyS",
-            "link": "https://youtu.be/MssIDaWvsyo?si=MJoJ-v9PbUeanrQ2",
-            "percent": 60,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

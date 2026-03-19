@@ -1,0 +1,24 @@
+{
+    "id": 61132346,
+    "name": "Hateful Reflection",
+    "author": "GD Iris",
+    "creators": [],
+    "verifier": "Demented",
+    "verification": "https://www.youtube.com/watch?v=o27ZvcHUOSU",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=HSkJDnjZNAI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=mGANL8PAT74",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

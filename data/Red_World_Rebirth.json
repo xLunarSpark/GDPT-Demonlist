@@ -1,0 +1,36 @@
+{
+    "id": 20077821,
+    "name": "Red World Rebirth",
+    "author": "Riot",
+    "creators": [],
+    "verifier": "Riot",
+    "verification": "https://www.youtube.com/watch?v=WsxDUMLRqN4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=o7kw6KSaS1Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=0l4E7W3bvOM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=OVvzuTwcf9c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "DYT",
+            "link": "https://www.youtube.com/watch?v=6HeomdTX7rU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

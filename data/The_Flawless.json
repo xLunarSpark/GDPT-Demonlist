@@ -1,0 +1,36 @@
+{
+    "id": 21280210,
+    "name": "The Flawless",
+    "author": "fin",
+    "creators": [],
+    "verifier": "TrusTa",
+    "verification": "https://www.youtube.com/watch?v=RHOCE37dP2A",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=kgoqcybER0U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=Bw9eoefsHLs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=qaqAEWhQXrw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "JonikLindo",
+            "link": "https://www.youtube.com/watch?v=irfH64bjQj8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

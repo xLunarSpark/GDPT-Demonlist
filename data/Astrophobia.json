@@ -1,0 +1,18 @@
+{
+    "id": 94772024,
+    "name": "Astrophobia",
+    "author": "Jakalope",
+    "creators": [],
+    "verifier": "Jakalope",
+    "verification": "https://www.youtube.com/watch?v=whPSq4uFTK4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=RooZJMGNIr4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

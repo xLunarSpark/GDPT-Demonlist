@@ -1,0 +1,18 @@
+{
+    "id": 93247638,
+    "name": "Exosphere",
+    "author": "Doggie",
+    "creators": [],
+    "verifier": "DijonGD",
+    "verification": "https://www.youtube.com/watch?v=HRbBub341W4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=iVk9rJ5RqIM",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

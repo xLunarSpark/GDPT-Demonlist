@@ -1,0 +1,18 @@
+{
+    "id": 118078448,
+    "name": "Stressed Out",
+    "author": "meph",
+    "creators": [],
+    "verifier": "meph",
+    "verification": "https://www.youtube.com/watch?v=V0dzmxhHjuI",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=1dfzE-jccks",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

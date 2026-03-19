@@ -2,7 +2,9 @@
     "id": 79918576,
     "name": "Jesse Pinkman",
     "author": "Renn241",
-    "creators": ["Renn241"],
+    "creators": [
+        "Renn241"
+    ],
     "verifier": "Comlayze",
     "verification": "https://www.youtube.com/watch?v=5uLVJyaifIk",
     "percentToQualify": 65,
@@ -16,7 +18,7 @@
         },
         {
             "user": "LunarSpark",
-            "link": "https://youtu.be/pCbt23PW3tg?si=krLU8bTVwVEO8-On",
+            "link": "https://www.youtube.com/watch?v=pCbt23PW3tg",
             "percent": 100,
             "hz": 240
         }

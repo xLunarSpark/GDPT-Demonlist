@@ -1,0 +1,54 @@
+{
+    "id": 2374518,
+    "name": "Red World",
+    "author": "saRy",
+    "creators": [],
+    "verifier": "guillester",
+    "verification": "https://www.youtube.com/watch?v=hL24xcJPnyY",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=_tPOMTzM7o4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=WvYMUt9z3kc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=36CU6enrKBs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=20ycPlkWoM0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=eIeqxNVbMmc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=BY-wPiOPWYk&t=95s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Docaedro",
+            "link": "https://www.youtube.com/watch?v=HptQLOpx7Co",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

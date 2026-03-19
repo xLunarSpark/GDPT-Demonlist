@@ -2,7 +2,12 @@
     "id": 71025973,
     "name": "Oblivion",
     "author": "dice88",
-    "creators": ["silver", "benji8080", "eth", "Goob"],
+    "creators": [
+        "silver",
+        "benji8080",
+        "eth",
+        "Goob"
+    ],
     "verifier": "dice88",
     "verification": "https://www.youtube.com/watch?v=eX1B8ZNym0s",
     "percentToQualify": "49",
@@ -15,10 +20,16 @@
             "hz": 360
         },
         {
-            "user": "Karmatas",
+            "user": "Karma",
             "link": "https://www.youtube.com/watch?v=yMhqDXR0o2c",
             "percent": 100,
-            "hz": 240
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=NByVp5vQG2g",
+            "percent": 100,
+            "hz": 360
         },
         {
             "user": "RedMurder",

@@ -1,0 +1,36 @@
+{
+    "id": 93549959,
+    "name": "Mystic Bounds",
+    "author": "gmdmann",
+    "creators": [],
+    "verifier": "gmdmann",
+    "verification": "https://www.youtube.com/watch?v=Nqa36orr4cQ",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=WbZ0n7XcBxU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=n5whL_JpDQE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=gsvpFQn8UGI&t=107s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=6gKl9KHOzTA",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

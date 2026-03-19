@@ -1,0 +1,24 @@
+{
+    "id": 19759411,
+    "name": "Phobos",
+    "author": "KrmaL",
+    "creators": [],
+    "verifier": "KrmaL",
+    "verification": "https://www.youtube.com/watch?v=wC8VJ4B2WRg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=dELMxGyE0H0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "JonikLindo",
+            "link": "https://www.youtube.com/watch?v=3JW3Qsd_J4g",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

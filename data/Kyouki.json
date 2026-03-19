@@ -2,7 +2,9 @@
     "id": 86018142,
     "name": "Kyouki",
     "author": "Demishio",
-    "creators": ["Demishio"],
+    "creators": [
+        "Demishio"
+    ],
     "verifier": "Demishio",
     "verification": "https://youtu.be/UyKJ4VAz5Hc?si=9QBcDttJsTFNpEoZ",
     "percentToQualify": "50",
@@ -10,7 +12,13 @@
     "records": [
         {
             "user": "Taiago",
-            "link": "https://youtu.be/UyKJ4VAz5Hc?si=9QBcDttJsTFNpEoZ",
+            "link": "https://www.youtube.com/watch?v=UyKJ4VAz5Hc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=xTVjXaeaHJE",
             "percent": 100,
             "hz": 360
         }

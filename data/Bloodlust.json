@@ -2,23 +2,46 @@
     "id": 42584142,
     "name": "Bloodlust",
     "author": "knobbelboy",
-    "creators": ["Namtar", "Willy5000", "TMNGaming", "Wabbit", "non4med", "Rustam", "nikroplays", "Minesap", "Quasar", "Manix648", "nwolc", "knobbelboy", "Havok", "Panman", "Xaro", "Terron"],
+    "creators": [
+        "Namtar",
+        "Willy5000",
+        "TMNGaming",
+        "Wabbit",
+        "non4med",
+        "Rustam",
+        "nikroplays",
+        "Minesap",
+        "Quasar",
+        "Manix648",
+        "nwolc",
+        "knobbelboy",
+        "Havok",
+        "Panman",
+        "Xaro",
+        "Terron"
+    ],
     "verifier": "knobbelboy",
     "verification": "https://www.youtube.com/watch?v=qIcVovPLg20",
     "percentToQualify": "56",
     "password": "121296",
     "records": [
         {
-            "user": "Darion123",
-            "link": "https://www.youtube.com/watch?v=qIcVovPLg20",
-            "percent": 100,
-            "hz": 300 
-        },
-        {
-            "user": "Plutz",
-            "link": "https://www.youtube.com/watch?v=RKYKM48snrg",
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=zBnG1A3V_8w",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=NIwJIC1EqpY&t=45s",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=UP5ZmGY-7os&t=86s",
+            "percent": 100,
+            "hz": 200
         },
         {
             "user": "LunarSpark",
@@ -27,40 +50,28 @@
             "hz": 360
         },
         {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=cE7tExnYCmI",
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=qIcVovPLg20&t=2s",
             "percent": 100,
-            "hz": 360
+            "hz": 300
         },
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=zBnG1A3V_8w",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=UP5ZmGY-7os",
-            "percent": 100,
-            "hz": 200
-        },
-        {
-            "user": "Karmatas",
-            "link": "https://youtu.be/NIwJIC1EqpY?si=ff1zSfK2ImxnqKjT",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=FrAVLRWuO74",
             "percent": 100,
             "hz": 240
         },
         {
             "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=U7QcKCSdPHo&t",
+            "link": "https://www.youtube.com/watch?v=U7QcKCSdPHo",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "zHexya",
-            "link": "https://youtu.be/FrAVLRWuO74?si=DAiAvJgVoZHEabYX",
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=90aWxkWsMck",
             "percent": 100,
-            "hz": 240
+            "hz": 360
         }
     ]
 }

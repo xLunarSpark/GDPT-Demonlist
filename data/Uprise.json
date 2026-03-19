@@ -1,0 +1,24 @@
+{
+    "id": 14977845,
+    "name": "Uprise",
+    "author": "Blad3M",
+    "creators": [],
+    "verifier": "iNeo",
+    "verification": "https://www.youtube.com/watch?v=oQBMG-aacNo",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=UwPq3C7o-68",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=-MPyk-aMkbs",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

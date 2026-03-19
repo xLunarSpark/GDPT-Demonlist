@@ -1,0 +1,24 @@
+{
+    "id": 92782493,
+    "name": "BLACKLIGHTS",
+    "author": "whlt",
+    "creators": [],
+    "verifier": "Zeronium",
+    "verification": "https://www.youtube.com/watch?v=mQk5NZ8fL4w",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=okqavFNLLGc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=-yDI2AZbSq0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

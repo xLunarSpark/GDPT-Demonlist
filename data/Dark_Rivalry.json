@@ -1,0 +1,24 @@
+{
+    "id": 40895189,
+    "name": "Dark Rivalry",
+    "author": "Flex",
+    "creators": [],
+    "verifier": "KingDLetsPlay",
+    "verification": "https://www.youtube.com/watch?v=tJOgXEUsJ_E",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=8cDXI4YcG4U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=LcpJ5GJZ1ng",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": 78687216,
+    "name": "Disruption",
+    "author": "Ka1sa",
+    "creators": [],
+    "verifier": "lucy",
+    "verification": "https://www.youtube.com/watch?v=0GV7YeQWIZg",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=xdUIdXDjda0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=VNA2e2fLOsQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=hn3Xqucw0oU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=Nixep_6JauU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=JOC5Fc7iRyQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=a52hrBN2cKs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=-GHOI2vfuRQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=yMey83Qe2SI",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

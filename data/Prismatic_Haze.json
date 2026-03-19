@@ -1,0 +1,66 @@
+{
+    "id": 59899374,
+    "name": "Prismatic Haze",
+    "author": "REDACTED",
+    "creators": [],
+    "verifier": "Moosh",
+    "verification": "https://www.youtube.com/watch?v=RS5ZFcuaw3I",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=L-JLAn_gcWY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=DLegPppbdkA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=a7PUDQGbCKc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=O2sv5IVYX8Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=S4nmerID-QA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=k9J5fVW5dg4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=PBQdFOiRDWg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=bj9YofrZ_J4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=nnENv3DmoV8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

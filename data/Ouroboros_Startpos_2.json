@@ -1,0 +1,24 @@
+{
+    "id": 94410319,
+    "name": "Ouroboros Startpos 2",
+    "author": "foody",
+    "creators": [],
+    "verifier": "foody",
+    "verification": "https://www.youtube.com/watch?v=YIsJeBI2c_c",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=wb9sgBLE43Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Lobo",
+            "link": "https://www.youtube.com/watch?v=KyXylGJoxU4",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

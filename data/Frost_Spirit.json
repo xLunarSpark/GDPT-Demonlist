@@ -1,0 +1,18 @@
+{
+    "id": 95767653,
+    "name": "Frost Spirit",
+    "author": "Quaybus",
+    "creators": [],
+    "verifier": "Varium",
+    "verification": "https://www.youtube.com/watch?v=KXbaRnRpm58",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Manu",
+            "link": "https://www.youtube.com/watch?v=yRQanBR5IgY",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}
