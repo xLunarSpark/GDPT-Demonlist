@@ -50,6 +50,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
 }
 
 header,
