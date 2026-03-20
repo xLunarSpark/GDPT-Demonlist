@@ -104,6 +104,16 @@
             .status-error { background: #ef444433; color: #f87171; }
             
         </style>
+        <script>
+            (function() {
+                try {
+                    let isDark = JSON.parse(localStorage.getItem('dark')) || false;
+                    if (isDark) {
+                        document.documentElement.classList.add('dark');
+                    }
+                } catch (e) {}
+            })();
+        </script>
     </head>
     <body id="app">
         <header id="header">
@@ -215,7 +225,7 @@
             let isDark = JSON.parse(localStorage.getItem('dark')) || false;
             
             function applyTheme() {
-                const els = [document.body, document.getElementById('header'), document.getElementById('main')];
+                const els = [document.documentElement, document.body, document.getElementById('header'), document.getElementById('main')];
                 els.forEach(el => isDark ? el.classList.add('dark') : el.classList.remove('dark'));
                 document.getElementById('theme-icon').src = isDark ? '/assets/light.svg' : '/assets/dark.svg';
             }
