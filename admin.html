@@ -185,15 +185,62 @@
                             </div>
                             
                             <form id="demon-form">
-                                <label class="type-label-lg">Target Position</label>
-                                <input type="number" id="d-position" placeholder="e.g. 1" required>
-                                <span class="hint-text">Shifts everything else down safely</span>
+                                <div class="flex-row">
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Target Position</label>
+                                        <input type="number" id="d-position" placeholder="e.g. 1" min="1" required>
+                                        <span class="hint-text" id="pos-hint">Loading max position...</span>
+                                    </div>
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Internal Filename</label>
+                                        <input type="text" id="d-filename" placeholder="e.g. Bloodbath" required>
+                                        <span class="hint-text" style="color:var(--color-primary)">e.g. file will be "Bloodbath.json"</span>
+                                    </div>
+                                </div>
                                 
-                                <label class="type-label-lg">Level JSON Data</label>
-                                <textarea id="d-json" rows="12" placeholder='{"id": 12345, "name": "Bloodbath", "records": []}' required></textarea>
+                                <span class="type-title-sm" style="margin-top: 1rem;">Level Properties</span>
                                 
-                                <button type="submit" class="btn" style="width:100%; justify-content:center; background:var(--color-primary); color:white;">
-                                    Push to Repository
+                                <div class="flex-row">
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">GD Level ID</label>
+                                        <input type="number" id="d-lvl-id" placeholder="e.g. 10565740" required>
+                                    </div>
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Level Name</label>
+                                        <input type="text" id="d-name" placeholder="e.g. Bloodbath" required>
+                                    </div>
+                                </div>
+
+                                <div class="flex-row">
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Publisher / Author</label>
+                                        <input type="text" id="d-author" placeholder="e.g. Riot" required>
+                                    </div>
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Verifier</label>
+                                        <input type="text" id="d-verifier" placeholder="e.g. Riot" required>
+                                    </div>
+                                </div>
+
+                                <label class="type-label-lg">Creators (Comma Separated)</label>
+                                <input type="text" id="d-creators" placeholder="e.g. Riot, WeoWeoTeo, ...">
+
+                                <label class="type-label-lg">Verification Video URL</label>
+                                <input type="text" id="d-video" placeholder="https://youtube.com/..." required>
+
+                                <div class="flex-row">
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">% To Qualify</label>
+                                        <input type="number" id="d-qualify" value="100" min="0" max="100" required>
+                                    </div>
+                                    <div style="flex:1">
+                                        <label class="type-label-lg">Copy Password</label>
+                                        <input type="text" id="d-password" value="Free to Copy">
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn" style="width:100%; justify-content:center; background:var(--color-primary); color:white; margin-top: 2rem;">
+                                    Confirm and Push to Repository
                                 </button>
                             </form>
                         </div>
