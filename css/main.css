@@ -25,6 +25,9 @@ header.dark {
 }
 */
 
+html.dark main,
+html.dark header,
+html.dark body,
 main.dark,
 header.dark {
     color-scheme: dark;
