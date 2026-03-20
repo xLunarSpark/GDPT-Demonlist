@@ -367,10 +367,18 @@
                         records: []
                     };
 
-                    document.getElementById('d-json').value = JSON.stringify(demonData, null, 4);
-                    document.getElementById('d-id').value = data.name.replace(/ /g, "_"); 
+                    document.getElementById('d-lvl-id').value = demonData.id;
+                    document.getElementById('d-name').value = demonData.name;
+                    document.getElementById('d-author').value = demonData.author;
+                    document.getElementById('d-creators').value = demonData.creators.join(", ");
+                    document.getElementById('d-verifier').value = demonData.verifier;
+                    document.getElementById('d-video').value = demonData.verification;
+                    document.getElementById('d-qualify').value = demonData.percentToQualify;
+                    document.getElementById('d-password').value = demonData.password;
+                    
+                    document.getElementById('d-filename').value = data.name.replace(/ /g, "_"); 
                     document.getElementById('d-position').value = data.position || ""; 
-                    setStatus(`Successfully compiled JSON for ${data.name}! Ready to push.`, "success");
+                    setStatus(`Successfully fetched data for ${data.name}! Ready to review and push.`, "success");
                 } catch(e) {
                     setStatus(e.message, "error");
                 }
@@ -381,9 +389,20 @@
                 setStatus("Connecting to GitHub API...", "info");
                 
                 try {
-                    const fileId = document.getElementById('d-id').value.trim();
+                    const fileId = document.getElementById('d-filename').value.trim();
                     const pos = document.getElementById('d-position').value;
-                    const demonData = JSON.parse(document.getElementById('d-json').value);
+                    
+                    const demonData = {
+                        id: parseInt(document.getElementById('d-lvl-id').value) || 0,
+                        name: document.getElementById('d-name').value.trim(),
+                        author: document.getElementById('d-author').value.trim(),
+                        creators: document.getElementById('d-creators').value.split(',').map(s => s.trim()).filter(s => s),
+                        verifier: document.getElementById('d-verifier').value.trim(),
+                        verification: document.getElementById('d-video').value.trim(),
+                        percentToQualify: parseInt(document.getElementById('d-qualify').value) || 100,
+                        password: document.getElementById('d-password').value || "Free to Copy",
+                        records: []
+                    };
 
                     const payload = { id: fileId, position: pos, demonData: demonData };
 
