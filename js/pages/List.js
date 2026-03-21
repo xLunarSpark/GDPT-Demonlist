@@ -1,5 +1,5 @@
 import { store } from "../main.js";
-import { embed } from "../util.js";
+import { embed, getYoutubeIdFromUrl } from "../util.js";
 import { score } from "../score.js";
 import { fetchEditors, fetchList } from "../content.js";
 
@@ -40,7 +40,7 @@ export default {
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
                     <LevelAuthors :author="level.author" :creators="level.creators" :verifier="level.verifier"></LevelAuthors>
-                    <iframe class="video" id="videoframe" :src="video" frameborder="0" loading="lazy" title="Verification Video"></iframe>
+                    <iframe class="video" id="videoframe" :src="video" :srcdoc="videoSrcdoc" frameborder="0" loading="lazy" title="Verification Video"></iframe>
                     <ul class="stats">
                         <li>
                             <div class="type-title-sm">Points when completed</div>
@@ -150,6 +150,11 @@ export default {
                     ? this.level.showcase
                     : this.level.verification
             );
+        },
+        videoSrcdoc() {
+            const vid = this.level.showcase && this.toggledShowcase ? this.level.showcase : this.level.verification;
+            const id = getYoutubeIdFromUrl(vid);
+            return `<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/${id}?autoplay=1><img src=https://img.youtube.com/vi/${id}/mqdefault.jpg alt='Video'><span>▶</span></a>`;
         },
     },
     async mounted() {
