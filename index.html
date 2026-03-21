@@ -33,13 +33,13 @@
         <link rel="preload" href="/css/typography.css" as="style" />
         <link rel="preload" href="/css/main.css" as="style" />
         
-        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="print" onload="this.media='all'" />
-        <link rel="stylesheet" type="text/css" href="/css/typography.css" media="print" onload="this.media='all'" />
-        <link rel="stylesheet" type="text/css" href="/css/main.css" media="print" onload="this.media='all'" />
-        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
         <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" media="print" onload="this.media='all'" />
         <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" media="print" onload="this.media='all'" />
-        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
         <link rel="stylesheet" type="text/css" href="/css/components/btn.css" media="print" onload="this.media='all'" />
         <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" media="print" onload="this.media='all'" />
         
@@ -57,7 +57,7 @@
         <script defer src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
         <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         
-                <!-- Module Preloads -->
+        <!-- Module Preloads -->
         <link rel="modulepreload" href="/js/main.js">
         <link rel="modulepreload" href="/js/routes.js">
         <link rel="modulepreload" href="/js/pages/List.js">
@@ -66,14 +66,15 @@
         <link rel="modulepreload" href="/js/util.js">
         <link rel="modulepreload" href="/js/components/Spinner.js">
         <link rel="modulepreload" href="/js/components/List/LevelAuthors.js">
-        <link rel="preload" href="/data/_editors.json" as="fetch" crossorigin="anonymous">
+        <link rel="preload" href="/data/_editors.json" as="fetch">
 
         <!-- Preload bundle -->
-        <link rel="preload" href="/data/_list_bundled.json" as="fetch" crossorigin="anonymous">
-        <link rel="preload" href="/data/_list.json" as="fetch" crossorigin="anonymous">
+        <link rel="preload" href="/data/_list_bundled.json" as="fetch">
+        <link rel="preload" href="/data/_list.json" as="fetch">
 
         <script defer type="module" src="/js/main.js"></script>
         <style>
+            [v-cloak] { display: none !important; }
             html { background-color: var(--color-background, white); }
             html.dark { background-color: #1c1b1f; }
         </style>
@@ -87,7 +88,7 @@
             })();
         </script>
     </head>
-    <body id="app">
+    <body id="app" v-cloak>
         <header :class="{ dark: store.dark }">
             <div class="logo">
                 <h2>GDPT Demonlist</h2>
