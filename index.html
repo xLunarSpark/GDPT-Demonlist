@@ -7,8 +7,8 @@
 
         <!-- Replace your server icon by uploading an image file named "list_icon.png"-->
         <link rel="icon" href="/list_icon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
         <link
             rel="preload"
             as="style"
@@ -26,27 +26,33 @@
                 rel="stylesheet"
             />
         </noscript>
-        
+
         <!-- Preload CSS -->
         <link rel="preload" href="/css/reset.css" as="style" />
         <link rel="preload" href="/css/typography.css" as="style" />
-        <link rel="stylesheet" type="text/css" href="/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="/css/typography.css" />
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="/css/pages/leaderboard.css"
-        />
-        <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
-        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
-        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="/css/components/tabs.css"
-        />
+        <link rel="preload" href="/css/main.css" as="style" />
+        
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" media="print" onload="this.media='all'" />
+        
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+            <link rel="stylesheet" type="text/css" href="/css/main.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
+            <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
+            <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
+            <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" />
+        </noscript>
         <script defer src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
         <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         

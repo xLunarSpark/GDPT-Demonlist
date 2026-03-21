@@ -23,7 +23,7 @@ export default {
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list">
+                    <tr v-for="([level, err], i) in list.slice(0, listLimit)">
                         <td class="rank">
                             <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
                             <p v-else class="type-label-lg">Legacy</p>
@@ -36,6 +36,7 @@ export default {
                     </tr>
                 </table>
             </div>
+            <div ref="loadMoreSentinel" style="height: 1px;"></div>
             <div class="level-container">
                 <div class="level" v-if="level">
                     <h1>{{ level.name }}</h1>
@@ -129,6 +130,7 @@ export default {
     `,
     data: () => ({
         list: [],
+        listLimit: 50,
         editors: [],
         loading: true,
         selected: 0,
@@ -157,6 +159,7 @@ export default {
             return `<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/${id}?autoplay=1><img src=https://img.youtube.com/vi/${id}/mqdefault.jpg alt='Video'><span>▶</span></a>`;
         },
     },
+
     async mounted() {
         // Hide loading spinner
         this.list = await fetchList();
@@ -181,6 +184,18 @@ export default {
         }
 
         this.loading = false;
+        
+        // Lazy load intersections
+        this.$nextTick(() => {
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && this.listLimit < this.list.length) {
+                    this.listLimit += 50;
+                }
+            });
+            if (this.$refs.loadMoreSentinel) {
+                observer.observe(this.$refs.loadMoreSentinel);
+            }
+        });
     },
     methods: {
         embed,

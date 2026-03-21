@@ -6,7 +6,7 @@ export function getYoutubeIdFromUrl(url) {
 }
 
 export function embed(video) {
-    return `https://www.youtube.com/embed/${getYoutubeIdFromUrl(video)}`;
+    return `https://www.youtube-nocookie.com/embed/${getYoutubeIdFromUrl(video)}`;
 }
 
 export function localize(num) {
@@ -14,7 +14,7 @@ export function localize(num) {
 }
 
 export function getThumbnailFromId(id) {
-    return `https://img.youtube.com/vi/${id}/mqdefault.jpg`;
+    return `https://i.ytimg.com/vi_webp/${id}/mqdefault.webp`;
 }
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array

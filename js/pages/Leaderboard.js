@@ -9,6 +9,7 @@ export default {
     },
     data: () => ({
         leaderboard: [],
+        boardLimit: 50,
         loading: true,
         selected: 0,
         err: [],
@@ -26,7 +27,7 @@ export default {
                 </div>
                 <div class="board-container">
                     <table class="board">
-                        <tr v-for="(ientry, i) in leaderboard">
+                        <tr v-for="(ientry, i) in leaderboard.slice(0, boardLimit)">
                             <td class="rank">
                                 <p class="type-label-lg">#{{ i + 1 }}</p>
                             </td>
@@ -40,6 +41,7 @@ export default {
                             </td>
                         </tr>
                     </table>
+                    <div ref="loadMoreSentinel" style="height: 1px;"></div>
                 </div>
                 <div class="player-container">
                     <div class="player">
@@ -103,6 +105,16 @@ export default {
         this.err = err;
         // Hide loading spinner
         this.loading = false;
+        this.$nextTick(() => {
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    this.boardLimit += 50;
+                }
+            });
+            if (this.$refs.loadMoreSentinel) {
+                observer.observe(this.$refs.loadMoreSentinel);
+            }
+        });
     },
     methods: {
         localize,
