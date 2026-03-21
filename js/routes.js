@@ -1,9 +1,8 @@
 import List from './pages/List.js';
-import Leaderboard from './pages/Leaderboard.js';
-import Roulette from './pages/Roulette.js';
 
+// Lazy loading
 export default [
     { path: '/', component: List },
-    { path: '/leaderboard', component: Leaderboard },
-    { path: '/roulette', component: Roulette },
+    { path: '/leaderboard', component: () => import('./pages/Leaderboard.js') },
+    { path: '/roulette', component: () => import('./pages/Roulette.js') },
 ];

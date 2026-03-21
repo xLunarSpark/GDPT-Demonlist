@@ -158,8 +158,20 @@ def main():
             
     with open(os.path.join(DATA_DIR, "_list.json"), "w", encoding="utf-8") as f:
         json.dump(new_list_names, f, indent=4)
-        
-    print(f"\nDone! Rebuilt _list.json with {len(new_list_names)} levels")
+
+    # Compile _list_bundled.json
+    bundled_data = []
+    for name in new_list_names:
+        try:
+            with open(os.path.join(DATA_DIR, f"{name}.json"), "r", encoding="utf-8") as lf:
+                bundled_data.append(json.load(lf))
+        except Exception:
+            pass
+            
+    with open(os.path.join(DATA_DIR, "_list_bundled.json"), "w", encoding="utf-8") as f:
+        json.dump(bundled_data, f, separators=(',', ':')) # Minified
+
+    print(f"\nDone! Rebuilt _list.json and _list_bundled.json with {len(new_list_names)} levels")
 
 if __name__ == '__main__':
     main()

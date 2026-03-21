@@ -30,9 +30,14 @@
             type="text/css"
             href="/css/components/tabs.css"
         />
-        <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
-        <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
-        <script type="module" src="/js/main.js"></script>
+        <script defer src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
+        <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
+        
+        <!-- Preload bundle -->
+        <link rel="preload" href="/data/_list_bundled.json" as="fetch" crossorigin="anonymous">
+        <link rel="preload" href="/data/_list.json" as="fetch" crossorigin="anonymous">
+
+        <script defer type="module" src="/js/main.js"></script>
         <style>
             html { background-color: var(--color-background, white); }
             html.dark { background-color: #1c1b1f; }

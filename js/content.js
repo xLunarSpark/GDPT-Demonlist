@@ -12,6 +12,28 @@ export async function fetchList() {
     const listResult = await fetch(`${dir}/_list.json`);
     try {
         const list = await listResult.json();
+        
+        try {
+            const bundledResult = await fetch(`${dir}/_list_bundled.json`);
+            if (bundledResult.ok) {
+                const bundledData = await bundledResult.json();
+                return bundledData.map((level, rank) => {
+                    return [
+                        {
+                            ...level,
+                            path: list[rank],
+                            records: level.records.sort(
+                                (a, b) => b.percent - a.percent,
+                            ),
+                        },
+                        null,
+                    ];
+                });
+            }
+        } catch (e) {
+            // Fallback
+        }
+
         return await Promise.all(
             list.map(async (path, rank) => {
                 const levelResult = await fetch(`${dir}/${path}.json`);
