@@ -69,7 +69,7 @@ def main():
                     if normalize_name(cr['user']) == norm_player:
                         found = True
                         break
-                    # Also check if video link matches exactly (very strong signal)
+                    # Also check if video link matches
                     if cr.get('link') and r.get('video') and cr['link'] == r['video']:
                         found = True
                         break
