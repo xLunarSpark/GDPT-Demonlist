@@ -21,6 +21,12 @@
             "link": "https://www.youtube.com/watch?v=iNmdTN2mX8s&t=78s",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "MalandroGaming",
+            "link": "https://www.youtube.com/watch?v=iNmdTN2mX8s",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

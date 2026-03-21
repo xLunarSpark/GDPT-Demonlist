@@ -37,6 +37,18 @@
             "link": "https://www.youtube.com/watch?v=Wby7X_xkhX0",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "[1319] Xanii",
+            "link": "https://www.youtube.com/watch?v=GCyZVX6X7zg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=Nr8G_KRyWWk",
+            "percent": 67,
+            "hz": 360
         }
     ]
 }

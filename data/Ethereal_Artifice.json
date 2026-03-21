@@ -68,6 +68,18 @@
             "link": "https://www.youtube.com/watch?v=0dCmuBR--qA",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "[MYS] tetrys",
+            "link": "https://www.youtube.com/watch?v=qysnHE5-L-Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "YT kerfuffles",
+            "link": "https://www.youtube.com/watch?v=ONP2Li04c3w",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

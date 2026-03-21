@@ -380,24 +380,45 @@
                     document.getElementById('d-filename').value = data.name.replace(/ /g, "_");
                     document.getElementById('d-position').value = data.position || "";
 
-                    // Fetch Portuguese records from Pointercrate
+                    // Fetch AREDL Records
+                    let aredlPtRecords = [];
                     try {
-                        setStatus(`Fetching Portuguese records from Pointercrate for ${data.name}...`, "info");
-                        const pcSearch = await fetch("https://pointercrate.com/api/v2/demons/listed/?name=" + encodeURIComponent(data.name));
+                        const aredlRecsRes = await fetch(`https://api.aredl.net/api/aredl/levels/${targetAredlLevel.level_id}/records`);
+                        if(aredlRecsRes.ok) {
+                            const aRecs = await aredlRecsRes.json();
+                            aredlPtRecords = aRecs
+                                .filter(r => r.submitted_by && r.submitted_by.country === 620)
+                                .map(r => ({
+                                    user: r.submitted_by.global_name || r.submitted_by.username,
+                                    link: r.video_url,
+                                    percent: 100,
+                                    hz: 360
+                                }));
+                        }
+                    } catch(e) {
+                        console.error("Failed fetching AREDL records", e);
+                    }
+
+                    // Fetch Pointercrate Records
+                    let pcPtRecords = [];
+                    try {
+                        setStatus(`Fetching Portuguese records from Pointercrate & AREDL for ${data.name}...`, "info");
+                        const pcSearch = await fetch(`https://pointercrate.com/api/v2/demons/listed/?name=${encodeURIComponent(data.name)}`);
                         if(pcSearch.ok) {
                             const pcList = await pcSearch.json();
                             if(pcList.length > 0) {
-                                const pcRes = await fetch("https://pointercrate.com/api/v2/demons/" + pcList[0].id + "/?__=");
+                                const pcRes = await fetch(`https://pointercrate.com/api/v2/demons/${pcList[0].id}/?__=`);
                                 if(pcRes.ok) {
                                     const pcFull = await pcRes.json();
                                     const allRecords = pcFull.data.records || [];
-                                    const ptRecords = allRecords.filter(r => r.nationality && r.nationality.country_code === 'PT').map(r => ({
-                                        user: r.player.name,
-                                        link: r.video,
-                                        percent: r.progress,
-                                        hz: 360
-                                    }));
-                                    demonData.records = ptRecords;
+                                    pcPtRecords = allRecords
+                                        .filter(r => r.nationality && r.nationality.country_code === 'PT')
+                                        .map(r => ({
+                                            user: r.player.name,
+                                            link: r.video,
+                                            percent: r.progress,
+                                            hz: 360
+                                        }));
                                 }
                             }
                         }
@@ -405,8 +426,25 @@
                         console.error("Failed fetching PC records", e);
                     }
 
+                    // 3. Deduplicate (AREDL + Pointercrate)
+                    const combinedRecords = [...aredlPtRecords, ...pcPtRecords];
+                    const uniqueRecordsMap = new Map();
+                    // Map by lowercase username 
+                    combinedRecords.forEach(rec => {
+                        const lowerName = rec.user.toLowerCase().trim(); 
+                        // AREDL gets priority
+                        if (!uniqueRecordsMap.has(lowerName)) {
+                            uniqueRecordsMap.set(lowerName, rec);
+                        } else if (rec.percent > uniqueRecordsMap.get(lowerName).percent) {
+                            // If pointercrate has a better %, replace it
+                            uniqueRecordsMap.set(lowerName, rec);
+                        }
+                    });
+                    
+                    demonData.records = Array.from(uniqueRecordsMap.values());
+                    
                     document.getElementById('d-records').value = JSON.stringify(demonData.records);
-                    setStatus(`Successfully fetched ${data.name} with ${demonData.records.length} PT records! Ready to push.`, "success");
+                    setStatus(`Successfully fetched ${data.name} with ${demonData.records.length} PT records (merged AREDL & PC)! Ready to push.`, "success");
                 } catch(e) {
                     setStatus(e.message, "error");
                 }

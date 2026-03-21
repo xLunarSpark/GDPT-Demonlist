@@ -27,6 +27,18 @@
             "link": "https://www.youtube.com/watch?v=m1sDEKqVHCA",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=t9q9ODYx6BI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "[WBT] Taiago",
+            "link": "https://www.youtube.com/watch?v=KzxifUn2CpM",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

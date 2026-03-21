@@ -18,6 +18,12 @@
             "link": "https://www.youtube.com/watch?v=W8mNrOuh-TU",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "hechie",
+            "link": "https://www.youtube.com/watch?v=3TcS7SVbTBM",
+            "percent": 70,
+            "hz": 360
         }
     ]
 }
