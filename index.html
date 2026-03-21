@@ -57,6 +57,17 @@
         <script defer src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
         <script defer src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
         
+                <!-- Module Preloads -->
+        <link rel="modulepreload" href="/js/main.js">
+        <link rel="modulepreload" href="/js/routes.js">
+        <link rel="modulepreload" href="/js/pages/List.js">
+        <link rel="modulepreload" href="/js/content.js">
+        <link rel="modulepreload" href="/js/score.js">
+        <link rel="modulepreload" href="/js/util.js">
+        <link rel="modulepreload" href="/js/components/Spinner.js">
+        <link rel="modulepreload" href="/js/components/List/LevelAuthors.js">
+        <link rel="preload" href="/data/_editors.json" as="fetch" crossorigin="anonymous">
+
         <!-- Preload bundle -->
         <link rel="preload" href="/data/_list_bundled.json" as="fetch" crossorigin="anonymous">
         <link rel="preload" href="/data/_list.json" as="fetch" crossorigin="anonymous">
