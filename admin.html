@@ -649,24 +649,35 @@
                 currentSubmissions.forEach(sub => {
                     const el = document.createElement('div');
                     el.style.border = "1px solid var(--color-background-hover)";
-                    el.style.padding = "1rem";
-                    el.style.borderRadius = "4px";
+                    el.style.padding = "1.5rem";
+                    el.style.borderRadius = "8px";
                     el.style.background = "var(--color-background)";
                     
                     el.innerHTML = `
-                        <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-                            <div style="flex:1;">
-                                <strong style="color:var(--color-primary)">${sub.player}</strong> 
-                                on <strong>${sub.level}</strong> 
-                                (${sub.percent}%, ${sub.hz} Hz)
-                                <br/>
-                                <a href="${sub.video}" target="_blank" style="color:#60a5fa; font-size:0.9em; margin-right: 1rem;">🎥 ${sub.video}</a>
-                                <a href="${sub.raw}" target="_blank" style="color:#60a5fa; font-size:0.9em;">📁 ${sub.raw}</a>
-                                ${sub.note ? `<div style="margin-top:0.5rem; background: var(--color-background-hover); padding: 0.5rem; border-radius: 4px; font-size: 0.85em; color: var(--color-on-background); border-left: 2px solid var(--color-primary);"><strong>Note:</strong> ${sub.note}</div>` : ''}
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap: 1.5rem;">
+                            <div style="flex:1; display:flex; flex-direction:column; gap: 0.75rem;">
+                                <div style="font-size: 1.1em;">
+                                    <strong style="color:var(--color-primary); font-size: 1.2em;">${sub.player}</strong> 
+                                    <span style="color:var(--color-on-background)"> on </span>
+                                    <strong style="color:var(--color-on-background); font-size: 1.1em;">${sub.level}</strong> 
+                                    <span style="color:var(--color-on-background); opacity: 0.8; font-size: 0.9em; margin-left: 0.25rem;">(${sub.percent}%, ${sub.hz} Hz)</span>
+                                </div>
+                                <div style="display:flex; flex-direction:column; gap: 0.5rem;">
+                                    <a href="${sub.video}" target="_blank" style="color:#60a5fa; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; width: fit-content;">
+                                        <span style="font-size: 1.2em;">🎥</span> <span style="text-decoration: underline;">${sub.video}</span>
+                                    </a>
+                                    ${sub.raw ? `<a href="${sub.raw}" target="_blank" style="color:#60a5fa; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; width: fit-content;">
+                                        <span style="font-size: 1.2em;">📁</span> <span style="text-decoration: underline;">${sub.raw}</span>
+                                    </a>` : ''}
+                                </div>
+                                ${sub.note ? `<div style="margin-top:0.25rem; background: var(--color-background-hover); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.95em; color: var(--color-on-background); border-left: 3px solid var(--color-primary); line-height: 1.5;">
+                                    <strong style="display:block; margin-bottom:0.25rem; font-size: 0.9em; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.8;">Note</strong>
+                                    ${sub.note}
+                                </div>` : ''}
                             </div>
-                            <div style="display:flex; gap:0.5rem; flex-direction:column; min-width:80px; margin-left:1rem;">
-                                <button class="btn" onclick="approveSubmission('${sub.id}')" style="background:#22c55e; color:white; border:none; padding:0.5rem; font-size:0.85em;">Approve</button>
-                                <button class="btn" onclick="rejectSubmission('${sub.id}')" style="background:var(--color-error); color:white; border:none; padding:0.5rem; font-size:0.85em;">Deny</button>
+                            <div style="display:flex; gap:0.5rem; flex-direction:column; min-width:110px;">
+                                <button class="btn" onclick="approveSubmission('${sub.id}')" style="background:#22c55e; color:white; border:none; padding:0.6rem 1rem; font-size:1em; font-weight: bold; cursor:pointer; width: 100%; justify-content: center;">Approve</button>
+                                <button class="btn" onclick="rejectSubmission('${sub.id}')" style="background:var(--color-error); color:white; border:none; padding:0.6rem 1rem; font-size:1em; font-weight: bold; cursor:pointer; width: 100%; justify-content: center;">Deny</button>
                             </div>
                         </div>
                     `;
@@ -724,7 +735,7 @@
                             hz: sub.hz
                         });
                     }
-                    
+
                     let targetPosition = cachedList.indexOf(targetSlug) + 1;
                     if (targetPosition === 0) targetPosition = 1; // Fallback
 
