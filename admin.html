@@ -708,12 +708,20 @@
 
                 try {
                     const levelRes = await fetch(`/data/${targetSlug}.json`);
-                    if (!levelRes.ok) {
+                    
+                    const contentType = levelRes.headers.get('content-type');
+                    if (!levelRes.ok || (contentType && contentType.includes('text/html'))) {
                         setStatus(`Level file "${targetSlug}.json" not found. Add the level first in Manage Levels!`, "error");
                         return;
                     }
 
-                    const demonData = await levelRes.json();
+                    let demonData;
+                    try {
+                        demonData = await levelRes.json();
+                    } catch(err) {
+                        setStatus(`Failed to parse "${targetSlug}.json". Missing or invalid data. Did you add the level first?`, "error");
+                        return;
+                    }
                     
                     // Add record
                     let exists = (demonData.records || []).find(r => r.user.toLowerCase() === sub.player.toLowerCase());
