@@ -412,6 +412,19 @@
                     document.getElementById('d-filename').value = data.name.replace(/ /g, "_");
                     document.getElementById('d-position').value = data.position || "";
 
+                    // Fetch AREDL Creators
+                    try {
+                        const aredlCreatorsRes = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}/creators`);
+                        if (aredlCreatorsRes.ok) {
+                            const aredlCreators = await aredlCreatorsRes.json();
+                            if (aredlCreators.length > 0) {
+                                document.getElementById('d-creators').value = aredlCreators.map(c => c.global_name || c.username).join(", ");
+                            }
+                        }
+                    } catch(e) {
+                        console.error("Failed fetching AREDL creators", e);
+                    }
+
                     // Fetch AREDL Records
                     let aredlPtRecords = [];
                     try {
@@ -442,16 +455,21 @@
                                 const pcRes = await fetch(`https://pointercrate.com/api/v2/demons/${pcList[0].id}/?__=`);
                                 if(pcRes.ok) {
                                     const pcFull = await pcRes.json();
-                                    
+
+                                    // Only use Pointercrate creators if AREDL creators box is still just the publisher/empty
+                                    let currentCreators = document.getElementById('d-creators').value;
                                     if (pcFull.data.creators && pcFull.data.creators.length > 0) {
                                         let aredlAuthor = data.publisher ? data.publisher.global_name : null;
-                                        let mergedCreators = aredlAuthor ? [aredlAuthor] : [];
-                                        pcFull.data.creators.forEach(c => {
-                                            if (c.name.toLowerCase() !== (aredlAuthor || "").toLowerCase()) {
-                                                mergedCreators.push(c.name);
-                                            }
-                                        });
-                                        document.getElementById('d-creators').value = mergedCreators.join(", ");
+                                        // If the input only has the author, or is empty, we can append PC creators
+                                        if (!currentCreators || currentCreators.trim() === (aredlAuthor || "")) {
+                                            let mergedCreators = aredlAuthor ? [aredlAuthor] : [];
+                                            pcFull.data.creators.forEach(c => {
+                                                if (c.name.toLowerCase() !== (aredlAuthor || "").toLowerCase()) {
+                                                    mergedCreators.push(c.name);
+                                                }
+                                            });
+                                            document.getElementById('d-creators').value = mergedCreators.join(", ");
+                                        }
                                     }
                                     if (pcFull.data.requirement) {
                                         document.getElementById('d-qualify').value = pcFull.data.requirement;
