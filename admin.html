@@ -392,7 +392,7 @@
                         id: data.level_id,
                         name: data.name,
                         author: data.publisher ? data.publisher.global_name : "Unknown",
-                        creators: [],
+                        creators: data.publisher ? [data.publisher.global_name] : [],
                         verifier: data.verifications && data.verifications.length > 0 ? data.verifications[0].submitted_by.global_name : "Unknown",
                         verification: data.verifications && data.verifications.length > 0 ? data.verifications[0].video_url : "",
                         percentToQualify: 100,
@@ -442,6 +442,21 @@
                                 const pcRes = await fetch(`https://pointercrate.com/api/v2/demons/${pcList[0].id}/?__=`);
                                 if(pcRes.ok) {
                                     const pcFull = await pcRes.json();
+                                    
+                                    if (pcFull.data.creators && pcFull.data.creators.length > 0) {
+                                        let aredlAuthor = data.publisher ? data.publisher.global_name : null;
+                                        let mergedCreators = aredlAuthor ? [aredlAuthor] : [];
+                                        pcFull.data.creators.forEach(c => {
+                                            if (c.name.toLowerCase() !== (aredlAuthor || "").toLowerCase()) {
+                                                mergedCreators.push(c.name);
+                                            }
+                                        });
+                                        document.getElementById('d-creators').value = mergedCreators.join(", ");
+                                    }
+                                    if (pcFull.data.requirement) {
+                                        document.getElementById('d-qualify').value = pcFull.data.requirement;
+                                    }
+
                                     const allRecords = pcFull.data.records || [];
                                     pcPtRecords = allRecords
                                         .filter(r => r.nationality && r.nationality.country_code === 'PT')
