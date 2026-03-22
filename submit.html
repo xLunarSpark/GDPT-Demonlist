@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1024" />
+        <title>GDPT Demonlist - Submit Record</title>
+
+        <link rel="icon" href="/list_icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&amp;display=swap" />
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;700&amp;display=swap" rel="stylesheet" />
+        </noscript>
+        
+        <link rel="stylesheet" type="text/css" href="/css/reset.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/typography.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/main.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/nav.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/components/btn.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/list.css" media="print" onload="this.media='all'" />
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="/css/typography.css" />
+            <link rel="stylesheet" type="text/css" href="/css/main.css" />
+            <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
+            <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
+        </noscript>
+        
+        <style>
+            html, body { height: 100%; margin: 0; display: flex; flex-direction: column; background: var(--color-background, white); color: var(--color-on-background, black); }
+            
+            .dark { 
+                color-scheme: dark; 
+                --color-background: #1c1b1f; 
+                --color-on-background: white; 
+                --color-background-hover: #27262c; 
+                --color-on-background-hover: white; 
+                --color-primary: #FF0000; 
+                --color-on-primary: white; 
+                --color-error: #de0000; 
+                --color-on-error: white;
+            }
+
+            .admin-wrapper {
+                grid-column: 2;
+                padding: 2rem 0;
+                width: 100%;
+            }
+
+            .admin-card {
+                background-color: var(--color-background-hover, #f0f0f0) !important;
+                border-radius: 8px;
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .admin-card .type-title-sm {
+                color: var(--color-on-background, black);
+                padding-bottom: 0.5rem;
+                border-bottom: 2px solid var(--color-primary, #000);
+                margin-bottom: 1.5rem;
+                display:inline-block;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+                color: var(--color-on-background, black);
+                font-weight: bold;
+            }
+
+            input, textarea {
+                width: 100%;
+                background: var(--color-background, #fff);
+                color: var(--color-on-background, black);
+                border: 2px solid var(--color-background-hover, #ccc);
+                padding: 1rem;
+                border-radius: 4px;
+                font-family: 'Lexend Deca', sans-serif;
+                margin-bottom: 1.5rem;
+                font-size: 1rem;
+                box-sizing: border-box;
+                transition: border-color 0.2s;
+            }
+
+            input:focus, textarea:focus {
+                outline: none;
+                border-color: var(--color-primary);
+            }
+
+            .flex-row { display: flex; gap: 1rem; }
+            .flex-row > * { flex: 1; }
+            
+            .hint-text {
+                font-size: 0.85em;
+                color: #aaa;
+                margin-top: -1.2rem;
+                margin-bottom: 1.5rem;
+                display: block;
+            }
+
+            .hidden { display: none !important; }
+
+            #status-msg {
+                margin-top: 1rem;
+                padding: 1rem;
+                border-radius: 4px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .status-info { background: #3b82f633; color: #60a5fa; }
+            .status-success { background: #22c55e33; color: #4ade80; }
+            .status-error { background: #ef444433; color: #f87171; }
+            
+        </style>
+        <script>
+            (function() {
+                try {
+                    let isDark = JSON.parse(localStorage.getItem('dark')) || false;
+                    if (isDark) {
+                        document.documentElement.classList.add('dark');
+                    }
+                } catch (e) {}
+            })();
+        </script>
+    </head>
+    <body id="app">
+        <header id="header">
+            <div class="logo">
+                <h2>GDPT Demonlist</h2>
+                <p>v1.0.0</p>
+            </div>
+            <nav class="nav">
+                <a class="nav__tab" href="/#/">
+                    <span class="type-label-lg">List</span>
+                </a>
+                <a class="nav__tab" href="/#/leaderboard">
+                    <span class="type-label-lg">Leaderboard</span>
+                </a>
+                <a class="nav__tab" href="/#/roulette">
+                    <span class="type-label-lg">Roulette</span>
+                </a>
+                <a class="nav__tab router-link-active" href="/admin.html">
+                    <span class="type-label-lg">Admin</span>
+                </a>
+                <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
+                    <span class="type-label-lg">Logout</span>
+                </a>
+                <div class="nav__actions">
+                    <button class="nav__icon" onclick="toggleTheme()" style="background: none; border: none; cursor: pointer;">
+                        <img id="theme-icon" src="/assets/dark.svg" alt="Toggle Theme" />
+                    </button>
+                    <a class="nav__icon" href="https://discord.gg/9agBPJnFy4">  
+                        <img src="/assets/discord.svg" alt="Discord Logo" />    
+                    </a>
+                    <a
+                        class="nav__cta type-label-lg"
+                        href="/submit.html"
+                        target="_blank"
+                    >Submit Record</a>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <div style="grid-column: 1"></div>
+            <div class="admin-wrapper">
+                <div class="board">
+                    <h2 class="type-title-md" style="margin-bottom:2rem; text-align:center;">Submit a Record</h2>
+                    
+                    <div class="admin-card">
+                        <span class="type-title-sm">Record Information</span>
+                        <p class="type-body-md" style="margin-bottom: 1.5rem; color: #888;">Fill out the details below to submit a record. Once submitted, it will be reviewed by a list moderator.</p>
+
+                        <form id="submit-form">
+                            <div class="flex-row">
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Player Name *</label>
+                                    <input type="text" id="s-player" placeholder="Your GD Username" required>
+                                </div>
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Level Name *</label>
+                                    <input type="text" id="s-level" placeholder="e.g. Bloodbath" required>
+                                </div>
+                            </div>
+
+                            <div class="flex-row">
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Video Link *</label>
+                                    <input type="text" id="s-video" placeholder="https://youtube.com/..." required>
+                                </div>
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Raw Footage *</label>
+                                    <input type="text" id="s-raw" placeholder="Google Drive, etc." required>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-row">
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Refresh Rate (Hz/FPS) *</label>
+                                    <input type="number" id="s-hz" placeholder="e.g. 360" required>
+                                </div>
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Percentage (%) *</label>
+                                    <input type="number" id="s-percent" value="100" min="0" max="100" required>
+                                </div>
+                            </div>
+
+                            <label class="type-label-lg">Additional Notes (Optional)</label>
+                            <textarea id="s-note" rows="3" placeholder="Any extra information for the moderators..."></textarea>
+
+                            <button type="submit" id="submit-btn" class="btn" style="width:100%; justify-content:center; background:var(--color-primary); color:white; margin-top: 1rem;">
+                                Submit Record
+                            </button>
+                        </form>
+                    </div>
+
+                    <div id="status-msg" class="hidden type-label-lg"></div>
+                </div>
+            </div>
+            <div style="grid-column: 3"></div>
+</main>
+
+        <script>
+            // Sync theme
+            let isDark = JSON.parse(localStorage.getItem('dark')) || false;
+
+            function applyTheme() {
+                const els = [document.documentElement, document.body, document.getElementById('header'), document.getElementById('main')];
+                els.forEach(el => isDark ? el.classList.add('dark') : el.classList.remove('dark'));
+                document.getElementById('theme-icon').src = isDark ? '/assets/light.svg' : '/assets/dark.svg';
+            }
+
+            if (isDark) {
+                applyTheme();
+            }
+
+            function toggleTheme() {
+                isDark = !isDark;
+                applyTheme();
+                localStorage.setItem('dark', JSON.stringify(isDark));
+            }
+
+            const statusMsg = document.getElementById('status-msg');
+
+            function setStatus(msg, type) {
+                statusMsg.textContent = msg;
+                statusMsg.className = `type-label-lg status-${type}`;
+                statusMsg.classList.remove('hidden');
+            }
+
+            document.getElementById('submit-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const btn = document.getElementById('submit-btn');
+                btn.disabled = true;
+                btn.textContent = "Submitting...";
+                let levelName = document.getElementById('s-level').value.trim();
+                let percent = parseInt(document.getElementById('s-percent').value);
+                
+                setStatus("Validating...", "info");
+                
+                try {
+                    // Fetch list_bundled
+                    const listRes = await fetch('/data/_list_bundled.json');
+                    if (listRes.ok) {
+                        const bundled = await listRes.json();
+                        // Find index
+                        const lvlIndex = bundled.findIndex(l => l.name.toLowerCase() === levelName.toLowerCase() || l.id.toString() === levelName);
+                        
+                        if (lvlIndex !== -1) {
+                            const levelData = bundled[lvlIndex];
+                            levelName = levelData.name; // Normalize name
+                            const position = lvlIndex + 1;
+                            const minPercent = levelData.percentToQualify || 100;
+                            
+                            if (position <= 75) {
+                                // Main list???
+                                if (percent < minPercent) {
+                                    setStatus(`Error: ${levelData.name} is Main List (#${position}). You need at least ${minPercent}% to submit.`, "error");
+                                    btn.disabled = false;
+                                    btn.textContent = "Submit Record";
+                                    return;
+                                }
+                            } else {
+                                // Not main list :(
+                                if (percent < 100) {
+                                    setStatus(`Error: ${levelData.name} is outside Main List (Legacy or Extended). You must have 100% to submit.`, "error");
+                                    btn.disabled = false;
+                                    btn.textContent = "Submit Record";
+                                    return;
+                                }
+                            }
+                        } else {
+                            if(!confirm(`Warning: The level "${levelName}" wasn't found on the list. Submit anyway?`)) {
+                                btn.disabled = false;
+                                btn.textContent = "Submit Record";
+                                setStatus("Aborted.", "info");
+                                return;
+                            }
+                        }
+                    }
+                } catch(e) {
+                    console.error("Validation fetch error", e);
+                }
+
+                setStatus("Sending submission...", "info");
+
+                const payload = {
+                    player: document.getElementById('s-player').value.trim(),
+                    level: levelName,
+                    video: document.getElementById('s-video').value.trim(),
+                    raw: document.getElementById('s-raw').value.trim(),
+                    hz: parseInt(document.getElementById('s-hz').value),
+                    percent: percent,
+                    note: document.getElementById('s-note').value.trim()
+                };
+
+                try {
+                    const res = await fetch('/api/submissions', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    
+                    if (res.ok) {
+                        setStatus("Successfully submitted! A moderator will review it soon.", "success");
+                        document.getElementById('submit-form').reset();
+                    } else {
+                        setStatus("Error submitting: " + await res.text(), "error");
+                    }
+                } catch(e) {
+                    setStatus("Error: " + e.message, "error");
+                }
+                
+                btn.disabled = false;
+                btn.textContent = "Submit Record";
+            });
+        </script>
+    </body>
+</html>
