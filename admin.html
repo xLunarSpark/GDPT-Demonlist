@@ -206,6 +206,11 @@
                                         <label class="type-label-lg">Target Position</label>
                                         <input type="number" id="d-position" placeholder="e.g. 1" min="1" required>
                                         <span class="hint-text" id="pos-hint">Loading max position...</span>
+                                        <div id="position-sandwich" class="admin-card hidden" style="margin-top: 1rem; margin-bottom: 0; padding: 1rem; background: var(--color-background-hover, #f0f0f0); border: 2px solid var(--color-primary);">
+                                            <span class="type-label-lg" style="font-size: 0.9em; margin-bottom:0.5rem; display:block;">Placement Preview</span>
+                                            <div id="sandwich-content" class="type-body-md" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                            </div>
+                                        </div>
                                     </div>
                                     <div style="flex:1">
                                         <label class="type-label-lg">Internal Filename</label>
@@ -514,6 +519,67 @@
                     setStatus("Delete Error: " + await res.text(), "error");
                 }
             }
+
+            let cachedList = [];
+            async function loadList() {
+                try {
+                    const res = await fetch('/data/_list.json');
+                    if (res.ok) {
+                        cachedList = await res.json();
+                        const posHint = document.getElementById('pos-hint');
+                        if(posHint) posHint.textContent = `Valid positions: 1 to ${cachedList.length + 1}`;
+                    }
+                } catch(e) {
+                    console.error("Could not load list for sandwich", e);
+                }
+            }
+            loadList();
+
+            function updateSandwich() {
+                const posInput = document.getElementById('d-position');
+                const nameInput = document.getElementById('d-name');
+                const sandwichDiv = document.getElementById('position-sandwich');
+                const contentDiv = document.getElementById('sandwich-content');
+
+                if (!posInput.value || cachedList.length === 0) {
+                    sandwichDiv.classList.add('hidden');
+                    return;
+                }
+
+                let targetPos = parseInt(posInput.value);
+                let newName = nameInput.value.trim() || "[New Level]";
+
+                if (isNaN(targetPos) || targetPos < 1) return;
+                
+                // Cap it at max
+                if (targetPos > cachedList.length + 1) targetPos = cachedList.length + 1;
+
+                sandwichDiv.classList.remove('hidden');
+
+                // Generate sandwich
+                let html = [];
+
+                let beforePos = targetPos - 1;
+                let afterPos = targetPos;
+
+                if (beforePos > 0 && beforePos <= cachedList.length) {
+                    const beforeName = cachedList[beforePos - 1].replace(/_/g, ' ');
+                    html.push(`<div style="opacity: 0.6;">#${beforePos} - ${beforeName}</div>`);
+                }
+
+                html.push(`<div style="color: var(--color-primary); font-weight: bold; font-size: 1.1em; background: rgba(0,0,0,0.1); padding: 4px; border-radius: 4px;">#${targetPos} - <span style="text-shadow: 0 0 5px var(--color-primary)">${newName}</span></div>`);
+                
+                if (afterPos <= cachedList.length) {
+                    const afterName = cachedList[afterPos - 1].replace(/_/g, ' ');
+                    html.push(`<div style="opacity: 0.6;">#${afterPos + 1} - ${afterName}</div>`);
+                }
+
+                contentDiv.innerHTML = html.join('');
+            }
+
+            document.getElementById('d-position').addEventListener('input', updateSandwich);
+            document.getElementById('d-name').addEventListener('input', updateSandwich);
+
         </script>
     </body>
 </html>

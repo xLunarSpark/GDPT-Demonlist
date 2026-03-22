@@ -74,12 +74,16 @@ export async function onRequest(context) {
             return new Response(JSON.stringify({ error: "Failed to commit demon data" }), { status: 500 });
         }
 
-        // Update _list.json
+        // Update _list.json and _list_bundled.json
         if (!isNaN(targetPosition) && targetPosition > 0) {
             const listFile = await getFile("data/_list.json");
+            const bundledFile = await getFile("data/_list_bundled.json");
+
             if (listFile) {
                 let listArray = [];
                 try { listArray = JSON.parse(listFile.content); } catch (e) {}
+
+                const oldIndex = listArray.indexOf(fileId);
 
                 // Remove level from current position
                 listArray = listArray.filter(x => x !== fileId);
@@ -89,6 +93,24 @@ export async function onRequest(context) {
                 listArray.splice(insertIndex, 0, fileId);
 
                 await commitFile("data/_list.json", JSON.stringify(listArray, null, 4), `Admin Panel: Move ${fileId} to #${targetPosition}`, listFile.sha);
+
+                if (bundledFile) {
+                    let bundledArray = [];
+                    try { bundledArray = JSON.parse(bundledFile.content); } catch (e) {}
+
+                    // Remove from bundle (trusting oldIndex, fallback to name)
+                    if (oldIndex !== -1 && oldIndex < bundledArray.length) {
+                        bundledArray.splice(oldIndex, 1);
+                    } else {
+                        const fallbackIdx = bundledArray.findIndex(x => x.name === demonData.name);
+                        if (fallbackIdx !== -1) bundledArray.splice(fallbackIdx, 1);
+                    }
+
+                    // Insert into new position
+                    bundledArray.splice(insertIndex, 0, demonData);
+
+                    await commitFile("data/_list_bundled.json", JSON.stringify(bundledArray), `Admin Panel: Update bundled data for ${fileId}`, bundledFile.sha);
+                }
             }
         }
 
@@ -118,13 +140,26 @@ export async function onRequest(context) {
             })
         });
 
-        // Also remove from _list.json
+        // Also remove from _list.json and _list_bundled.json
         const listFile = await getFile("data/_list.json");
+        const bundledFile = await getFile("data/_list_bundled.json");
         if (listFile) {
             let listArray = [];
             try { listArray = JSON.parse(listFile.content); } catch (e) {}
+            
+            const oldIndex = listArray.indexOf(fileId);
             const newArray = listArray.filter(x => x !== fileId);
             await commitFile("data/_list.json", JSON.stringify(newArray, null, 4), `Admin Panel: Remove ${fileId} from list`, listFile.sha);
+            
+            if (bundledFile && oldIndex !== -1) {
+                let bundledArray = [];
+                try { bundledArray = JSON.parse(bundledFile.content); } catch (e) {}
+                
+                if (oldIndex < bundledArray.length) {
+                    bundledArray.splice(oldIndex, 1);
+                    await commitFile("data/_list_bundled.json", JSON.stringify(bundledArray), `Admin Panel: Remove ${fileId} from bundled list`, bundledFile.sha);
+                }
+            }
         }
 
         if (resDel.ok) return new Response(JSON.stringify({ success: true }));
