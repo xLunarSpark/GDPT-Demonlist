@@ -502,11 +502,12 @@
                         console.error("Failed fetching PC records", e);
                     }
 
-                      // Define known player aliases to standardize names across APIs
+                      // #rapenuno
                       const playerAliases = {
                           "billie eilish": "Ka1sa",
-                          "ka1isa": "Ka1sa"
-                          // Add more aliases here in lowercase: "Canonical Name"
+                          "ka1isa": "Ka1sa",
+                          "l_lobo1811": "Lobo",
+                          "Benson Boone": "Lobo"
                       };
 
                       // 3. Deduplicate (Existing + AREDL + Pointercrate)
@@ -517,7 +518,6 @@
                       combinedRecords.forEach(rec => {
                           let lowerName = rec.user.toLowerCase().trim();
                           
-                          // Apply alias standardization
                           if (playerAliases[lowerName]) {
                               rec.user = playerAliases[lowerName];
                               lowerName = rec.user.toLowerCase().trim();
