@@ -502,13 +502,28 @@
                         console.error("Failed fetching PC records", e);
                     }
 
+                      // Define known player aliases to standardize names across APIs
+                      const playerAliases = {
+                          "billie eilish": "Ka1sa",
+                          "ka1isa": "Ka1sa"
+                          // Add more aliases here in lowercase: "Canonical Name"
+                      };
+
                       // 3. Deduplicate (Existing + AREDL + Pointercrate)
                       const combinedRecords = [...existingRecords, ...aredlPtRecords, ...pcPtRecords];
-                    const uniqueRecordsMap = new Map();
-                    // Map by lowercase username 
-                    combinedRecords.forEach(rec => {
-                        const lowerName = rec.user.toLowerCase().trim(); 
-                        // AREDL gets priority
+                      const uniqueRecordsMap = new Map();
+                      
+                      // Map by standard username
+                      combinedRecords.forEach(rec => {
+                          let lowerName = rec.user.toLowerCase().trim();
+                          
+                          // Apply alias standardization
+                          if (playerAliases[lowerName]) {
+                              rec.user = playerAliases[lowerName];
+                              lowerName = rec.user.toLowerCase().trim();
+                          }
+                          
+                          // AREDL/Existing gets priority
                         if (!uniqueRecordsMap.has(lowerName)) {
                             uniqueRecordsMap.set(lowerName, rec);
                         } else if (rec.percent > uniqueRecordsMap.get(lowerName).percent) {
