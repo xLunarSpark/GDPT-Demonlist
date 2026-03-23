@@ -388,20 +388,31 @@
                     if (!res.ok) throw new Error("Network error fetching Level");
                     const data = await res.json();
                     
-                    const demonData = {
-                        id: data.level_id,
-                        name: data.name,
-                        author: data.publisher ? data.publisher.global_name : "Unknown",
-                        creators: data.publisher ? [data.publisher.global_name] : [],
-                        verifier: data.verifications && data.verifications.length > 0 ? data.verifications[0].submitted_by.global_name : "Unknown",
-                        verification: data.verifications && data.verifications.length > 0 ? data.verifications[0].video_url : "",
-                        percentToQualify: 100,
-                        password: "Free to Copy",
-                        records: []
-                    };
+                      let existingRecords = [];
+                      try {
+                          const currentRecsStr = document.getElementById('d-records').value.trim();
+                          if (currentRecsStr) {
+                              const parsed = JSON.parse(currentRecsStr);
+                              if (Array.isArray(parsed)) {
+                                  existingRecords = parsed;
+                              }
+                          }
+                      } catch(e) {}
 
-                    document.getElementById('d-lvl-id').value = demonData.id;
-                    document.getElementById('d-name').value = demonData.name;
+                      const demonData = {
+                          id: data.level_id,
+                          name: data.name,
+                          author: data.publisher ? data.publisher.global_name : "Unknown",
+                          creators: data.publisher ? [data.publisher.global_name] : [],
+                          verifier: data.verifications && data.verifications.length > 0 ? data.verifications[0].submitted_by.global_name : "Unknown",
+                          verification: data.verifications && data.verifications.length > 0 ? data.verifications[0].video_url : "",
+                          percentToQualify: 100,
+                          password: "Free to Copy",
+                          records: existingRecords
+                      };
+
+                      document.getElementById('d-lvl-id').value = demonData.id;
+                      document.getElementById('d-name').value = demonData.name;
                     document.getElementById('d-author').value = demonData.author;
                     document.getElementById('d-creators').value = demonData.creators.join(", ");
                     document.getElementById('d-verifier').value = demonData.verifier;
@@ -428,7 +439,7 @@
                     // Fetch AREDL Records
                     let aredlPtRecords = [];
                     try {
-                        const aredlRecsRes = await fetch(`https://api.aredl.net/api/aredl/levels/${targetAredlLevel.level_id}/records`);
+                          const aredlRecsRes = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}/records`);
                         if(aredlRecsRes.ok) {
                             const aRecs = await aredlRecsRes.json();
                             aredlPtRecords = aRecs
@@ -491,8 +502,8 @@
                         console.error("Failed fetching PC records", e);
                     }
 
-                    // 3. Deduplicate (AREDL + Pointercrate)
-                    const combinedRecords = [...aredlPtRecords, ...pcPtRecords];
+                      // 3. Deduplicate (Existing + AREDL + Pointercrate)
+                      const combinedRecords = [...existingRecords, ...aredlPtRecords, ...pcPtRecords];
                     const uniqueRecordsMap = new Map();
                     // Map by lowercase username 
                     combinedRecords.forEach(rec => {
