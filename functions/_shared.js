@@ -95,6 +95,7 @@ export function createGitHubContentClient(env) {
     const token = env.GITHUB_TOKEN;
     const owner = env.GITHUB_OWNER;
     const repo = env.GITHUB_REPO;
+    const branch = env.GITHUB_BRANCH || env.CF_PAGES_BRANCH || DEFAULT_BRANCH;
 
     if (!token || !owner || !repo) {
         throw new Error('Missing GitHub credentials in Cloudflare Env');
@@ -108,8 +109,13 @@ export function createGitHubContentClient(env) {
         Accept: 'application/vnd.github+json',
     };
 
+    function withBranchRef(url) {
+        const ref = encodeURIComponent(branch);
+        return `${url}${url.includes('?') ? '&' : '?'}ref=${ref}`;
+    }
+
     async function getFile(path) {
-        const res = await fetch(`${githubApiUrl}/${path}`, {
+        const res = await fetch(withBranchRef(`${githubApiUrl}/${path}`), {
             headers: baseHeaders,
         });
 
@@ -138,7 +144,7 @@ export function createGitHubContentClient(env) {
         const body = {
             message,
             content: encodeBase64Utf8(content),
-            branch: DEFAULT_BRANCH,
+            branch,
         };
 
         if (sha) {
@@ -172,7 +178,7 @@ export function createGitHubContentClient(env) {
             body: JSON.stringify({
                 message,
                 sha,
-                branch: DEFAULT_BRANCH,
+                branch,
             }),
         });
 

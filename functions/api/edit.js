@@ -6,6 +6,7 @@ import {
 
 const LIST_FILE = 'data/_list.json';
 const BUNDLED_FILE = 'data/_list_bundled.json';
+const MAX_GITHUB_WRITE_RETRIES = 2;
 
 function safeParseArray(text) {
     try {
@@ -18,6 +19,255 @@ function safeParseArray(text) {
 
 function clamp(value, min, max) {
     return Math.max(min, Math.min(max, value));
+}
+
+function isShaConflict(error) {
+    const msg = String(error?.message ?? error);
+    return msg.includes(' failed: 409') && msg.includes('sha is at');
+}
+
+function isNotFound(error) {
+    const msg = String(error?.message ?? error);
+    return msg.includes(' failed: 404');
+}
+
+async function updateListForMove(github, fileId, targetPosition, initialFile = null) {
+    let listFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!listFile) {
+            listFile = await github.getFile(LIST_FILE);
+        }
+
+        if (!listFile) {
+            throw new Error('List file not found');
+        }
+
+        const parsedList = safeParseArray(listFile.content);
+        let listArray = parsedList.filter((x) => typeof x === 'string');
+        const oldIndex = listArray.indexOf(fileId);
+
+        listArray = listArray.filter((x) => x !== fileId);
+        const insertIndex = clamp(targetPosition - 1, 0, listArray.length);
+        listArray.splice(insertIndex, 0, fileId);
+
+        try {
+            await github.putFile(
+                LIST_FILE,
+                JSON.stringify(listArray, null, 4),
+                `Admin Panel: Move ${fileId} to #${targetPosition}`,
+                listFile.sha,
+            );
+
+            return { oldIndex, insertIndex };
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            listFile = null;
+        }
+    }
+
+    throw lastError;
+}
+
+async function updateListForDelete(github, fileId, initialFile = null) {
+    let listFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!listFile) {
+            listFile = await github.getFile(LIST_FILE);
+        }
+
+        if (!listFile) {
+            throw new Error('List file not found');
+        }
+
+        const parsedList = safeParseArray(listFile.content);
+        const listArray = parsedList.filter((x) => typeof x === 'string');
+
+        const oldIndex = listArray.indexOf(fileId);
+        const newArray = listArray.filter((x) => x !== fileId);
+
+        if (newArray.length === listArray.length) {
+            return { oldIndex, changed: false };
+        }
+
+        try {
+            await github.putFile(
+                LIST_FILE,
+                JSON.stringify(newArray, null, 4),
+                `Admin Panel: Remove ${fileId} from list`,
+                listFile.sha,
+            );
+
+            return { oldIndex, changed: true };
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            listFile = null;
+        }
+    }
+
+    throw lastError;
+}
+
+async function updateBundledForMove(github, fileId, demonData, insertIndex, oldIndex, initialFile = null) {
+    let bundledFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!bundledFile) {
+            bundledFile = await github.getFile(BUNDLED_FILE);
+        }
+
+        if (!bundledFile) {
+            return false;
+        }
+
+        const bundledArray = safeParseArray(bundledFile.content);
+        const safeInsertIndex = clamp(insertIndex, 0, bundledArray.length);
+
+        let removeIndex = -1;
+        const demonId = demonData?.id;
+        const demonName = demonData?.name;
+        removeIndex = bundledArray.findIndex((x) => x?.id === demonId || x?.name === demonName);
+
+        if (removeIndex === -1 && oldIndex !== -1 && oldIndex < bundledArray.length) {
+            const candidate = bundledArray[oldIndex];
+            if (candidate?.id === demonId || candidate?.name === demonName) {
+                removeIndex = oldIndex;
+            }
+        }
+
+        if (removeIndex !== -1) {
+            bundledArray.splice(removeIndex, 1);
+        }
+
+        bundledArray.splice(safeInsertIndex, 0, demonData);
+
+        try {
+            await github.putFile(
+                BUNDLED_FILE,
+                JSON.stringify(bundledArray),
+                `Admin Panel: Update bundled data for ${fileId}`,
+                bundledFile.sha,
+            );
+
+            return true;
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            bundledFile = null;
+        }
+    }
+
+    throw lastError;
+}
+
+async function updateBundledForDelete(github, fileId, demonDataForFallback, oldIndex, initialFile = null) {
+    let bundledFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!bundledFile) {
+            bundledFile = await github.getFile(BUNDLED_FILE);
+        }
+
+        if (!bundledFile) {
+            return false;
+        }
+
+        const bundledArray = safeParseArray(bundledFile.content);
+
+        let removeIndex = -1;
+        if (demonDataForFallback) {
+            const demonId = demonDataForFallback?.id;
+            const demonName = demonDataForFallback?.name;
+            removeIndex = bundledArray.findIndex((x) => x?.id === demonId || x?.name === demonName);
+        }
+
+        if (removeIndex === -1) {
+            const slugName = String(fileId).replace(/_/g, ' ').toLowerCase();
+            removeIndex = bundledArray.findIndex((x) => String(x?.name ?? '').toLowerCase() === slugName);
+        }
+
+        if (removeIndex === -1 && oldIndex !== -1 && oldIndex < bundledArray.length) {
+            const candidateSlug = String(bundledArray[oldIndex]?.name ?? '').replace(/ /g, '_').toLowerCase();
+            if (candidateSlug === String(fileId).toLowerCase()) {
+                removeIndex = oldIndex;
+            }
+        }
+
+        if (removeIndex === -1) {
+            return false;
+        }
+
+        bundledArray.splice(removeIndex, 1);
+
+        try {
+            await github.putFile(
+                BUNDLED_FILE,
+                JSON.stringify(bundledArray),
+                `Admin Panel: Remove ${fileId} from bundled list`,
+                bundledFile.sha,
+            );
+
+            return true;
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            bundledFile = null;
+        }
+    }
+
+    throw lastError;
+}
+
+async function deleteDemonFile(github, filename, fileId, initialFile = null) {
+    let demonFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!demonFile) {
+            demonFile = await github.getFile(filename);
+        }
+
+        if (!demonFile) {
+            return false;
+        }
+
+        try {
+            await github.deleteFile(filename, `Admin Panel: Delete ${fileId}`, demonFile.sha);
+            return true;
+        } catch (e) {
+            if (isNotFound(e)) {
+                return false;
+            }
+
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            demonFile = null;
+        }
+    }
+
+    throw lastError;
 }
 
 export async function onRequest(context) {
@@ -77,56 +327,23 @@ export async function onRequest(context) {
             );
 
             if (shouldUpdatePlacements && listFile) {
-                const parsedList = safeParseArray(listFile.content);
-                let listArray = parsedList.filter((x) => typeof x === 'string');
-                const oldIndex = listArray.indexOf(fileId);
-
-                listArray = listArray.filter((x) => x !== fileId);
-
-                const insertIndex = clamp(targetPosition - 1, 0, listArray.length);
-                listArray.splice(insertIndex, 0, fileId);
-
-                const ops = [];
-                ops.push(
-                    github.putFile(
-                        LIST_FILE,
-                        JSON.stringify(listArray, null, 4),
-                        `Admin Panel: Move ${fileId} to #${targetPosition}`,
-                        listFile.sha,
-                    ),
+                const { oldIndex, insertIndex } = await updateListForMove(
+                    github,
+                    fileId,
+                    targetPosition,
+                    listFile,
                 );
 
                 if (bundledFile) {
-                    const bundledArray = safeParseArray(bundledFile.content);
-
-                    let removeIndex = -1;
-                    if (oldIndex !== -1 && oldIndex < bundledArray.length) {
-                        removeIndex = oldIndex;
-                    } else {
-                        const demonId = demonData?.id;
-                        const demonName = demonData?.name;
-                        removeIndex = bundledArray.findIndex(
-                            (x) => x?.id === demonId || x?.name === demonName,
-                        );
-                    }
-
-                    if (removeIndex !== -1) {
-                        bundledArray.splice(removeIndex, 1);
-                    }
-
-                    bundledArray.splice(insertIndex, 0, demonData);
-
-                    ops.push(
-                        github.putFile(
-                            BUNDLED_FILE,
-                            JSON.stringify(bundledArray),
-                            `Admin Panel: Update bundled data for ${fileId}`,
-                            bundledFile.sha,
-                        ),
+                    await updateBundledForMove(
+                        github,
+                        fileId,
+                        demonData,
+                        insertIndex,
+                        oldIndex,
+                        bundledFile,
                     );
                 }
-
-                await Promise.all(ops);
             }
 
             return jsonResponse({
@@ -153,20 +370,6 @@ export async function onRequest(context) {
                 github.getFile(LIST_FILE),
                 github.getFile(BUNDLED_FILE),
             ]);
-
-            const ops = [];
-
-            if (demonFile) {
-                ops.push(
-                    github.deleteFile(
-                        filename,
-                        `Admin Panel: Delete ${fileId}`,
-                        demonFile.sha,
-                    ),
-                );
-            }
-
-            let oldIndex = -1;
             let demonDataForFallback = null;
             if (demonFile?.content) {
                 try {
@@ -179,53 +382,18 @@ export async function onRequest(context) {
                 }
             }
 
-            if (listFile) {
-                const parsedList = safeParseArray(listFile.content);
-                const listArray = parsedList.filter((x) => typeof x === 'string');
-
-                oldIndex = listArray.indexOf(fileId);
-                const newArray = listArray.filter((x) => x !== fileId);
-
-                if (newArray.length !== listArray.length) {
-                    ops.push(
-                        github.putFile(
-                            LIST_FILE,
-                            JSON.stringify(newArray, null, 4),
-                            `Admin Panel: Remove ${fileId} from list`,
-                            listFile.sha,
-                        ),
-                    );
-                }
-            }
-
+            const { oldIndex } = await updateListForDelete(github, fileId, listFile);
             if (bundledFile) {
-                const bundledArray = safeParseArray(bundledFile.content);
-
-                let removeIndex = -1;
-                if (oldIndex !== -1 && oldIndex < bundledArray.length) {
-                    removeIndex = oldIndex;
-                } else if (demonDataForFallback) {
-                    const demonId = demonDataForFallback?.id;
-                    const demonName = demonDataForFallback?.name;
-                    removeIndex = bundledArray.findIndex(
-                        (x) => x?.id === demonId || x?.name === demonName,
-                    );
-                }
-
-                if (removeIndex !== -1) {
-                    bundledArray.splice(removeIndex, 1);
-                    ops.push(
-                        github.putFile(
-                            BUNDLED_FILE,
-                            JSON.stringify(bundledArray),
-                            `Admin Panel: Remove ${fileId} from bundled list`,
-                            bundledFile.sha,
-                        ),
-                    );
-                }
+                await updateBundledForDelete(
+                    github,
+                    fileId,
+                    demonDataForFallback,
+                    oldIndex,
+                    bundledFile,
+                );
             }
 
-            await Promise.all(ops);
+            await deleteDemonFile(github, filename, fileId, demonFile);
             return jsonResponse({ success: true });
         } catch (e) {
             return jsonResponse({ error: String(e?.message ?? e) }, { status: 500 });
