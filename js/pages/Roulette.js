@@ -4,6 +4,47 @@ import { getThumbnailFromId, getYoutubeIdFromUrl, shuffle } from '../util.js';
 import Spinner from '../components/Spinner.js';
 import Btn from '../components/Btn.js';
 
+const ROULETTE_STORAGE_KEY = 'roulette';
+const MAX_ROULETTE_LEVELS = 100;
+const MAIN_LIST_LIMIT = 75;
+const EXTENDED_LIST_LIMIT = 150;
+
+function normalizeRouletteLevel(rawLevel) {
+    if (!rawLevel || typeof rawLevel !== 'object') {
+        return null;
+    }
+
+    const video = rawLevel.video ?? rawLevel.verification ?? '';
+    const youtubeId = rawLevel.youtubeId ?? getYoutubeIdFromUrl(video);
+    const thumbnail = rawLevel.thumbnail ?? getThumbnailFromId(youtubeId);
+
+    return {
+        ...rawLevel,
+        video,
+        youtubeId,
+        thumbnail,
+    };
+}
+
+function normalizeRouletteLevels(levels) {
+    if (!Array.isArray(levels)) {
+        return [];
+    }
+    return levels.map(normalizeRouletteLevel).filter(Boolean);
+}
+
+function readSavedRoulette() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(ROULETTE_STORAGE_KEY));
+        if (!parsed || !Array.isArray(parsed.levels) || !Array.isArray(parsed.progression)) {
+            return null;
+        }
+        return parsed;
+    } catch {
+        return null;
+    }
+}
+
 export default {
     components: { Spinner, Btn },
     template: `
@@ -41,9 +82,9 @@ export default {
                 <div class="levels">
                     <template v-if="levels.length > 0">
                         <!-- Completed Levels -->
-                        <div class="level" v-for="(level, i) in levels.slice(0, progression.length)">
+                        <div class="level" v-for="(level, i) in completedLevels" :key="level.id + '-' + level.rank">
                             <a :href="level.video" class="video">
-                                <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="" width="192" height="108" loading="lazy">
+                                <img :src="level.thumbnail" alt="" width="192" height="108" loading="lazy">
                             </a>
                             <div class="meta">
                                 <p>#{{ level.rank }}</p>
@@ -54,7 +95,7 @@ export default {
                         <!-- Current Level -->
                         <div class="level" v-if="!hasCompleted">
                             <a :href="currentLevel.video" target="_blank" class="video">
-                                <img :src="getThumbnailFromId(getYoutubeIdFromUrl(currentLevel.video))" alt="" width="192" height="108" loading="lazy">
+                                <img :src="currentLevel.thumbnail" alt="" width="192" height="108" loading="lazy">
                             </a>
                             <div class="meta">
                                 <p>#{{ currentLevel.rank }}</p>
@@ -76,9 +117,9 @@ export default {
                         </div>
                         <!-- Remaining Levels -->
                         <template v-if="givenUp && showRemaining">
-                            <div class="level" v-for="(level, i) in levels.slice(progression.length + 1, levels.length - currentPercentage + progression.length)">
+                            <div class="level" v-for="(level, i) in remainingLevels" :key="level.id + '-' + level.rank">
                                 <a :href="level.video" target="_blank" class="video">
-                                    <img :src="getThumbnailFromId(getYoutubeIdFromUrl(level.video))" alt="" width="192" height="108" loading="lazy">
+                                    <img :src="level.thumbnail" alt="" width="192" height="108" loading="lazy">
                                 </a>
                                 <div class="meta">
                                     <p>#{{ level.rank }}</p>
@@ -92,7 +133,7 @@ export default {
             </section>
             <div class="toasts-container">
                 <div class="toasts">
-                    <div v-for="toast in toasts" class="toast">
+                    <div v-for="(toast, i) in toasts" :key="toast + '-' + i" class="toast">
                         <p>{{ toast }}</p>
                     </div>
                 </div>
@@ -120,16 +161,29 @@ export default {
         this.fileInput.addEventListener('change', this.onImportUpload);
 
         // Load progress from local storage
-        const roulette = JSON.parse(localStorage.getItem('roulette'));
+        const roulette = readSavedRoulette();
 
         if (!roulette) {
             return;
         }
 
-        this.levels = roulette.levels;
+        this.levels = normalizeRouletteLevels(roulette.levels);
         this.progression = roulette.progression;
     },
+    beforeUnmount() {
+        if (this.fileInput) {
+            this.fileInput.removeEventListener('change', this.onImportUpload);
+        }
+    },
     computed: {
+        completedLevels() {
+            return this.levels.slice(0, this.progression.length);
+        },
+        remainingLevels() {
+            const start = this.progression.length + 1;
+            const count = Math.max(0, this.levels.length - this.currentPercentage - 1);
+            return this.levels.slice(start, start + count);
+        },
         currentLevel() {
             return this.levels[this.progression.length];
         },
@@ -164,14 +218,20 @@ export default {
             }
 
             if (!this.useMainList && !this.useExtendedList) {
+                this.showToast('Select at least one list.');
                 return;
             }
 
             this.loading = true;
 
             const fullList = await fetchList();
+            if (!fullList) {
+                this.loading = false;
+                this.showToast('Failed to load list.');
+                return;
+            }
 
-            if (fullList.filter(([_, err]) => err).length > 0) {
+            if (fullList.some(([_, err]) => err)) {
                 this.loading = false;
                 this.showToast(
                     'List is currently broken. Wait until it\'s fixed to start a roulette.',
@@ -179,30 +239,43 @@ export default {
                 return;
             }
 
-            const fullListMapped = fullList.map(([lvl, _], i) => ({
-                rank: i + 1,
-                id: lvl.id,
-                name: lvl.name,
-                video: lvl.verification,
-            }));
             const list = [];
-            if (this.useMainList) list.push(...fullListMapped.slice(0, 75));
-            if (this.useExtendedList) {
-                list.push(...fullListMapped.slice(75, 150));
+            for (let index = 0; index < fullList.length; index += 1) {
+                const [level] = fullList[index];
+                if (!level) {
+                    continue;
+                }
+
+                const rank = index + 1;
+                const isMainList = rank <= MAIN_LIST_LIMIT;
+                const isExtendedList = rank > MAIN_LIST_LIMIT && rank <= EXTENDED_LIST_LIMIT;
+
+                if ((isMainList && this.useMainList) || (isExtendedList && this.useExtendedList)) {
+                    const youtubeId = getYoutubeIdFromUrl(level.verification);
+                    list.push({
+                        rank,
+                        id: level.id,
+                        name: level.name,
+                        video: level.verification,
+                        youtubeId,
+                        thumbnail: getThumbnailFromId(youtubeId),
+                    });
+                }
             }
 
             // random 100 levels
-            this.levels = shuffle(list).slice(0, 100);
+            this.levels = shuffle(list).slice(0, MAX_ROULETTE_LEVELS);
             this.showRemaining = false;
             this.givenUp = false;
             this.progression = [];
             this.percentage = undefined;
 
+            this.save();
             this.loading = false;
         },
         save() {
             localStorage.setItem(
-                'roulette',
+                ROULETTE_STORAGE_KEY,
                 JSON.stringify({
                     levels: this.levels,
                     progression: this.progression,
@@ -210,19 +283,20 @@ export default {
             );
         },
         onDone() {
-            if (!this.percentage) {
+            const nextPercentage = Number(this.percentage);
+            if (!Number.isFinite(nextPercentage)) {
                 return;
             }
 
             if (
-                this.percentage <= this.currentPercentage ||
-                this.percentage > 100
+                nextPercentage <= this.currentPercentage ||
+                nextPercentage > 100
             ) {
                 this.showToast('Invalid percentage.');
                 return;
             }
 
-            this.progression.push(this.percentage);
+            this.progression.push(nextPercentage);
             this.percentage = undefined;
 
             this.save();
@@ -231,7 +305,7 @@ export default {
             this.givenUp = true;
 
             // Save progress
-            localStorage.removeItem('roulette');
+            localStorage.removeItem(ROULETTE_STORAGE_KEY);
         },
         onImport() {
             if (
@@ -241,14 +315,21 @@ export default {
                 return;
             }
 
-            this.fileInput.showPicker();
+            if (typeof this.fileInput.showPicker === 'function') {
+                this.fileInput.showPicker();
+            } else {
+                this.fileInput.click();
+            }
         },
         async onImportUpload() {
             if (this.fileInput.files.length === 0) return;
 
             const file = this.fileInput.files[0];
 
-            if (file.type !== 'application/json') {
+            if (
+                file.type !== 'application/json'
+                && !file.name.toLowerCase().endsWith('.json')
+            ) {
                 this.showToast('Invalid file.');
                 return;
             }
@@ -256,12 +337,12 @@ export default {
             try {
                 const roulette = JSON.parse(await file.text());
 
-                if (!roulette.levels || !roulette.progression) {
+                if (!Array.isArray(roulette.levels) || !Array.isArray(roulette.progression)) {
                     this.showToast('Invalid file.');
                     return;
                 }
 
-                this.levels = roulette.levels;
+                this.levels = normalizeRouletteLevels(roulette.levels);
                 this.progression = roulette.progression;
                 this.save();
                 this.givenUp = false;
@@ -281,10 +362,11 @@ export default {
                 { type: 'application/json' },
             );
             const a = document.createElement('a');
-            a.href = URL.createObjectURL(file);
-            a.download = 'tsl_roulette';
+            const url = URL.createObjectURL(file);
+            a.href = url;
+            a.download = 'tsl_roulette.json';
             a.click();
-            URL.revokeObjectURL(a.href);
+            URL.revokeObjectURL(url);
         },
         showToast(msg) {
             this.toasts.push(msg);

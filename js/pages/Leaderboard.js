@@ -13,6 +13,7 @@ export default {
         loading: true,
         selected: 0,
         err: [],
+        loadMoreObserver: null,
     }),
     template: `
         <main v-if="loading">
@@ -27,7 +28,7 @@ export default {
                 </div>
                 <div class="board-container">
                     <table class="board">
-                        <tr v-for="(ientry, i) in leaderboard.slice(0, boardLimit)">
+                        <tr v-for="(ientry, i) in visibleLeaderboard" :key="ientry.user">
                             <td class="rank">
                                 <p class="type-label-lg">#{{ i + 1 }}</p>
                             </td>
@@ -49,7 +50,7 @@ export default {
                         <h3>{{ entry.total }}</h3>
                         <h2 v-if="entry.verified.length > 0">Verified ({{ entry.verified.length}})</h2>
                         <table class="table">
-                            <tr v-for="score in entry.verified">
+                            <tr v-for="score in entry.verified" :key="score.rank + '-' + (score.link || score.level)">
                                 <td class="rank">
                                     <p>#{{ score.rank }}</p>
                                 </td>
@@ -63,7 +64,7 @@ export default {
                         </table>
                         <h2 v-if="entry.completed.length > 0">Completed ({{ entry.completed.length }})</h2>
                         <table class="table">
-                            <tr v-for="score in entry.completed">
+                            <tr v-for="score in entry.completed" :key="score.rank + '-' + (score.link || score.level)">
                                 <td class="rank">
                                     <p>#{{ score.rank }}</p>
                                 </td>
@@ -77,7 +78,7 @@ export default {
                         </table>
                         <h2 v-if="entry.progressed.length > 0">Progressed ({{entry.progressed.length}})</h2>
                         <table class="table">
-                            <tr v-for="score in entry.progressed">
+                            <tr v-for="score in entry.progressed" :key="score.rank + '-' + (score.link || score.level)">
                                 <td class="rank">
                                     <p>#{{ score.rank }}</p>
                                 </td>
@@ -95,26 +96,43 @@ export default {
         </main>
     `,
     computed: {
+        visibleLeaderboard() {
+            return this.leaderboard.slice(0, this.boardLimit);
+        },
         entry() {
-            return this.leaderboard[this.selected];
+            return this.leaderboard[this.selected] ?? {
+                user: 'N/A',
+                total: 0,
+                verified: [],
+                completed: [],
+                progressed: [],
+            };
         },
     },
     async mounted() {
         const [leaderboard, err] = await fetchLeaderboard();
         this.leaderboard = leaderboard;
         this.err = err;
+        if (this.selected >= this.leaderboard.length) {
+            this.selected = 0;
+        }
         // Hide loading spinner
         this.loading = false;
         this.$nextTick(() => {
-            const observer = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting) {
+            this.loadMoreObserver = new IntersectionObserver((entries) => {
+                if (entries.some((entry) => entry.isIntersecting) && this.boardLimit < this.leaderboard.length) {
                     this.boardLimit += 50;
                 }
             });
             if (this.$refs.loadMoreSentinel) {
-                observer.observe(this.$refs.loadMoreSentinel);
+                this.loadMoreObserver.observe(this.$refs.loadMoreSentinel);
             }
         });
+    },
+    beforeUnmount() {
+        if (this.loadMoreObserver) {
+            this.loadMoreObserver.disconnect();
+        }
     },
     methods: {
         localize,

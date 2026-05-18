@@ -23,7 +23,7 @@ export default {
         <main v-else class="page-list">
             <div class="list-container">
                 <table class="list" v-if="list">
-                    <tr v-for="([level, err], i) in list.slice(0, listLimit)">
+                    <tr v-for="([level, err], i) in visibleList" :key="level?.path || err || i">
                         <td class="rank">
                             <p v-if="i + 1 <= 150" class="type-label-lg">#{{ i + 1 }}</p>
                             <p v-else class="type-label-lg">Legacy</p>
@@ -61,7 +61,7 @@ export default {
                     <p v-else-if="selected +1 <= 150"><strong>100%</strong> or better to qualify</p>
                     <p v-else>This level does not accept new records.</p>
                     <table class="records">
-                        <tr v-for="record in level.records" class="record">
+                        <tr v-for="record in level.records" :key="record.user + '-' + record.percent + '-' + (record.link || '')" class="record">
                             <td class="percent">
                                 <p>{{ record.percent }}%</p>
                             </td>
@@ -84,7 +84,7 @@ export default {
             <div class="meta-container">
                 <div class="meta">
                     <div class="errors" v-show="errors.length > 0">
-                        <p class="error" v-for="error of errors">{{ error }}</p>
+                        <p class="error" v-for="error of errors" :key="error">{{ error }}</p>
                     </div>
                     <div class="og">
                         <p class="type-label-md">Website layout made by <a href="https://tsl.pages.dev/" target="_blank">TheShittyList</a></p>
@@ -92,7 +92,7 @@ export default {
                     <template v-if="editors">
                         <h3>List Editors</h3>
                         <ol class="editors">
-                            <li v-for="editor in editors">
+                            <li v-for="editor in editors" :key="editor.name">
                                 <img :src="\`/assets/\${roleIconMap[editor.role]}\${store.dark ? '-dark' : ''}.svg\`" :alt="editor.role" width="20" height="20">
                                 <a v-if="editor.link" class="type-label-lg link" target="_blank" :href="editor.link">{{ editor.name }}</a>
                                 <p v-else>{{ editor.name }}</p>
@@ -134,15 +134,25 @@ export default {
         editors: [],
         loading: true,
         selected: 0,
+        toggledShowcase: false,
         errors: [],
         roleIconMap,
-        store
+        loadMoreObserver: null,
+        store,
     }),
     computed: {
+        visibleList() {
+            return this.list.slice(0, this.listLimit);
+        },
         level() {
-            return this.list[this.selected][0];
+            const entry = this.list[this.selected];
+            return entry ? entry[0] : null;
         },
         video() {
+            if (!this.level) {
+                return '';
+            }
+
             if (!this.level.showcase) {
                 return embed(this.level.verification);
             }
@@ -154,6 +164,10 @@ export default {
             );
         },
         videoSrcdoc() {
+            if (!this.level) {
+                return '';
+            }
+
             const vid = this.level.showcase && this.toggledShowcase ? this.level.showcase : this.level.verification;
             const id = getYoutubeIdFromUrl(vid);
             return `<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/${id}?autoplay=1><img src=https://i.ytimg.com/vi_webp/${id}/mqdefault.webp alt='Video'><span>&#x25B6;</span></a>`;
@@ -161,12 +175,12 @@ export default {
     },
 
     async mounted() {
-        // Hide loading spinner
-        this.list = await fetchList();
-        this.editors = await fetchEditors();
+        const [list, editors] = await Promise.all([fetchList(), fetchEditors()]);
+        this.list = list ?? [];
+        this.editors = editors ?? [];
 
         // Error handling
-        if (!this.list) {
+        if (!list) {
             this.errors = [
                 "Failed to load list. Retry in a few minutes or notify list staff.",
             ];
@@ -178,24 +192,33 @@ export default {
                         return `Failed to load level. (${err}.json)`;
                     })
             );
-            if (!this.editors) {
+            if (!editors) {
                 this.errors.push("Failed to load list editors.");
             }
+        }
+
+        if (this.selected >= this.list.length) {
+            this.selected = 0;
         }
 
         this.loading = false;
         
         // Lazy load intersections
         this.$nextTick(() => {
-            const observer = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting && this.listLimit < this.list.length) {
+            this.loadMoreObserver = new IntersectionObserver((entries) => {
+                if (entries.some((entry) => entry.isIntersecting) && this.listLimit < this.list.length) {
                     this.listLimit += 50;
                 }
             });
             if (this.$refs.loadMoreSentinel) {
-                observer.observe(this.$refs.loadMoreSentinel);
+                this.loadMoreObserver.observe(this.$refs.loadMoreSentinel);
             }
         });
+    },
+    beforeUnmount() {
+        if (this.loadMoreObserver) {
+            this.loadMoreObserver.disconnect();
+        }
     },
     methods: {
         embed,

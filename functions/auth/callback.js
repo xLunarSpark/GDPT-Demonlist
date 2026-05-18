@@ -1,3 +1,5 @@
+import { parseIdSet } from '../_shared.js';
+
 export async function onRequest(context) {
     const request = context.request;
     const url = new URL(request.url);
@@ -5,8 +7,11 @@ export async function onRequest(context) {
     
     if (!code) return new Response("No code provided", { status: 400 });
 
-    const clientId = context.env.DISCORD_CLIENT_ID || "1484307401745371367";
-    const clientSecret = context.env.DISCORD_CLIENT_SECRET || "NoCM6bNVboGhLqQg-pTvDoR89OGQmJHn";
+    const clientId = context.env.DISCORD_CLIENT_ID;
+    const clientSecret = context.env.DISCORD_CLIENT_SECRET;
+    if (!clientId || !clientSecret) {
+        return new Response('Missing Discord OAuth credentials in Cloudflare Env', { status: 500 });
+    }
     const redirectUri = `${url.origin}/auth/callback`;
 
     // Exchange code for token
@@ -22,26 +27,30 @@ export async function onRequest(context) {
         })
     });
 
-    const tokenData = await tokenResponse.json();
-    if (!tokenData.access_token) return new Response("Failed to get token", { status: 400 });
+    const tokenData = await tokenResponse.json().catch(() => null);
+    if (!tokenResponse.ok || !tokenData?.access_token) {
+        return new Response('Failed to get token', { status: 400 });
+    }
 
     // Get user info
     const userResponse = await fetch("https://discord.com/api/users/@me", {
         headers: { "Authorization": `Bearer ${tokenData.access_token}` }
     });
     
-    const userData = await userResponse.json();
+    const userData = await userResponse.json().catch(() => null);
+    if (!userResponse.ok || !userData?.id) {
+        return new Response('Failed to get user info', { status: 400 });
+    }
 
-    const adminIdsStr = context.env.ADMIN_DISCORD_ID || ""; 
-    const adminIds = adminIdsStr.split(",").map(id => id.trim());
-    const isAdmin = adminIds.includes(userData.id);
+    const adminIds = parseIdSet(context.env.ADMIN_DISCORD_ID);
+    const isAdmin = adminIds.has(userData.id);
 
     const headers = new Headers();
     // HttpOnly session
     headers.append("Set-Cookie", `session=${userData.id}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=86400`);
     // Expose info to frontend
     headers.append("Set-Cookie", `discord_username=${encodeURIComponent(userData.username)}; Path=/; Secure; SameSite=Lax; Max-Age=86400`);
-    headers.append("Set-Cookie", `is_admin=${isAdmin}; Path=/; Secure; SameSite=Lax; Max-Age=86400`);
+    headers.append("Set-Cookie", `is_admin=${isAdmin ? '1' : '0'}; Path=/; Secure; SameSite=Lax; Max-Age=86400`);
     
     headers.append("Location", "/admin.html");
 

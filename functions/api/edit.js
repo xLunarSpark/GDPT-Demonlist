@@ -1,170 +1,236 @@
+import {
+    createGitHubContentClient,
+    jsonResponse,
+    requireAdmin,
+} from '../_shared.js';
+
+const LIST_FILE = 'data/_list.json';
+const BUNDLED_FILE = 'data/_list_bundled.json';
+
+function safeParseArray(text) {
+    try {
+        const parsed = JSON.parse(text);
+        return Array.isArray(parsed) ? parsed : [];
+    } catch {
+        return [];
+    }
+}
+
+function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+}
+
 export async function onRequest(context) {
     const { request, env } = context;
 
-    const cookieHeader = request.headers.get("Cookie");
-    if (!cookieHeader) return new Response("Unauthorized", { status: 401 });
-
-    const sessionMatch = cookieHeader.match(/session=([^;]+)/);
-    if (!sessionMatch) return new Response("Unauthorized", { status: 401 });
-
-    const userId = sessionMatch[1];
-    
-    const adminIdsStr = env.ADMIN_DISCORD_ID || "";
-    const adminIds = adminIdsStr.split(",").map(id => id.trim());
-    
-    if (!adminIds.includes(userId)) {
-        return new Response("Forbidden: You do not have admin permissions.", { status: 403 });
+    const { response } = requireAdmin(request, env);
+    if (response) {
+        return response;
     }
 
-    const token = env.GITHUB_TOKEN;
-    const owner = env.GITHUB_OWNER;
-    const repo = env.GITHUB_REPO;
-    
-    if (!token || !owner || !repo) {
-        return new Response(JSON.stringify({ error: "Missing GitHub credentials in Cloudflare Env" }), { status: 500 });
+    let github;
+    try {
+        github = createGitHubContentClient(env);
+    } catch (e) {
+        return jsonResponse({ error: String(e?.message ?? e) }, { status: 500 });
     }
 
-    const githubApiUrl = `https://api.github.com/repos/${owner}/${repo}/contents`;
-
-    async function getFile(path) {
-        const res = await fetch(`${githubApiUrl}/${path}`, {
-            headers: { "Authorization": `Bearer ${token}`, "User-Agent": "Cloudflare-Pages" }
-        });
-        if (res.ok) {
-            const data = await res.json();
-            return { sha: data.sha, content: decodeURIComponent(escape(atob(data.content))) };
+    if (request.method === 'POST') {
+        let reqData;
+        try {
+            reqData = await request.json();
+        } catch {
+            return jsonResponse({ error: 'Invalid JSON' }, { status: 400 });
         }
-        return null;
-    }
 
-    async function commitFile(path, content, message, sha = null) {
-        const body = {
-            message: message,
-            content: btoa(unescape(encodeURIComponent(content))),
-            branch: "main" 
-        };
-        if (sha) body.sha = sha;
+        const fileId = String(reqData?.id ?? '').trim();
+        const demonData = reqData?.demonData;
+        const targetPosition = Number.parseInt(reqData?.position, 10);
 
-        const res = await fetch(`${githubApiUrl}/${path}`, {
-            method: "PUT",
-            headers: {
-                "Authorization": `Bearer ${token}`,
-                "Content-Type": "application/json",
-                "User-Agent": "Cloudflare-Pages"
-            },
-            body: JSON.stringify(body)
-        });
-        return res.ok;
-    }
+        if (!fileId || !demonData || typeof demonData !== 'object') {
+            return jsonResponse({ error: 'Missing required fields' }, { status: 400 });
+        }
 
-    if (request.method === "POST") {
-        const reqData = await request.json();
-        const fileId = reqData.id;
-        const demonData = reqData.demonData; 
-        const targetPosition = parseInt(reqData.position);
-        
         const filename = `data/${fileId}.json`;
+        const shouldUpdatePlacements = Number.isInteger(targetPosition) && targetPosition > 0;
 
-        // Save
-        const demonFile = await getFile(filename);
-        const fileSha = demonFile ? demonFile.sha : null;
-        const successFile = await commitFile(filename, JSON.stringify(demonData, null, 4), `Admin Panel: Update ${fileId} data`, fileSha);
-        
-        if (!successFile) {
-            return new Response(JSON.stringify({ error: "Failed to commit demon data" }), { status: 500 });
-        }
+        try {
+            const demonFilePromise = github.getFile(filename);
+            const listFilePromise = shouldUpdatePlacements
+                ? github.getFile(LIST_FILE)
+                : Promise.resolve(null);
+            const bundledFilePromise = shouldUpdatePlacements
+                ? github.getFile(BUNDLED_FILE)
+                : Promise.resolve(null);
 
-        // Update _list.json and _list_bundled.json
-        if (!isNaN(targetPosition) && targetPosition > 0) {
-            const listFile = await getFile("data/_list.json");
-            const bundledFile = await getFile("data/_list_bundled.json");
+            const [demonFile, listFile, bundledFile] = await Promise.all([
+                demonFilePromise,
+                listFilePromise,
+                bundledFilePromise,
+            ]);
 
-            if (listFile) {
-                let listArray = [];
-                try { listArray = JSON.parse(listFile.content); } catch (e) {}
+            await github.putFile(
+                filename,
+                JSON.stringify(demonData, null, 4),
+                `Admin Panel: Update ${fileId} data`,
+                demonFile?.sha ?? null,
+            );
 
+            if (shouldUpdatePlacements && listFile) {
+                const parsedList = safeParseArray(listFile.content);
+                let listArray = parsedList.filter((x) => typeof x === 'string');
                 const oldIndex = listArray.indexOf(fileId);
 
-                // Remove level from current position
-                listArray = listArray.filter(x => x !== fileId);
+                listArray = listArray.filter((x) => x !== fileId);
 
-                // Insert into new position
-                const insertIndex = targetPosition - 1; // 1-based index to 0-based
+                const insertIndex = clamp(targetPosition - 1, 0, listArray.length);
                 listArray.splice(insertIndex, 0, fileId);
 
-                await commitFile("data/_list.json", JSON.stringify(listArray, null, 4), `Admin Panel: Move ${fileId} to #${targetPosition}`, listFile.sha);
+                const ops = [];
+                ops.push(
+                    github.putFile(
+                        LIST_FILE,
+                        JSON.stringify(listArray, null, 4),
+                        `Admin Panel: Move ${fileId} to #${targetPosition}`,
+                        listFile.sha,
+                    ),
+                );
 
                 if (bundledFile) {
-                    let bundledArray = [];
-                    try { bundledArray = JSON.parse(bundledFile.content); } catch (e) {}
+                    const bundledArray = safeParseArray(bundledFile.content);
 
-                    // Remove from bundle (trusting oldIndex, fallback to name)
+                    let removeIndex = -1;
                     if (oldIndex !== -1 && oldIndex < bundledArray.length) {
-                        bundledArray.splice(oldIndex, 1);
+                        removeIndex = oldIndex;
                     } else {
-                        const fallbackIdx = bundledArray.findIndex(x => x.name === demonData.name);
-                        if (fallbackIdx !== -1) bundledArray.splice(fallbackIdx, 1);
+                        const demonId = demonData?.id;
+                        const demonName = demonData?.name;
+                        removeIndex = bundledArray.findIndex(
+                            (x) => x?.id === demonId || x?.name === demonName,
+                        );
                     }
 
-                    // Insert into new position
+                    if (removeIndex !== -1) {
+                        bundledArray.splice(removeIndex, 1);
+                    }
+
                     bundledArray.splice(insertIndex, 0, demonData);
 
-                    await commitFile("data/_list_bundled.json", JSON.stringify(bundledArray), `Admin Panel: Update bundled data for ${fileId}`, bundledFile.sha);
+                    ops.push(
+                        github.putFile(
+                            BUNDLED_FILE,
+                            JSON.stringify(bundledArray),
+                            `Admin Panel: Update bundled data for ${fileId}`,
+                            bundledFile.sha,
+                        ),
+                    );
                 }
-            }
-        }
 
-        return new Response(JSON.stringify({ success: true, message: `Updated ${fileId} and placements.` }));
+                await Promise.all(ops);
+            }
+
+            return jsonResponse({
+                success: true,
+                message: `Updated ${fileId}.`,
+            });
+        } catch (e) {
+            return jsonResponse({ error: String(e?.message ?? e) }, { status: 500 });
+        }
     }
-    
-    if (request.method === "DELETE") {
+
+    if (request.method === 'DELETE') {
         const url = new URL(request.url);
-        const fileId = url.searchParams.get("id");
-        const filename = `data/${fileId}.json`;
-        
-        const fileData = await getFile(filename);
-        if (!fileData) return new Response(JSON.stringify({ error: "File not found" }), { status: 404 });
-
-        // Delete the demon file
-        const resDel = await fetch(`${githubApiUrl}/${filename}`, {
-            method: "DELETE",
-            headers: {
-                "Authorization": `Bearer ${token}`,
-                "Content-Type": "application/json",
-                "User-Agent": "Cloudflare-Pages"
-            },
-            body: JSON.stringify({
-                message: `Admin Panel: Delete ${fileId}`,
-                sha: fileData.sha,
-                branch: "main"
-            })
-        });
-
-        // Also remove from _list.json and _list_bundled.json
-        const listFile = await getFile("data/_list.json");
-        const bundledFile = await getFile("data/_list_bundled.json");
-        if (listFile) {
-            let listArray = [];
-            try { listArray = JSON.parse(listFile.content); } catch (e) {}
-            
-            const oldIndex = listArray.indexOf(fileId);
-            const newArray = listArray.filter(x => x !== fileId);
-            await commitFile("data/_list.json", JSON.stringify(newArray, null, 4), `Admin Panel: Remove ${fileId} from list`, listFile.sha);
-            
-            if (bundledFile && oldIndex !== -1) {
-                let bundledArray = [];
-                try { bundledArray = JSON.parse(bundledFile.content); } catch (e) {}
-                
-                if (oldIndex < bundledArray.length) {
-                    bundledArray.splice(oldIndex, 1);
-                    await commitFile("data/_list_bundled.json", JSON.stringify(bundledArray), `Admin Panel: Remove ${fileId} from bundled list`, bundledFile.sha);
-                }
-            }
+        const fileId = String(url.searchParams.get('id') ?? '').trim();
+        if (!fileId) {
+            return jsonResponse({ error: 'Missing id' }, { status: 400 });
         }
 
-        if (resDel.ok) return new Response(JSON.stringify({ success: true }));
-        return new Response(JSON.stringify({ error: "Failed to delete" }), { status: 500 });
+        const filename = `data/${fileId}.json`;
+
+        try {
+            const [demonFile, listFile, bundledFile] = await Promise.all([
+                github.getFile(filename),
+                github.getFile(LIST_FILE),
+                github.getFile(BUNDLED_FILE),
+            ]);
+
+            const ops = [];
+
+            if (demonFile) {
+                ops.push(
+                    github.deleteFile(
+                        filename,
+                        `Admin Panel: Delete ${fileId}`,
+                        demonFile.sha,
+                    ),
+                );
+            }
+
+            let oldIndex = -1;
+            let demonDataForFallback = null;
+            if (demonFile?.content) {
+                try {
+                    const parsed = JSON.parse(demonFile.content);
+                    if (parsed && typeof parsed === 'object') {
+                        demonDataForFallback = parsed;
+                    }
+                } catch {
+                    demonDataForFallback = null;
+                }
+            }
+
+            if (listFile) {
+                const parsedList = safeParseArray(listFile.content);
+                const listArray = parsedList.filter((x) => typeof x === 'string');
+
+                oldIndex = listArray.indexOf(fileId);
+                const newArray = listArray.filter((x) => x !== fileId);
+
+                if (newArray.length !== listArray.length) {
+                    ops.push(
+                        github.putFile(
+                            LIST_FILE,
+                            JSON.stringify(newArray, null, 4),
+                            `Admin Panel: Remove ${fileId} from list`,
+                            listFile.sha,
+                        ),
+                    );
+                }
+            }
+
+            if (bundledFile) {
+                const bundledArray = safeParseArray(bundledFile.content);
+
+                let removeIndex = -1;
+                if (oldIndex !== -1 && oldIndex < bundledArray.length) {
+                    removeIndex = oldIndex;
+                } else if (demonDataForFallback) {
+                    const demonId = demonDataForFallback?.id;
+                    const demonName = demonDataForFallback?.name;
+                    removeIndex = bundledArray.findIndex(
+                        (x) => x?.id === demonId || x?.name === demonName,
+                    );
+                }
+
+                if (removeIndex !== -1) {
+                    bundledArray.splice(removeIndex, 1);
+                    ops.push(
+                        github.putFile(
+                            BUNDLED_FILE,
+                            JSON.stringify(bundledArray),
+                            `Admin Panel: Remove ${fileId} from bundled list`,
+                            bundledFile.sha,
+                        ),
+                    );
+                }
+            }
+
+            await Promise.all(ops);
+            return jsonResponse({ success: true });
+        } catch (e) {
+            return jsonResponse({ error: String(e?.message ?? e) }, { status: 500 });
+        }
     }
 
-    return new Response("Method not allowed", { status: 405 });
+    return jsonResponse({ error: 'Method not allowed' }, { status: 405 });
 }
