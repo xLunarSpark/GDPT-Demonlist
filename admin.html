@@ -72,7 +72,7 @@
                 font-weight: bold;
             }
 
-            input, textarea {
+            input, textarea, select {
                 width: 100%;
                 background: var(--color-background, #fff);
                 color: var(--color-on-background, black);
@@ -103,6 +103,96 @@
             }
 
             .hidden { display: none !important; }
+
+            .auto-fill-row {
+                display: grid;
+                grid-template-columns: 1fr max-content;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            .auto-fill-row input { margin-bottom: 0; }
+            .auto-fill-row .btn {
+                width: auto;
+                justify-content: center;
+                white-space: nowrap;
+                padding-inline: 1.25rem;
+            }
+
+            .discord-login-btn {
+                width: 100%;
+                justify-content: center;
+                gap: 0.75rem;
+                font-size: 1.1rem;
+                padding: 1.1rem 1rem;
+            }
+            .discord-login-btn img {
+                height: 1.5rem;
+                width: auto;
+            }
+
+            .btn-outline {
+                background-color: var(--color-background) !important;
+                color: var(--color-on-background) !important;
+                border: 2px solid var(--color-primary) !important;
+                box-shadow: none !important;
+            }
+
+            .btn-danger {
+                background-color: var(--color-error) !important;
+                color: var(--color-on-error) !important;
+                border: 2px solid var(--color-error) !important;
+                box-shadow: none !important;
+            }
+
+            .placement-preview {
+                margin-top: 1rem;
+                margin-bottom: 0;
+                padding: 1rem;
+                background: var(--color-background-hover, #f0f0f0);
+                border: 2px solid var(--color-primary);
+                border-radius: 8px;
+            }
+
+            .preview-list {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .preview-item {
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+                padding: 0.5rem 0.75rem;
+                border-radius: 0.5rem;
+            }
+            .preview-item--muted { opacity: 0.65; }
+            .preview-item--highlight {
+                background: var(--color-background);
+                border: 1px solid var(--color-primary);
+                color: var(--color-primary);
+                font-weight: 700;
+            }
+            .preview-rank {
+                min-width: 4.5rem;
+                text-align: right;
+                font-variant-numeric: tabular-nums;
+            }
+            .preview-name {
+                flex: 1;
+                overflow-wrap: anywhere;
+            }
+
+            .admin-actions {
+                display: flex;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .admin-actions .btn {
+                width: auto;
+                justify-content: center;
+                white-space: nowrap;
+            }
 
             #status-msg {
                 margin-top: 1rem;
@@ -172,9 +262,9 @@
                     <div id="login-section" class="admin-card" style="text-align: center;">
                         <span class="type-title-sm">Authentication</span>
                         <p class="type-body-md" style="margin-bottom: 1.5rem;">Please authorize with Discord to access the Admin Panel.</p>
-                        <button class="btn" style="width:100%; justify-content:center; gap: 0.5rem; background-color: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary); font-size: 1.1rem;" onclick="window.location.href='/auth/login'">
-                            <img src="/assets/discord.svg" alt="Discord" style="height: 1.5rem; filter: invert(0.5) sepia(1) saturate(5) hue-rotate(200deg);" id="discord-btn-icon"/>
-                            <span>Login with Discord</span>
+                        <button class="btn discord-login-btn" onclick="window.location.href='/auth/login'">
+                            <img src="/assets/discord.svg" alt="" aria-hidden="true" />
+                            <span>Continue with Discord</span>
                         </button>
                     </div>
                     <div id="user-section" class="admin-card hidden" style="border-left: 4px solid var(--color-error);">
@@ -194,11 +284,11 @@
 
                         <div id="section-levels">
                             <div class="admin-card" style="border-left: 4px solid var(--color-primary); background: var(--color-background) !important;">
-                                <span class="type-title-sm" style="border-color: transparent; margin-bottom: 0.5rem;">[Optional] Smart AREDL Auto-fill</span>
-                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Search the AREDL API to quickly pre-fill the manual form below. (Auto-fetches PT records from Pointercrate!)</p>
-                                <div class="flex-row">
-                                    <input type="text" id="d-id" placeholder="Level Name, GD ID, or #Pos" style="margin-bottom:0;">
-                                    <button type="button" class="btn" onclick="fetchAredl()" style="width: auto; background: var(--color-primary); color: white;">Auto-Fill</button>
+                                <span class="type-title-sm" style="border-color: transparent; margin-bottom: 0.5rem;">Auto-fill (AREDL + Pointercrate)</span>
+                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Pre-fill the form below using both sources at once. PT records are merged + de-duped (Existing + AREDL + Pointercrate).</p>
+                                <div class="auto-fill-row">
+                                    <input type="text" id="d-id" placeholder="Level name, GD ID, AREDL #pos, or Pointercrate ID" />
+                                    <button type="button" class="btn btn-outline" onclick="fetchAutoFill()">Auto-fill</button>
                                 </div>
                             </div>
 
@@ -211,10 +301,9 @@
                                         <label class="type-label-lg">Target Position</label>
                                         <input type="number" id="d-position" placeholder="e.g. 1" min="1" required>
                                         <span class="hint-text" id="pos-hint">Loading max position...</span>
-                                        <div id="position-sandwich" class="admin-card hidden" style="margin-top: 1rem; margin-bottom: 0; padding: 1rem; background: var(--color-background-hover, #f0f0f0); border: 2px solid var(--color-primary);">
-                                            <span class="type-label-lg" style="font-size: 0.9em; margin-bottom:0.5rem; display:block;">Placement Preview</span>
-                                            <div id="sandwich-content" class="type-body-md" style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                            </div>
+                                        <div id="position-sandwich" class="placement-preview hidden">
+                                            <span class="type-label-lg" style="font-size: 0.9em; margin-bottom:0.5rem; display:block;">Placement Preview (2 above / 2 below)</span>
+                                            <div id="sandwich-content" class="type-body-md preview-list"></div>
                                         </div>
                                     </div>
                                     <div style="flex:1">
@@ -272,13 +361,45 @@
                             </form>
                         </div>
 
+                        <div class="admin-card" style="border-left: 4px solid var(--color-primary);">
+                            <span class="type-title-sm">2. Move a Level</span>
+                            <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Select a level already on the list and move it up/down. Preview shows the final placement.</p>
+
+                            <div class="flex-row">
+                                <div style="flex:1">
+                                    <label class="type-label-lg">Level on list</label>
+                                    <select id="move-id" required>
+                                        <option value="" selected disabled>Loading list...</option>
+                                    </select>
+                                    <span class="hint-text" id="move-current-hint">Loading list...</span>
+                                </div>
+                                <div style="flex:1">
+                                    <label class="type-label-lg">New Position</label>
+                                    <input type="number" id="move-position" placeholder="e.g. 10" min="1" style="margin-bottom: 0;">
+                                    <div class="admin-actions" style="margin-top: 0.75rem; margin-bottom: 1.5rem;">
+                                        <button type="button" class="btn btn-outline" onclick="nudgeMove(-1)">Move Up</button>
+                                        <button type="button" class="btn btn-outline" onclick="nudgeMove(1)">Move Down</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="move-preview" class="placement-preview hidden">
+                                <span class="type-label-lg" style="font-size: 0.9em; margin-bottom:0.5rem; display:block;">Placement Preview (2 above / 2 below)</span>
+                                <div id="move-preview-content" class="type-body-md preview-list"></div>
+                            </div>
+
+                            <button type="button" class="btn" style="width:100%; justify-content:center; background:var(--color-primary); color:white;" onclick="applyMove()">
+                                Apply Move
+                            </button>
+                        </div>
+
                         <div class="admin-card" style="border-left: 4px solid var(--color-error);">
-                            <span class="type-title-sm" style="color:var(--color-error); border-color:var(--color-error);">2. Delete a Level</span>
+                            <span class="type-title-sm" style="color:var(--color-error); border-color:var(--color-error);">3. Delete a Level</span>
                             <form onsubmit="event.preventDefault(); deleteDemon();">
                                 <label class="type-label-lg">Internal Slug / Filename</label>
                                 <div class="flex-row">
                                     <input type="text" id="del-id" placeholder="e.g. Bloodbath" style="margin-bottom:0;" required>
-                                    <button type="submit" class="btn" style="width: auto; background:var(--color-error); color:white; border-color:var(--color-error);">
+                                    <button type="submit" class="btn btn-danger" style="width: auto;">
                                         Delete Forever
                                     </button>
                                 </div>
@@ -330,7 +451,8 @@
             }
 
             const username = getCookie('discord_username');
-            const isAdmin = getCookie('is_admin') === 'true';
+            const isAdminCookie = getCookie('is_admin');
+            const isAdmin = isAdminCookie === '1' || isAdminCookie === 'true';
 
             if (username) {
                 document.getElementById('login-section').classList.add('hidden');
@@ -359,6 +481,331 @@
                 statusMsg.classList.remove('hidden');
             }
 
+            const AREDL_API_BASE = 'https://api.aredl.net/v2/api/aredl';
+            const POINTERCRATE_API_BASE = 'https://pointercrate.com/api/v2';
+
+            let aredlLevelsCache = null;
+            let aredlLevelsPromise = null;
+
+            async function fetchAredlLevels() {
+                if (aredlLevelsCache) return aredlLevelsCache;
+                if (!aredlLevelsPromise) {
+                    aredlLevelsPromise = fetch(`${AREDL_API_BASE}/levels`)
+                        .then((res) => {
+                            if (!res.ok) throw new Error('Could not fetch AREDL list');
+                            return res.json();
+                        })
+                        .then((levels) => {
+                            aredlLevelsCache = levels;
+                            return levels;
+                        })
+                        .finally(() => {
+                            aredlLevelsPromise = null;
+                        });
+                }
+                return aredlLevelsPromise;
+            }
+
+            function clamp(num, min, max) {
+                return Math.max(min, Math.min(max, num));
+            }
+
+            function formatSlug(slug) {
+                return String(slug ?? '').replace(/_/g, ' ');
+            }
+
+            function escapeHtml(value) {
+                return String(value ?? '')
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+            }
+
+            const PLAYER_ALIASES = {
+                'billie eilish': 'Ka1sa',
+                'ka1isa': 'Ka1sa',
+                'l_lobo1811': 'Lobo',
+                'benson boone': 'Lobo',
+            };
+
+            function readExistingRecordsFromForm() {
+                try {
+                    const currentRecsStr = document.getElementById('d-records').value.trim();
+                    if (!currentRecsStr) return [];
+                    const parsed = JSON.parse(currentRecsStr);
+                    return Array.isArray(parsed) ? parsed : [];
+                } catch {
+                    return [];
+                }
+            }
+
+            function mergeAndDedupRecords(...recordSets) {
+                const combinedRecords = recordSets.flatMap((set) => (Array.isArray(set) ? set : []));
+                const uniqueRecordsMap = new Map();
+
+                combinedRecords.forEach((rec) => {
+                    if (!rec || typeof rec !== 'object') return;
+
+                    const rawUser = String(rec.user ?? '').trim();
+                    if (!rawUser) return;
+
+                    const alias = PLAYER_ALIASES[rawUser.toLowerCase()];
+                    if (alias) {
+                        rec.user = alias;
+                    }
+
+                    const key = String(rec.user ?? '').toLowerCase().trim();
+                    if (!key) return;
+
+                    const existing = uniqueRecordsMap.get(key);
+                    if (!existing) {
+                        uniqueRecordsMap.set(key, rec);
+                        return;
+                    }
+
+                    const nextPercent = Number(rec.percent);
+                    const existingPercent = Number(existing.percent);
+                    if (Number.isFinite(nextPercent) && Number.isFinite(existingPercent) && nextPercent > existingPercent) {
+                        uniqueRecordsMap.set(key, rec);
+                    }
+                });
+
+                return Array.from(uniqueRecordsMap.values());
+            }
+
+            function setRecordsToForm(records) {
+                document.getElementById('d-records').value = JSON.stringify(Array.isArray(records) ? records : []);
+            }
+
+            async function fetchPointercrateDemon(query) {
+                const q = String(query ?? '').trim();
+                if (!q) {
+                    throw new Error('Search field is empty');
+                }
+
+                let demonId = null;
+                if (/^\d+$/.test(q)) {
+                    demonId = Number.parseInt(q, 10);
+                } else {
+                    const searchRes = await fetch(`${POINTERCRATE_API_BASE}/demons/listed/?name=${encodeURIComponent(q)}`);
+                    if (!searchRes.ok) {
+                        throw new Error('Could not search Pointercrate');
+                    }
+
+                    const matches = await searchRes.json();
+                    if (!Array.isArray(matches) || matches.length === 0) {
+                        throw new Error('Could not match input to a Pointercrate demon');
+                    }
+
+                    demonId = matches[0]?.id;
+                }
+
+                if (!demonId) {
+                    throw new Error('Pointercrate demon id not found');
+                }
+
+                const demonRes = await fetch(`${POINTERCRATE_API_BASE}/demons/${demonId}/?__=`);
+                if (!demonRes.ok) {
+                    throw new Error('Network error fetching Pointercrate demon');
+                }
+
+                const payload = await demonRes.json();
+                const data = payload?.data ?? payload;
+                if (!data || typeof data !== 'object') {
+                    throw new Error('Unexpected Pointercrate response');
+                }
+
+                return data;
+            }
+
+            async function fetchAredlBundleByQuery(query) {
+                const val = String(query ?? '').trim();
+                if (!val) {
+                    throw new Error('AREDL: empty query');
+                }
+
+                const levels = await fetchAredlLevels();
+                const isNumeric = /^\d+$/.test(val);
+                const numVal = isNumeric ? Number.parseInt(val, 10) : null;
+
+                let targetAredlLevel = null;
+                if (isNumeric && Number.isFinite(numVal)) {
+                    targetAredlLevel = levels.find((l) => l.level_id === numVal || l.position === numVal);
+                } else {
+                    const lowerVal = formatSlug(val).toLowerCase();
+                    targetAredlLevel = levels.find((l) => l.name?.toLowerCase() === lowerVal);
+                    if (!targetAredlLevel) targetAredlLevel = levels.find((l) => l.name?.toLowerCase().includes(lowerVal));
+                }
+
+                if (!targetAredlLevel) {
+                    throw new Error('AREDL: no match');
+                }
+
+                const res = await fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}`);
+                if (!res.ok) {
+                    throw new Error('AREDL: network error fetching level');
+                }
+
+                const data = await res.json();
+
+                const [creatorsSettled, recordsSettled] = await Promise.allSettled([
+                    fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}/creators`).then((r) => (r.ok ? r.json() : [])),
+                    fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}/records`).then((r) => (r.ok ? r.json() : [])),
+                ]);
+
+                const creators = creatorsSettled.status === 'fulfilled' && Array.isArray(creatorsSettled.value)
+                    ? creatorsSettled.value
+                    : [];
+                const creatorNames = creators
+                    .map((c) => c?.global_name || c?.username)
+                    .filter(Boolean);
+
+                const aredlRecords = recordsSettled.status === 'fulfilled' && Array.isArray(recordsSettled.value)
+                    ? recordsSettled.value
+                    : [];
+
+                const ptRecords = aredlRecords
+                    .filter((r) => r?.submitted_by?.country === 620)
+                    .map((r) => ({
+                        user: r.submitted_by.global_name || r.submitted_by.username,
+                        link: r.video_url || '',
+                        percent: 100,
+                        hz: 360
+                    }))
+                    .filter((r) => r.user);
+
+                return { target: targetAredlLevel, data, creatorNames, ptRecords };
+            }
+
+            async function fetchPointercrateBundleByQuery(query) {
+                const demon = await fetchPointercrateDemon(query);
+
+                const ptRecords = (Array.isArray(demon.records) ? demon.records : [])
+                    .filter((r) => r?.nationality?.country_code === 'PT')
+                    .map((r) => ({
+                        user: r?.player?.name,
+                        link: r?.video || '',
+                        percent: Number(r?.progress) || 100,
+                        hz: 360
+                    }))
+                    .filter((r) => r.user);
+
+                const creators = Array.isArray(demon.creators) ? demon.creators.map((c) => c?.name).filter(Boolean) : [];
+                const author = demon.publisher?.name;
+                const creatorNames = author ? Array.from(new Set([author, ...creators])) : creators;
+
+                return { demon, creatorNames, ptRecords };
+            }
+
+            async function fetchAutoFill() {
+                const val = document.getElementById('d-id').value.trim();
+                if (!val) return alert('Search field is empty');
+
+                const existingRecords = readExistingRecordsFromForm();
+
+                setStatus('Searching AREDL + Pointercrate...', 'info');
+
+                const isNumeric = /^\d+$/.test(val);
+                const numVal = isNumeric ? Number.parseInt(val, 10) : null;
+
+                let aredl = null;
+                let pc = null;
+
+                // Heuristic: small numbers are usually AREDL positions; use AREDL to resolve the name,
+                // then fetch Pointercrate by name to avoid mixing two unrelated numeric ID schemes.
+                if (isNumeric && Number.isFinite(numVal) && numVal <= 500) {
+                    try {
+                        aredl = await fetchAredlBundleByQuery(val);
+                    } catch {}
+
+                    if (aredl?.data?.name) {
+                        try {
+                            pc = await fetchPointercrateBundleByQuery(aredl.data.name);
+                        } catch {}
+                    } else {
+                        try {
+                            pc = await fetchPointercrateBundleByQuery(val);
+                        } catch {}
+                    }
+                } else {
+                    const [aredlSettled, pcSettled] = await Promise.allSettled([
+                        fetchAredlBundleByQuery(val),
+                        fetchPointercrateBundleByQuery(val)
+                    ]);
+
+                    if (aredlSettled.status === 'fulfilled') aredl = aredlSettled.value;
+                    if (pcSettled.status === 'fulfilled') pc = pcSettled.value;
+
+                    // Cross-fallbacks
+                    if (!pc && aredl?.data?.name) {
+                        try {
+                            pc = await fetchPointercrateBundleByQuery(aredl.data.name);
+                        } catch {}
+                    }
+
+                    if (!aredl && pc?.demon) {
+                        const fallbackId = pc.demon.level_id ? String(pc.demon.level_id) : '';
+                        try {
+                            if (fallbackId) aredl = await fetchAredlBundleByQuery(fallbackId);
+                        } catch {}
+
+                        if (!aredl) {
+                            try {
+                                aredl = await fetchAredlBundleByQuery(pc.demon.name);
+                            } catch {}
+                        }
+                    }
+                }
+
+                if (!aredl && !pc) {
+                    setStatus('Auto-fill failed: could not match AREDL or Pointercrate.', 'error');
+                    return;
+                }
+
+                const name = aredl?.data?.name || pc?.demon?.name || '';
+                const slug = name ? name.replace(/ /g, '_') : '';
+
+                const levelId = Number(aredl?.data?.level_id || aredl?.target?.level_id || pc?.demon?.level_id) || 0;
+                const author = aredl?.data?.publisher?.global_name || pc?.demon?.publisher?.name || 'Unknown';
+                const verifier =
+                    aredl?.data?.verifications?.[0]?.submitted_by?.global_name ||
+                    aredl?.data?.verifications?.[0]?.submitted_by?.username ||
+                    pc?.demon?.verifier?.name ||
+                    'Unknown';
+                const video = aredl?.data?.verifications?.[0]?.video_url || pc?.demon?.video || '';
+
+                const creators = (aredl?.creatorNames && aredl.creatorNames.length > 0)
+                    ? aredl.creatorNames
+                    : (pc?.creatorNames && pc.creatorNames.length > 0)
+                        ? pc.creatorNames
+                        : author
+                            ? [author]
+                            : [];
+
+                const requirement = Number(pc?.demon?.requirement) || 100;
+                const position = Number(aredl?.data?.position || aredl?.target?.position || pc?.demon?.position) || '';
+
+                document.getElementById('d-lvl-id').value = levelId;
+                document.getElementById('d-name').value = name;
+                document.getElementById('d-author').value = author;
+                document.getElementById('d-creators').value = creators.join(', ');
+                document.getElementById('d-verifier').value = verifier;
+                document.getElementById('d-video').value = video;
+                document.getElementById('d-qualify').value = requirement;
+                document.getElementById('d-password').value = 'Free to Copy';
+                if (slug) document.getElementById('d-filename').value = slug;
+                document.getElementById('d-position').value = position;
+
+                const merged = mergeAndDedupRecords(existingRecords, aredl?.ptRecords, pc?.ptRecords);
+                setRecordsToForm(merged);
+                updateAddPlacementPreview();
+
+                const usedSources = [aredl ? 'AREDL' : null, pc ? 'Pointercrate' : null].filter(Boolean).join(' + ');
+                setStatus(`Auto-fill complete (${usedSources}). PT records merged: ${merged.length}.`, 'success');
+            }
+
             async function fetchAredl() {
                 let val = document.getElementById('d-id').value.trim();
                 if(!val) return alert("Search field is empty");
@@ -366,16 +813,14 @@
                 
                 try {
                     let targetAredlLevel = null;
-                    const listRes = await fetch("https://api.aredl.net/v2/api/aredl/levels");
-                    if (!listRes.ok) throw new Error("Could not fetch AREDL list");
-                    const levels = await listRes.json();
+                    const levels = await fetchAredlLevels();
                     
                     const isNumeric = /^\d+$/.test(val);
                     if (isNumeric) {
                         const numVal = parseInt(val);
                         targetAredlLevel = levels.find(l => l.level_id === numVal || l.position === numVal);
                     } else {
-                        const lowerVal = val.toLowerCase().replace(/_/g, " ");
+                        const lowerVal = formatSlug(val).toLowerCase();
                         targetAredlLevel = levels.find(l => l.name.toLowerCase() === lowerVal);
                         if(!targetAredlLevel) targetAredlLevel = levels.find(l => l.name.toLowerCase().includes(lowerVal));
                     }
@@ -384,20 +829,11 @@
 
                     setStatus(`Located "${targetAredlLevel.name}". Compiling data...`, "info");
 
-                    const res = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}`);
+                    const res = await fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}`);
                     if (!res.ok) throw new Error("Network error fetching Level");
                     const data = await res.json();
                     
-                      let existingRecords = [];
-                      try {
-                          const currentRecsStr = document.getElementById('d-records').value.trim();
-                          if (currentRecsStr) {
-                              const parsed = JSON.parse(currentRecsStr);
-                              if (Array.isArray(parsed)) {
-                                  existingRecords = parsed;
-                              }
-                          }
-                      } catch(e) {}
+                      const existingRecords = readExistingRecordsFromForm();
 
                       const demonData = {
                           id: data.level_id,
@@ -425,7 +861,7 @@
 
                     // Fetch AREDL Creators
                     try {
-                        const aredlCreatorsRes = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}/creators`);
+                        const aredlCreatorsRes = await fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}/creators`);
                         if (aredlCreatorsRes.ok) {
                             const aredlCreators = await aredlCreatorsRes.json();
                             if (aredlCreators.length > 0) {
@@ -439,7 +875,7 @@
                     // Fetch AREDL Records
                     let aredlPtRecords = [];
                     try {
-                          const aredlRecsRes = await fetch(`https://api.aredl.net/v2/api/aredl/levels/${targetAredlLevel.level_id}/records`);
+                          const aredlRecsRes = await fetch(`${AREDL_API_BASE}/levels/${targetAredlLevel.level_id}/records`);
                         if(aredlRecsRes.ok) {
                             const aRecs = await aredlRecsRes.json();
                             aredlPtRecords = aRecs
@@ -459,11 +895,11 @@
                     let pcPtRecords = [];
                     try {
                         setStatus(`Fetching Portuguese records from Pointercrate & AREDL for ${data.name}...`, "info");
-                        const pcSearch = await fetch(`https://pointercrate.com/api/v2/demons/listed/?name=${encodeURIComponent(data.name)}`);
+                        const pcSearch = await fetch(`${POINTERCRATE_API_BASE}/demons/listed/?name=${encodeURIComponent(data.name)}`);
                         if(pcSearch.ok) {
                             const pcList = await pcSearch.json();
                             if(pcList.length > 0) {
-                                const pcRes = await fetch(`https://pointercrate.com/api/v2/demons/${pcList[0].id}/?__=`);
+                                const pcRes = await fetch(`${POINTERCRATE_API_BASE}/demons/${pcList[0].id}/?__=`);
                                 if(pcRes.ok) {
                                     const pcFull = await pcRes.json();
 
@@ -502,42 +938,97 @@
                         console.error("Failed fetching PC records", e);
                     }
 
-                      // #rapenuno
-                      const playerAliases = {
-                          "billie eilish": "Ka1sa",
-                          "ka1isa": "Ka1sa",
-                          "l_lobo1811": "Lobo",
-                          "Benson Boone": "Lobo"
-                      };
-
-                      // 3. Deduplicate (Existing + AREDL + Pointercrate)
-                      const combinedRecords = [...existingRecords, ...aredlPtRecords, ...pcPtRecords];
-                      const uniqueRecordsMap = new Map();
-                      
-                      // Map by standard username
-                      combinedRecords.forEach(rec => {
-                          let lowerName = rec.user.toLowerCase().trim();
-                          
-                          if (playerAliases[lowerName]) {
-                              rec.user = playerAliases[lowerName];
-                              lowerName = rec.user.toLowerCase().trim();
-                          }
-                          
-                          // AREDL/Existing gets priority
-                        if (!uniqueRecordsMap.has(lowerName)) {
-                            uniqueRecordsMap.set(lowerName, rec);
-                        } else if (rec.percent > uniqueRecordsMap.get(lowerName).percent) {
-                            // If pointercrate has a better %, replace it
-                            uniqueRecordsMap.set(lowerName, rec);
-                        }
-                    });
-                    
-                    demonData.records = Array.from(uniqueRecordsMap.values());
-                    
-                    document.getElementById('d-records').value = JSON.stringify(demonData.records);
-                    setStatus(`Successfully fetched ${data.name} with ${demonData.records.length} PT records (merged AREDL & PC)! Ready to push.`, "success");
+                      demonData.records = mergeAndDedupRecords(existingRecords, aredlPtRecords, pcPtRecords);
+                      setRecordsToForm(demonData.records);
+                      updateAddPlacementPreview();
+                      setStatus(`Successfully fetched ${data.name} with ${demonData.records.length} PT records (merged Existing + AREDL + Pointercrate). Ready to push.`, "success");
                 } catch(e) {
                     setStatus(e.message, "error");
+                }
+            }
+
+            async function fetchPointercrate() {
+                const val = document.getElementById('d-id').value.trim();
+                if (!val) return alert('Search field is empty');
+                setStatus('Searching Pointercrate API...', 'info');
+
+                try {
+                    const demon = await fetchPointercrateDemon(val);
+                    setStatus(`Located "${demon.name}" on Pointercrate. Compiling data...`, 'info');
+
+                    const existingRecords = readExistingRecordsFromForm();
+
+                    // Pointercrate basics
+                    document.getElementById('d-lvl-id').value = Number(demon.level_id) || 0;
+                    document.getElementById('d-name').value = demon.name || '';
+                    document.getElementById('d-author').value = demon.publisher?.name || 'Unknown';
+
+                    const pcCreators = Array.isArray(demon.creators) ? demon.creators.map((c) => c?.name).filter(Boolean) : [];
+                    const pcAuthor = demon.publisher?.name;
+                    const pcCreatorsMerged = pcAuthor ? Array.from(new Set([pcAuthor, ...pcCreators])) : pcCreators;
+                    document.getElementById('d-creators').value = pcCreatorsMerged.join(', ');
+
+                    document.getElementById('d-verifier').value = demon.verifier?.name || 'Unknown';
+                    document.getElementById('d-video').value = demon.video || '';
+                    document.getElementById('d-qualify').value = Number(demon.requirement) || 100;
+                    document.getElementById('d-password').value = 'Free to Copy';
+                    document.getElementById('d-filename').value = String(demon.name || '').replace(/ /g, '_');
+                    document.getElementById('d-position').value = Number(demon.position) || '';
+
+                    // Pointercrate PT records
+                    const pcPtRecords = (Array.isArray(demon.records) ? demon.records : [])
+                        .filter((r) => r?.nationality?.country_code === 'PT')
+                        .map((r) => ({
+                            user: r?.player?.name,
+                            link: r?.video || '',
+                            percent: Number(r?.progress) || 100,
+                            hz: 360
+                        }))
+                        .filter((r) => r.user);
+
+                    let aredlPtRecords = [];
+                    try {
+                        const levels = await fetchAredlLevels();
+                        const target = Number.isFinite(Number(demon.level_id))
+                            ? levels.find((l) => l.level_id === Number(demon.level_id))
+                            : levels.find((l) => l.name?.toLowerCase() === String(demon.name || '').toLowerCase());
+
+                        if (target) {
+                            try {
+                                const aredlCreatorsRes = await fetch(`${AREDL_API_BASE}/levels/${target.level_id}/creators`);
+                                if (aredlCreatorsRes.ok) {
+                                    const aredlCreators = await aredlCreatorsRes.json();
+                                    if (Array.isArray(aredlCreators) && aredlCreators.length > 0) {
+                                        document.getElementById('d-creators').value = aredlCreators.map((c) => c.global_name || c.username).join(', ');
+                                    }
+                                }
+                            } catch {}
+
+                            try {
+                                const aredlRecsRes = await fetch(`${AREDL_API_BASE}/levels/${target.level_id}/records`);
+                                if (aredlRecsRes.ok) {
+                                    const aRecs = await aredlRecsRes.json();
+                                    aredlPtRecords = (Array.isArray(aRecs) ? aRecs : [])
+                                        .filter((r) => r?.submitted_by?.country === 620)
+                                        .map((r) => ({
+                                            user: r.submitted_by.global_name || r.submitted_by.username,
+                                            link: r.video_url || '',
+                                            percent: 100,
+                                            hz: 360
+                                        }))
+                                        .filter((r) => r.user);
+                                }
+                            } catch {}
+                        }
+                    } catch {}
+
+                    const merged = mergeAndDedupRecords(existingRecords, aredlPtRecords, pcPtRecords);
+                    setRecordsToForm(merged);
+                    updateAddPlacementPreview();
+
+                    setStatus(`Successfully fetched ${demon.name} with ${merged.length} PT records (merged Existing + AREDL + Pointercrate). Ready to push.`, 'success');
+                } catch (e) {
+                    setStatus(e.message || 'Pointercrate autofill failed', 'error');
                 }
             }
 
@@ -595,64 +1086,279 @@
             }
 
             let cachedList = [];
+            let cachedListIndex = new Map();
+
+            function rebuildCachedListIndex() {
+                cachedListIndex = new Map(cachedList.map((slug, idx) => [slug, idx]));
+            }
+
+            function populateMoveSelect(selectedSlug) {
+                const select = document.getElementById('move-id');
+                if (!select) return;
+
+                const desired = selectedSlug ?? select.value;
+                select.innerHTML = '';
+
+                const placeholder = document.createElement('option');
+                placeholder.value = '';
+                placeholder.disabled = true;
+                placeholder.selected = !desired;
+                placeholder.textContent = 'Select a level...';
+                select.appendChild(placeholder);
+
+                cachedList.forEach((slug, idx) => {
+                    const opt = document.createElement('option');
+                    opt.value = slug;
+                    opt.textContent = `#${idx + 1} — ${formatSlug(slug)}`;
+                    select.appendChild(opt);
+                });
+
+                if (desired && cachedListIndex.has(desired)) {
+                    select.value = desired;
+                }
+            }
+
+            function updateMoveCurrentHint() {
+                const hint = document.getElementById('move-current-hint');
+                if (!hint) return;
+
+                if (!cachedList.length) {
+                    hint.textContent = 'Loading list...';
+                    return;
+                }
+
+                const slug = document.getElementById('move-id')?.value;
+                if (!slug) {
+                    hint.textContent = `Valid positions: 1 to ${cachedList.length}`;
+                    return;
+                }
+
+                const idx = cachedListIndex.get(slug);
+                const currentPos = typeof idx === 'number' ? idx + 1 : '?';
+                hint.textContent = `Current: #${currentPos}. Valid positions: 1 to ${cachedList.length}`;
+            }
+
+            function simulatePlacement(slug, targetPosRaw, removeExisting) {
+                const cleanSlug = String(slug ?? '').trim();
+                if (!cleanSlug) return null;
+
+                const targetPos = Number.parseInt(targetPosRaw, 10);
+                if (!Number.isFinite(targetPos) || targetPos < 1) return null;
+
+                const baseList = Array.isArray(cachedList) ? cachedList : [];
+                const listWithout = removeExisting ? baseList.filter((s) => s !== cleanSlug) : baseList.slice();
+
+                const maxPos = listWithout.length + 1;
+                const clampedPos = clamp(targetPos, 1, maxPos);
+                const insertIndex = clampedPos - 1;
+
+                const finalList = [...listWithout.slice(0, insertIndex), cleanSlug, ...listWithout.slice(insertIndex)];
+                return { finalList, insertIndex, clampedPos };
+            }
+
+            function renderPlacementPreview(containerDiv, contentDiv, finalList, highlightIndex, highlightName) {
+                const start = Math.max(0, highlightIndex - 2);
+                const end = Math.min(finalList.length - 1, highlightIndex + 2);
+
+                const items = [];
+                for (let i = start; i <= end; i++) {
+                    const slug = finalList[i];
+                    const isHighlight = i === highlightIndex;
+                    const displayName = isHighlight ? (highlightName || formatSlug(slug)) : formatSlug(slug);
+                    const classes = ['preview-item', isHighlight ? 'preview-item--highlight' : 'preview-item--muted'];
+
+                    items.push(
+                        `<div class="${classes.join(' ')}">` +
+                            `<div class="preview-rank">#${i + 1}</div>` +
+                            `<div class="preview-name">${escapeHtml(displayName)}</div>` +
+                        `</div>`
+                    );
+                }
+
+                contentDiv.innerHTML = items.join('');
+                containerDiv.classList.remove('hidden');
+            }
+
+            function getAddSlug() {
+                const fileSlug = document.getElementById('d-filename')?.value?.trim();
+                if (fileSlug) return fileSlug;
+
+                const name = document.getElementById('d-name')?.value?.trim();
+                return name ? name.replace(/ /g, '_') : '';
+            }
+
+            function updateAddPlacementPreview() {
+                const containerDiv = document.getElementById('position-sandwich');
+                const contentDiv = document.getElementById('sandwich-content');
+                const posHint = document.getElementById('pos-hint');
+
+                if (!containerDiv || !contentDiv || !posHint) return;
+
+                if (!cachedList.length) {
+                    containerDiv.classList.add('hidden');
+                    posHint.textContent = 'Loading max position...';
+                    return;
+                }
+
+                const slug = getAddSlug();
+                const posRaw = document.getElementById('d-position')?.value;
+                if (!slug || !posRaw) {
+                    containerDiv.classList.add('hidden');
+                    posHint.textContent = `Valid positions: 1 to ${cachedList.length + 1}`;
+                    return;
+                }
+
+                const isExisting = cachedListIndex.has(slug);
+                const maxPos = isExisting ? cachedList.length : cachedList.length + 1;
+                posHint.textContent = `Valid positions: 1 to ${maxPos}`;
+
+                const sim = simulatePlacement(slug, posRaw, isExisting);
+                if (!sim) {
+                    containerDiv.classList.add('hidden');
+                    return;
+                }
+
+                const highlightName = document.getElementById('d-name')?.value?.trim() || formatSlug(slug) || '[New Level]';
+                renderPlacementPreview(containerDiv, contentDiv, sim.finalList, sim.insertIndex, highlightName);
+            }
+
+            function updateMovePlacementPreview() {
+                const containerDiv = document.getElementById('move-preview');
+                const contentDiv = document.getElementById('move-preview-content');
+                if (!containerDiv || !contentDiv) return;
+
+                if (!cachedList.length) {
+                    containerDiv.classList.add('hidden');
+                    return;
+                }
+
+                const slug = document.getElementById('move-id')?.value;
+                const posRaw = document.getElementById('move-position')?.value;
+                if (!slug || !posRaw) {
+                    containerDiv.classList.add('hidden');
+                    return;
+                }
+
+                const sim = simulatePlacement(slug, posRaw, true);
+                if (!sim) {
+                    containerDiv.classList.add('hidden');
+                    return;
+                }
+
+                renderPlacementPreview(containerDiv, contentDiv, sim.finalList, sim.insertIndex, formatSlug(slug));
+            }
+
+            function nudgeMove(delta) {
+                if (!cachedList.length) return;
+
+                const slug = document.getElementById('move-id')?.value;
+                const posEl = document.getElementById('move-position');
+                if (!posEl) return;
+
+                const current = Number.parseInt(posEl.value, 10);
+                const selectedIdx = slug ? cachedListIndex.get(slug) : undefined;
+
+                const base = Number.isFinite(current)
+                    ? current
+                    : (typeof selectedIdx === 'number' ? selectedIdx + 1 : 1);
+
+                const next = clamp(base + Number(delta || 0), 1, cachedList.length);
+                posEl.value = String(next);
+                updateMovePlacementPreview();
+            }
+
+            async function applyMove() {
+                if (!cachedList.length) return alert('List not loaded yet');
+
+                const slug = document.getElementById('move-id')?.value;
+                if (!slug) return alert('Please select a level to move');
+
+                const posEl = document.getElementById('move-position');
+                const rawPos = posEl?.value;
+                let targetPos = Number.parseInt(rawPos, 10);
+                if (!Number.isFinite(targetPos) || targetPos < 1) return alert('Please enter a valid new position');
+
+                targetPos = clamp(targetPos, 1, cachedList.length);
+
+                setStatus(`Moving ${formatSlug(slug)} to #${targetPos}...`, 'info');
+
+                try {
+                    const demonRes = await fetch(`/data/${encodeURIComponent(slug)}.json`, { cache: 'no-store' });
+                    if (!demonRes.ok) {
+                        throw new Error('Could not load level data');
+                    }
+                    const demonData = await demonRes.json();
+
+                    const payload = { id: slug, position: String(targetPos), demonData };
+                    const res = await fetch('/api/edit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    // Optimistically update local list so previews/selector reflect the move.
+                    const sim = simulatePlacement(slug, targetPos, true);
+                    if (sim) {
+                        cachedList = sim.finalList;
+                        rebuildCachedListIndex();
+                        populateMoveSelect(slug);
+                        if (posEl) posEl.value = String(sim.clampedPos);
+                        updateMoveCurrentHint();
+                        updateMovePlacementPreview();
+                        updateAddPlacementPreview();
+                    }
+
+                    setStatus(`Success! Moved to #${targetPos}. Site is rebuilding.`, 'success');
+                } catch (e) {
+                    setStatus(`Move Error: ${e.message || e}`, 'error');
+                }
+            }
+
             async function loadList() {
                 try {
-                    const res = await fetch('/data/_list.json');
+                    const res = await fetch('/data/_list.json', { cache: 'no-store' });
                     if (res.ok) {
-                        cachedList = await res.json();
-                        const posHint = document.getElementById('pos-hint');
-                        if(posHint) posHint.textContent = `Valid positions: 1 to ${cachedList.length + 1}`;
+                        const list = await res.json();
+                        if (Array.isArray(list)) {
+                            cachedList = list;
+                            rebuildCachedListIndex();
+                            populateMoveSelect();
+                            updateMoveCurrentHint();
+                            updateAddPlacementPreview();
+                            updateMovePlacementPreview();
+                        }
                     }
                 } catch(e) {
-                    console.error("Could not load list for sandwich", e);
+                    console.error('Could not load list for placement preview', e);
                 }
             }
             loadList();
 
-            function updateSandwich() {
-                const posInput = document.getElementById('d-position');
-                const nameInput = document.getElementById('d-name');
-                const sandwichDiv = document.getElementById('position-sandwich');
-                const contentDiv = document.getElementById('sandwich-content');
+            const addPosEl = document.getElementById('d-position');
+            const addNameEl = document.getElementById('d-name');
+            const addSlugEl = document.getElementById('d-filename');
+            if (addPosEl) addPosEl.addEventListener('input', updateAddPlacementPreview);
+            if (addNameEl) addNameEl.addEventListener('input', updateAddPlacementPreview);
+            if (addSlugEl) addSlugEl.addEventListener('input', updateAddPlacementPreview);
 
-                if (!posInput.value || cachedList.length === 0) {
-                    sandwichDiv.classList.add('hidden');
-                    return;
-                }
-
-                let targetPos = parseInt(posInput.value);
-                let newName = nameInput.value.trim() || "[New Level]";
-
-                if (isNaN(targetPos) || targetPos < 1) return;
-                
-                // Cap it at max
-                if (targetPos > cachedList.length + 1) targetPos = cachedList.length + 1;
-
-                sandwichDiv.classList.remove('hidden');
-
-                // Generate sandwich
-                let html = [];
-
-                let beforePos = targetPos - 1;
-                let afterPos = targetPos;
-
-                if (beforePos > 0 && beforePos <= cachedList.length) {
-                    const beforeName = cachedList[beforePos - 1].replace(/_/g, ' ');
-                    html.push(`<div style="opacity: 0.6;">#${beforePos} - ${beforeName}</div>`);
-                }
-
-                html.push(`<div style="color: var(--color-primary); font-weight: bold; font-size: 1.1em; background: rgba(0,0,0,0.1); padding: 4px; border-radius: 4px;">#${targetPos} - <span style="text-shadow: 0 0 5px var(--color-primary)">${newName}</span></div>`);
-                
-                if (afterPos <= cachedList.length) {
-                    const afterName = cachedList[afterPos - 1].replace(/_/g, ' ');
-                    html.push(`<div style="opacity: 0.6;">#${afterPos + 1} - ${afterName}</div>`);
-                }
-
-                contentDiv.innerHTML = html.join('');
+            const moveSelectEl = document.getElementById('move-id');
+            const movePosEl = document.getElementById('move-position');
+            if (moveSelectEl) {
+                moveSelectEl.addEventListener('change', () => {
+                    const slug = moveSelectEl.value;
+                    const idx = cachedListIndex.get(slug);
+                    if (movePosEl && typeof idx === 'number') {
+                        movePosEl.value = String(idx + 1);
+                    }
+                    updateMoveCurrentHint();
+                    updateMovePlacementPreview();
+                });
             }
-
-            document.getElementById('d-position').addEventListener('input', updateSandwich);
-            document.getElementById('d-name').addEventListener('input', updateSandwich);
+            if (movePosEl) movePosEl.addEventListener('input', updateMovePlacementPreview);
 
             // Tabs Logic
             function switchAdminTab(tab) {

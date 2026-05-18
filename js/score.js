@@ -2,6 +2,34 @@
  * Numbers of decimal digits to round to
  */
 const scale = 3;
+const MAX_RANK_WITH_POINTS = 150;
+const FULL_CLEAR_REQUIRED_AFTER = 75;
+
+function getBaseScore(rank) {
+    if (rank <= 5) {
+        return -33 * Math.pow(rank - 1, 0.65) + 500;
+    }
+    if (rank <= 15) {
+        return -14.44 * rank + 466.64;
+    }
+    if (rank <= 30) {
+        return -5 * rank + 310;
+    }
+    if (rank <= 50) {
+        return -4.474 * rank + 290.7;
+    }
+    if (rank <= 75) {
+        return -0.958 * rank + 113.858;
+    }
+    if (rank <= 85) {
+        return -0.556 * rank + 82.256;
+    }
+    if (rank <= 115) {
+        return -0.367 * rank + 65.195;
+    }
+    return -0.486 * rank + 77.79;
+}
+
 /**
  * Calculate the score awarded when having a certain percentage on a list level
  * @param {Number} rank Position on the list
@@ -10,61 +38,34 @@ const scale = 3;
  * @returns {Number}
  */
 export function score(rank, percent, minPercent) {
-    if (rank > 150) {
-        return 0;  // No points for ranks beyond 150
+    if (rank > MAX_RANK_WITH_POINTS) {
+        return 0;
     }
-    if (rank > 75 && percent < 100) {
-        return 0;  // Levels above rank 75 only get points if completed 100%
+    if (rank > FULL_CLEAR_REQUIRED_AFTER && percent < 100) {
+        return 0;
     }
-    // Cálculo Base da Pontuação
 
-    let baseScore;
+    const baseScore = getBaseScore(rank);
+    const threshold = minPercent - 1;
+    const completionFactor = Math.max(0, (percent - threshold) / (100 - threshold));
+    const adjustedScore = Math.max(0, baseScore * completionFactor);
+    const finalScore = percent === 100 ? adjustedScore : adjustedScore * (2 / 3);
 
-    if (rank <= 5) {
-       baseScore = (-33 * Math.pow(rank - 1, 0.65) + 500);
-    } if (rank > 5 && rank <= 15) {  // Use 'else' to avoid redundant checks
-       baseScore = (-14.44 * rank +466.64);
-    } if (rank > 15 && rank <= 30) {  // Use 'else' to avoid redundant checks
-       baseScore = (-5 * rank + 310 );
-    } if (rank > 115 && rank <= 150) {  // Use 'else' to avoid redundant checks
-       baseScore = (-0.486 * rank + 77.79 );
-    } if (rank > 85 && rank <= 115) {  // Use 'else' to avoid redundant checks
-       baseScore = (-0.367 * rank + 65.195 );
-    } if (rank > 75 && rank <= 85) {  // Use 'else' to avoid redundant checks
-       baseScore = (-0.556 * rank + 82.256  );
-    } if (rank > 50 && rank <= 75) {  // Use 'else' to avoid redundant checks
-       baseScore = (-0.958 * rank + 113.858 );
-    } if (rank > 30 && rank <= 50) {  // Use 'else' to avoid redundant checks
-       baseScore = (-4.474 * rank + 290.7 );
-    }
-    
-    // Fator de completude da percentagem, ajustando para ser mais gradual
-    let percentCompletionFactor = (percent - (minPercent - 1)) / (100 - (minPercent - 1));
-    // Garantir que o fator não é negativo
-    percentCompletionFactor = Math.max(0, percentCompletionFactor);
-    // Pontuação ajustada com o fator de completude
-    let score = baseScore * percentCompletionFactor;
-    // Assegurar que a pontuação é positiva
-    score = Math.max(0, score);
-    // Se a percentagem não for 100%, reduzir a pontuação em um terço
-    if (percent !== 100) {
-        return round(score - score / 3);
-    }
-    return round(score);
+    return round(finalScore);
 }
+
 export function round(num) {
-    if (!('' + num).includes('e')) {
-        return +(Math.round(num + 'e+' + scale) + 'e-' + scale);
-    } else {
-        var arr = ('' + num).split('e');
-        var sig = '';
-        if (+arr[1] + scale > 0) {
-            sig = '+';
-        }
-        return +(
-            Math.round(+arr[0] + 'e' + sig + (+arr[1] + scale)) +
-            'e-' +
-            scale
-        );
+    const stringified = String(num);
+    if (!stringified.includes('e')) {
+        return +(Math.round(`${num}e+${scale}`) + `e-${scale}`);
     }
+
+    const [coefficient, exponent] = stringified.split('e');
+    const shiftedExponent = Number(exponent) + scale;
+    const sign = shiftedExponent > 0 ? '+' : '';
+
+    return +(
+        Math.round(`${Number(coefficient)}e${sign}${shiftedExponent}`)
+        + `e-${scale}`
+    );
 }

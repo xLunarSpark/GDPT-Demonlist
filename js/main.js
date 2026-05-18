@@ -1,17 +1,29 @@
 import routes from './routes.js';
 
+const DARK_STORAGE_KEY = 'dark';
+
+function readDarkPreference() {
+    try {
+        return JSON.parse(localStorage.getItem(DARK_STORAGE_KEY)) === true;
+    } catch {
+        return false;
+    }
+}
+
+function syncDarkClass(isDark) {
+    document.documentElement.classList.toggle('dark', isDark);
+}
+
 export const store = Vue.reactive({
-    dark: JSON.parse(localStorage.getItem('dark')) || false,
+    dark: readDarkPreference(),
     toggleDark() {
         this.dark = !this.dark;
-        localStorage.setItem('dark', JSON.stringify(this.dark));
-        if (this.dark) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+        localStorage.setItem(DARK_STORAGE_KEY, JSON.stringify(this.dark));
+        syncDarkClass(this.dark);
     },
 });
+
+syncDarkClass(store.dark);
 
 const app = Vue.createApp({
     data: () => ({ store }),

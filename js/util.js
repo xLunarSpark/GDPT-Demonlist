@@ -1,8 +1,11 @@
+const YOUTUBE_ID_REGEX = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+
 // https://stackoverflow.com/questions/3452546/how-do-i-get-the-youtube-video-id-from-a-url
 export function getYoutubeIdFromUrl(url) {
-    return url.match(
-        /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/,
-    )?.[1] ?? '';
+    if (!url) {
+        return '';
+    }
+    return url.match(YOUTUBE_ID_REGEX)?.[1] ?? '';
 }
 
 export function embed(video) {
@@ -22,7 +25,7 @@ export function shuffle(array) {
     let currentIndex = array.length, randomIndex;
 
     // While there remain elements to shuffle.
-    while (currentIndex != 0) {
+    while (currentIndex !== 0) {
         // Pick a remaining element.
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
