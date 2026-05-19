@@ -13,6 +13,15 @@ let listCachedAt = 0;
 let editorsCache = null;
 let editorsCachedAt = 0;
 
+async function loadPendingPlacements() {
+    try {
+        const data = await fetchJson(`${dir}/_pending_placements.json`);
+        return Array.isArray(data) ? data : [];
+    } catch {
+        return [];
+    }
+}
+
 async function fetchJson(path) {
     const response = await fetch(path);
     if (!response.ok) {
@@ -41,21 +50,34 @@ async function mapWithConcurrency(items, concurrency, mapper) {
     return results;
 }
 
-function normalizeLevel(level, path) {
+function normalizeLevel(level, path, pendingSet) {
     const records = Array.isArray(level.records)
         ? [...level.records].sort((a, b) => b.percent - a.percent)
         : [];
+
+    const pendingPlacement = pendingSet ? pendingSet.has(path) : false;
 
     return {
         ...level,
         path,
         records,
+        pendingPlacement,
     };
 }
 
 async function loadList() {
     try {
-        const listPaths = await fetchJson(`${dir}/_list.json`);
+        const [listPaths, pendingValues] = await Promise.all([
+            fetchJson(`${dir}/_list.json`),
+            loadPendingPlacements(),
+        ]);
+
+        const pendingSet = new Set(
+            (Array.isArray(pendingValues) ? pendingValues : [])
+                .filter((x) => typeof x === 'string')
+                .map((x) => x.trim())
+                .filter(Boolean),
+        );
 
         try {
             const bundledData = await fetchJson(`${dir}/_list_bundled.json`);
@@ -66,7 +88,7 @@ async function loadList() {
                         console.error(`Failed to load level #${rank + 1} ${path}.`);
                         return [null, path];
                     }
-                    return [normalizeLevel(level, path), null];
+                    return [normalizeLevel(level, path, pendingSet), null];
                 });
             }
         } catch {
@@ -80,7 +102,7 @@ async function loadList() {
             async (path, rank) => {
                 try {
                     const level = await fetchJson(`${dir}/${path}.json`);
-                    return [normalizeLevel(level, path), null];
+                    return [normalizeLevel(level, path, pendingSet), null];
                 } catch {
                     console.error(`Failed to load level #${rank + 1} ${path}.`);
                     return [null, path];
@@ -184,6 +206,10 @@ export async function fetchLeaderboard() {
         const [level, err] = list[rank];
         if (err || !level) {
             errs.push(err ?? `#${rank + 1}`);
+            continue;
+        }
+
+        if (level.pendingPlacement) {
             continue;
         }
 

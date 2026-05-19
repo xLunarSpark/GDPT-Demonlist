@@ -6,6 +6,7 @@ import {
 
 const LIST_FILE = 'data/_list.json';
 const BUNDLED_FILE = 'data/_list_bundled.json';
+const PENDING_FILE = 'data/_pending_placements.json';
 const MAX_GITHUB_WRITE_RETRIES = 2;
 
 function safeParseArray(text) {
@@ -29,6 +30,95 @@ function isShaConflict(error) {
 function isNotFound(error) {
     const msg = String(error?.message ?? error);
     return msg.includes(' failed: 404');
+}
+
+async function addPendingPlacement(github, fileId, initialFile = null) {
+    let pendingFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!pendingFile) {
+            pendingFile = await github.getFile(PENDING_FILE);
+        }
+
+        const pendingValues = pendingFile
+            ? safeParseArray(pendingFile.content)
+            : [];
+
+        const values = pendingValues
+            .filter((x) => typeof x === 'string')
+            .map((x) => x.trim())
+            .filter(Boolean);
+
+        if (values.includes(fileId)) {
+            return false;
+        }
+
+        values.push(fileId);
+
+        try {
+            await github.putFile(
+                PENDING_FILE,
+                JSON.stringify(values, null, 4),
+                `Admin Panel: Mark ${fileId} as pending placement`,
+                pendingFile?.sha ?? null,
+            );
+            return true;
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            pendingFile = null;
+        }
+    }
+
+    throw lastError;
+}
+
+async function removePendingPlacement(github, fileId, initialFile = null) {
+    let pendingFile = initialFile;
+    let lastError = null;
+
+    for (let attempt = 0; attempt < MAX_GITHUB_WRITE_RETRIES; attempt += 1) {
+        if (!pendingFile) {
+            pendingFile = await github.getFile(PENDING_FILE);
+        }
+
+        if (!pendingFile) {
+            return false;
+        }
+
+        const pendingValues = safeParseArray(pendingFile.content)
+            .filter((x) => typeof x === 'string')
+            .map((x) => x.trim())
+            .filter(Boolean);
+
+        const nextValues = pendingValues.filter((slug) => slug !== fileId);
+        if (nextValues.length === pendingValues.length) {
+            return false;
+        }
+
+        try {
+            await github.putFile(
+                PENDING_FILE,
+                JSON.stringify(nextValues, null, 4),
+                `Admin Panel: Remove ${fileId} from pending placements`,
+                pendingFile.sha,
+            );
+            return true;
+        } catch (e) {
+            lastError = e;
+            if (!isShaConflict(e) || attempt === MAX_GITHUB_WRITE_RETRIES - 1) {
+                throw e;
+            }
+
+            pendingFile = null;
+        }
+    }
+
+    throw lastError;
 }
 
 async function updateListForMove(github, fileId, targetPosition, initialFile = null) {
@@ -312,11 +402,15 @@ export async function onRequest(context) {
             const bundledFilePromise = shouldUpdatePlacements
                 ? github.getFile(BUNDLED_FILE)
                 : Promise.resolve(null);
+            const pendingFilePromise = shouldUpdatePlacements
+                ? github.getFile(PENDING_FILE)
+                : Promise.resolve(null);
 
-            const [demonFile, listFile, bundledFile] = await Promise.all([
+            const [demonFile, listFile, bundledFile, pendingFile] = await Promise.all([
                 demonFilePromise,
                 listFilePromise,
                 bundledFilePromise,
+                pendingFilePromise,
             ]);
 
             await github.putFile(
@@ -333,6 +427,11 @@ export async function onRequest(context) {
                     targetPosition,
                     listFile,
                 );
+
+                // Newly inserted demons start as "projected" (pending) placements.
+                if (oldIndex === -1) {
+                    await addPendingPlacement(github, fileId, pendingFile);
+                }
 
                 if (bundledFile) {
                     await updateBundledForMove(
@@ -365,10 +464,11 @@ export async function onRequest(context) {
         const filename = `data/${fileId}.json`;
 
         try {
-            const [demonFile, listFile, bundledFile] = await Promise.all([
+            const [demonFile, listFile, bundledFile, pendingFile] = await Promise.all([
                 github.getFile(filename),
                 github.getFile(LIST_FILE),
                 github.getFile(BUNDLED_FILE),
+                github.getFile(PENDING_FILE),
             ]);
             let demonDataForFallback = null;
             if (demonFile?.content) {
@@ -392,6 +492,8 @@ export async function onRequest(context) {
                     bundledFile,
                 );
             }
+
+            await removePendingPlacement(github, fileId, pendingFile);
 
             await deleteDemonFile(github, filename, fileId, demonFile);
             return jsonResponse({ success: true });

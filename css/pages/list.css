@@ -36,6 +36,9 @@
     cursor: not-allowed;
     text-decoration: line-through;
 }
+.page-list .list .level.pending button {
+    opacity: 0.65;
+}
 .page-list .list .level button:hover {
     background-color: var(--color-background-hover);
     color: var(--color-on-background-hover);

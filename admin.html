@@ -280,6 +280,7 @@
                         <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
                             <button class="btn" id="tab-levels-btn" style="flex: 1; justify-content: center; background: var(--color-primary); color: white;" onclick="switchAdminTab('levels')">Manage Levels</button>
                             <button class="btn" id="tab-subs-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('subs')">Review Submissions</button>
+                            <button class="btn" id="tab-pending-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('pending')">Pending Placements</button>
                         </div>
 
                         <div id="section-levels">
@@ -412,6 +413,16 @@
                                 <span class="type-title-sm">Pending Submissions</span>
                                 <div id="submissions-list" style="display: flex; flex-direction: column; gap: 1rem;">
                                     <p class="type-body-md" style="color:#888;">Loading submissions...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="section-pending" class="hidden">
+                            <div class="admin-card">
+                                <span class="type-title-sm">Pending Placements</span>
+                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Levels newly added to the list start here and do not award points until confirmed.</p>
+                                <div id="pending-placements-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p class="type-body-md" style="color:#888;">Loading pending placements...</p>
                                 </div>
                             </div>
                         </div>
@@ -1361,31 +1372,184 @@
             if (movePosEl) movePosEl.addEventListener('input', updateMovePlacementPreview);
 
             // Tabs Logic
+            function setAdminTabButtonState(buttonId, isActive) {
+                const btn = document.getElementById(buttonId);
+                if (!btn) return;
+
+                if (isActive) {
+                    btn.style.background = 'var(--color-primary)';
+                    btn.style.color = 'white';
+                    btn.style.borderColor = 'transparent';
+                    return;
+                }
+
+                btn.style.background = 'var(--color-background)';
+                btn.style.color = 'var(--color-on-background)';
+                btn.style.borderColor = 'var(--color-primary)';
+            }
+
             function switchAdminTab(tab) {
-                if (tab === 'levels') {
-                    document.getElementById('section-levels').classList.remove('hidden');
-                    document.getElementById('section-subs').classList.add('hidden');
-                    document.getElementById('tab-levels-btn').style.background = 'var(--color-primary)';
-                    document.getElementById('tab-levels-btn').style.color = 'white';
-                    document.getElementById('tab-levels-btn').style.borderColor = 'transparent';
-                    
-                    document.getElementById('tab-subs-btn').style.background = 'var(--color-background)';
-                    document.getElementById('tab-subs-btn').style.color = 'var(--color-on-background)';
-                    document.getElementById('tab-subs-btn').style.borderColor = 'var(--color-primary)';
-                } else {
-                    document.getElementById('section-levels').classList.add('hidden');
-                    document.getElementById('section-subs').classList.remove('hidden');
-                    document.getElementById('tab-subs-btn').style.background = 'var(--color-primary)';
-                    document.getElementById('tab-subs-btn').style.color = 'white';
-                    document.getElementById('tab-subs-btn').style.borderColor = 'transparent';
-                    
-                    document.getElementById('tab-levels-btn').style.background = 'var(--color-background)';
-                    document.getElementById('tab-levels-btn').style.color = 'var(--color-on-background)';
-                    document.getElementById('tab-levels-btn').style.borderColor = 'var(--color-primary)';
-                    
+                const sections = {
+                    levels: 'section-levels',
+                    subs: 'section-subs',
+                    pending: 'section-pending',
+                };
+
+                Object.values(sections).forEach((id) => {
+                    const el = document.getElementById(id);
+                    if (el) el.classList.add('hidden');
+                });
+
+                const activeSection = document.getElementById(sections[tab] || sections.levels);
+                if (activeSection) activeSection.classList.remove('hidden');
+
+                setAdminTabButtonState('tab-levels-btn', tab === 'levels');
+                setAdminTabButtonState('tab-subs-btn', tab === 'subs');
+                setAdminTabButtonState('tab-pending-btn', tab === 'pending');
+
+                if (tab === 'subs') {
                     loadSubmissions();
+                } else if (tab === 'pending') {
+                    loadPendingPlacements();
                 }
                 statusMsg.classList.add('hidden');
+            }
+
+            let currentPendingPlacements = [];
+
+            async function loadPendingPlacements() {
+                setStatus('Loading pending placements...', 'info');
+                try {
+                    const res = await fetch('/api/pending-placements');
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    const data = await res.json();
+                    currentPendingPlacements = Array.isArray(data) ? data : [];
+                    renderPendingPlacements();
+                    statusMsg.classList.add('hidden');
+                } catch (e) {
+                    setStatus('Error loading pending placements', 'error');
+                }
+            }
+
+            function renderPendingPlacements() {
+                const list = document.getElementById('pending-placements-list');
+                if (!list) return;
+
+                list.innerHTML = '';
+                const pending = (Array.isArray(currentPendingPlacements) ? currentPendingPlacements : [])
+                    .filter((x) => typeof x === 'string')
+                    .map((x) => x.trim())
+                    .filter(Boolean);
+
+                if (pending.length === 0) {
+                    list.innerHTML = `<p class="type-body-md" style="color:#888;">No pending placements.</p>`;
+                    return;
+                }
+
+                pending.forEach((slug) => {
+                    const idx = cachedListIndex.get(slug);
+                    const pos = typeof idx === 'number' ? idx + 1 : '?';
+
+                    const el = document.createElement('div');
+                    el.style.border = '1px solid var(--color-background-hover)';
+                    el.style.padding = '1.5rem';
+                    el.style.borderRadius = '8px';
+                    el.style.background = 'var(--color-background)';
+
+                    const row = document.createElement('div');
+                    row.style.display = 'flex';
+                    row.style.justifyContent = 'space-between';
+                    row.style.alignItems = 'flex-start';
+                    row.style.gap = '1.5rem';
+
+                    const left = document.createElement('div');
+                    left.style.flex = '1';
+                    left.style.display = 'flex';
+                    left.style.flexDirection = 'column';
+                    left.style.gap = '0.5rem';
+
+                    const title = document.createElement('div');
+                    title.style.fontSize = '1.1em';
+
+                    const posEl = document.createElement('strong');
+                    posEl.style.color = 'var(--color-primary)';
+                    posEl.style.fontSize = '1.2em';
+                    posEl.textContent = pos === '?' ? '#?' : `#${pos}`;
+
+                    const nameEl = document.createElement('strong');
+                    nameEl.style.color = 'var(--color-on-background)';
+                    nameEl.style.fontSize = '1.1em';
+                    nameEl.style.marginLeft = '0.5rem';
+                    nameEl.textContent = formatSlug(slug);
+
+                    title.appendChild(posEl);
+                    title.appendChild(nameEl);
+
+                    const slugEl = document.createElement('div');
+                    slugEl.className = 'type-body-md';
+                    slugEl.style.color = '#888';
+                    slugEl.textContent = `${slug}.json`;
+
+                    left.appendChild(title);
+                    left.appendChild(slugEl);
+
+                    const right = document.createElement('div');
+                    right.style.display = 'flex';
+                    right.style.gap = '0.5rem';
+                    right.style.flexDirection = 'column';
+                    right.style.minWidth = '140px';
+
+                    const confirmBtn = document.createElement('button');
+                    confirmBtn.className = 'btn';
+                    confirmBtn.textContent = 'Confirm';
+                    confirmBtn.style.background = '#22c55e';
+                    confirmBtn.style.color = 'white';
+                    confirmBtn.style.border = 'none';
+                    confirmBtn.style.padding = '0.6rem 1rem';
+                    confirmBtn.style.fontSize = '1em';
+                    confirmBtn.style.fontWeight = 'bold';
+                    confirmBtn.style.cursor = 'pointer';
+                    confirmBtn.style.width = '100%';
+                    confirmBtn.style.justifyContent = 'center';
+                    confirmBtn.onclick = () => confirmPendingPlacement(slug);
+
+                    right.appendChild(confirmBtn);
+
+                    row.appendChild(left);
+                    row.appendChild(right);
+                    el.appendChild(row);
+                    list.appendChild(el);
+                });
+            }
+
+            async function confirmPendingPlacement(slug) {
+                const cleanSlug = String(slug ?? '').trim();
+                if (!cleanSlug) return;
+
+                if (!confirm(`Confirm ${formatSlug(cleanSlug)}? This will enable points for this level.`)) {
+                    return;
+                }
+
+                setStatus(`Confirming ${formatSlug(cleanSlug)}...`, 'info');
+                try {
+                    const res = await fetch(`/api/pending-placements?id=${encodeURIComponent(cleanSlug)}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    currentPendingPlacements = (Array.isArray(currentPendingPlacements) ? currentPendingPlacements : [])
+                        .filter((x) => x !== cleanSlug);
+                    renderPendingPlacements();
+                    setStatus(`Confirmed ${formatSlug(cleanSlug)}. Site is rebuilding...`, 'success');
+                } catch (e) {
+                    setStatus(`Error confirming: ${e?.message || e}`, 'error');
+                }
             }
 
             let currentSubmissions = [];
