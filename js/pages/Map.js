@@ -21,19 +21,38 @@ const DISTRICTS = [
     { key: 'evora', name: 'Evora' },
     { key: 'beja', name: 'Beja' },
     { key: 'faro', name: 'Faro' },
-    { key: 'acores', name: 'Açores' },
-    { key: 'madeira', name: 'Madeira' },
 ];
+
+const DISTRICT_CENTER_HINTS = [
+    { key: 'viana-do-castelo', x: 0.22, y: 0.08 },
+    { key: 'braga', x: 0.28, y: 0.12 },
+    { key: 'vila-real', x: 0.42, y: 0.12 },
+    { key: 'braganca', x: 0.62, y: 0.12 },
+    { key: 'porto', x: 0.27, y: 0.2 },
+    { key: 'aveiro', x: 0.3, y: 0.3 },
+    { key: 'viseu', x: 0.44, y: 0.3 },
+    { key: 'guarda', x: 0.62, y: 0.3 },
+    { key: 'coimbra', x: 0.34, y: 0.4 },
+    { key: 'castelo-branco', x: 0.58, y: 0.43 },
+    { key: 'leiria', x: 0.3, y: 0.5 },
+    { key: 'santarem', x: 0.43, y: 0.52 },
+    { key: 'lisboa', x: 0.3, y: 0.6 },
+    { key: 'setubal', x: 0.35, y: 0.66 },
+    { key: 'portalegre', x: 0.58, y: 0.57 },
+    { key: 'evora', x: 0.54, y: 0.69 },
+    { key: 'beja', x: 0.52, y: 0.8 },
+    { key: 'faro', x: 0.6, y: 0.93 },
+];
+
+const DISTRICT_CENTER_BY_KEY = new Map(
+    DISTRICT_CENTER_HINTS.map((district) => [district.key, district])
+);
 
 const DISTRICT_KEY_BY_NAME = new Map(
     DISTRICTS.map((district) => [normalizeRegionName(district.name), district.key])
 );
 
-const DISTRICT_ALIASES = new Map([
-    ['azores', 'acores'],
-    ['acores', 'acores'],
-    ['madeira', 'madeira'],
-]);
+const DISTRICT_ALIASES = new Map();
 
 function stripDiacritics(value) {
     return String(value ?? '')
@@ -71,6 +90,81 @@ function getHardestEntry(entry) {
         }
         return best;
     }, null);
+}
+
+function autoAssignDistricts(svg, districts) {
+    const layer = svg.querySelector('#layer6') || svg;
+    const paths = Array.from(layer.querySelectorAll('path'));
+    if (paths.length === 0) {
+        return [];
+    }
+
+    const viewBox = svg.viewBox?.baseVal;
+    const vb = viewBox
+        ? { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height }
+        : svg.getBBox();
+
+    const pathInfos = paths
+        .map((path) => {
+            const box = path.getBBox();
+            const area = box.width * box.height;
+            return {
+                el: path,
+                area,
+                cx: (box.x + box.width / 2 - vb.x) / vb.width,
+                cy: (box.y + box.height / 2 - vb.y) / vb.height,
+            };
+        })
+        .filter((info) => Number.isFinite(info.area) && info.area > 0);
+
+    pathInfos.sort((a, b) => b.area - a.area);
+    const topPaths = pathInfos.slice(0, districts.length);
+    const targets = districts
+        .map((district) => DISTRICT_CENTER_BY_KEY.get(district.key))
+        .filter(Boolean);
+
+    if (targets.length !== districts.length || topPaths.length !== districts.length) {
+        return [];
+    }
+
+    const distances = [];
+    targets.forEach((district) => {
+        topPaths.forEach((path) => {
+            const dx = path.cx - district.x;
+            const dy = path.cy - district.y;
+            distances.push({
+                key: district.key,
+                path,
+                distance: Math.hypot(dx, dy),
+            });
+        });
+    });
+
+    distances.sort((a, b) => a.distance - b.distance);
+
+    const assignedDistricts = new Set();
+    const assignedPaths = new Set();
+    const matches = [];
+
+    distances.forEach((entry) => {
+        if (assignedDistricts.has(entry.key) || assignedPaths.has(entry.path.el)) {
+            return;
+        }
+
+        assignedDistricts.add(entry.key);
+        assignedPaths.add(entry.path.el);
+        matches.push({ key: entry.key, el: entry.path.el });
+    });
+
+    if (matches.length !== districts.length) {
+        return [];
+    }
+
+    matches.forEach((match) => {
+        match.el.setAttribute('data-district', match.key);
+    });
+
+    return matches.map((match) => match.el);
 }
 
 export default {
@@ -170,7 +264,7 @@ export default {
                     <div class="map-canvas" @mouseleave="clearHover">
                         <div v-if="mapSvg" ref="mapSvgContainer" class="map-svg-wrapper" v-html="mapSvg"></div>
                         <div v-else class="map-missing">
-                            <p class="type-body-md">Add /assets/portugal-districts.svg with data-district attributes to enable the district map.</p>
+                            <p class="type-body-md">Add /assets/portugal-districts.svg to enable the district map.</p>
                             <p v-if="mapAssetError" class="map-error">{{ mapAssetError }}</p>
                         </div>
                     </div>
@@ -219,7 +313,7 @@ export default {
 
                 (Array.isArray(profiles) ? profiles : []).forEach((profile) => {
                     const districtKey = resolveDistrictKey(profile?.region);
-                    if (!districtKey) return;
+                    if (!districtKey || !stats[districtKey]) return;
 
                     const stat = stats[districtKey];
                     stat.players += 1;
@@ -277,7 +371,14 @@ export default {
                 return;
             }
 
-            const elements = Array.from(container.querySelectorAll('[data-district]'));
+            let elements = Array.from(container.querySelectorAll('[data-district]'));
+            if (elements.length === 0) {
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    elements = autoAssignDistricts(svg, this.districts);
+                }
+            }
+
             elements.forEach((el) => {
                 const key = el.getAttribute('data-district');
                 if (!key) {

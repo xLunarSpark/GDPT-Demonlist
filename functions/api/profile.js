@@ -26,9 +26,6 @@ const VALID_REGIONS = new Set([
     'Evora',
     'Beja',
     'Faro',
-    'Azores',
-    'Acores',
-    'Madeira',
 ]);
 
 function safeParseArray(text) {

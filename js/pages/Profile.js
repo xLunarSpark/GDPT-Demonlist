@@ -20,8 +20,6 @@ const REGIONS = [
     'Evora',
     'Beja',
     'Faro',
-    'Acores',
-    'Madeira',
 ];
 
 export default {
@@ -172,9 +170,9 @@ export default {
                 }
 
                 if (profile?.region) {
-                    this.profile.region = profile.region === 'Azores'
-                        ? 'Acores'
-                        : profile.region;
+                    this.profile.region = this.regions.includes(profile.region)
+                        ? profile.region
+                        : '';
                 }
             } catch (e) {
                 this.saveMessage = e?.message || 'Failed to load profile.';
