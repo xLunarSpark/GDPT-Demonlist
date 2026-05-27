@@ -4,6 +4,7 @@ export async function onRequest(context) {
     const request = context.request;
     const url = new URL(request.url);
     const code = url.searchParams.get("code");
+    const state = url.searchParams.get("state");
     
     if (!code) return new Response("No code provided", { status: 400 });
 
@@ -52,7 +53,28 @@ export async function onRequest(context) {
     headers.append("Set-Cookie", `discord_username=${encodeURIComponent(userData.username)}; Path=/; Secure; SameSite=Lax; Max-Age=86400`);
     headers.append("Set-Cookie", `is_admin=${isAdmin ? '1' : '0'}; Path=/; Secure; SameSite=Lax; Max-Age=86400`);
     
-    headers.append("Location", "/admin.html");
+    function sanitizeRedirect(value) {
+        if (!value || typeof value !== 'string') {
+            return '/admin.html';
+        }
+        if (!value.startsWith('/') || value.startsWith('//')) {
+            return '/admin.html';
+        }
+        return value;
+    }
+
+    let decodedState = null;
+    if (state) {
+        try {
+            decodedState = decodeURIComponent(state);
+        } catch {
+            decodedState = null;
+        }
+    }
+
+    const redirectPath = sanitizeRedirect(decodedState);
+
+    headers.append("Location", redirectPath);
 
     return new Response("", { status: 302, headers });
 }

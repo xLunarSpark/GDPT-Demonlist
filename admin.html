@@ -233,8 +233,14 @@
                 <a class="nav__tab" href="/#/roulette">
                     <span class="type-label-lg">Roulette</span>
                 </a>
-                <a class="nav__tab router-link-active" href="/admin">
+                <a class="nav__tab" href="/#/map">
+                    <span class="type-label-lg">Map</span>
+                </a>
+                <a class="nav__tab router-link-active" href="/admin" id="admin-tab" style="display:none;">
                     <span class="type-label-lg">Admin</span>
+                </a>
+                <a class="nav__tab" href="/#/profile" id="profile-tab" style="display:none;">
+                    <span class="type-label-lg">Profile</span>
                 </a>
                 <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
                     <span class="type-label-lg">Logout</span>
@@ -262,7 +268,7 @@
                     <div id="login-section" class="admin-card" style="text-align: center;">
                         <span class="type-title-sm">Authentication</span>
                         <p class="type-body-md" style="margin-bottom: 1.5rem;">Please authorize with Discord to access the Admin Panel.</p>
-                        <button class="btn discord-login-btn" onclick="window.location.href='/auth/login'">
+                        <button class="btn discord-login-btn" onclick="window.location.href='/auth/login?redirect=/admin.html'">
                             <img src="/assets/discord.svg" alt="" aria-hidden="true" />
                             <span>Continue with Discord</span>
                         </button>
@@ -281,6 +287,8 @@
                             <button class="btn" id="tab-levels-btn" style="flex: 1; justify-content: center; background: var(--color-primary); color: white;" onclick="switchAdminTab('levels')">Manage Levels</button>
                             <button class="btn" id="tab-subs-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('subs')">Review Submissions</button>
                             <button class="btn" id="tab-pending-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('pending')">Pending Placements</button>
+                            <button class="btn" id="tab-links-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('links')">User Links</button>
+                            <button class="btn" id="tab-profiles-btn" style="flex: 1; justify-content: center; background: var(--color-background); color: var(--color-on-background); border: 2px solid var(--color-primary);" onclick="switchAdminTab('profiles')">Profiles</button>
                         </div>
 
                         <div id="section-levels">
@@ -427,6 +435,74 @@
                             </div>
                         </div>
 
+                        <div id="section-links" class="hidden">
+                            <div class="admin-card">
+                                <span class="type-title-sm">Discord ID Links</span>
+                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Link Discord user IDs to leaderboard names so logins are auto-matched.</p>
+                                <form id="link-form">
+                                    <div class="flex-row">
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">Discord User ID</label>
+                                            <input type="text" id="link-discord-id" placeholder="e.g. 123456789012345678" inputmode="numeric" pattern="\d+" required>
+                                            <span class="hint-text">Enable Developer Mode in Discord to copy user IDs.</span>
+                                        </div>
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">Leaderboard Name</label>
+                                            <input type="text" id="link-gd-name" list="leaderboard-names" placeholder="Exact leaderboard name" required>
+                                            <datalist id="leaderboard-names"></datalist>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn" style="width:100%; justify-content:center; background: var(--color-primary); color:white;">Save Link</button>
+                                </form>
+                            </div>
+                            <div class="admin-card">
+                                <span class="type-title-sm">Existing Links</span>
+                                <div id="links-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p class="type-body-md" style="color:#888;">Loading links...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="section-profiles" class="hidden">
+                            <div class="admin-card">
+                                <span class="type-title-sm">Edit Profiles</span>
+                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Select a user to update their GD name and district.</p>
+                                <form id="profile-admin-form">
+                                    <div class="flex-row">
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">Select User</label>
+                                            <select id="profile-select">
+                                                <option value="" selected>Pick a user...</option>
+                                            </select>
+                                        </div>
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">Discord User ID</label>
+                                            <input type="text" id="profile-user-id" placeholder="Discord ID" required>
+                                        </div>
+                                    </div>
+                                    <div class="flex-row">
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">GD Username</label>
+                                            <input type="text" id="profile-gd-name" placeholder="GD name" required>
+                                        </div>
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">District</label>
+                                            <select id="profile-district" required>
+                                                <option value="" selected disabled>Select a district</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn" style="width:100%; justify-content:center; background: var(--color-primary); color:white;">Save Profile</button>
+                                </form>
+                            </div>
+                            <div class="admin-card">
+                                <span class="type-title-sm">User Submissions</span>
+                                <div id="profile-submissions-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                                    <p class="type-body-md" style="color:#888;">Select a user to view submissions.</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div id="status-msg" class="hidden type-label-lg"></div>
                     </div>
 
@@ -464,6 +540,16 @@
             const username = getCookie('discord_username');
             const isAdminCookie = getCookie('is_admin');
             const isAdmin = isAdminCookie === '1' || isAdminCookie === 'true';
+
+            const adminTab = document.getElementById('admin-tab');
+            if (adminTab) {
+                adminTab.style.display = isAdmin ? 'flex' : 'none';
+            }
+
+            const profileTab = document.getElementById('profile-tab');
+            if (profileTab) {
+                profileTab.style.display = username ? 'flex' : 'none';
+            }
 
             if (username) {
                 document.getElementById('login-section').classList.add('hidden');
@@ -1393,6 +1479,8 @@
                     levels: 'section-levels',
                     subs: 'section-subs',
                     pending: 'section-pending',
+                    links: 'section-links',
+                    profiles: 'section-profiles',
                 };
 
                 Object.values(sections).forEach((id) => {
@@ -1406,11 +1494,18 @@
                 setAdminTabButtonState('tab-levels-btn', tab === 'levels');
                 setAdminTabButtonState('tab-subs-btn', tab === 'subs');
                 setAdminTabButtonState('tab-pending-btn', tab === 'pending');
+                setAdminTabButtonState('tab-links-btn', tab === 'links');
+                setAdminTabButtonState('tab-profiles-btn', tab === 'profiles');
 
                 if (tab === 'subs') {
                     loadSubmissions();
                 } else if (tab === 'pending') {
                     loadPendingPlacements();
+                } else if (tab === 'links') {
+                    loadUserLinks();
+                    loadLeaderboardNames();
+                } else if (tab === 'profiles') {
+                    loadProfilesAdmin();
                 }
                 statusMsg.classList.add('hidden');
             }
@@ -1552,6 +1647,376 @@
                 }
             }
 
+            let leaderboardNamesLoaded = false;
+            async function loadLeaderboardNames() {
+                if (leaderboardNamesLoaded) return;
+
+                try {
+                    const res = await fetch('/data/_list_bundled.json', { cache: 'no-store' });
+                    if (!res.ok) {
+                        throw new Error('Failed to load leaderboard names');
+                    }
+
+                    const data = await res.json();
+                    const names = [];
+                    if (Array.isArray(data)) {
+                        data.forEach((entry) => {
+                            if (entry?.verifier) {
+                                names.push(entry.verifier);
+                            }
+                            if (Array.isArray(entry?.records)) {
+                                entry.records.forEach((record) => {
+                                    if (record?.user) {
+                                        names.push(record.user);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                    const unique = Array.from(new Set(names));
+
+                    const datalist = document.getElementById('leaderboard-names');
+                    if (datalist) {
+                        datalist.innerHTML = unique
+                            .map((name) => `<option value="${escapeHtml(name)}"></option>`)
+                            .join('');
+                    }
+
+                    leaderboardNamesLoaded = true;
+                } catch (e) {
+                    console.warn('Could not load leaderboard names', e);
+                }
+            }
+
+            const DISTRICTS = [
+                'Viana do Castelo',
+                'Braga',
+                'Vila Real',
+                'Braganca',
+                'Porto',
+                'Aveiro',
+                'Viseu',
+                'Guarda',
+                'Coimbra',
+                'Castelo Branco',
+                'Leiria',
+                'Santarem',
+                'Lisboa',
+                'Setubal',
+                'Portalegre',
+                'Evora',
+                'Beja',
+                'Faro',
+                'Acores',
+                'Madeira',
+            ];
+
+            function populateDistrictSelect() {
+                const select = document.getElementById('profile-district');
+                if (!select) return;
+
+                select.innerHTML = '<option value="" selected disabled>Select a district</option>';
+                DISTRICTS.forEach((district) => {
+                    const opt = document.createElement('option');
+                    opt.value = district;
+                    opt.textContent = district;
+                    select.appendChild(opt);
+                });
+            }
+
+            populateDistrictSelect();
+
+            let currentProfiles = [];
+            async function loadProfilesAdmin() {
+                setStatus('Loading profiles...', 'info');
+                try {
+                    const res = await fetch('/api/admin-profiles');
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    const data = await res.json();
+                    currentProfiles = Array.isArray(data) ? data : [];
+                    renderProfileSelect();
+                    statusMsg.classList.add('hidden');
+                } catch (e) {
+                    setStatus('Error loading profiles', 'error');
+                }
+            }
+
+            function renderProfileSelect() {
+                const select = document.getElementById('profile-select');
+                if (!select) return;
+
+                select.innerHTML = '<option value="" selected>Pick a user...</option>';
+                const sorted = [...currentProfiles].sort((a, b) => String(a.gd_name).localeCompare(String(b.gd_name)));
+                sorted.forEach((profile) => {
+                    const opt = document.createElement('option');
+                    opt.value = profile.user_id;
+                    opt.textContent = `${profile.gd_name || 'Unknown'} (${profile.user_id})`;
+                    select.appendChild(opt);
+                });
+            }
+
+            async function loadUserSubmissionHistory(userId) {
+                const list = document.getElementById('profile-submissions-list');
+                if (!list) return;
+
+                list.innerHTML = '<p class="type-body-md" style="color:#888;">Loading submissions...</p>';
+                try {
+                    const res = await fetch(`/api/submissions?user_id=${encodeURIComponent(userId)}`);
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    const data = await res.json();
+                    renderUserSubmissionHistory(Array.isArray(data) ? data : []);
+                } catch (e) {
+                    list.innerHTML = `<p class="type-body-md" style="color:#f87171;">Error loading submissions.</p>`;
+                }
+            }
+
+            function renderUserSubmissionHistory(entries) {
+                const list = document.getElementById('profile-submissions-list');
+                if (!list) return;
+
+                list.innerHTML = '';
+                if (!entries.length) {
+                    list.innerHTML = `<p class="type-body-md" style="color:#888;">No submissions yet.</p>`;
+                    return;
+                }
+
+                entries.forEach((sub) => {
+                    const el = document.createElement('div');
+                    el.style.border = '1px solid var(--color-background-hover)';
+                    el.style.padding = '1.25rem';
+                    el.style.borderRadius = '8px';
+                    el.style.background = 'var(--color-background)';
+
+                    const status = sub.status || 'pending';
+                    const statusColor = status === 'approved'
+                        ? '#22c55e'
+                        : status === 'denied'
+                            ? 'var(--color-error)'
+                            : '#60a5fa';
+
+                    el.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap: 1.5rem;">
+                            <div style="flex:1; display:flex; flex-direction:column; gap: 0.5rem;">
+                                <div style="font-size: 1.05em;">
+                                    <strong style="color:var(--color-primary);">${escapeHtml(sub.player || 'Unknown')}</strong>
+                                    <span style="color:var(--color-on-background)"> on </span>
+                                    <strong style="color:var(--color-on-background);">${escapeHtml(sub.level || 'Unknown')}</strong>
+                                </div>
+                                <div class="type-body-md" style="color:#888;">${escapeHtml(sub.percent ?? '')}% at ${escapeHtml(sub.hz ?? '')} hz</div>
+                                ${sub.review_reason ? `<div class="type-body-md" style="color:#f87171;">Reason: ${escapeHtml(sub.review_reason)}</div>` : ''}
+                            </div>
+                            <div style="min-width:110px; text-align:right;">
+                                <span style="font-weight:700; color:${statusColor}; text-transform:uppercase; letter-spacing:0.08em; font-size:0.85rem;">${escapeHtml(status)}</span>
+                            </div>
+                        </div>
+                    `;
+                    list.appendChild(el);
+                });
+            }
+
+            const profileSelect = document.getElementById('profile-select');
+            if (profileSelect) {
+                profileSelect.addEventListener('change', () => {
+                    const userId = profileSelect.value;
+                    const profile = currentProfiles.find((entry) => entry.user_id === userId);
+                    document.getElementById('profile-user-id').value = userId || '';
+                    document.getElementById('profile-gd-name').value = profile?.gd_name || '';
+                    document.getElementById('profile-district').value = profile?.region || '';
+
+                    if (userId) {
+                        loadUserSubmissionHistory(userId);
+                    } else {
+                        const list = document.getElementById('profile-submissions-list');
+                        if (list) {
+                            list.innerHTML = '<p class="type-body-md" style="color:#888;">Select a user to view submissions.</p>';
+                        }
+                    }
+                });
+            }
+
+            const profileForm = document.getElementById('profile-admin-form');
+            if (profileForm) {
+                profileForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const userId = document.getElementById('profile-user-id')?.value?.trim();
+                    const gdName = document.getElementById('profile-gd-name')?.value?.trim();
+                    const district = document.getElementById('profile-district')?.value?.trim();
+
+                    if (!userId || !gdName || !district) {
+                        setStatus('Please fill all profile fields.', 'error');
+                        return;
+                    }
+
+                    setStatus('Saving profile...', 'info');
+                    try {
+                        const res = await fetch('/api/admin-profiles', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                user_id: userId,
+                                gd_name: gdName,
+                                region: district,
+                            }),
+                        });
+
+                        if (!res.ok) {
+                            throw new Error(await res.text());
+                        }
+
+                        const data = await res.json();
+                        const profile = data?.profile;
+                        if (profile) {
+                            const idx = currentProfiles.findIndex((entry) => entry.user_id === profile.user_id);
+                            if (idx === -1) {
+                                currentProfiles.push(profile);
+                            } else {
+                                currentProfiles[idx] = profile;
+                            }
+                        }
+
+                        renderProfileSelect();
+                        setStatus('Profile saved.', 'success');
+                        if (userId) {
+                            loadUserSubmissionHistory(userId);
+                        }
+                    } catch (e) {
+                        setStatus('Error saving profile', 'error');
+                    }
+                });
+            }
+
+            let currentUserLinks = [];
+            async function loadUserLinks() {
+                setStatus('Loading user links...', 'info');
+                try {
+                    const res = await fetch('/api/user-links');
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    const data = await res.json();
+                    currentUserLinks = Array.isArray(data) ? data : [];
+                    renderUserLinks();
+                    statusMsg.classList.add('hidden');
+                } catch (e) {
+                    setStatus('Error loading user links', 'error');
+                }
+            }
+
+            function renderUserLinks() {
+                const list = document.getElementById('links-list');
+                if (!list) return;
+
+                list.innerHTML = '';
+                if (!currentUserLinks.length) {
+                    list.innerHTML = `<p class="type-body-md" style="color:#888;">No links yet.</p>`;
+                    return;
+                }
+
+                currentUserLinks.forEach((link) => {
+                    const el = document.createElement('div');
+                    el.style.border = '1px solid var(--color-background-hover)';
+                    el.style.padding = '1.25rem';
+                    el.style.borderRadius = '8px';
+                    el.style.background = 'var(--color-background)';
+
+                    const updatedAt = link.updated_at ? new Date(link.updated_at).toLocaleString() : 'Unknown';
+
+                    el.innerHTML = `
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap: 1.5rem;">
+                            <div style="flex:1; display:flex; flex-direction:column; gap: 0.5rem;">
+                                <div style="font-size: 1.1em;">
+                                    <strong style="color:var(--color-primary); font-size: 1.2em;">${escapeHtml(link.gd_name || 'Unknown')}</strong>
+                                </div>
+                                <div class="type-body-md" style="color:#888;">Discord ID: ${escapeHtml(link.discord_id || '')}</div>
+                                <div class="type-body-md" style="color:#888;">Updated: ${escapeHtml(updatedAt)}</div>
+                            </div>
+                            <div style="display:flex; gap:0.5rem; flex-direction:column; min-width:120px;">
+                                <button class="btn" style="background:var(--color-error); color:white; border:none; padding:0.6rem 1rem; font-size:1em; font-weight: bold; cursor:pointer; width: 100%; justify-content: center;" onclick="removeUserLink('${escapeHtml(link.discord_id || '')}')">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                    list.appendChild(el);
+                });
+            }
+
+            async function removeUserLink(discordId) {
+                const cleanId = String(discordId ?? '').trim();
+                if (!cleanId) return;
+                if (!confirm(`Remove link for Discord ID ${cleanId}?`)) return;
+
+                setStatus('Removing link...', 'info');
+                try {
+                    const res = await fetch(`/api/user-links?discord_id=${encodeURIComponent(cleanId)}`, { method: 'DELETE' });
+                    if (!res.ok) {
+                        throw new Error(await res.text());
+                    }
+
+                    currentUserLinks = currentUserLinks.filter((link) => link?.discord_id !== cleanId);
+                    renderUserLinks();
+                    setStatus('Link removed.', 'success');
+                } catch (e) {
+                    setStatus('Error removing link', 'error');
+                }
+            }
+
+            const linkForm = document.getElementById('link-form');
+            if (linkForm) {
+                linkForm.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    const discordId = document.getElementById('link-discord-id')?.value?.trim();
+                    const gdName = document.getElementById('link-gd-name')?.value?.trim();
+                    if (!discordId || !gdName) {
+                        setStatus('Please enter both Discord ID and leaderboard name.', 'error');
+                        return;
+                    }
+
+                    setStatus('Saving link...', 'info');
+                    try {
+                        const res = await fetch('/api/user-links', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({
+                                discord_id: discordId,
+                                gd_name: gdName,
+                            }),
+                        });
+
+                        if (!res.ok) {
+                            throw new Error(await res.text());
+                        }
+
+                        const data = await res.json();
+                        const nextLink = data?.link;
+                        if (nextLink) {
+                            const existingIndex = currentUserLinks.findIndex((link) => link?.discord_id === nextLink.discord_id);
+                            if (existingIndex === -1) {
+                                currentUserLinks.push(nextLink);
+                            } else {
+                                currentUserLinks[existingIndex] = nextLink;
+                            }
+                        }
+
+                        renderUserLinks();
+                        setStatus('Link saved.', 'success');
+                        const idInput = document.getElementById('link-discord-id');
+                        const nameInput = document.getElementById('link-gd-name');
+                        if (idInput) idInput.value = '';
+                        if (nameInput) nameInput.value = '';
+                    } catch (e) {
+                        setStatus('Error saving link', 'error');
+                    }
+                });
+            }
+
             let currentSubmissions = [];
             async function loadSubmissions() {
                 setStatus("Loading submissions...", "info");
@@ -1592,6 +2057,7 @@
                                     <span style="color:var(--color-on-background); opacity: 0.8; font-size: 0.9em; margin-left: 0.25rem;">(${sub.percent}%, ${sub.hz} Hz)</span>
                                 </div>
                                 <div style="display:flex; flex-direction:column; gap: 0.5rem;">
+                                    ${sub.submitted_by && sub.submitted_by.username ? `<div style="color:var(--color-on-background); opacity: 0.75;">Discord: ${sub.submitted_by.username}</div>` : ''}
                                     <a href="${sub.video}" target="_blank" style="color:#60a5fa; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; width: fit-content;">
                                         <span style="font-size: 1.2em;">🎥</span> <span style="text-decoration: underline;">${sub.video}</span>
                                     </a>
@@ -1619,7 +2085,7 @@
                 if(reason === null) return; // cancelled
                 
                 setStatus("Denying...", "info");
-                const res = await fetch(`/api/submissions?id=${id}&reason=${encodeURIComponent(reason)}`, { method: 'DELETE' });
+                const res = await fetch(`/api/submissions?id=${id}&status=denied&reason=${encodeURIComponent(reason)}`, { method: 'DELETE' });
                 if(res.ok) {
                     setStatus("Denied.", "success");
                     loadSubmissions();
@@ -1691,8 +2157,8 @@
                     });
 
                     if (updateRes.ok) {
-                        // Remove submission
-                        await fetch(`/api/submissions?id=${id}`, { method: 'DELETE' });
+                        // Removed submission (gdwt those who know :skull:)
+                        await fetch(`/api/submissions?id=${id}&status=approved`, { method: 'DELETE' });
                         setStatus(`Approved ${sub.player}'s record on ${sub.level}!`, "success");
                         loadSubmissions();
                     } else {

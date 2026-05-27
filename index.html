@@ -39,6 +39,8 @@
         <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
         <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" media="print" onload="this.media='all'" />
         <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/profile.css" media="print" onload="this.media='all'" />
+        <link rel="stylesheet" type="text/css" href="/css/pages/map.css" media="print" onload="this.media='all'" />
         <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
         <link rel="stylesheet" type="text/css" href="/css/components/btn.css" media="print" onload="this.media='all'" />
         <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" media="print" onload="this.media='all'" />
@@ -50,6 +52,8 @@
             <link rel="stylesheet" type="text/css" href="/css/pages/list.css" />
             <link rel="stylesheet" type="text/css" href="/css/pages/leaderboard.css" />
             <link rel="stylesheet" type="text/css" href="/css/pages/roulette.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/profile.css" />
+            <link rel="stylesheet" type="text/css" href="/css/pages/map.css" />
             <link rel="stylesheet" type="text/css" href="/css/components/nav.css" />
             <link rel="stylesheet" type="text/css" href="/css/components/btn.css" />
             <link rel="stylesheet" type="text/css" href="/css/components/tabs.css" />
@@ -61,6 +65,8 @@
         <link rel="modulepreload" href="/js/main.js">
         <link rel="modulepreload" href="/js/routes.js">
         <link rel="modulepreload" href="/js/pages/List.js">
+        <link rel="modulepreload" href="/js/pages/Profile.js">
+        <link rel="modulepreload" href="/js/pages/Map.js">
         <link rel="modulepreload" href="/js/content.js">
         <link rel="modulepreload" href="/js/score.js">
         <link rel="modulepreload" href="/js/util.js">
@@ -104,7 +110,13 @@
                 <router-link class="nav__tab" to="/roulette">
                     <span class="type-label-lg">Roulette</span>
                 </router-link>
-                <a class="nav__tab" href="/admin">
+                <router-link class="nav__tab" to="/map">
+                    <span class="type-label-lg">Map</span>
+                </router-link>
+                <router-link v-if="store.auth.loggedIn" class="nav__tab" to="/profile">
+                    <span class="type-label-lg">Profile</span>
+                </router-link>
+                <a v-if="store.auth.isAdmin" class="nav__tab" href="/admin">
                     <span class="type-label-lg">Admin</span>
                 </a>
                 <div class="nav__actions">
@@ -124,6 +136,17 @@
                       <a class="nav__icon" href="https://discord.gg/9agBPJnFy4" aria-label="Join our Discord">
                           <img src="/assets/discord.svg" alt="Discord Logo" width="31" height="24" />
                     </a>
+                    <a
+                        v-if="!store.auth.loggedIn"
+                        class="nav__link type-label-lg"
+                        href="/auth/login?redirect=/#/profile"
+                    >Login</a>
+                    <a
+                        v-else
+                        class="nav__link type-label-lg"
+                        href="javascript:void(0)"
+                        @click.prevent="store.auth.logout()"
+                    >Logout</a>
                     <!-- List record submission form, add a link to replace the '#' when putting a link to your list submission form-->
                     <a
                         class="nav__cta type-label-lg"

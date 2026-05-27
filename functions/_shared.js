@@ -91,6 +91,28 @@ export function requireAdmin(request, env) {
     return { userId };
 }
 
+export function requireAuth(request) {
+    const userId = getCookieValue(request.headers.get('Cookie'), 'session');
+    if (!userId) {
+        return { response: new Response('Unauthorized', { status: 401 }) };
+    }
+
+    return { userId };
+}
+
+export function getDiscordUsername(request) {
+    const raw = getCookieValue(request.headers.get('Cookie'), 'discord_username');
+    if (!raw) {
+        return null;
+    }
+
+    try {
+        return decodeURIComponent(raw);
+    } catch {
+        return raw;
+    }
+}
+
 export function createGitHubContentClient(env) {
     const token = env.GITHUB_TOKEN;
     const owner = env.GITHUB_OWNER;

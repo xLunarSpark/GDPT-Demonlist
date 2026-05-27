@@ -104,6 +104,18 @@
 
             .hidden { display: none !important; }
 
+            .discord-login-btn {
+                width: 100%;
+                justify-content: center;
+                gap: 0.75rem;
+                font-size: 1.1rem;
+                padding: 1.1rem 1rem;
+            }
+            .discord-login-btn img {
+                height: 1.5rem;
+                width: auto;
+            }
+
             #status-msg {
                 margin-top: 1rem;
                 padding: 1rem;
@@ -143,8 +155,14 @@
                 <a class="nav__tab" href="/#/roulette">
                     <span class="type-label-lg">Roulette</span>
                 </a>
-                <a class="nav__tab router-link-active" href="/admin.html">
+                <a class="nav__tab" href="/#/map">
+                    <span class="type-label-lg">Map</span>
+                </a>
+                <a class="nav__tab" href="/admin.html" id="admin-tab" style="display:none;">
                     <span class="type-label-lg">Admin</span>
+                </a>
+                <a class="nav__tab" href="/#/profile" id="profile-tab" style="display:none;">
+                    <span class="type-label-lg">Profile</span>
                 </a>
                 <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
                     <span class="type-label-lg">Logout</span>
@@ -170,8 +188,18 @@
                 <div class="board">
                     <h2 class="type-title-md" style="margin-bottom:2rem; text-align:center;">Submit a Record</h2>
                     
-                    <div class="admin-card">
+                    <div id="login-section" class="admin-card" style="text-align: center;">
+                        <span class="type-title-sm">Login Required</span>
+                        <p class="type-body-md" style="margin-bottom: 1.5rem; color: #888;">Sign in with Discord to submit a record.</p>
+                        <button class="btn discord-login-btn" onclick="window.location.href='/auth/login?redirect=/submit.html'">
+                            <img src="/assets/discord.svg" alt="" aria-hidden="true" />
+                            <span>Continue with Discord</span>
+                        </button>
+                    </div>
+
+                    <div id="submit-section" class="admin-card hidden">
                         <span class="type-title-sm">Record Information</span>
+                        <p class="type-body-md" id="submit-username" style="margin-bottom: 0.75rem; display: none;"></p>
                         <p class="type-body-md" style="margin-bottom: 1.5rem; color: #888;">Fill out the details below to submit a record. Once submitted, it will be reviewed by a list moderator.</p>
 
                         <form id="submit-form">
@@ -243,6 +271,62 @@
                 localStorage.setItem('dark', JSON.stringify(isDark));
             }
 
+            function getCookie(name) {
+                const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                return match ? decodeURIComponent(match[2]) : null;
+            }
+
+            const username = getCookie('discord_username');
+            const isAdminCookie = getCookie('is_admin');
+            const isAdmin = isAdminCookie === '1' || isAdminCookie === 'true';
+
+            const adminTab = document.getElementById('admin-tab');
+            if (adminTab) {
+                adminTab.style.display = isAdmin ? 'flex' : 'none';
+            }
+
+            const profileTab = document.getElementById('profile-tab');
+            if (profileTab) {
+                profileTab.style.display = username ? 'flex' : 'none';
+            }
+
+            if (username) {
+                document.getElementById('login-section').classList.add('hidden');
+                document.getElementById('submit-section').classList.remove('hidden');
+                document.getElementById('logout-btn').style.display = 'flex';
+                const submitName = document.getElementById('submit-username');
+                submitName.innerHTML = `Logged in as <strong>${username}</strong>.`;
+                submitName.style.display = 'block';
+            }
+
+            function logout() {
+                document.cookie = "session=; Max-Age=0; path=/";
+                document.cookie = "discord_username=; Max-Age=0; path=/";
+                document.cookie = "is_admin=; Max-Age=0; path=/";
+                window.location.reload();
+            }
+
+            async function hydrateProfile() {
+                if (!username) return;
+
+                try {
+                    const res = await fetch('/api/profile');
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    const profile = data?.profile;
+                    if (profile?.gd_name) {
+                        const playerInput = document.getElementById('s-player');
+                        if (playerInput && !playerInput.value) {
+                            playerInput.value = profile.gd_name;
+                        }
+                    }
+                } catch {
+                    // ignore
+                }
+            }
+
+            hydrateProfile();
+
             const statusMsg = document.getElementById('status-msg');
 
             function setStatus(msg, type) {
@@ -253,6 +337,11 @@
 
             document.getElementById('submit-form').addEventListener('submit', async (e) => {
                 e.preventDefault();
+
+                if (!username) {
+                    setStatus("Please login with Discord before submitting.", "error");
+                    return;
+                }
                 
                 const btn = document.getElementById('submit-btn');
                 btn.disabled = true;
@@ -324,8 +413,9 @@
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(payload)
                     });
-                    
-                    if (res.ok) {
+                    if (res.status === 401) {
+                        setStatus("Please login with Discord before submitting.", "error");
+                    } else if (res.ok) {
                         setStatus("Successfully submitted! A moderator will review it soon.", "success");
                         document.getElementById('submit-form').reset();
                     } else {

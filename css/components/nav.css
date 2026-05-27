@@ -52,3 +52,15 @@
 .nav .nav__actions .nav__cta:hover:not(:active) {
     transform: translateY(-2px);
 }
+.nav .nav__actions .nav__link {
+    margin-left: 1rem;
+    color: var(--color-on-primary);
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+}
+.nav .nav__actions .nav__link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}

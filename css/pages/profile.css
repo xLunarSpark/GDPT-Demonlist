@@ -1,0 +1,185 @@
+.page-profile {
+    position: relative;
+    background: radial-gradient(120% 120% at 20% 0%, rgba(0, 102, 0, 0.14), transparent 60%),
+        linear-gradient(135deg, rgba(0, 102, 0, 0.08), rgba(0, 0, 0, 0));
+}
+
+.page-profile .profile-shell {
+    grid-column: 2;
+    padding: 2.5rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.page-profile .profile-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.page-profile .profile-hero-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.page-profile .profile-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2rem;
+}
+
+.page-profile .profile-card {
+    background: var(--color-background);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.page-profile .profile-login {
+    align-items: center;
+    text-align: center;
+}
+
+.page-profile .profile-login-btn {
+    width: 100%;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.1rem 1rem;
+}
+
+.page-profile input,
+.page-profile select {
+    width: 100%;
+    background: var(--color-background);
+    color: var(--color-on-background);
+    border: 2px solid var(--color-background-hover);
+    padding: 0.9rem 1rem;
+    border-radius: 0.75rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+}
+
+.page-profile .profile-save-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.page-profile .profile-status {
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.page-profile .profile-status--success {
+    background: rgba(34, 197, 94, 0.2);
+    color: #16a34a;
+}
+
+.page-profile .profile-status--error {
+    background: rgba(239, 68, 68, 0.2);
+    color: #dc2626;
+}
+
+.page-profile .profile-submissions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.page-profile .profile-submission {
+    background: var(--color-background-hover);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.page-profile .submission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page-profile .submission-status {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.page-profile .submission-status.status-pending {
+    background: rgba(59, 130, 246, 0.15);
+    color: #2563eb;
+}
+
+.page-profile .submission-status.status-approved {
+    background: rgba(34, 197, 94, 0.15);
+    color: #16a34a;
+}
+
+.page-profile .submission-status.status-denied {
+    background: rgba(239, 68, 68, 0.15);
+    color: #dc2626;
+}
+
+.page-profile .submission-meta {
+    opacity: 0.75;
+}
+
+.page-profile .submission-reason {
+    background: rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.page-profile .profile-error {
+    color: var(--color-error);
+}
+
+.page-profile .profile-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 12rem;
+}
+
+html.dark .page-profile .profile-card {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
+}
+
+html.dark .page-profile .submission-reason {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 1200px) {
+    .page-profile .profile-shell {
+        grid-column: 1 / -1;
+        padding-inline: 1.5rem;
+    }
+
+    .page-profile .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-profile .profile-hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
