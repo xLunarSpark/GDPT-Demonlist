@@ -78,10 +78,17 @@
     object-fit: contain;
 }
 
+.page-map .map-svg-wrapper svg * {
+    fill: transparent !important;
+    stroke: transparent !important;
+    pointer-events: none !important; 
+}
+
 .page-map .map-region {
     fill: var(--map-fill) !important;
     stroke: var(--map-stroke) !important;
-    stroke-width: 2;
+    stroke-width: 1.5px !important;
+    pointer-events: auto !important; 
     transition: fill 150ms ease, stroke 150ms ease;
     cursor: pointer;
 }
@@ -90,7 +97,6 @@
 .page-map .map-region.active {
     fill: var(--map-highlight) !important;
     stroke: var(--map-highlight-stroke) !important;
-    transform: translateY(-2px);
 }
 
 .page-map .map-region.selected {
@@ -189,6 +195,6 @@ html.dark .page-map {
     }
 
     .page-map .map-svg-wrapper {
-        max-width: 320px;
+        max-width: 100%;
     }
 }
