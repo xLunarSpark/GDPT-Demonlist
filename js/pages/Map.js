@@ -457,6 +457,16 @@ export default {
             }
 
             if (elements.length === 0) {
+                const svg = container.querySelector('svg');
+                if (svg) {
+                    const fallbackPaths = Array.from(svg.querySelectorAll('#layer6 path'));
+                    fallbackPaths.forEach((path) => {
+                        path.classList.add('map-region');
+                    });
+                    this.mapAssetError = 'Showing map without district data. Please provide a district-tagged SVG for hover details.';
+                    return;
+                }
+
                 this.mapAssetError = 'Unable to detect district shapes in the SVG.';
                 return;
             }
