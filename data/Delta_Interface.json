@@ -11,6 +11,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=wcVU7BUp_Z0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Castro 13GD",
             "link": "https://www.youtube.com/watch?v=sIsPloZTo1Y",
             "percent": 100,
@@ -23,9 +29,15 @@
             "hz": 288
         },
         {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=Bp1TVkQU_V4",
-            "percent": 62,
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=Gp3rECanz6I",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=QT7gjOdo7ek",
+            "percent": 100,
             "hz": 360
         }
     ]

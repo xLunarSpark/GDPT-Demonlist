@@ -9,14 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=OwcvJHwTDqk",
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=WsCxdDsIukM",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Gorb",
-            "link": "https://www.youtube.com/watch?v=WsCxdDsIukM",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=OwcvJHwTDqk",
             "percent": 100,
             "hz": 360
         }

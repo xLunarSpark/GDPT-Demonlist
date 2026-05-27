@@ -1,0 +1,18 @@
+{
+    "id": 127135884,
+    "name": "Fun Friday",
+    "author": "Zeronium",
+    "creators": [],
+    "verifier": "Zeronium",
+    "verification": "https://youtu.be/tEQbQgQ8WZ4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=gpTzmHrwwq8",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

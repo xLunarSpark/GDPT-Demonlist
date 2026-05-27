@@ -9,20 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=s6N5YyrCID8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=4zsLabK3Sr8",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=BsRdx9LXl2Q",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Reivax",
-            "link": "https://www.youtube.com/watch?v=0SbKtKLML7c",
             "percent": 100,
             "hz": 360
         },
@@ -33,14 +27,14 @@
             "hz": 360
         },
         {
-            "user": "Gorb",
-            "link": "https://www.youtube.com/watch?v=s6N5YyrCID8",
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=0SbKtKLML7c",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=nCW-y5CIS5I",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=BsRdx9LXl2Q",
             "percent": 100,
             "hz": 360
         }

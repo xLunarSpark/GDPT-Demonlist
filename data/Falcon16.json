@@ -9,8 +9,8 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=3tsbxh8VvzM",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=LZgN0vp5Brk",
             "percent": 100,
             "hz": 360
         },
@@ -21,20 +21,20 @@
             "hz": 360
         },
         {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=DUXuM_iea0M",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=PWiSpjsrNT4",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=LZgN0vp5Brk",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Landet",
-            "link": "https://www.youtube.com/watch?v=DUXuM_iea0M",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=3tsbxh8VvzM",
             "percent": 100,
             "hz": 360
         }

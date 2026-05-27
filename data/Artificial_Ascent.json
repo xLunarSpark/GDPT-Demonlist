@@ -29,20 +29,20 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=dGyXZMdsi5M",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=vgR-aiFtBCE&t=32s",
             "percent": 100,
             "hz": 300
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=wvFji-dtS0Q",
+            "user": "L0WKey",
+            "link": "https://www.youtube.com/watch?v=n8aPEtnQ3DU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=dGyXZMdsi5M",
             "percent": 100,
             "hz": 360
         },
@@ -53,20 +53,8 @@
             "hz": 360
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=ZVBZxc_46zA",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=OaEdRIr-MVA",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "YT kerfuffles",
-            "link": "https://www.youtube.com/watch?v=-ph6sPXGOkk",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=wvFji-dtS0Q",
             "percent": 100,
             "hz": 360
         }

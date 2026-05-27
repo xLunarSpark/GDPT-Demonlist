@@ -1,0 +1,18 @@
+{
+    "id": 113138918,
+    "name": "SHURIMA",
+    "author": "stcubing",
+    "creators": [],
+    "verifier": "stcubing",
+    "verification": "https://www.youtube.com/watch?v=ceiEzf3srJ0",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=jFUkFVZBvyM",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

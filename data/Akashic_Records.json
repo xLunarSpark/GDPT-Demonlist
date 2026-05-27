@@ -40,12 +40,6 @@
     "password": "002224",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=TkF9JKlY_ps",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Castro 13GD",
             "link": "https://www.youtube.com/watch?v=AyYLwDSL3Ww",
             "percent": 100,
@@ -54,6 +48,12 @@
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=bQDN-WxmT_w",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=TkF9JKlY_ps",
             "percent": 100,
             "hz": 360
         }

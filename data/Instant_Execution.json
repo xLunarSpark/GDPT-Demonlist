@@ -9,6 +9,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Idy Is Lowercase",
+            "link": "https://www.youtube.com/watch?v=ZyQdZ0wRcVk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=Ze53s-_ay14",
             "percent": 100,

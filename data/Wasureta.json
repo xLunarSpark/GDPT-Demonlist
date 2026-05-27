@@ -20,20 +20,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=5S58PLWwIqg",
-            "percent": 100,
-            "hz": 330
-        },
-        {
-            "user": "Karma",
-            "link": "https://www.youtube.com/watch?v=HdHCoL6eFFw",
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=IXg57KtM5bE&t=65s",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=IXg57KtM5bE&t=65s",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=HdHCoL6eFFw",
             "percent": 100,
             "hz": 360
         },
@@ -50,22 +44,10 @@
             "hz": 360
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=tB-AxKjFOck",
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=5S58PLWwIqg",
             "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "MalandroGaming",
-            "link": "https://www.youtube.com/watch?v=xyTXXlde2VM",
-            "percent": 58,
-            "hz": 360
-        },
-        {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=K6i3QTPpJcc",
-            "percent": 65,
-            "hz": 360
+            "hz": 330
         }
     ]
 }

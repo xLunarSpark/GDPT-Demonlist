@@ -9,12 +9,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=Ct6PhOGgJ4E",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "David_Varela_Pt",
             "link": "https://www.youtube.com/watch?v=y3URHPDiifo",
             "percent": 100,
@@ -23,6 +17,12 @@
         {
             "user": "Docaedro",
             "link": "https://www.youtube.com/watch?v=uLXZBLcL_Hs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=Ct6PhOGgJ4E",
             "percent": 100,
             "hz": 360
         }

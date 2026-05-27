@@ -9,12 +9,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=RzhZU09l2X0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Angl",
             "link": "https://www.youtube.com/watch?v=31o7bV64atI",
             "percent": 100,
@@ -23,6 +17,18 @@
         {
             "user": "Diog",
             "link": "https://www.youtube.com/watch?v=C_8G8G2BCUs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Landet",
+            "link": "https://www.youtube.com/watch?v=6FP3v10jvSI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=RzhZU09l2X0",
             "percent": 100,
             "hz": 360
         }

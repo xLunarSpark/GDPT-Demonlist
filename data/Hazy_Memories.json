@@ -1,0 +1,18 @@
+{
+    "id": 88559663,
+    "name": "Hazy Memories",
+    "author": "oleki",
+    "creators": [],
+    "verifier": "oleki",
+    "verification": "https://www.youtube.com/watch?v=lMQwdK4MU6Y",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Tiga3000",
+            "link": "https://www.youtube.com/watch?v=nX4uHTwefp0",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

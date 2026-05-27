@@ -13,12 +13,6 @@
     "password": "474969",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=7wFBj9HjzAA",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=pH8ESYHDKWU",
             "percent": 100,
@@ -31,20 +25,14 @@
             "hz": 360
         },
         {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=7wFBj9HjzAA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=dWnBdW23MwQ",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=ayuf3QrB3E8",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=4m-QrdVrjV8",
             "percent": 100,
             "hz": 360
         }

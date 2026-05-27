@@ -9,8 +9,8 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=TOxxDEvgc40",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=lv6mZoeZM88",
             "percent": 100,
             "hz": 360
         },
@@ -21,14 +21,14 @@
             "hz": 360
         },
         {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=7jmXkOnk1Iw&t=1s",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=TOxxDEvgc40",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=lv6mZoeZM88",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=7jmXkOnk1Iw&t=1s",
             "percent": 100,
             "hz": 360
         }

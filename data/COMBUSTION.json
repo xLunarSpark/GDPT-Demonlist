@@ -12,12 +12,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=J_10AAqG5Vw",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=vBQFjvigUcg",
             "percent": 100,
@@ -26,6 +20,12 @@
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=muR_DGJsYrw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=J_10AAqG5Vw",
             "percent": 100,
             "hz": 360
         }

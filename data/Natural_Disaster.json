@@ -23,16 +23,16 @@
     "password": "No Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=-BtW3RKIu1k",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=v1leyzvj4sM",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=-BtW3RKIu1k",
+            "percent": 100,
+            "hz": 240
         }
     ]
 }

@@ -9,8 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=8puXPwvoNis",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=a4b2K7EzkHc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=KVNBl2R2sm8",
             "percent": 100,
             "hz": 360
         },
@@ -21,26 +27,26 @@
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=MOyfQvOC4X0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=MwixNqjM9Rc",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=a4b2K7EzkHc",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=8puXPwvoNis",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Diog",
-            "link": "https://www.youtube.com/watch?v=KVNBl2R2sm8",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=82WqxNlxb4Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=MOyfQvOC4X0",
             "percent": 100,
             "hz": 360
         }

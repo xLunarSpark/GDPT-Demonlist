@@ -9,14 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=HCZXmFEYV-8",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=ytZw4_pB4tQ",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=ytZw4_pB4tQ",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=HCZXmFEYV-8",
             "percent": 100,
             "hz": 360
         }

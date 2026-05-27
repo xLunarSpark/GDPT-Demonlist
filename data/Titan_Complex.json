@@ -44,16 +44,16 @@
             "hz": 144
         },
         {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=skYEohrYtbg",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=hTzY11rmNTk",
             "percent": 100,
             "hz": 300
+        },
+        {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=skYEohrYtbg",
+            "percent": 100,
+            "hz": 240
         },
         {
             "user": "zHexya",

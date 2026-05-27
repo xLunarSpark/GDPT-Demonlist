@@ -9,12 +9,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karma",
-            "link": "https://www.youtube.com/watch?v=y8whwdkbtmE",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Castro 13GD",
             "link": "https://www.youtube.com/watch?v=gQXBUCAkTEM&t=4s",
             "percent": 100,
@@ -23,6 +17,12 @@
         {
             "user": "Drema",
             "link": "https://www.youtube.com/watch?v=95vpMCVtzAQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=y8whwdkbtmE",
             "percent": 100,
             "hz": 360
         },

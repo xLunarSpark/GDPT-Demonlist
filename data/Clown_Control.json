@@ -1,0 +1,30 @@
+{
+    "id": 113620104,
+    "name": "Clown Control",
+    "author": "ThePurgatory115",
+    "creators": [],
+    "verifier": "Polterghast",
+    "verification": "https://www.youtube.com/watch?v=RRt-r1U4Pt4",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=kMd4glbke6U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=v-HVBmwk4rI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=LuHa_StdLHs",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

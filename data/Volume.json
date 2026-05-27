@@ -15,6 +15,12 @@
             "hz": 360
         },
         {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=EDrT18J7NQ0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=hsdjMBcFoOc",
             "percent": 100,
@@ -23,12 +29,6 @@
         {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=vTQyDCB5pTc",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=EDrT18J7NQ0",
             "percent": 100,
             "hz": 360
         }

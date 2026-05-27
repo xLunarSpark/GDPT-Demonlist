@@ -9,18 +9,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=jRRu2S5cXzo",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Reivax",
-            "link": "https://www.youtube.com/watch?v=yfdzYR5TxGk",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Diog",
             "link": "https://www.youtube.com/watch?v=gqYSaHPOtxo&t=8s",
             "percent": 100,
@@ -33,8 +21,14 @@
             "hz": 360
         },
         {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=b6XAqQ7tf8E",
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=yfdzYR5TxGk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=jRRu2S5cXzo",
             "percent": 100,
             "hz": 360
         }

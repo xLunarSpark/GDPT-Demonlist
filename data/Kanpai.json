@@ -1,0 +1,18 @@
+{
+    "id": 118613010,
+    "name": "Kanpai",
+    "author": "Kz04",
+    "creators": [],
+    "verifier": "Kz04",
+    "verification": "https://www.youtube.com/watch?v=4vbiaKzNprE",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=FzKMWPuTZOo",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

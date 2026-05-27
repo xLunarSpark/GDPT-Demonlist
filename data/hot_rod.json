@@ -9,8 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=wXmKbpdVG5s",
+            "user": "Aryn",
+            "link": "https://www.youtube.com/watch?v=ylwSOoLmIWE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Gorb",
+            "link": "https://www.youtube.com/watch?v=t2EkEIdBvOE",
             "percent": 100,
             "hz": 360
         },
@@ -21,8 +27,8 @@
             "hz": 360
         },
         {
-            "user": "Gorb",
-            "link": "https://www.youtube.com/watch?v=t2EkEIdBvOE",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=wXmKbpdVG5s",
             "percent": 100,
             "hz": 360
         },

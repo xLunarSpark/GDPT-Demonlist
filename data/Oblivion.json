@@ -14,12 +14,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=eX1B8ZNym0s",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=yMhqDXR0o2c",
             "percent": 100,
@@ -36,6 +30,12 @@
             "link": "https://www.youtube.com/watch?v=C8LgC7h4Lic",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=eX1B8ZNym0s",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

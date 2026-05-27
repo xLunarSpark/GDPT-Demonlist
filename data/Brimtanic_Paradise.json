@@ -9,14 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karma",
-            "link": "https://www.youtube.com/watch?v=lvl7ctoigLc",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=tRiJlxD7wgA",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=fjv_jcHy8os",
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=lvl7ctoigLc",
             "percent": 100,
             "hz": 360
         },
@@ -27,8 +27,8 @@
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=tRiJlxD7wgA",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=fjv_jcHy8os",
             "percent": 100,
             "hz": 360
         }

@@ -22,36 +22,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Karma",
-            "link": "https://www.youtube.com/watch?v=Iwd6K3IUmHI",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=8yt971Pogr4",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=rscPB5BqHOA",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=q2nrTLqqV7Q",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "David_Varela_Pt",
             "link": "https://www.youtube.com/watch?v=hDhSERpZoaw",
             "percent": 100,
@@ -64,20 +34,38 @@
             "hz": 360
         },
         {
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=rscPB5BqHOA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=Iwd6K3IUmHI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Landet",
             "link": "https://www.youtube.com/watch?v=0dCmuBR--qA",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=qysnHE5-L-Y",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=8yt971Pogr4",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "YT kerfuffles",
-            "link": "https://www.youtube.com/watch?v=ONP2Li04c3w",
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=q2nrTLqqV7Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
             "percent": 100,
             "hz": 360
         }

@@ -12,6 +12,12 @@
     "password": "210716",
     "records": [
         {
+            "user": "Drema",
+            "link": "https://www.youtube.com/watch?v=K_LDGpGzGb0",
+            "percent": 100,
+            "hz": 240
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=EGZzmvUSpmY",
             "percent": 100,
@@ -20,18 +26,6 @@
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=o8shxkBrl3k",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Drema",
-            "link": "https://www.youtube.com/watch?v=K_LDGpGzGb0",
-            "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=dpgNAxcPDyY",
             "percent": 100,
             "hz": 360
         }

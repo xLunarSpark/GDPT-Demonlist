@@ -9,20 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Reivax",
-            "link": "https://www.youtube.com/watch?v=JAp8ml1BZy0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=CdnCKYSHk_g",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "tetrys",
-            "link": "https://www.youtube.com/watch?v=KTfOOcOK7BI",
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=JAp8ml1BZy0",
             "percent": 100,
             "hz": 360
         }

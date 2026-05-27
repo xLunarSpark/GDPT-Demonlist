@@ -9,14 +9,8 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=Nzf8_oQt2eI",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Karma",
-            "link": "https://www.youtube.com/watch?v=ytMEQithEW8",
+            "user": "Alexyz",
+            "link": "https://www.youtube.com/watch?v=wh_0suyK2Wo",
             "percent": 100,
             "hz": 360
         },
@@ -27,14 +21,8 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=A5tyPE0wPl8",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Viwi",
-            "link": "https://www.youtube.com/watch?v=qcEpDxUakAQ",
+            "user": "Francis",
+            "link": "https://www.youtube.com/watch?v=cA2PPMcGGPc",
             "percent": 100,
             "hz": 360
         },
@@ -45,26 +33,44 @@
             "hz": 360
         },
         {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=ytMEQithEW8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Liziuri",
+            "link": "https://www.youtube.com/watch?v=PIJz3Wq3m4c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=A5tyPE0wPl8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=Nzf8_oQt2eI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Viwi",
+            "link": "https://www.youtube.com/watch?v=qcEpDxUakAQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zFredGd",
+            "link": "https://www.youtube.com/watch?v=oaEH9kXlV8g",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=B23WDku35g0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Alexyz",
-            "link": "https://www.youtube.com/watch?v=wh_0suyK2Wo",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Francis",
-            "link": "https://www.youtube.com/watch?v=cA2PPMcGGPc",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=NId33diOd1A",
             "percent": 100,
             "hz": 360
         }

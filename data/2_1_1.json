@@ -14,14 +14,14 @@
     "password": "112112",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=jvTW87nXnmg",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=GRq19rYVbpU",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=GRq19rYVbpU",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=jvTW87nXnmg",
             "percent": 100,
             "hz": 360
         }

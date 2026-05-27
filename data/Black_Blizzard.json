@@ -11,20 +11,8 @@
     "password": "000006",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=2LytiQuG79c",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=nuj_Awp6dhQ",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=RW0RvWIKuS0",
             "percent": 100,
             "hz": 360
         },
@@ -35,8 +23,14 @@
             "hz": 240
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=KSSlLV0t4yY",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=2LytiQuG79c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=RW0RvWIKuS0",
             "percent": 100,
             "hz": 360
         }

@@ -11,21 +11,15 @@
     "password": "446799",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=7E_6nDukXPI",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=35kRp5-dZOg",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=-eTWu7agThU",
-            "percent": 64,
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=7E_6nDukXPI",
+            "percent": 100,
             "hz": 360
         }
     ]

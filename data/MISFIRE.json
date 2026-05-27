@@ -11,20 +11,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=1GKODklzrr0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=gWzo1VCFvSE&t=18",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Gray",
-            "link": "https://www.youtube.com/watch?v=dnCPyRLWcnc",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=1GKODklzrr0",
             "percent": 100,
             "hz": 360
         }

@@ -12,6 +12,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Angl",
+            "link": "https://www.youtube.com/watch?v=-AqlBkyY_y8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=mYPpnUSpxlE",
             "percent": 100,
@@ -20,12 +26,6 @@
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=2Q0pngDoMms",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Angl",
-            "link": "https://www.youtube.com/watch?v=-AqlBkyY_y8",
             "percent": 100,
             "hz": 360
         }

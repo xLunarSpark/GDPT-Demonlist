@@ -17,20 +17,14 @@
             "hz": 200
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=amVyCt5-NGs",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=xJGeUjNzS0s",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=5HSBawJF1Ig",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=amVyCt5-NGs",
             "percent": 100,
             "hz": 360
         }

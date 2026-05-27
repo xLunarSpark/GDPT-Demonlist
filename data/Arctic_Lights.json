@@ -13,10 +13,10 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=zfLmfkg79I8",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=K1-P5dekZbQ",
             "percent": 100,
-            "hz": 360
+            "hz": 240
         },
         {
             "user": "Karma",
@@ -31,26 +31,20 @@
             "hz": 360
         },
         {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=K1-P5dekZbQ",
-            "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=rTsnFpaTZS4",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "RedMurder",
             "link": "https://www.youtube.com/watch?v=hUim9xNUaIA",
             "percent": 100,
             "hz": 240
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=MKM5ZfwVWUI",
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=zfLmfkg79I8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=rTsnFpaTZS4",
             "percent": 100,
             "hz": 360
         }

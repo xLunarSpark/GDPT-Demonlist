@@ -9,12 +9,6 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "zFredGd",
-            "link": "https://www.youtube.com/watch?v=eNXL8XzfV8M",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Andre0997",
             "link": "https://www.youtube.com/watch?v=dEnmLEqjabs",
             "percent": 100,
@@ -29,6 +23,24 @@
         {
             "user": "DYT",
             "link": "https://www.youtube.com/watch?v=nH2d8fZMeEc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "L0WKey",
+            "link": "https://www.youtube.com/watch?v=1pul0ArR47A",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Tiga3000",
+            "link": "https://www.youtube.com/watch?v=V4jl5xvF8wc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zFredGd",
+            "link": "https://www.youtube.com/watch?v=eNXL8XzfV8M",
             "percent": 100,
             "hz": 360
         }

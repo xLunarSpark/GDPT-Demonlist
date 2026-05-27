@@ -11,16 +11,16 @@
     "password": "112822",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=LC9ZHZaf0QI",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=bHJ773LQNYY",
             "percent": 100,
             "hz": 500
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=LC9ZHZaf0QI",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

@@ -15,8 +15,8 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=0t4P_VuDtB0",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=MkpVGoZlKkU",
             "percent": 100,
             "hz": 360
         },
@@ -27,14 +27,14 @@
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=9AlaClzZ3mc",
+            "user": "L0WKey",
+            "link": "https://www.youtube.com/watch?v=D5b1aDRnSzY",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Reivax",
-            "link": "https://www.youtube.com/watch?v=Gv0vn8gxH2o",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=0t4P_VuDtB0",
             "percent": 100,
             "hz": 360
         },
@@ -45,8 +45,14 @@
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=MkpVGoZlKkU",
+            "user": "Reivax",
+            "link": "https://www.youtube.com/watch?v=Gv0vn8gxH2o",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=9AlaClzZ3mc",
             "percent": 100,
             "hz": 360
         }

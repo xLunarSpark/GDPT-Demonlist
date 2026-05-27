@@ -9,6 +9,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=_mPke_cG_u0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=djdH7PdfFqY",
             "percent": 100,
@@ -17,12 +23,6 @@
         {
             "user": "RedMurder",
             "link": "https://www.youtube.com/watch?v=iea2nwcJ0Wk",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Andre0997",
-            "link": "https://www.youtube.com/watch?v=_mPke_cG_u0",
             "percent": 100,
             "hz": 360
         }

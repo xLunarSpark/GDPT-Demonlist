@@ -14,26 +14,20 @@
     "password": "159357",
     "records": [
         {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=fbhhA9omn_E",
-            "percent": 100,
-            "hz": 720
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=2v0CUlvs5J0",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=1AjYPmOY_Es",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=fbhhA9omn_E",
             "percent": 100,
-            "hz": 360
+            "hz": 720
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=XHzUtij3u0E",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=1AjYPmOY_Es",
             "percent": 100,
             "hz": 360
         }

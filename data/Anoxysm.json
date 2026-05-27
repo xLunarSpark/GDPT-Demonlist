@@ -11,8 +11,8 @@
     "password": "040400",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=z6c4amBeC6w",
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=0TZ7Tc-eoFE",
             "percent": 100,
             "hz": 360
         },
@@ -23,8 +23,8 @@
             "hz": 240
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=0TZ7Tc-eoFE",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=z6c4amBeC6w",
             "percent": 100,
             "hz": 360
         }

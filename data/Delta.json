@@ -35,6 +35,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Drema",
+            "link": "https://www.youtube.com/watch?v=KIRDNfm57LU",
+            "percent": 100,
+            "hz": 240
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=D0uQb8YkwJ0",
             "percent": 100,
@@ -44,18 +50,6 @@
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=faSV0Ex2D2s",
             "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Drema",
-            "link": "https://www.youtube.com/watch?v=KIRDNfm57LU",
-            "percent": 100,
-            "hz": 240
-        },
-        {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=mPZy9Vwq45I",
-            "percent": 84,
             "hz": 360
         }
     ]

@@ -20,16 +20,16 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=PnvWeukXdDc&t=28s",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "Angl",
             "link": "https://www.youtube.com/watch?v=2jx2aAH1vFI",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=PnvWeukXdDc&t=28s",
+            "percent": 100,
+            "hz": 240
         },
         {
             "user": "Lobo",

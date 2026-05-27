@@ -28,34 +28,10 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=0GaAXgdLT3k",
-            "percent": 100,
-            "hz": 288
-        },
-        {
-            "user": "Ka1sa",
-            "link": "https://www.youtube.com/watch?v=866tfgfeWxA",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=NwH51diLPrU",
             "percent": 100,
             "hz": 300
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=oipCe5zaEnc",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "RedMurder",
-            "link": "https://www.youtube.com/watch?v=5fT749uRLW4",
-            "percent": 100,
-            "hz": 240
         },
         {
             "user": "David_Varela_Pt",
@@ -64,14 +40,26 @@
             "hz": 360
         },
         {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=q-Pn5BWrNRI",
+            "user": "Ka1sa",
+            "link": "https://www.youtube.com/watch?v=866tfgfeWxA",
             "percent": 100,
-            "hz": 360
+            "hz": 240
         },
         {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=CUxy3zqV_5I",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=0GaAXgdLT3k",
+            "percent": 100,
+            "hz": 288
+        },
+        {
+            "user": "RedMurder",
+            "link": "https://www.youtube.com/watch?v=5fT749uRLW4",
+            "percent": 100,
+            "hz": 240
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=oipCe5zaEnc",
             "percent": 100,
             "hz": 360
         }

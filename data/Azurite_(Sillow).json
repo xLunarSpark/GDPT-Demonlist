@@ -9,14 +9,8 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=gzmM1NhcwoA",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=Qf9J_emObxw",
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=Cx8GjxhJEZU",
             "percent": 100,
             "hz": 360
         },
@@ -27,14 +21,32 @@
             "hz": 360
         },
         {
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=gzmM1NhcwoA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "David_Varela_Pt",
+            "link": "https://www.youtube.com/watch?v=KUxoo-eI3L0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=X7iV4R6lAGE",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=KOyIvl7ZuL4",
+            "user": "L0WKey",
+            "link": "https://www.youtube.com/watch?v=NZrEbI3wMZs",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=Qf9J_emObxw",
             "percent": 100,
             "hz": 360
         },
@@ -45,8 +57,8 @@
             "hz": 360
         },
         {
-            "user": "David_Varela_Pt",
-            "link": "https://www.youtube.com/watch?v=KUxoo-eI3L0",
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=KOyIvl7ZuL4",
             "percent": 100,
             "hz": 360
         }

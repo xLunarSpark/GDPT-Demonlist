@@ -1,0 +1,18 @@
+{
+    "id": 61936205,
+    "name": "SIGSEGV",
+    "author": "-",
+    "creators": [],
+    "verifier": "-",
+    "verification": "https://www.youtube.com/watch?v=RkKn5HWqpIM",
+    "percentToQualify": 100,
+    "password": "Free to Copy",
+    "records": [
+        {
+            "user": "Skivie",
+            "link": "https://www.youtube.com/watch?v=sUECSMUyGKc",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

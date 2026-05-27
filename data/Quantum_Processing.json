@@ -15,8 +15,8 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=SWBgqrLLxbo",
+            "user": "DYT",
+            "link": "https://www.youtube.com/watch?v=P8FzzhrrSqk",
             "percent": 100,
             "hz": 360
         },
@@ -27,8 +27,14 @@
             "hz": 360
         },
         {
-            "user": "DYT",
-            "link": "https://www.youtube.com/watch?v=P8FzzhrrSqk",
+            "user": "Liziuri",
+            "link": "https://www.youtube.com/watch?v=NIvDl4dMQMg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=SWBgqrLLxbo",
             "percent": 100,
             "hz": 360
         }

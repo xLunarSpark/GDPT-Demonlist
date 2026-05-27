@@ -12,6 +12,12 @@
     "password": "004250",
     "records": [
         {
+            "user": "Diog",
+            "link": "https://www.youtube.com/watch?v=mlcq8Md4ss4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=962OVZyLLoY",
             "percent": 100,
@@ -26,24 +32,6 @@
         {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=hZ2wQsztPoQ",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Diog",
-            "link": "https://www.youtube.com/watch?v=mlcq8Md4ss4",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "Xanii",
-            "link": "https://www.youtube.com/watch?v=YtUFCoKbu1c",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "YT kerfuffles",
-            "link": "https://www.youtube.com/watch?v=BViOYrwLt6g",
             "percent": 100,
             "hz": 360
         }

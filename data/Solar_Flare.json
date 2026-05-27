@@ -12,6 +12,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Andre0997",
+            "link": "https://www.youtube.com/watch?v=6oLMoeMFQGw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=LozEn_xbieM",
             "percent": 100,

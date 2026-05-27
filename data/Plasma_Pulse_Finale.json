@@ -18,28 +18,22 @@
             "hz": 360
         },
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=gexahE3PE9c",
-            "percent": 100,
-            "hz": 432
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=nvUuVQsAGrE",
             "percent": 100,
             "hz": 330
         },
         {
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=gexahE3PE9c",
+            "percent": 100,
+            "hz": 432
+        },
+        {
             "user": "zHexya",
             "link": "https://www.youtube.com/watch?v=pYKiWvZEXVE",
             "percent": 100,
             "hz": 240
-        },
-        {
-            "user": "Ferox242",
-            "link": "https://www.youtube.com/watch?v=iv9Pp-Yn-yM",
-            "percent": 89,
-            "hz": 360
         }
     ]
 }

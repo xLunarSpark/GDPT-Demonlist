@@ -12,12 +12,6 @@
     "password": "789123",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=3daqlLTnD6k",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=Qrtp_f7c2Fs",
             "percent": 100,
@@ -36,8 +30,8 @@
             "hz": 360
         },
         {
-            "user": "Creeevy",
-            "link": "https://www.youtube.com/watch?v=97tIcKZ8wxA",
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=3daqlLTnD6k",
             "percent": 100,
             "hz": 360
         }

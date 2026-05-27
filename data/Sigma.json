@@ -37,10 +37,10 @@
     "password": "772002",
     "records": [
         {
-            "user": "Taiago",
-            "link": "https://www.youtube.com/watch?v=dNUExFXxiZI",
+            "user": "Castro 13GD",
+            "link": "https://www.youtube.com/watch?v=v1JVaHmGDy0",
             "percent": 100,
-            "hz": 165
+            "hz": 240
         },
         {
             "user": "Karma",
@@ -49,16 +49,16 @@
             "hz": 360
         },
         {
-            "user": "Castro 13GD",
-            "link": "https://www.youtube.com/watch?v=v1JVaHmGDy0",
-            "percent": 100,
-            "hz": 240
-        },
-        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=XE_Y_vrhvsY",
             "percent": 100,
             "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=dNUExFXxiZI",
+            "percent": 100,
+            "hz": 165
         }
     ]
 }

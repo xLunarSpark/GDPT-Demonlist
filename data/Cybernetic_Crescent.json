@@ -27,20 +27,20 @@
     "password": "010721",
     "records": [
         {
-            "user": "LunarSpark",
-            "link": "https://www.youtube.com/watch?v=KONDCCXe8c0",
-            "percent": 100,
-            "hz": 360
-        },
-        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=OcbzPeJOYpU",
             "percent": 100,
             "hz": 330
         },
         {
-            "user": "Pifoxo",
-            "link": "https://www.youtube.com/watch?v=x73fdFTlCgc",
+            "user": "LunarSpark",
+            "link": "https://www.youtube.com/watch?v=KONDCCXe8c0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zHexya",
+            "link": "https://www.youtube.com/watch?v=6Ddz6tvJjYc",
             "percent": 100,
             "hz": 360
         }
