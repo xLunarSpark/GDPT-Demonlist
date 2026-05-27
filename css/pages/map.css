@@ -77,11 +77,11 @@
 }
 
 .page-map .map-svg-wrapper svg > g {
-    display: none;
+    display: none !important;
 }
 
 .page-map .map-svg-wrapper svg #layer6 {
-    display: inline;
+    display: inline !important;
 }
 
 .page-map .map-svg-wrapper svg #layer6 path,
