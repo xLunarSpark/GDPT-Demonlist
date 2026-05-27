@@ -100,22 +100,50 @@ function autoAssignDistricts(svg, districts) {
     }
 
     const viewBox = svg.viewBox?.baseVal;
+    const svgRect = svg.getBoundingClientRect();
     const vb = viewBox
         ? { x: viewBox.x, y: viewBox.y, width: viewBox.width, height: viewBox.height }
-        : svg.getBBox();
+        : null;
+
+    const getPathBox = (path) => {
+        try {
+            const box = path.getBBox();
+            return { x: box.x, y: box.y, width: box.width, height: box.height, source: 'bbox' };
+        } catch {
+            if (!svgRect.width || !svgRect.height) {
+                return null;
+            }
+            const rect = path.getBoundingClientRect();
+            return {
+                x: rect.left - svgRect.left,
+                y: rect.top - svgRect.top,
+                width: rect.width,
+                height: rect.height,
+                source: 'rect',
+            };
+        }
+    };
 
     const pathInfos = paths
         .map((path) => {
-            const box = path.getBBox();
+            const box = getPathBox(path);
+            if (!box) {
+                return null;
+            }
+
             const area = box.width * box.height;
+            const base = vb && box.source === 'bbox'
+                ? vb
+                : { x: 0, y: 0, width: svgRect.width, height: svgRect.height };
+
             return {
                 el: path,
                 area,
-                cx: (box.x + box.width / 2 - vb.x) / vb.width,
-                cy: (box.y + box.height / 2 - vb.y) / vb.height,
+                cx: (box.x + box.width / 2 - base.x) / base.width,
+                cy: (box.y + box.height / 2 - base.y) / base.height,
             };
         })
-        .filter((info) => Number.isFinite(info.area) && info.area > 0);
+        .filter((info) => info && Number.isFinite(info.area) && info.area > 0);
 
     pathInfos.sort((a, b) => b.area - a.area);
     const topPaths = pathInfos.slice(0, districts.length);
@@ -359,7 +387,7 @@ export default {
 
                 this.mapSvg = await res.text();
                 this.$nextTick(() => {
-                    this.bindMapEvents();
+                    requestAnimationFrame(() => this.bindMapEvents());
                 });
             } catch (e) {
                 this.mapAssetError = e?.message || 'Failed to load map asset.';
@@ -377,6 +405,11 @@ export default {
                 if (svg) {
                     elements = autoAssignDistricts(svg, this.districts);
                 }
+            }
+
+            if (elements.length === 0) {
+                this.mapAssetError = 'Unable to detect district shapes in the SVG.';
+                return;
             }
 
             elements.forEach((el) => {
