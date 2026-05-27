@@ -84,7 +84,7 @@
     pointer-events: none !important; 
 }
 
-.page-map .map-region {
+.page-map .map-svg-wrapper svg .map-region {
     fill: var(--map-fill) !important;
     stroke: var(--map-stroke) !important;
     stroke-width: 1.5px !important;
@@ -93,13 +93,13 @@
     cursor: pointer;
 }
 
-.page-map .map-region:hover,
-.page-map .map-region.active {
+.page-map .map-svg-wrapper svg .map-region:hover,
+.page-map .map-svg-wrapper svg .map-region.active {
     fill: var(--map-highlight) !important;
     stroke: var(--map-highlight-stroke) !important;
 }
 
-.page-map .map-region.selected {
+.page-map .map-svg-wrapper svg .map-region.selected {
     fill: var(--map-selected) !important;
     stroke: var(--map-selected-stroke) !important;
 }
