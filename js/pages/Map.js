@@ -195,6 +195,52 @@ function autoAssignDistricts(svg, districts) {
     return matches.map((match) => match.el);
 }
 
+function assignDistrictsByOrder(svg, districts) {
+    const layer = svg.querySelector('#layer6') || svg;
+    const paths = Array.from(layer.querySelectorAll('path'));
+    if (paths.length === 0) {
+        return [];
+    }
+
+    const svgRect = svg.getBoundingClientRect();
+    if (!svgRect.width || !svgRect.height) {
+        return [];
+    }
+
+    const pathInfos = paths
+        .map((path) => {
+            const rect = path.getBoundingClientRect();
+            const width = rect.width;
+            const height = rect.height;
+            if (!width || !height) {
+                return null;
+            }
+            return {
+                el: path,
+                area: width * height,
+                cx: rect.left + width / 2,
+                cy: rect.top + height / 2,
+            };
+        })
+        .filter(Boolean);
+
+    if (pathInfos.length < districts.length) {
+        return [];
+    }
+
+    pathInfos.sort((a, b) => {
+        if (a.cy !== b.cy) return a.cy - b.cy;
+        return a.cx - b.cx;
+    });
+
+    const selected = pathInfos.slice(0, districts.length);
+    selected.forEach((info, index) => {
+        info.el.setAttribute('data-district', districts[index].key);
+    });
+
+    return selected.map((info) => info.el);
+}
+
 export default {
     components: { Spinner },
     data: () => ({
@@ -404,6 +450,9 @@ export default {
                 const svg = container.querySelector('svg');
                 if (svg) {
                     elements = autoAssignDistricts(svg, this.districts);
+                    if (elements.length === 0) {
+                        elements = assignDistrictsByOrder(svg, this.districts);
+                    }
                 }
             }
 
