@@ -31,6 +31,10 @@ USERNAME_ALIASES = {
     "zpifoxo": "Pifoxo",
     "pifoxo": "Pifoxo",
 }
+EXCLUDED_USERS = {"reivax", "malandrogaming"}
+
+
+EXCLUDED_USERS = {"reivax", "malandrogaming"}
 
 TRUSTED_LOCAL_USERS = {"truejumpy", "pifoxo", "lock"}
 
@@ -76,6 +80,14 @@ def normalize_username(profile: dict) -> str:
 def clean_username(name: str) -> str:
     cleaned = CLAN_TAG_REGEX.sub("", str(name).strip()).strip()
     return USERNAME_ALIASES.get(cleaned.lower(), cleaned)
+
+
+def is_excluded_username(name: str) -> bool:
+    return clean_username(name).strip().lower() in EXCLUDED_USERS
+
+
+def is_excluded_username(name: str) -> bool:
+    return clean_username(name).strip().lower() in EXCLUDED_USERS
 
 
 def normalize_level_name(name: str) -> str:
@@ -167,6 +179,8 @@ def fetch_pointercrate_player(pid: int):
 
 def add_records_from_profile(profile: dict, all_levels: dict) -> None:
     username = normalize_username(profile)
+    if is_excluded_username(username):
+        return
 
     for rec in profile.get("records", []) or []:
         level_info = rec.get("level") or {}
@@ -231,6 +245,9 @@ def collect_pointercrate_records() -> dict:
                 if not level_name:
                     continue
 
+                if is_excluded_username(player_name):
+                    continue
+
                 records_by_level.setdefault(level_name, []).append(
                     {
                         "user": player_name,
@@ -253,7 +270,7 @@ def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
 
     for record in records:
         cleaned_user = clean_username(record.get("user", ""))
-        if not cleaned_user:
+        if not cleaned_user or cleaned_user.lower() in EXCLUDED_USERS:
             continue
 
         key = cleaned_user.lower()
@@ -609,10 +626,16 @@ def main() -> None:
         existing_hz_by_user = {
             clean_username(str(record.get("user", ""))).lower(): record.get("hz", 360)
             for record in existing_records
-            if isinstance(record, dict) and record.get("user")
+            if isinstance(record, dict)
+            and record.get("user")
+            and not is_excluded_username(record.get("user", ""))
         }
 
-        combined_records = list(existing_records)
+        combined_records = [
+            record
+            for record in existing_records
+            if not is_excluded_username(record.get("user", ""))
+        ]
         combined_records.extend(level.get("records", []) or [])
         combined_records.extend(
             resolve_pointercrate_records_for_level(
@@ -628,7 +651,7 @@ def main() -> None:
         final_records = []
         for record in combined_records:
             user = clean_username(str(record.get("user", "")))
-            if not user:
+            if not user or user.lower() in EXCLUDED_USERS:
                 continue
 
             final_records.append(
