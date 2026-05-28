@@ -409,13 +409,15 @@ def main() -> None:
             print(f"Fetching metadata for new level: {lvl_name} ({lvl.get('id')})")
             level_json = fetch_level_metadata(lvl.get("id"), lvl_name)
 
+        existing_records = list(level_json.get("records", []) or [])
         existing_hz_by_user = {
             clean_username(str(r.get("user", ""))).lower(): r.get("hz", 360)
-            for r in (level_json.get("records", []) or [])
+            for r in existing_records
             if isinstance(r, dict) and r.get("user")
         }
 
-        combined_records = list(lvl.get("records", []) or [])
+        combined_records = existing_records
+        combined_records.extend(lvl.get("records", []) or [])
         combined_records.extend(pointercrate_records_by_level.get(normalize_level_name(lvl_name), []))
 
         raw_records_by_level[lvl_name] = combined_records

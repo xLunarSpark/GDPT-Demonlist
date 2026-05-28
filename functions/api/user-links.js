@@ -174,7 +174,7 @@ export async function onRequest(context) {
         }
 
         const discordId = normalizeDiscordId(data?.discord_id);
-        const gdName = normalizeName(data?.gd_name);
+        const gdName = String(data?.gd_name ?? '').trim();
 
         if (!discordId || !gdName) {
             return new Response('Missing discord_id or gd_name', { status: 400 });
