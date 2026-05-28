@@ -588,12 +588,49 @@ export default {
                 return;
             }
 
+            const container = this.$refs.mapSvgContainer;
+            const computed = container ? getComputedStyle(container) : null;
+            const highlight = computed ? computed.getPropertyValue('--map-highlight').trim() : '';
+            const highlightStroke = computed ? computed.getPropertyValue('--map-highlight-stroke').trim() : '';
+            const selectedFill = computed ? computed.getPropertyValue('--map-selected').trim() : '';
+            const selectedStroke = computed ? computed.getPropertyValue('--map-selected-stroke').trim() : '';
+
             this.mapElements.forEach((el, key) => {
-                el.classList.toggle('active', key === this.hoverDistrict);
-                el.classList.toggle('selected', key === this.selectedDistrict);
+                const isActive = key === this.hoverDistrict;
+                const isSelected = key === this.selectedDistrict;
+                el.classList.toggle('active', isActive);
+                el.classList.toggle('selected', isSelected);
+
+                try {
+                    if (isActive) {
+                        if (highlight) {
+                            el.style.fill = highlight;
+                        }
+                        if (highlightStroke) {
+                            el.style.stroke = highlightStroke;
+                        }
+                        el.style.fillOpacity = '1';
+                    } else if (isSelected) {
+                        if (selectedFill) {
+                            el.style.fill = selectedFill;
+                        }
+                        if (selectedStroke) {
+                            el.style.stroke = selectedStroke;
+                        }
+                        el.style.fillOpacity = '1';
+                    } else {
+                        el.style.fill = '';
+                        el.style.stroke = '';
+                        el.style.fillOpacity = '';
+                    }
+                } catch (e) {
+                    // ignore style errors
+                }
             });
         },
         setHover(key) {
+            // eslint-disable-next-line no-console
+            console.log('[map] hover', key);
             this.hoverDistrict = key;
             this.syncMapHighlights();
         },
@@ -602,6 +639,8 @@ export default {
             this.syncMapHighlights();
         },
         setSelected(key) {
+            // eslint-disable-next-line no-console
+            console.log('[map] select', key);
             this.selectedDistrict = key;
             this.syncMapHighlights();
         },
