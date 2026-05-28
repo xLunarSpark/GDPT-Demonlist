@@ -101,6 +101,51 @@ function cleanSVGPresentation(el) {
     }
 }
 
+// hardcoded mapping from SVG path id -> district key
+const HARD_CODED_PATH_MAP = {
+    path3030: 'viana-do-castelo',
+    path2600: 'braga',
+    path2590: 'vila-real',
+    path2610: 'braganca',
+    path2588: 'porto',
+    path2558: 'aveiro',
+    path2814: 'viseu',
+    path2892: 'guarda',
+    path2900: 'coimbra',
+    path2716: 'castelo-branco',
+    path2734: 'leiria',
+    path2568: 'santarem',
+    path2580: 'lisboa',
+    path3040: 'setubal',
+    path2742: 'portalegre',
+    path2576: 'evora',
+    path2584: 'beja',
+    path2586: 'faro',
+};
+
+function applyHardcodedMapping(svg) {
+    if (!svg) return [];
+    const assigned = [];
+    Object.keys(HARD_CODED_PATH_MAP).forEach((id) => {
+        try {
+            // find element by id within the SVG
+            const el = svg.querySelector(`[id="${id}"]`);
+            if (el) {
+                const key = HARD_CODED_PATH_MAP[id];
+                el.setAttribute('data-district', key);
+                el.setAttribute('data-district-debug', key);
+                cleanSVGPresentation(el);
+                assigned.push(el);
+                // eslint-disable-next-line no-console
+                console.log('[map] hard-mapped', key, '->', id);
+            }
+        } catch (e) {
+            // ignore
+        }
+    });
+    return assigned;
+}
+
 function resolveDistrictKey(value) {
     const normalized = normalizeRegionName(value);
     if (DISTRICT_KEY_BY_NAME.has(normalized)) {
@@ -545,7 +590,11 @@ export default {
             if (elements.length === 0) {
                 const svg = container.querySelector('svg');
                 if (svg) {
-                    elements = autoAssignDistricts(svg, this.districts);
+                    // try hardcoded mapping first
+                    elements = applyHardcodedMapping(svg);
+                    if (elements.length === 0) {
+                        elements = autoAssignDistricts(svg, this.districts);
+                    }
                     if (elements.length === 0) {
                         elements = assignDistrictsByOrder(svg, this.districts);
                     }
@@ -589,11 +638,15 @@ export default {
             }
 
             const container = this.$refs.mapSvgContainer;
-            const computed = container ? getComputedStyle(container) : null;
+            const varOwner = container ? (container.closest('.page-map') || container) : document.documentElement;
+            const computed = varOwner ? getComputedStyle(varOwner) : null;
             const highlight = computed ? computed.getPropertyValue('--map-highlight').trim() : '';
             const highlightStroke = computed ? computed.getPropertyValue('--map-highlight-stroke').trim() : '';
             const selectedFill = computed ? computed.getPropertyValue('--map-selected').trim() : '';
             const selectedStroke = computed ? computed.getPropertyValue('--map-selected-stroke').trim() : '';
+
+            // eslint-disable-next-line no-console
+            console.log('[map] css-vars', { highlight, highlightStroke, selectedFill, selectedStroke });
 
             this.mapElements.forEach((el, key) => {
                 const isActive = key === this.hoverDistrict;
@@ -603,25 +656,23 @@ export default {
 
                 try {
                     if (isActive) {
-                        if (highlight) {
-                            el.style.fill = highlight;
-                        }
-                        if (highlightStroke) {
-                            el.style.stroke = highlightStroke;
-                        }
-                        el.style.fillOpacity = '1';
+                        const parts = [];
+                        if (highlight) parts.push('fill: ' + highlight + ' !important');
+                        if (highlightStroke) parts.push('stroke: ' + highlightStroke + ' !important');
+                        parts.push('fill-opacity: 1 !important');
+                        parts.push('stroke-width: 1.8px !important');
+                        el.setAttribute('style', parts.join('; '));
                     } else if (isSelected) {
-                        if (selectedFill) {
-                            el.style.fill = selectedFill;
-                        }
-                        if (selectedStroke) {
-                            el.style.stroke = selectedStroke;
-                        }
-                        el.style.fillOpacity = '1';
+                        const parts = [];
+                        if (selectedFill) parts.push('fill: ' + selectedFill + ' !important');
+                        if (selectedStroke) parts.push('stroke: ' + selectedStroke + ' !important');
+                        parts.push('fill-opacity: 1 !important');
+                        parts.push('stroke-width: 1.8px !important');
+                        el.setAttribute('style', parts.join('; '));
                     } else {
-                        el.style.fill = '';
-                        el.style.stroke = '';
-                        el.style.fillOpacity = '';
+                        if (el.hasAttribute && el.hasAttribute('style')) {
+                            el.removeAttribute('style');
+                        }
                     }
                 } catch (e) {
                     // ignore style errors
