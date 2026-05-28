@@ -53,7 +53,7 @@ export default {
                 <div class="profile-hero">
                     <div>
                         <h1 class="type-title-lg">Profile</h1>
-                        <p class="type-body-md">Manage your GD name, region, and track submissions.</p>
+                        <p class="type-body-md">Manage your username, region, and track submissions.</p>
                     </div>
                     <div class="profile-hero-tag" v-if="loggedIn">
                         <span class="type-label-lg">Logged in as</span>
@@ -79,11 +79,11 @@ export default {
                         <section class="profile-card">
                             <h2 class="type-title-sm">Your Details</h2>
                             <form @submit.prevent="saveProfile">
-                                <label class="type-label-lg">GD Username</label>
+                                <label class="type-label-lg">Username</label>
                                 <input
                                     v-model="profile.gd_name"
                                     type="text"
-                                    placeholder="Your GD username"
+                                    placeholder="Your username"
                                     required
                                 />
 
