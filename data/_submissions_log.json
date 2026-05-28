@@ -6892,5 +6892,1535 @@
         "timestamp": "2026-05-28T10:38:18.633Z",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T10:38:18.633Z"
+    },
+    {
+        "id": "bd08ef8a-a703-4f74-a524-414b0d0f7ec8",
+        "player": "castro 13gd",
+        "level": "The Hallucination",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "f1564740-197d-4389-a680-83b19fd6818f",
+        "player": "castro 13gd",
+        "level": "The Golden",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "05a3c395-97b8-43b9-b193-b10aebcfb531",
+        "player": "castro 13gd",
+        "level": "Zodiac",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "86f74aee-69b6-443c-bea1-d72e8a96d8d8",
+        "player": "castro 13gd",
+        "level": "Widestep",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "bc3f8fb7-1c13-4624-90b9-d890ab17b242",
+        "player": "castro 13gd",
+        "level": "Thinking Space",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "5a222854-cbd7-4019-9e6c-798f937cd271",
+        "player": "castro 13gd",
+        "level": "Calculator Core",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "ae558e89-e4d1-4a81-af21-f0c006c25f7c",
+        "player": "castro 13gd",
+        "level": "Trotil",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "586b5614-20dc-44c4-a39c-038f37a2b845",
+        "player": "castro 13gd",
+        "level": "Akashic Records",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "2f8acf63-4eaf-4712-bc0b-f4e8ee7b7fb1",
+        "player": "castro 13gd",
+        "level": "Ragnarok",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "21988ab6-33ea-4e28-b9cc-96406e283dec",
+        "player": "castro 13gd",
+        "level": "Bloodlust",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "71de6cfd-4a56-4dc8-8972-0319bf6edd7c",
+        "player": "castro 13gd",
+        "level": "Sigma",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "fae0387e-34ce-4df1-b91c-3df77497d3ad",
+        "player": "castro 13gd",
+        "level": "Ouroboros",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "ce7c6aa7-f88e-4c33-9d83-636e552712ec",
+        "player": "castro 13gd",
+        "level": "Ourwa",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "b8184ebb-b8f9-41e9-bbdb-4af6bc441673",
+        "player": "castro 13gd",
+        "level": "Visible Ray",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "b22ff87c-b72a-4a2d-8832-fb785edebaca",
+        "player": "castro 13gd",
+        "level": "The Yandere",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "cfef143d-ddc7-4222-9695-7e1775f82adf",
+        "player": "castro 13gd",
+        "level": "Plasma Pulse Finale",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "84d9f751-1507-4282-9ea0-71cff0aa49b5",
+        "player": "castro 13gd",
+        "level": "Calamity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "7fba0e45-d82c-4663-beab-092a94cb6e14",
+        "player": "castro 13gd",
+        "level": "RANDOM ACCESS MEMORY",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "a9090485-c813-4f4b-9932-c46d00867c6b",
+        "player": "castro 13gd",
+        "level": "Spacial Rend",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "ac0a6237-88d3-4246-903e-1049478b0fa6",
+        "player": "castro 13gd",
+        "level": "Wasureta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "0ae6e7ad-104a-40f1-9bd4-17eca827c2c9",
+        "player": "castro 13gd",
+        "level": "Yatagarasu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "551820c6-8f43-4ca8-974a-f1b09db905cb",
+        "player": "castro 13gd",
+        "level": "Infinite Iniquity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "27c32eea-78c3-4b03-b725-a3f70bdc3819",
+        "player": "castro 13gd",
+        "level": "Edge of the Blade",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "711325bc-fe04-4b66-b725-9255efd8a019",
+        "player": "castro 13gd",
+        "level": "xo",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "40e6c9f6-cbba-4bc9-a39c-eab00e8b3cf3",
+        "player": "castro 13gd",
+        "level": "Titan Complex",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "0c19f5c6-8dd3-4766-bf7c-d504be99dcc1",
+        "player": "castro 13gd",
+        "level": "Ascension",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "17f4fdb4-0536-47b3-b904-0b71d7b8ba02",
+        "player": "castro 13gd",
+        "level": "Devil Vortex",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "cfd38921-632a-4409-9ce2-beef8ab024a0",
+        "player": "castro 13gd",
+        "level": "Killbot",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "b87fc67b-b0e6-426a-a139-1ea8a48b40da",
+        "player": "castro 13gd",
+        "level": "Delta Interface",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "c0a51247-2f5c-47ca-9d53-4f9a61185755",
+        "player": "castro 13gd",
+        "level": "Bete Noire",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "07452413-bb52-464f-b133-e4eba81c5f3f",
+        "player": "castro 13gd",
+        "level": "The Hell Inferno",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "60903512-2d75-421f-a4d0-b9c7ff457a50",
+        "player": "castro 13gd",
+        "level": "Ancestral Calamity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "73fcb8a7-8d59-4b85-91d8-43c497d63c24",
+        "player": "castro 13gd",
+        "level": "Blade of Justice",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "42db1679-b9fc-49d2-ae92-27fda8f98586",
+        "player": "castro 13gd",
+        "level": "Asmodeus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "7b27723b-555a-4eb5-be54-cddd23cb7eb3",
+        "player": "castro 13gd",
+        "level": "Sakupen Hell",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "a7594116-5008-4349-8b9b-0a0d6551277b",
+        "player": "castro 13gd",
+        "level": "Artifice",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "ba1ffc44-e857-4a74-a02c-d489b64ba263",
+        "player": "castro 13gd",
+        "level": "Tenth Circle",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "bc026636-60f7-4805-90ab-c072e72fe2c4",
+        "player": "castro 13gd",
+        "level": "Carcano",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "159a8dc7-2d63-4a75-b41e-65a4f930665a",
+        "player": "castro 13gd",
+        "level": "Molten Mercury",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "d5fd0da4-a57c-4862-85ce-ca205403d5f6",
+        "player": "castro 13gd",
+        "level": "Bloodbath",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "8242968e-3ca1-41fc-8a42-7c5237123529",
+        "player": "castro 13gd",
+        "level": "Eon",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "3dbe0db4-54ba-49f1-9a31-8cdc0d069a3b",
+        "player": "castro 13gd",
+        "level": "ATMarbl",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "ccb1b78d-8b9a-4468-aa4b-23021e7d4157",
+        "player": "castro 13gd",
+        "level": "Conical Depression",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "046d0c0a-6120-4106-9271-b9ca53821bc9",
+        "player": "castro 13gd",
+        "level": "INNARDS",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "548247f9-608f-46a6-9efc-2ec5962e997a",
+        "player": "castro 13gd",
+        "level": "Sigma Interface",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "0d63147f-72f8-4d7e-ba5d-6489e4ba3dca",
+        "player": "castro 13gd",
+        "level": "aftermath",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "d0b84a19-43e6-49de-9a75-ed8cf3083e1b",
+        "player": "castro 13gd",
+        "level": "Plasma Pulse III",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "15a196ab-1916-43d4-b508-279454f2ae03",
+        "player": "castro 13gd",
+        "level": "Vermilion",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "9c040937-347c-4ddc-ad12-c0d692ed7fca",
+        "player": "castro 13gd",
+        "level": "Glide",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "d9b15d5d-3cc6-42c5-ae65-f13a05be97dc",
+        "player": "castro 13gd",
+        "level": "The Ultimate Return",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "57885aa5-6ea6-4753-a410-76e3e1743752",
+        "player": "castro 13gd",
+        "level": "Skrrah",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "a3057f18-0e02-4feb-b922-1fc589059d87",
+        "player": "castro 13gd",
+        "level": "Shukufuku",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "6a6e1f4e-89e7-4cab-b06a-5174451092b3",
+        "player": "castro 13gd",
+        "level": "Artificial Dream",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "5f2c6c46-92ee-4614-a08c-ad7191f91d2f",
+        "player": "castro 13gd",
+        "level": "Once Again",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "1e48d2cf-4734-4710-a11c-17db6ec26532",
+        "player": "castro 13gd",
+        "level": "Fexty",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "83de14be-5453-41e9-a8c8-6b98030fc0b7",
+        "player": "castro 13gd",
+        "level": "The Ultimate Phase",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "b396a40a-7d1e-4a5b-822e-fec09ca9e6f8",
+        "player": "castro 13gd",
+        "level": "Volume",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "fe9c3c06-198f-426d-ae80-9ea485d6cce1",
+        "player": "castro 13gd",
+        "level": "Retention",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "72fa8555-5fa2-4cab-81d6-0c14b1104b87",
+        "player": "castro 13gd",
+        "level": "Falling Up",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "c713a9f0-45eb-4f3e-a600-6bd067464b3d",
+        "player": "castro 13gd",
+        "level": "Zettabyte",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "8a643d99-ca3e-414e-b80f-dcece8abdae7",
+        "player": "castro 13gd",
+        "level": "Deception Dive",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "629113ff-0bf8-4c35-88df-dc238c4c28a6",
+        "player": "castro 13gd",
+        "level": "Allegiance",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "a173f901-bdda-4ee8-891d-6e94487f15c9",
+        "player": "castro 13gd",
+        "level": "HyperSonic",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "19f360a8-18dd-4e51-a84a-b7409b222b10",
+        "player": "castro 13gd",
+        "level": "Yggdrasil",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "45d7e7e5-109e-429e-9efe-1e45d9473a20",
+        "player": "castro 13gd",
+        "level": "AcropoliX",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "3ebf1b4d-606b-4c7d-9072-a983434892da",
+        "player": "castro 13gd",
+        "level": "The Ultimate Demon",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "08c8f905-d26b-470d-8a38-13e154672a68",
+        "player": "castro 13gd",
+        "level": "MELTDOWN",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "b8fd230b-3e67-41d3-b313-60a4f1100d72",
+        "player": "castro 13gd",
+        "level": "robotchief exposal",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "1d9579a2-2767-4dcb-adba-ec3dcac07b7a",
+        "player": "castro 13gd",
+        "level": "niflhel",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "11891ac7-f882-4ccb-9e40-4ba830dbe1f6",
+        "player": "castro 13gd",
+        "level": "Uprise",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "42b081ba-815d-499e-b114-963dff4309a3",
+        "player": "castro 13gd",
+        "level": "Disruption",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "d2019774-753e-4d48-80a8-51f25e5d83c5",
+        "player": "castro 13gd",
+        "level": "Forbidden Isle",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "0eb69bc7-eb8a-42e5-a7a0-70f54b625154",
+        "player": "castro 13gd",
+        "level": "phantasmagoria (whlt)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "5376a96e-f7cf-423d-aa08-908282caf6db",
+        "player": "castro 13gd",
+        "level": "Cataclysm",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "edf215b3-eb3c-417e-be1e-ce7e94ec02b1",
+        "player": "castro 13gd",
+        "level": "Komodo",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "8b2d41be-8f03-4907-bba6-446be5eebb67",
+        "player": "castro 13gd",
+        "level": "Kanpai",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "c9ce743c-396f-4cf4-bcfa-0b84a202387a",
+        "player": "castro 13gd",
+        "level": "Proteus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "bd8773d3-39b1-42a6-9a62-8fef6a71cd5e",
+        "player": "castro 13gd",
+        "level": "Azurite (Sillow)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "aabb41d1-6c95-4163-af2d-52d19f86d384",
+        "player": "castro 13gd",
+        "level": "Final Epilogue",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "1919d166-2d5f-4601-b863-c20e47085725",
+        "player": "castro 13gd",
+        "level": "Artificial Climb",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "44998e57-c8c4-41ec-9f61-25f52e57a8e4",
+        "player": "castro 13gd",
+        "level": "Raindance",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "45c5f2ee-8d00-4a1c-8cd1-570f4115d337",
+        "player": "castro 13gd",
+        "level": "Acu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "a70d1a20-fde9-4cda-9d50-665a28edbdae",
+        "player": "castro 13gd",
+        "level": "Red World",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "f6bb195d-08e5-4114-b311-331073f1c10b",
+        "player": "castro 13gd",
+        "level": "White Album",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
+    },
+    {
+        "id": "7316353d-a012-4e37-a7da-2c4ac5fcdbe3",
+        "player": "castro 13gd",
+        "level": "High Heat",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "718915034171965648",
+            "username": "castro 13gd"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:38:52.186Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:38:52.186Z"
     }
 ]
