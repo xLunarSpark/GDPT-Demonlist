@@ -28,6 +28,8 @@ USERNAME_ALIASES = {
     "Karmatas": "Karma",
     "taiago": "Taiago",
     "lunarspark": "LunarSpark",
+    "zpifoxo": "Pifoxo",
+    "pifoxo": "Pifoxo",
 }
 
 TRUSTED_LOCAL_USERS = {"truejumpy", "pifoxo", "lock"}

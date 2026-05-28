@@ -53,6 +53,12 @@
             "hz": 360
         },
         {
+            "user": "Pifoxo",
+            "link": "https://www.youtube.com/watch?v=OaEdRIr-MVA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "RedMurder",
             "link": "https://www.youtube.com/watch?v=-mrmRyywStQ",
             "percent": 100,
@@ -67,12 +73,6 @@
         {
             "user": "YT kerfuffles",
             "link": "https://www.youtube.com/watch?v=-ph6sPXGOkk",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zPifoxo",
-            "link": "https://www.youtube.com/watch?v=OaEdRIr-MVA",
             "percent": 100,
             "hz": 360
         }
