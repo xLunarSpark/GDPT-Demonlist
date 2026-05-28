@@ -224,26 +224,20 @@
                 <p>v1.0.0</p>
             </div>
             <nav class="nav">
-                <a class="nav__tab" href="/#/">
-                    <span class="type-label-lg">List</span>
-                </a>
-                <a class="nav__tab" href="/#/leaderboard">
-                    <span class="type-label-lg">Leaderboard</span>
-                </a>
-                <a class="nav__tab" href="/#/roulette">
-                    <span class="type-label-lg">Roulette</span>
-                </a>
                 <a class="nav__tab" href="/#/map">
                     <span class="type-label-lg">Map</span>
+                </a>
+                <a class="nav__tab" href="/#/profile" id="profile-tab" style="display:none;">
+                    <span class="type-label-lg">Profile</span>
+                </a>
+                <a class="nav__tab router-link-active" href="/admin" id="admin-tab" style="display:none;">
+                    <span class="type-label-lg">Admin</span>
                 </a>
                 <a class="nav__tab router-link-active" href="/admin" id="admin-tab" style="display:none;">
                     <span class="type-label-lg">Admin</span>
                 </a>
                 <a class="nav__tab" href="/#/profile" id="profile-tab" style="display:none;">
                     <span class="type-label-lg">Profile</span>
-                </a>
-                <a class="nav__tab" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">
-                    <span class="type-label-lg">Logout</span>
                 </a>
                 <div class="nav__actions">
                     <button class="nav__icon" onclick="toggleTheme()" style="background: none; border: none; cursor: pointer;">
@@ -252,6 +246,7 @@
                     <a class="nav__icon" href="https://discord.gg/9agBPJnFy4">  
                         <img src="/assets/discord.svg" alt="Discord Logo" />    
                     </a>
+                    <a class="nav__link type-label-lg" href="javascript:void(0)" onclick="logout()" id="logout-btn" style="display:none;">Logout</a>
                     <a
                         class="nav__cta type-label-lg"
                         href="/submit.html"
