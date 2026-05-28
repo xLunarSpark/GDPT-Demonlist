@@ -438,18 +438,19 @@
                         <div id="section-links" class="hidden">
                             <div class="admin-card">
                                 <span class="type-title-sm">Discord ID Links</span>
-                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Link Discord user IDs to leaderboard names so logins are auto-matched.</p>
+                                <p class="type-body-md" style="margin-bottom: 1rem; color: #888;">Pick a leaderboard player, add their Discord ID, and migrate their profile + accepted submissions.</p>
                                 <form id="link-form">
                                     <div class="flex-row">
+                                        <div style="flex:1">
+                                            <label class="type-label-lg">Leaderboard User</label>
+                                            <select id="link-gd-name" required>
+                                                <option value="" selected disabled>Pick a leaderboard user</option>
+                                            </select>
+                                        </div>
                                         <div style="flex:1">
                                             <label class="type-label-lg">Discord User ID</label>
                                             <input type="text" id="link-discord-id" placeholder="e.g. 123456789012345678" inputmode="numeric" pattern="\d+" required>
                                             <span class="hint-text">Enable Developer Mode in Discord to copy user IDs.</span>
-                                        </div>
-                                        <div style="flex:1">
-                                            <label class="type-label-lg">Leaderboard Name</label>
-                                            <input type="text" id="link-gd-name" list="leaderboard-names" placeholder="Exact leaderboard name" required>
-                                            <datalist id="leaderboard-names"></datalist>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn" style="width:100%; justify-content:center; background: var(--color-primary); color:white;">Save Link</button>
@@ -1675,11 +1676,12 @@
                     }
                     const unique = Array.from(new Set(names));
 
-                    const datalist = document.getElementById('leaderboard-names');
-                    if (datalist) {
-                        datalist.innerHTML = unique
-                            .map((name) => `<option value="${escapeHtml(name)}"></option>`)
-                            .join('');
+                    const select = document.getElementById('link-gd-name');
+                    if (select) {
+                        select.innerHTML = `
+                            <option value="" selected disabled>Pick a leaderboard user</option>
+                            ${unique.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join('')}
+                        `;
                     }
 
                     leaderboardNamesLoaded = true;
@@ -1973,11 +1975,11 @@
                     const discordId = document.getElementById('link-discord-id')?.value?.trim();
                     const gdName = document.getElementById('link-gd-name')?.value?.trim();
                     if (!discordId || !gdName) {
-                        setStatus('Please enter both Discord ID and leaderboard name.', 'error');
+                        setStatus('Please select a leaderboard user and enter a Discord ID.', 'error');
                         return;
                     }
 
-                    setStatus('Saving link...', 'info');
+                    setStatus('Migrating profile and saving link...', 'info');
                     try {
                         const res = await fetch('/api/user-links', {
                             method: 'POST',
@@ -2004,7 +2006,7 @@
                         }
 
                         renderUserLinks();
-                        setStatus('Link saved.', 'success');
+                        setStatus('Profile migrated and link saved.', 'success');
                         const idInput = document.getElementById('link-discord-id');
                         const nameInput = document.getElementById('link-gd-name');
                         if (idInput) idInput.value = '';
