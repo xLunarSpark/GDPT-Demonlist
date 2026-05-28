@@ -68,6 +68,22 @@ function normalizeName(value) {
     return normalizeRegionName(value);
 }
 
+function getDistrictPaths(svg) {
+    const layer = svg.querySelector('#layer6') || svg;
+    const paths = Array.from(layer.querySelectorAll('path'));
+    if (paths.length === 0) {
+        return [];
+    }
+
+    const filtered = paths.filter((path) => {
+        const hasData = path.hasAttribute('data-district');
+        const hasClass = Boolean(path.getAttribute('class'));
+        return hasData || hasClass;
+    });
+
+    return filtered.length > 0 ? filtered : paths;
+}
+
 function resolveDistrictKey(value) {
     const normalized = normalizeRegionName(value);
     if (DISTRICT_KEY_BY_NAME.has(normalized)) {
@@ -93,8 +109,7 @@ function getHardestEntry(entry) {
 }
 
 function autoAssignDistricts(svg, districts) {
-    const layer = svg.querySelector('#layer6') || svg;
-    const paths = Array.from(layer.querySelectorAll('path'));
+    const paths = getDistrictPaths(svg);
     if (paths.length === 0) {
         return [];
     }
@@ -196,8 +211,7 @@ function autoAssignDistricts(svg, districts) {
 }
 
 function assignDistrictsByOrder(svg, districts) {
-    const layer = svg.querySelector('#layer6') || svg;
-    const paths = Array.from(layer.querySelectorAll('path'));
+    const paths = getDistrictPaths(svg);
     if (paths.length === 0) {
         return [];
     }
@@ -466,7 +480,7 @@ export default {
             if (elements.length === 0) {
                 const svg = container.querySelector('svg');
                 if (svg) {
-                    const fallbackPaths = Array.from(svg.querySelectorAll('#layer6 path'));
+                    const fallbackPaths = getDistrictPaths(svg);
                     fallbackPaths.forEach((path) => {
                         path.classList.add('map-region');
                     });

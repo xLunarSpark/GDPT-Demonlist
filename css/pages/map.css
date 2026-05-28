@@ -3,7 +3,7 @@
     background: var(--color-background);
     --map-fill: rgba(var(--color-on-background-rgb), 0.12);
     --map-stroke: rgba(var(--color-on-background-rgb), 0.55);
-    --map-highlight: rgba(var(--color-primary-rgb), 0.75);
+    --map-highlight: rgba(var(--color-primary-rgb), 0.9);
     --map-highlight-stroke: var(--color-primary);
     --map-selected: rgba(var(--color-error-rgb), 0.55);
     --map-selected-stroke: var(--color-error);
