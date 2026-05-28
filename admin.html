@@ -1662,12 +1662,9 @@
                     const names = [];
                     if (Array.isArray(data)) {
                         data.forEach((entry) => {
-                            if (entry?.verifier) {
-                                names.push(entry.verifier);
-                            }
                             if (Array.isArray(entry?.records)) {
                                 entry.records.forEach((record) => {
-                                    if (record?.user) {
+                                    if (record?.user && Number(record?.percent) === 100) {
                                         names.push(record.user);
                                     }
                                 });
