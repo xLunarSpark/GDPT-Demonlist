@@ -11158,5 +11158,138 @@
         "timestamp": "2026-05-28T21:58:46.084Z",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T21:58:46.084Z"
+    },
+    {
+        "id": "22dd21fc-4132-404a-bfb0-bd2e01e2b420",
+        "player": "lexrsv",
+        "level": "Erebus (BoldStep)",
+        "video": "https://youtu.be/jzCBPR2ncWI?is=gf_8pvowiKB1myTc",
+        "raw": "https://youtu.be/oICu_v-AM7c?is=8jSTmRzXfRwQBsdQ",
+        "hz": 144,
+        "percent": 100,
+        "note": "Demorei mais tentativas neste nível do q em qualquer outro pra já",
+        "submitted_by": {
+            "id": "990726522899927040",
+            "username": "megadriveleo"
+        },
+        "timestamp": "2026-05-28T13:24:36.199Z",
+        "status": "denied",
+        "review_reason": "raw footage needs to be on google drive",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:35:12.219Z"
+    },
+    {
+        "id": "1aa7826f-5e71-47d2-b335-c65e372a7bd0",
+        "player": "lexrsv",
+        "level": "Yatagarasu",
+        "video": "https://youtu.be/97ZdltFqExw?is=9yBU7VA_q2bJAIxm",
+        "raw": "https://youtu.be/2vAlwNy4hRU?is=XXGG3JbJ3GAB7Ype",
+        "hz": 144,
+        "percent": 100,
+        "note": "Ye, quase me vomitei",
+        "submitted_by": {
+            "id": "990726522899927040",
+            "username": "megadriveleo"
+        },
+        "timestamp": "2026-05-28T13:26:18.909Z",
+        "status": "denied",
+        "review_reason": "raw footage needs to be on google drive",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:35:20.468Z"
+    },
+    {
+        "id": "8ab8f6ae-8300-45c4-8c9f-b88bf56b0e79",
+        "player": "lexrsv",
+        "level": "Sonic Wave",
+        "video": "https://youtu.be/wodT-I7hM9I?is=JhqokaPiuYD3zZo1",
+        "raw": "N tenho pq na altura achei q o overlay do rato era suficiente",
+        "hz": 144,
+        "percent": 100,
+        "note": "Meu hardest demon rn",
+        "submitted_by": {
+            "id": "990726522899927040",
+            "username": "megadriveleo"
+        },
+        "timestamp": "2026-05-28T13:28:54.672Z",
+        "status": "denied",
+        "review_reason": "no raw footage",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:35:36.642Z"
+    },
+    {
+        "id": "1d398243-3c67-4ffe-8d42-23ae842e7f7e",
+        "player": "wheels",
+        "level": "Bloodbath",
+        "video": "https://www.youtube.com/watch?v=McEVkc3GODk&t",
+        "raw": "https://drive.google.com/drive/u/1/home",
+        "hz": 560,
+        "percent": 100,
+        "note": "",
+        "submitted_by": {
+            "id": "614479352440291369",
+            "username": "rodas_2_0_0_6"
+        },
+        "timestamp": "2026-05-28T22:40:13.507Z",
+        "status": "approved",
+        "review_reason": null,
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:40:55.141Z"
+    },
+    {
+        "id": "b4697106-1e6e-4df8-a7e0-d41881e8521b",
+        "player": "wheels",
+        "level": "Broken Signal",
+        "video": "https://www.youtube.com/watch?v=dUa_W5gqpFU",
+        "raw": "https://drive.google.com/file/d/1IQ9x3O4myUTU2DQmCMDAtieIoTVTk1e7/view?usp=sharing",
+        "hz": 560,
+        "percent": 100,
+        "note": "",
+        "submitted_by": {
+            "id": "614479352440291369",
+            "username": "rodas_2_0_0_6"
+        },
+        "timestamp": "2026-05-28T22:41:12.479Z",
+        "status": "approved",
+        "review_reason": null,
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:42:26.565Z"
+    },
+    {
+        "id": "d98d83a6-976c-4e2b-b235-8d9f851b5cb8",
+        "player": "wheels",
+        "level": "Acu",
+        "video": "https://www.youtube.com/watch?v=LCv_Hhra-hY",
+        "raw": "https://www.youtube.com/watch?v=LCv_Hhra-hY",
+        "hz": 280,
+        "percent": 100,
+        "note": "",
+        "submitted_by": {
+            "id": "614479352440291369",
+            "username": "rodas_2_0_0_6"
+        },
+        "timestamp": "2026-05-28T22:42:54.978Z",
+        "status": "approved",
+        "review_reason": null,
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:43:08.328Z"
+    },
+    {
+        "id": "2a252d49-1231-4255-8f7d-ca6d89bc5874",
+        "player": "wheels",
+        "level": "Shukufuku",
+        "video": "https://www.youtube.com/watch?v=kf_tpk_lDt8",
+        "raw": "https://drive.google.com/file/d/1XgEKx1EJ6_EmgNC3x-4IzoZborAxq8GF/view?usp=sharing",
+        "hz": 560,
+        "percent": 100,
+        "note": "",
+        "submitted_by": {
+            "id": "614479352440291369",
+            "username": "rodas_2_0_0_6"
+        },
+        "timestamp": "2026-05-28T22:43:54.385Z",
+        "status": "approved",
+        "review_reason": null,
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:44:05.144Z"
     }
 ]
