@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "id": "2a252d49-1231-4255-8f7d-ca6d89bc5874",
+        "player": "wheels",
+        "level": "Shukufuku",
+        "video": "https://www.youtube.com/watch?v=kf_tpk_lDt8",
+        "raw": "https://drive.google.com/file/d/1XgEKx1EJ6_EmgNC3x-4IzoZborAxq8GF/view?usp=sharing",
+        "hz": 560,
+        "percent": 100,
+        "note": "",
+        "submitted_by": {
+            "id": "614479352440291369",
+            "username": "rodas_2_0_0_6"
+        },
+        "timestamp": "2026-05-28T22:43:54.385Z"
+    }
+]
