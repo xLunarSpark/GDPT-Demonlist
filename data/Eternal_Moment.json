@@ -20,15 +20,15 @@
             "hz": 360
         },
         {
-            "user": "hechie",
-            "link": "https://www.youtube.com/watch?v=3TcS7SVbTBM",
-            "percent": 70,
-            "hz": 360
-        },
-        {
             "user": "TrueJumpy",
             "link": "https://www.youtube.com/watch?v=o31hKBUVtAQ",
             "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "hechie",
+            "link": "https://www.youtube.com/watch?v=3TcS7SVbTBM",
+            "percent": 70,
             "hz": 360
         }
     ]

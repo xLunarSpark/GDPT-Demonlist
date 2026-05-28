@@ -17,6 +17,7 @@ REQUEST_TIMEOUT_S = 20
 
 PROFILE_FETCH_WORKERS = 8
 POINTERCRATE_FETCH_WORKERS = 8
+VERBOSE_OUTPUT = False
 
 CLAN_TAG_REGEX = re.compile(r"^\[.*?\]\s*")
 USERNAME_ALIASES = {
@@ -24,9 +25,12 @@ USERNAME_ALIASES = {
     "manugrk": "Manu",
     "zhexya": "Hexya",
     "karma": "Karma",
+    "Karmatas": "Karma",
     "taiago": "Taiago",
     "lunarspark": "LunarSpark",
 }
+
+TRUSTED_LOCAL_USERS = {"truejumpy", "pifoxo", "lock"}
 
 
 def fetch_json(url: str):
@@ -76,20 +80,73 @@ def normalize_level_name(name: str) -> str:
     return str(name).strip().lower()
 
 
+def base_level_name(name: str) -> str:
+    value = str(name).strip()
+    if value.endswith(")") and "(" in value:
+        value = value[: value.rfind("(")].strip()
+    return value
+
+
+def normalize_identity_value(value: str) -> str:
+    return str(value or "").strip().lower()
+
+
+def extract_identity_tokens(value) -> set[str]:
+    tokens = set()
+    if value is None:
+        return tokens
+
+    if isinstance(value, str):
+        token = normalize_identity_value(value)
+        if token:
+            tokens.add(token)
+        return tokens
+
+    if isinstance(value, dict):
+        for key in ("global_name", "name", "username"):
+            token = normalize_identity_value(value.get(key))
+            if token:
+                tokens.add(token)
+        return tokens
+
+    if isinstance(value, list):
+        for item in value:
+            tokens.update(extract_identity_tokens(item))
+        return tokens
+
+    return tokens
+
+
+def collect_aredl_identity_tokens(level_api_data: dict) -> set[str]:
+    tokens = set()
+    tokens.update(extract_identity_tokens(level_api_data.get("publisher")))
+    tokens.update(extract_identity_tokens(level_api_data.get("creators")))
+    return tokens
+
+
+def collect_pointercrate_identity_tokens(demon_data: dict) -> set[str]:
+    tokens = set()
+    tokens.update(extract_identity_tokens(demon_data.get("publisher")))
+    tokens.update(extract_identity_tokens(demon_data.get("creator")))
+    tokens.update(extract_identity_tokens(demon_data.get("creators")))
+    tokens.update(extract_identity_tokens(demon_data.get("author")))
+    return tokens
+
+
 def gather_players(country_data: dict) -> dict:
     players = {}
 
-    for r in country_data.get("records", []) or []:
-        p = r.get("submitted_by") or {}
-        pid = p.get("id")
+    for record in country_data.get("records", []) or []:
+        submitted_by = record.get("submitted_by") or {}
+        pid = submitted_by.get("id")
         if pid is not None:
-            players[pid] = p
+            players[pid] = submitted_by
 
-    for r in country_data.get("published", []) or []:
-        p = r.get("publisher") or {}
-        pid = p.get("id")
+    for record in country_data.get("published", []) or []:
+        publisher = record.get("publisher") or {}
+        pid = publisher.get("id")
         if pid is not None:
-            players[pid] = p
+            players[pid] = publisher
 
     return players
 
@@ -110,42 +167,28 @@ def add_records_from_profile(profile: dict, all_levels: dict) -> None:
     username = normalize_username(profile)
 
     for rec in profile.get("records", []) or []:
-        lvl_info = rec.get("level") or {}
-        lvl_id = lvl_info.get("level_id")
-        if lvl_id is None:
+        level_info = rec.get("level") or {}
+        level_id = level_info.get("level_id")
+        if level_id is None:
             continue
 
-        level_entry = all_levels.get(lvl_id)
+        level_entry = all_levels.get(level_id)
         if not level_entry:
             level_entry = {
-                "id": lvl_id,
-                "name": str(lvl_info.get("name", "")).strip(),
-                "position": lvl_info.get("position", 999999),
-                "legacy": lvl_info.get("legacy", False),
+                "id": level_id,
+                "name": str(level_info.get("name", "")).strip(),
+                "position": level_info.get("position", 999999),
+                "legacy": level_info.get("legacy", False),
                 "records": [],
             }
-            all_levels[lvl_id] = level_entry
-        else:
-            #keep metadata reasonably up to date if we get better info later
-            if not level_entry.get("name") and lvl_info.get("name"):
-                level_entry["name"] = str(lvl_info.get("name")).strip()
-
-            pos = lvl_info.get("position")
-            if pos is not None and (
-                level_entry.get("position") is None
-                or level_entry.get("position") == 999999
-            ):
-                level_entry["position"] = pos
-
-            if bool(lvl_info.get("legacy")) and not bool(level_entry.get("legacy")):
-                level_entry["legacy"] = True
+            all_levels[level_id] = level_entry
 
         level_entry["records"].append(
             {
                 "user": username,
                 "link": rec.get("video_url", ""),
                 "percent": 100,
-                "hz": 360,  # defaulted
+                "hz": 360,
             }
         )
 
@@ -157,20 +200,23 @@ def collect_pointercrate_records() -> dict:
         print(f"Error fetching Pointercrate PT players: {error}")
         return {}
 
-    print(f"Found {len(pt_players)} Pointercrate PT players. Fetching data...")
+    print(f"Pointercrate PT players: {len(pt_players)}")
 
     records_by_level = {}
+    fetch_failures = 0
 
     with concurrent.futures.ThreadPoolExecutor(
         max_workers=POINTERCRATE_FETCH_WORKERS
     ) as executor:
-        futures = {executor.submit(fetch_pointercrate_player, p["id"]): p for p in pt_players}
+        futures = {executor.submit(fetch_pointercrate_player, player["id"]): player for player in pt_players}
         for future in concurrent.futures.as_completed(futures):
             try:
                 details = future.result()
             except Exception as error:
                 player = futures[future]
-                print(f"Failed to fetch Pointercrate player {player.get('id')}: {error}")
+                fetch_failures += 1
+                if VERBOSE_OUTPUT:
+                    print(f"Failed to fetch Pointercrate player {player.get('id')}: {error}")
                 continue
 
             player_name = details.get("name", "Unknown")
@@ -178,8 +224,8 @@ def collect_pointercrate_records() -> dict:
                 if record.get("status") != "approved":
                     continue
 
-                level_info = record.get("demon") or {}
-                level_name = normalize_level_name(level_info.get("name", ""))
+                demon = record.get("demon") or {}
+                level_name = normalize_level_name(base_level_name(demon.get("name", "")))
                 if not level_name:
                     continue
 
@@ -189,13 +235,14 @@ def collect_pointercrate_records() -> dict:
                         "link": record.get("video", ""),
                         "percent": record.get("progress", 100),
                         "hz": 360,
+                        "identity_tokens": sorted(collect_pointercrate_identity_tokens(demon)),
                     }
                 )
 
-    total_pointercrate_records = sum(len(records) for records in records_by_level.values())
-    print(
-        f"Found {total_pointercrate_records} approved Pointercrate completions across {len(records_by_level)} levels"
-    )
+    total_records = sum(len(records) for records in records_by_level.values())
+    print(f"Pointercrate approved records: {total_records} across {len(records_by_level)} levels")
+    if fetch_failures:
+        print(f"Pointercrate player fetch failures: {fetch_failures}")
     return records_by_level
 
 
@@ -207,7 +254,7 @@ def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
         if not cleaned_user:
             continue
 
-        normalized_key = cleaned_user.lower()
+        key = cleaned_user.lower()
         cleaned_record = {
             "user": cleaned_user,
             "link": record.get("link", ""),
@@ -215,9 +262,9 @@ def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
             "hz": record.get("hz", 360),
         }
 
-        existing = deduped.get(normalized_key)
+        existing = deduped.get(key)
         if existing is None:
-            deduped[normalized_key] = cleaned_record
+            deduped[key] = cleaned_record
             continue
 
         existing_percent = int(existing.get("percent", 0) or 0)
@@ -226,9 +273,9 @@ def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
         new_link = str(cleaned_record.get("link", ""))
 
         if new_percent > existing_percent:
-            deduped[normalized_key] = cleaned_record
+            deduped[key] = cleaned_record
         elif new_percent == existing_percent and not existing_link and new_link:
-            deduped[normalized_key] = cleaned_record
+            deduped[key] = cleaned_record
 
     return list(deduped.values())
 
@@ -236,8 +283,6 @@ def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
 def report_duplicate_summary(raw_records_by_level: dict[str, list[dict]]) -> None:
     level_dups = 0
     global_user_variations = {}
-
-    print("Checking for duplicates within individual level files...")
 
     for level_name, records in raw_records_by_level.items():
         seen = set()
@@ -248,50 +293,51 @@ def report_duplicate_summary(raw_records_by_level: dict[str, list[dict]]) -> Non
 
             lower_user = raw_user.lower()
             if lower_user in seen:
-                print(f" -> [{level_name}] Duplicate record found for: '{raw_user}'")
                 level_dups += 1
             seen.add(lower_user)
 
             global_user_variations.setdefault(lower_user, set()).add(raw_user)
 
-    if level_dups == 0:
-        print(" -> No duplicates found within individual level files.\n")
-    else:
-        print(f" -> Total intra-level duplicates: {level_dups}\n")
-
-    print("Checking for global name styling variations (capitalization/spacing mismatches)...")
     variations_found = 0
     for lower_user, forms in global_user_variations.items():
         if len(forms) > 1:
-            print(f" -> Variation found for '{lower_user}': {sorted(forms)}")
             variations_found += 1
 
-    if variations_found == 0:
-        print(" -> No global variations found.")
-    else:
-        print(f" -> Total global variations: {variations_found}")
+    print(f"Duplicate summary: intra-level={level_dups}, global-name-variations={variations_found}")
 
 
-def load_name_to_filename_map(data_dir: Path) -> dict:
-    mapping = {}
+def load_level_indexes(data_dir: Path) -> tuple[dict[int, str], dict[str, list[str]]]:
+    id_to_stem = {}
+    name_to_stems = {}
 
     for path in data_dir.iterdir():
         if path.suffix.lower() != ".json" or path.name.startswith("_"):
             continue
 
+        stem = path.stem
+        data = {}
         try:
             with path.open("r", encoding="utf-8") as f:
                 data = json.load(f)
-            name = str(data.get("name", "")).strip().lower()
-            if name:
-                mapping[name] = path.stem
-                continue
         except Exception:
-            pass
+            data = {}
 
-        mapping[path.stem.replace("_", " ").strip().lower()] = path.stem
+        level_id = data.get("id")
+        if isinstance(level_id, int):
+            id_to_stem[level_id] = stem
 
-    return mapping
+        level_name = str(data.get("name", "")).strip().lower()
+        if not level_name:
+            level_name = stem.replace("_", " ").strip().lower()
+
+        name_to_stems.setdefault(level_name, []).append(stem)
+
+    return id_to_stem, name_to_stems
+
+
+def build_author_variant_stem(level_name: str, author: str) -> str:
+    safe_author = str(author or "unknown").strip().lower()
+    return slugify(f"{level_name}_({safe_author})")
 
 
 def load_local_level(path: Path) -> dict:
@@ -304,12 +350,54 @@ def load_local_level(path: Path) -> dict:
         return {}
 
 
+def load_existing_list(data_dir: Path) -> list[str]:
+    list_path = data_dir / "_list.json"
+    if not list_path.exists():
+        return []
+
+    try:
+        with list_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            return [str(x) for x in data if isinstance(x, str)]
+    except Exception:
+        pass
+
+    return []
+
+
+def list_all_level_stems(data_dir: Path) -> list[str]:
+    stems = []
+    for path in data_dir.iterdir():
+        if path.suffix.lower() != ".json" or path.name.startswith("_"):
+            continue
+        stems.append(path.stem)
+    return stems
+
+
 def fetch_level_metadata(level_id: int, level_name: str) -> dict:
     try:
-        lvl_api_data = fetch_json(f"{API_BASE}/levels/{level_id}")
-        author = lvl_api_data.get("publisher", {}).get("global_name", "Unknown")
+        level_api_data = fetch_json(f"{API_BASE}/levels/{level_id}")
+        author = level_api_data.get("publisher", {}).get("global_name", "Unknown")
 
-        verifications = lvl_api_data.get("verifications", []) or []
+        creators_raw = level_api_data.get("creators", []) or []
+        creators = []
+        for creator in creators_raw:
+            if isinstance(creator, str):
+                text = creator.strip()
+            elif isinstance(creator, dict):
+                text = str(
+                    creator.get("global_name")
+                    or creator.get("name")
+                    or creator.get("username")
+                    or ""
+                ).strip()
+            else:
+                text = ""
+            if text:
+                creators.append(text)
+
+        verifications = level_api_data.get("verifications", []) or []
         verifier = "Unknown"
         verification_url = ""
         if verifications:
@@ -324,14 +412,14 @@ def fetch_level_metadata(level_id: int, level_name: str) -> dict:
             "id": level_id,
             "name": level_name,
             "author": author,
-            "creators": [],
+            "creators": creators,
             "verifier": verifier,
             "verification": verification_url,
             "percentToQualify": 100,
             "password": "Free to Copy",
         }
-    except Exception as e:
-        print(f"Error fetching level metadata {level_name}: {e}")
+    except Exception as error:
+        print(f"Error fetching level metadata {level_name}: {error}")
         return {
             "id": level_id,
             "name": level_name,
@@ -344,20 +432,80 @@ def fetch_level_metadata(level_id: int, level_name: str) -> dict:
         }
 
 
+def build_aredl_duplicate_context(levels: list[dict]) -> dict:
+    grouped = {}
+    for level in levels:
+        level_name = str(level.get("name", "")).strip()
+        if not level_name:
+            continue
+        key = normalize_level_name(base_level_name(level_name))
+        grouped.setdefault(key, []).append(level)
+
+    duplicate_context = {}
+    for key, variants in grouped.items():
+        if len(variants) <= 1:
+            continue
+
+        tokens_by_id = {}
+        for variant in variants:
+            level_id = variant.get("id")
+            if not isinstance(level_id, int):
+                continue
+            try:
+                api_data = fetch_json(f"{API_BASE}/levels/{level_id}")
+                tokens_by_id[level_id] = collect_aredl_identity_tokens(api_data)
+            except Exception as error:
+                print(f"Could not fetch duplicate context for level {level_id}: {error}")
+                tokens_by_id[level_id] = set()
+
+        duplicate_context[key] = {"tokens_by_id": tokens_by_id}
+
+    return duplicate_context
+
+
+def resolve_pointercrate_records_for_level(
+    level_name: str,
+    level_id: int,
+    pointercrate_records_by_level: dict,
+    duplicate_context: dict,
+) -> list[dict]:
+    base_key = normalize_level_name(base_level_name(level_name))
+    candidates = list(pointercrate_records_by_level.get(base_key, []))
+    if not candidates:
+        return []
+
+    context = duplicate_context.get(base_key)
+    if not context:
+        return candidates
+
+    target_tokens = context.get("tokens_by_id", {}).get(level_id, set())
+    if not target_tokens:
+        return []
+
+    matched = []
+    for record in candidates:
+        pointer_tokens = set(record.get("identity_tokens", []))
+        if pointer_tokens and (pointer_tokens & target_tokens):
+            matched.append(record)
+
+    return matched
+
+
 def main() -> None:
-    print("Fetching data")
+    print("Rebuild started")
     try:
         pt_data = fetch_json(f"{API_BASE}/country/{PORTUGAL_COUNTRY_ID}")
-    except Exception as e:
-        print(f"Error fetching PT country data: {e}")
+    except Exception as error:
+        print(f"Error fetching PT country data: {error}")
         return
 
     players = gather_players(pt_data)
-    print(f"Found {len(players)} players. Fetching data...")
+    print(f"AREDL PT players: {len(players)}")
 
     all_levels = {}
 
     player_ids = list(players.keys())
+    profile_fetch_failures = 0
     with concurrent.futures.ThreadPoolExecutor(
         max_workers=PROFILE_FETCH_WORKERS
     ) as executor:
@@ -366,16 +514,18 @@ def main() -> None:
             pid = futures[future]
             try:
                 profile = future.result()
-            except Exception as e:
-                print(f"Failed to fetch profile {pid}: {e}")
+            except Exception as error:
+                profile_fetch_failures += 1
+                if VERBOSE_OUTPUT:
+                    print(f"Failed to fetch profile {pid}: {error}")
                 continue
 
             add_records_from_profile(profile, all_levels)
 
     total_completions = sum(len(level["records"]) for level in all_levels.values())
-    print(
-        f"Found {total_completions} total completions across {len(all_levels)} unique levels!"
-    )
+    print(f"AREDL completions: {total_completions} across {len(all_levels)} levels")
+    if profile_fetch_failures:
+        print(f"AREDL profile fetch failures: {profile_fetch_failures}")
 
     pointercrate_records_by_level = collect_pointercrate_records()
 
@@ -386,67 +536,113 @@ def main() -> None:
         return (is_legacy, pos)
 
     sorted_levels = sorted(all_levels.values(), key=sort_key)
+    duplicate_context = build_aredl_duplicate_context(sorted_levels)
 
-    name_to_filename = load_name_to_filename_map(DATA_DIR)
+    id_to_filename, name_to_filenames = load_level_indexes(DATA_DIR)
 
-    new_list_names = []
+    aredl_rank_by_name = {}
     raw_records_by_level = {}
 
-    for lvl in sorted_levels:
-        lvl_name = str(lvl.get("name", "")).strip()
-        if not lvl_name:
+    id_name_mismatches = 0
+    new_levels_created = 0
+
+    for level in sorted_levels:
+        level_name = str(level.get("name", "")).strip()
+        if not level_name:
             continue
 
-        filename_base = name_to_filename.get(lvl_name.lower())
+        level_id = level.get("id")
+        filename_base = id_to_filename.get(level_id)
+        level_metadata = None
+
+        if filename_base:
+            by_id_path = DATA_DIR / f"{filename_base}.json"
+            by_id_json = load_local_level(by_id_path)
+            by_id_name = str(by_id_json.get("name", "")).strip()
+            if by_id_name and normalize_level_name(base_level_name(by_id_name)) != normalize_level_name(base_level_name(level_name)):
+                id_name_mismatches += 1
+                if VERBOSE_OUTPUT:
+                    print(
+                        f"ID/name mismatch for {filename_base}: local='{by_id_name}' vs AREDL='{level_name}'. Ignoring ID mapping."
+                    )
+                filename_base = None
+
         if not filename_base:
-            filename_base = slugify(lvl_name) or str(lvl.get("id", "Unknown"))
+            candidates = name_to_filenames.get(level_name.lower(), [])
+            if len(candidates) == 1:
+                filename_base = candidates[0]
+            elif len(candidates) > 1:
+                level_metadata = fetch_level_metadata(level_id, level_name)
+                author_variant = build_author_variant_stem(
+                    level_name, level_metadata.get("author", "unknown")
+                )
+                match = next(
+                    (candidate for candidate in candidates if candidate.lower() == author_variant.lower()),
+                    None,
+                )
+                filename_base = match or author_variant
+            else:
+                filename_base = slugify(level_name) or str(level_id or "Unknown")
 
         filepath = DATA_DIR / f"{filename_base}.json"
-        new_list_names.append(filename_base)
+        if filename_base not in aredl_rank_by_name:
+            aredl_rank_by_name[filename_base] = len(aredl_rank_by_name)
 
         level_json = load_local_level(filepath)
         if not level_json:
-            print(f"Fetching metadata for new level: {lvl_name} ({lvl.get('id')})")
-            level_json = fetch_level_metadata(lvl.get("id"), lvl_name)
+            new_levels_created += 1
+            if VERBOSE_OUTPUT:
+                print(f"Fetching metadata for new level: {level_name} ({level_id})")
+            if level_metadata is None:
+                level_metadata = fetch_level_metadata(level_id, level_name)
+            level_json = level_metadata
+
+        if isinstance(level_id, int):
+            id_to_filename[level_id] = filename_base
+        name_to_filenames.setdefault(level_name.lower(), [])
+        if filename_base not in name_to_filenames[level_name.lower()]:
+            name_to_filenames[level_name.lower()].append(filename_base)
 
         existing_records = list(level_json.get("records", []) or [])
         existing_hz_by_user = {
-            clean_username(str(r.get("user", ""))).lower(): r.get("hz", 360)
-            for r in existing_records
-            if isinstance(r, dict) and r.get("user")
+            clean_username(str(record.get("user", ""))).lower(): record.get("hz", 360)
+            for record in existing_records
+            if isinstance(record, dict) and record.get("user")
         }
 
-        combined_records = existing_records
-        combined_records.extend(lvl.get("records", []) or [])
-        combined_records.extend(pointercrate_records_by_level.get(normalize_level_name(lvl_name), []))
+        combined_records = list(existing_records)
+        combined_records.extend(level.get("records", []) or [])
+        combined_records.extend(
+            resolve_pointercrate_records_for_level(
+                level_name,
+                level_id,
+                pointercrate_records_by_level,
+                duplicate_context,
+            )
+        )
 
-        raw_records_by_level[lvl_name] = combined_records
+        raw_records_by_level[level_name] = combined_records
 
         final_records = []
-        for new_r in combined_records:
-            user = clean_username(str(new_r.get("user", "")))
+        for record in combined_records:
+            user = clean_username(str(record.get("user", "")))
             if not user:
                 continue
 
             final_records.append(
                 {
                     "user": user,
-                    "link": new_r.get("link", ""),
-                    "percent": new_r.get("percent", 100),
-                    "hz": existing_hz_by_user.get(
-                        user.lower(),
-                        new_r.get("hz", 360),
-                    ),
+                    "link": record.get("link", ""),
+                    "percent": record.get("percent", 100),
+                    "hz": existing_hz_by_user.get(user.lower(), record.get("hz", 360)),
                 }
             )
 
         final_records = dedupe_and_clean_records(final_records)
-
-        # deterministic output is easier to review
         final_records.sort(
-            key=lambda r: (
-                -int(r.get("percent", 0) or 0),
-                str(r.get("user", "")).lower(),
+            key=lambda record: (
+                -int(record.get("percent", 0) or 0),
+                str(record.get("user", "")).lower(),
             )
         )
 
@@ -457,16 +653,56 @@ def main() -> None:
             json.dump(level_json, f, indent=4, ensure_ascii=False)
 
     report_duplicate_summary(raw_records_by_level)
+    print(f"Rebuild summary: new-level-files={new_levels_created}, id-name-mismatches={id_name_mismatches}")
+
+    current_list = load_existing_list(DATA_DIR)
+    all_level_stems = set(list_all_level_stems(DATA_DIR))
+
+    final_list_names = []
+    seen = set()
+
+    for name in current_list:
+        if name in all_level_stems and name not in seen:
+            final_list_names.append(name)
+            seen.add(name)
+
+    def insert_by_aredl_rank(level_stem: str) -> None:
+        rank = aredl_rank_by_name.get(level_stem)
+        if rank is None:
+            return
+
+        insert_at = len(final_list_names)
+        for idx, existing_name in enumerate(final_list_names):
+            existing_rank = aredl_rank_by_name.get(existing_name)
+            if existing_rank is not None and existing_rank > rank:
+                insert_at = idx
+                break
+
+        final_list_names.insert(insert_at, level_stem)
+        seen.add(level_stem)
+
+    ranked_missing = [
+        name
+        for name in all_level_stems
+        if name not in seen and name in aredl_rank_by_name
+    ]
+    ranked_missing.sort(key=lambda name: aredl_rank_by_name[name])
+    for name in ranked_missing:
+        insert_by_aredl_rank(name)
+
+    for name in sorted(all_level_stems):
+        if name not in seen:
+            final_list_names.append(name)
+            seen.add(name)
 
     with (DATA_DIR / "_list.json").open("w", encoding="utf-8") as f:
-        json.dump(new_list_names, f, indent=4, ensure_ascii=False)
+        json.dump(final_list_names, f, indent=4, ensure_ascii=False)
 
-    # Compile _list_bundled.json
     bundled_data = []
-    for name in new_list_names:
+    for name in final_list_names:
         try:
-            with (DATA_DIR / f"{name}.json").open("r", encoding="utf-8") as lf:
-                bundled_data.append(json.load(lf))
+            with (DATA_DIR / f"{name}.json").open("r", encoding="utf-8") as level_file:
+                bundled_data.append(json.load(level_file))
         except Exception:
             pass
 
@@ -474,7 +710,7 @@ def main() -> None:
         json.dump(bundled_data, f, separators=(",", ":"), ensure_ascii=False)
 
     print(
-        f"\nDone! Rebuilt _list.json and _list_bundled.json with {len(new_list_names)} levels"
+        f"\nDone! Rebuilt _list.json and _list_bundled.json with {len(final_list_names)} levels"
     )
 
 

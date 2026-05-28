@@ -141,6 +141,12 @@
             "hz": 360
         },
         {
+            "user": "TrueJumpy",
+            "link": "https://www.youtube.com/watch?v=wp7hFFEVTuU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Viwi",
             "link": "https://www.youtube.com/watch?v=jGhG8BO0Wms",
             "percent": 100,
@@ -149,12 +155,6 @@
         {
             "user": "Xanii",
             "link": "https://www.youtube.com/watch?v=c0jCX_jqmCs",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "TrueJumpy",
-            "link": "https://www.youtube.com/watch?v=wp7hFFEVTuU",
             "percent": 100,
             "hz": 360
         }
