@@ -84,6 +84,23 @@ function getDistrictPaths(svg) {
     return filtered.length > 0 ? filtered : paths;
 }
 
+function cleanSVGPresentation(el) {
+    try {
+        ['fill', 'stroke', 'style', 'fill-opacity', 'stroke-opacity', 'opacity'].forEach((attr) => {
+            if (el.hasAttribute && el.hasAttribute(attr)) {
+                el.removeAttribute(attr);
+            }
+        });
+        if (el.style) {
+            el.style.fill = '';
+            el.style.stroke = '';
+            el.style.opacity = '';
+        }
+    } catch (e) {
+        // ignore
+    }
+}
+
 function resolveDistrictKey(value) {
     const normalized = normalizeRegionName(value);
     if (DISTRICT_KEY_BY_NAME.has(normalized)) {
@@ -254,14 +271,15 @@ function autoAssignDistricts(svg, districts) {
     }));
 
     matches.forEach((match) => {
-        try {
-            match.el.setAttribute('data-district', match.key);
-            match.el.setAttribute('data-district-debug', match.key);
-            // eslint-disable-next-line no-console
-            console.log('[map] assigned', match.key, '->', match.el.id || match.el.getAttribute('id') || match.el.tagName);
-        } catch (e) {
-            // ignore
-        }
+            try {
+                match.el.setAttribute('data-district', match.key);
+                match.el.setAttribute('data-district-debug', match.key);
+                cleanSVGPresentation(match.el);
+                // eslint-disable-next-line no-console
+                console.log('[map] assigned', match.key, '->', match.el.id || match.el.getAttribute('id') || match.el.tagName);
+            } catch (e) {
+                // ignore
+            }
     });
 
     return matches.map((match) => match.el);
@@ -539,6 +557,7 @@ export default {
                 if (svg) {
                     const fallbackPaths = getDistrictPaths(svg);
                     fallbackPaths.forEach((path) => {
+                        cleanSVGPresentation(path);
                         path.classList.add('map-region');
                     });
                     this.mapAssetError = 'Showing map without district data. Please provide a district-tagged SVG for hover details.';
@@ -554,6 +573,7 @@ export default {
                 if (!key) {
                     return;
                 }
+                cleanSVGPresentation(el);
                 el.classList.add('map-region');
                 el.addEventListener('mouseenter', () => this.setHover(key));
                 el.addEventListener('click', () => this.setSelected(key));
