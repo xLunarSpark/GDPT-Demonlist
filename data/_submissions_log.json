@@ -11196,5 +11196,24 @@
         "review_reason": "raw footage needs to be on google drive",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T22:35:20.468Z"
+    },
+    {
+        "id": "8ab8f6ae-8300-45c4-8c9f-b88bf56b0e79",
+        "player": "lexrsv",
+        "level": "Sonic Wave",
+        "video": "https://youtu.be/wodT-I7hM9I?is=JhqokaPiuYD3zZo1",
+        "raw": "N tenho pq na altura achei q o overlay do rato era suficiente",
+        "hz": 144,
+        "percent": 100,
+        "note": "Meu hardest demon rn",
+        "submitted_by": {
+            "id": "990726522899927040",
+            "username": "megadriveleo"
+        },
+        "timestamp": "2026-05-28T13:28:54.672Z",
+        "status": "denied",
+        "review_reason": "no raw footage",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:35:36.642Z"
     }
 ]
