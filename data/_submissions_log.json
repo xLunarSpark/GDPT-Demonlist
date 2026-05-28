@@ -9016,5 +9016,221 @@
         "timestamp": "2026-05-28T10:39:28.874Z",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T10:39:28.874Z"
+    },
+    {
+        "id": "6fd32e47-7144-43bf-b56f-ccd5f2b664f2",
+        "player": "manu",
+        "level": "SARYYX NEVER CLEAR",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "fdf0bd78-1803-4cde-9db0-dc0b534c1eec",
+        "player": "manu",
+        "level": "Viprin UFO",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "f3e1ecd5-0339-4f4c-be47-b0e4c612f85e",
+        "player": "manu",
+        "level": "Hard Machine",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "16a22780-fd80-4986-a45c-dc5f3a194d3f",
+        "player": "manu",
+        "level": "Lotus Flower",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "713f3c3d-b635-4ac8-bc2a-a0389cad4107",
+        "player": "manu",
+        "level": "Frost Spirit",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "09ca0bb3-3d4a-429f-8c9f-f2608066e507",
+        "player": "manu",
+        "level": "DIRECTIONS",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "dc92f1c2-be73-460a-9426-6ddab3c52974",
+        "player": "manu",
+        "level": "Neon Skyline",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "c51714d3-feff-46c4-b644-d7bba7995682",
+        "player": "manu",
+        "level": "SARY NEVER CLEAR",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "b0988487-46ce-4972-8c11-41bd2cd71876",
+        "player": "manu",
+        "level": "RUST",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "308b1ca4-1a83-4fba-9390-19c02367f3fe",
+        "player": "manu",
+        "level": "Shardscapes",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "2537b73f-d417-471d-acc5-fb50b00916ba",
+        "player": "manu",
+        "level": "FARBIDI THEORY",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
+    },
+    {
+        "id": "70098c22-470f-4076-874d-0ce9e6ee55be",
+        "player": "manu",
+        "level": "Congregation",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "438419070170300436",
+            "username": "manu"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:39:55.620Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:39:55.620Z"
     }
 ]
