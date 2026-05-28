@@ -12,6 +12,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Creeevy",
+            "link": "https://www.youtube.com/watch?v=EAsfZksC37U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=9FiUNCAQwzA",
             "percent": 100,

@@ -1,6 +1,9 @@
 import concurrent.futures
 import io
 import json
+import re
+import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -8,17 +11,49 @@ PORTUGAL_COUNTRY_ID = 620
 DATA_DIR = Path("data")
 
 API_BASE = "https://api.aredl.net/v2/api/aredl"
+POINTERCRATE_BASE = "https://pointercrate.com/api/v1"
 USER_AGENT = "Mozilla/5.0"
 REQUEST_TIMEOUT_S = 20
 
 PROFILE_FETCH_WORKERS = 8
+POINTERCRATE_FETCH_WORKERS = 8
+
+CLAN_TAG_REGEX = re.compile(r"^\[.*?\]\s*")
+USERNAME_ALIASES = {
+    "gamer_bernax": "BernaX",
+    "manugrk": "Manu",
+    "zhexya": "Hexya",
+    "karma": "Karma",
+    "taiago": "Taiago",
+    "lunarspark": "LunarSpark",
+}
 
 
 def fetch_json(url: str):
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_S) as response:
-        with io.TextIOWrapper(response, encoding="utf-8") as text:
-            return json.load(text)
+    last_error = None
+
+    for attempt in range(1, 5):
+        try:
+            with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT_S) as response:
+                with io.TextIOWrapper(response, encoding="utf-8") as text:
+                    return json.load(text)
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if error.code == 429 and attempt < 4:
+                retry_after = error.headers.get("Retry-After")
+                sleep_for = float(retry_after) if retry_after else (0.75 * attempt)
+                time.sleep(sleep_for)
+                continue
+            raise
+        except urllib.error.URLError as error:
+            last_error = error
+            if attempt < 4:
+                time.sleep(0.5 * attempt)
+                continue
+            raise
+
+    raise last_error
 
 
 def slugify(name: str) -> str:
@@ -30,6 +65,15 @@ def normalize_username(profile: dict) -> str:
     if isinstance(username, str) and username and username.islower():
         return username.title()
     return username
+
+
+def clean_username(name: str) -> str:
+    cleaned = CLAN_TAG_REGEX.sub("", str(name).strip()).strip()
+    return USERNAME_ALIASES.get(cleaned.lower(), cleaned)
+
+
+def normalize_level_name(name: str) -> str:
+    return str(name).strip().lower()
 
 
 def gather_players(country_data: dict) -> dict:
@@ -52,6 +96,14 @@ def gather_players(country_data: dict) -> dict:
 
 def fetch_profile(pid: int):
     return fetch_json(f"{API_BASE}/profile/{pid}")
+
+
+def fetch_pointercrate_players():
+    return fetch_json(f"{POINTERCRATE_BASE}/players/?nation=PT")
+
+
+def fetch_pointercrate_player(pid: int):
+    return fetch_json(f"{POINTERCRATE_BASE}/players/{pid}")["data"]
 
 
 def add_records_from_profile(profile: dict, all_levels: dict) -> None:
@@ -96,6 +148,128 @@ def add_records_from_profile(profile: dict, all_levels: dict) -> None:
                 "hz": 360,  # defaulted
             }
         )
+
+
+def collect_pointercrate_records() -> dict:
+    try:
+        pt_players = fetch_pointercrate_players()
+    except Exception as error:
+        print(f"Error fetching Pointercrate PT players: {error}")
+        return {}
+
+    print(f"Found {len(pt_players)} Pointercrate PT players. Fetching data...")
+
+    records_by_level = {}
+
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=POINTERCRATE_FETCH_WORKERS
+    ) as executor:
+        futures = {executor.submit(fetch_pointercrate_player, p["id"]): p for p in pt_players}
+        for future in concurrent.futures.as_completed(futures):
+            try:
+                details = future.result()
+            except Exception as error:
+                player = futures[future]
+                print(f"Failed to fetch Pointercrate player {player.get('id')}: {error}")
+                continue
+
+            player_name = details.get("name", "Unknown")
+            for record in details.get("records", []) or []:
+                if record.get("status") != "approved":
+                    continue
+
+                level_info = record.get("demon") or {}
+                level_name = normalize_level_name(level_info.get("name", ""))
+                if not level_name:
+                    continue
+
+                records_by_level.setdefault(level_name, []).append(
+                    {
+                        "user": player_name,
+                        "link": record.get("video", ""),
+                        "percent": record.get("progress", 100),
+                        "hz": 360,
+                    }
+                )
+
+    total_pointercrate_records = sum(len(records) for records in records_by_level.values())
+    print(
+        f"Found {total_pointercrate_records} approved Pointercrate completions across {len(records_by_level)} levels"
+    )
+    return records_by_level
+
+
+def dedupe_and_clean_records(records: list[dict]) -> list[dict]:
+    deduped = {}
+
+    for record in records:
+        cleaned_user = clean_username(record.get("user", ""))
+        if not cleaned_user:
+            continue
+
+        normalized_key = cleaned_user.lower()
+        cleaned_record = {
+            "user": cleaned_user,
+            "link": record.get("link", ""),
+            "percent": record.get("percent", 100),
+            "hz": record.get("hz", 360),
+        }
+
+        existing = deduped.get(normalized_key)
+        if existing is None:
+            deduped[normalized_key] = cleaned_record
+            continue
+
+        existing_percent = int(existing.get("percent", 0) or 0)
+        new_percent = int(cleaned_record.get("percent", 0) or 0)
+        existing_link = str(existing.get("link", ""))
+        new_link = str(cleaned_record.get("link", ""))
+
+        if new_percent > existing_percent:
+            deduped[normalized_key] = cleaned_record
+        elif new_percent == existing_percent and not existing_link and new_link:
+            deduped[normalized_key] = cleaned_record
+
+    return list(deduped.values())
+
+
+def report_duplicate_summary(raw_records_by_level: dict[str, list[dict]]) -> None:
+    level_dups = 0
+    global_user_variations = {}
+
+    print("Checking for duplicates within individual level files...")
+
+    for level_name, records in raw_records_by_level.items():
+        seen = set()
+        for record in records:
+            raw_user = str(record.get("user", "")).strip()
+            if not raw_user:
+                continue
+
+            lower_user = raw_user.lower()
+            if lower_user in seen:
+                print(f" -> [{level_name}] Duplicate record found for: '{raw_user}'")
+                level_dups += 1
+            seen.add(lower_user)
+
+            global_user_variations.setdefault(lower_user, set()).add(raw_user)
+
+    if level_dups == 0:
+        print(" -> No duplicates found within individual level files.\n")
+    else:
+        print(f" -> Total intra-level duplicates: {level_dups}\n")
+
+    print("Checking for global name styling variations (capitalization/spacing mismatches)...")
+    variations_found = 0
+    for lower_user, forms in global_user_variations.items():
+        if len(forms) > 1:
+            print(f" -> Variation found for '{lower_user}': {sorted(forms)}")
+            variations_found += 1
+
+    if variations_found == 0:
+        print(" -> No global variations found.")
+    else:
+        print(f" -> Total global variations: {variations_found}")
 
 
 def load_name_to_filename_map(data_dir: Path) -> dict:
@@ -203,6 +377,8 @@ def main() -> None:
         f"Found {total_completions} total completions across {len(all_levels)} unique levels!"
     )
 
+    pointercrate_records_by_level = collect_pointercrate_records()
+
     def sort_key(level: dict):
         is_legacy = bool(level.get("legacy"))
         pos = level.get("position")
@@ -214,6 +390,7 @@ def main() -> None:
     name_to_filename = load_name_to_filename_map(DATA_DIR)
 
     new_list_names = []
+    raw_records_by_level = {}
 
     for lvl in sorted_levels:
         lvl_name = str(lvl.get("name", "")).strip()
@@ -233,14 +410,22 @@ def main() -> None:
             level_json = fetch_level_metadata(lvl.get("id"), lvl_name)
 
         existing_hz_by_user = {
-            str(r.get("user", "")).lower(): r.get("hz", 360)
+            clean_username(str(r.get("user", ""))).lower(): r.get("hz", 360)
             for r in (level_json.get("records", []) or [])
             if isinstance(r, dict) and r.get("user")
         }
 
+        combined_records = list(lvl.get("records", []) or [])
+        combined_records.extend(pointercrate_records_by_level.get(normalize_level_name(lvl_name), []))
+
+        raw_records_by_level[lvl_name] = combined_records
+
         final_records = []
-        for new_r in lvl.get("records", []) or []:
-            user = str(new_r.get("user", ""))
+        for new_r in combined_records:
+            user = clean_username(str(new_r.get("user", "")))
+            if not user:
+                continue
+
             final_records.append(
                 {
                     "user": user,
@@ -252,6 +437,8 @@ def main() -> None:
                     ),
                 }
             )
+
+        final_records = dedupe_and_clean_records(final_records)
 
         # deterministic output is easier to review
         final_records.sort(
@@ -266,6 +453,8 @@ def main() -> None:
         filepath.parent.mkdir(parents=True, exist_ok=True)
         with filepath.open("w", encoding="utf-8") as f:
             json.dump(level_json, f, indent=4, ensure_ascii=False)
+
+    report_duplicate_summary(raw_records_by_level)
 
     with (DATA_DIR / "_list.json").open("w", encoding="utf-8") as f:
         json.dump(new_list_names, f, indent=4, ensure_ascii=False)

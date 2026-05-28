@@ -18,6 +18,12 @@
             "hz": 360
         },
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=hZ2wQsztPoQ",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=962OVZyLLoY",
             "percent": 100,
@@ -30,8 +36,14 @@
             "hz": 288
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=hZ2wQsztPoQ",
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=YtUFCoKbu1c",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "YT kerfuffles",
+            "link": "https://www.youtube.com/watch?v=BViOYrwLt6g",
             "percent": 100,
             "hz": 360
         }

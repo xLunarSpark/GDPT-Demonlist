@@ -19,10 +19,16 @@
             "hz": 240
         },
         {
-            "user": "zHexya",
+            "user": "Hexya",
             "link": "https://www.youtube.com/watch?v=up_2R5BXzIs",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=0ZY8YIzuCYU",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

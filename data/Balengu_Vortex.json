@@ -13,6 +13,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=2dd5o3O-7kA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Ka1sa",
             "link": "https://www.youtube.com/watch?v=6Qh9ilpoNPs",
             "percent": 100,
@@ -33,12 +39,6 @@
         {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=3R1lvzUO0WY",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=2dd5o3O-7kA",
             "percent": 100,
             "hz": 360
         }

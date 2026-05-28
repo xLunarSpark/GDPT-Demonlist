@@ -19,10 +19,22 @@
             "hz": 360
         },
         {
+            "user": "corepic",
+            "link": "https://www.youtube.com/watch?v=m89ofjHOVyc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Darion123",
             "link": "https://www.youtube.com/watch?v=cu7Z5-XcKsI&t=4s",
             "percent": 100,
             "hz": 300
+        },
+        {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=V3dq8X9ESgw",
+            "percent": 100,
+            "hz": 360
         },
         {
             "user": "JooPozo",
@@ -37,8 +49,14 @@
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=V3dq8X9ESgw",
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=VBBLFq66ZUY",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=1nkgmFK7Zpw",
             "percent": 100,
             "hz": 360
         }

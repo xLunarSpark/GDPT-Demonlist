@@ -15,6 +15,12 @@
             "hz": 360
         },
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=BsRdx9LXl2Q",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=4zsLabK3Sr8",
             "percent": 100,
@@ -33,8 +39,8 @@
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=BsRdx9LXl2Q",
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=nCW-y5CIS5I",
             "percent": 100,
             "hz": 360
         }

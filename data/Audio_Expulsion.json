@@ -21,16 +21,16 @@
     "password": "276943",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=VfBHY2Uft-I",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=Xn-elh5HSvM",
             "percent": 100,
             "hz": 288
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=VfBHY2Uft-I",
-            "percent": 100,
-            "hz": 360
         }
     ]
 }

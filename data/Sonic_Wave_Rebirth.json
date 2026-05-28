@@ -19,9 +19,33 @@
             "hz": 360
         },
         {
+            "user": "corepic",
+            "link": "https://www.youtube.com/watch?v=vXGcKzxPZDE",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=Z8m9gjfgHwo",
             "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Taiago",
+            "link": "https://www.youtube.com/watch?v=Bxg6G6Ferxk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=lUILqGAXWTk",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Darion123",
+            "link": "https://www.youtube.com/watch?v=CEFQ5coDduk",
+            "percent": 70,
             "hz": 360
         }
     ]

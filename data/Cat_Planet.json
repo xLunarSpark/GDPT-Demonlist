@@ -9,6 +9,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=fI_SSMDw2b0",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Landet",
             "link": "https://www.youtube.com/watch?v=liWR2mCenGc",
             "percent": 100,
@@ -17,12 +23,6 @@
         {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=RxfyYET-lxc&t=25",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=fI_SSMDw2b0",
             "percent": 100,
             "hz": 360
         }

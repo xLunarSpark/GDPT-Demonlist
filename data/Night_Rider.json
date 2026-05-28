@@ -60,6 +60,12 @@
             "link": "https://www.youtube.com/watch?v=ic8tJouQFjU",
             "percent": 100,
             "hz": 288
+        },
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=EZHZOcdbRAg",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

@@ -11,6 +11,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Gray",
+            "link": "https://www.youtube.com/watch?v=dnCPyRLWcnc",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Lobo",
             "link": "https://www.youtube.com/watch?v=gWzo1VCFvSE&t=18",
             "percent": 100,

@@ -9,8 +9,14 @@
     "password": "Free to Copy",
     "records": [
         {
-            "user": "zHexya",
+            "user": "Hexya",
             "link": "https://www.youtube.com/watch?v=JSqPRIdSu7M",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=145ToO9sp6Y",
             "percent": 100,
             "hz": 360
         }

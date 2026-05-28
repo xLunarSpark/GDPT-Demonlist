@@ -9,14 +9,20 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=BCtQrqhCGNg",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=7Ikbd-7HfJk",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=BCtQrqhCGNg",
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=oDXxePYS7ko",
             "percent": 100,
             "hz": 360
         }

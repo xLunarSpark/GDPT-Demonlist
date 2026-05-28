@@ -9,6 +9,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "BernaX",
+            "link": "https://www.youtube.com/watch?v=o08K8d9sy70",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Castro 13GD",
             "link": "https://www.youtube.com/watch?v=C_JVh5suy_E&t=3s",
             "percent": 100,
@@ -21,14 +27,20 @@
             "hz": 360
         },
         {
+            "user": "Ferox242",
+            "link": "https://www.youtube.com/watch?v=TLU6ynSc8Us",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Francis",
             "link": "https://www.youtube.com/watch?v=KMhQytFRmkY&t=1s",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "Gamer_BernaX",
-            "link": "https://www.youtube.com/watch?v=o08K8d9sy70",
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=y3zM_daBuCs",
             "percent": 100,
             "hz": 360
         },
@@ -47,12 +59,6 @@
         {
             "user": "Reivax",
             "link": "https://www.youtube.com/watch?v=lwVEBROTccI",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=y3zM_daBuCs",
             "percent": 100,
             "hz": 360
         }

@@ -21,6 +21,12 @@
             "hz": 360
         },
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=SWBgqrLLxbo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Idy Is Lowercase",
             "link": "https://www.youtube.com/watch?v=vp3EXi6CUj4",
             "percent": 100,
@@ -29,12 +35,6 @@
         {
             "user": "Liziuri",
             "link": "https://www.youtube.com/watch?v=NIvDl4dMQMg",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=SWBgqrLLxbo",
             "percent": 100,
             "hz": 360
         }

@@ -12,6 +12,12 @@
     "password": "789123",
     "records": [
         {
+            "user": "Creeevy",
+            "link": "https://www.youtube.com/watch?v=97tIcKZ8wxA",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=Qrtp_f7c2Fs",
             "percent": 100,

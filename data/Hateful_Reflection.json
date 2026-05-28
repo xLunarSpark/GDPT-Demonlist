@@ -9,14 +9,20 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=mGANL8PAT74",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=HSkJDnjZNAI",
             "percent": 100,
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=mGANL8PAT74",
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=ml6-3oHdFQA",
             "percent": 100,
             "hz": 360
         }

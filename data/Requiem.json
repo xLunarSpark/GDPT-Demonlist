@@ -11,8 +11,14 @@
     "password": "No Copy",
     "records": [
         {
-            "user": "Gamer_BernaX",
+            "user": "BernaX",
             "link": "https://www.youtube.com/watch?v=iwrn4e8h7OM",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "MalandroGaming",
+            "link": "https://www.youtube.com/watch?v=XH6jTGN8mLA",
             "percent": 100,
             "hz": 360
         },

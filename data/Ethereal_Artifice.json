@@ -28,6 +28,12 @@
             "hz": 360
         },
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Idy Is Lowercase",
             "link": "https://www.youtube.com/watch?v=a8PLe9hwVa4",
             "percent": 100,
@@ -64,8 +70,14 @@
             "hz": 360
         },
         {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=SXMKmh6FJ8U",
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=qysnHE5-L-Y",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "YT kerfuffles",
+            "link": "https://www.youtube.com/watch?v=ONP2Li04c3w",
             "percent": 100,
             "hz": 360
         }

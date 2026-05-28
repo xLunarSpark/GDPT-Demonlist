@@ -19,6 +19,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=4GMbVNbX2i8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=xaHZNG4IbMY",
             "percent": 100,

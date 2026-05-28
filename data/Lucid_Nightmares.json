@@ -12,6 +12,12 @@
     "password": "341269",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=tQmZFsZ87OI",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=wYfMPbETH90",
             "percent": 100,
@@ -20,12 +26,6 @@
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=OStob4G7WT8",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=tQmZFsZ87OI",
             "percent": 100,
             "hz": 360
         }

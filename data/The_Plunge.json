@@ -9,6 +9,12 @@
     "password": "Free to Copy",
     "records": [
         {
+            "user": "Karma",
+            "link": "https://www.youtube.com/watch?v=Ipb-Y2gyvU8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "LunarSpark",
             "link": "https://www.youtube.com/watch?v=0Y2-nkYqdVA",
             "percent": 100,

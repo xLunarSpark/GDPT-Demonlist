@@ -27,10 +27,22 @@
     "password": "772002",
     "records": [
         {
-            "user": "zHexya",
+            "user": "Hexya",
             "link": "https://www.youtube.com/watch?v=hPtSLv18a7g",
             "percent": 100,
             "hz": 240
+        },
+        {
+            "user": "tetrys",
+            "link": "https://www.youtube.com/watch?v=Aa_IVc774dw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xanii",
+            "link": "https://www.youtube.com/watch?v=3qxx_QUqq9w",
+            "percent": 100,
+            "hz": 360
         }
     ]
 }

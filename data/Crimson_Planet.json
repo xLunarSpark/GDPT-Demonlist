@@ -22,6 +22,12 @@
     "password": "123456",
     "records": [
         {
+            "user": "Hexya",
+            "link": "https://www.youtube.com/watch?v=sWNU4ILnbIU",
+            "percent": 100,
+            "hz": 360
+        },
+        {
             "user": "Karma",
             "link": "https://www.youtube.com/watch?v=RnrWMI7MffI",
             "percent": 100,
@@ -30,12 +36,6 @@
         {
             "user": "Taiago",
             "link": "https://www.youtube.com/watch?v=eAvkJ9BQJgM",
-            "percent": 100,
-            "hz": 360
-        },
-        {
-            "user": "zHexya",
-            "link": "https://www.youtube.com/watch?v=sWNU4ILnbIU",
             "percent": 100,
             "hz": 360
         }
