@@ -4210,5 +4210,1139 @@
         "timestamp": "2026-05-28T10:35:54.028Z",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T10:35:54.028Z"
+    },
+    {
+        "id": "eda065b1-b84a-457d-9271-ba8861040c05",
+        "player": "taiago",
+        "level": "Tidal Wave",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "c6dbc744-3503-408c-bbaf-6bf703c51cd1",
+        "player": "taiago",
+        "level": "andromeda",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "ce51dbb2-40fa-4ce6-ba57-ad5d0a1301a9",
+        "player": "taiago",
+        "level": "Avernus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "29309051-cfc3-4560-9cf2-15e9bd0a0a9d",
+        "player": "taiago",
+        "level": "Acheron",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "91e5555b-704f-4c27-9464-47da793144d5",
+        "player": "taiago",
+        "level": "Tunnel of Despair",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "f9cea3a8-8b2d-4b91-ae97-56e016dfc149",
+        "player": "taiago",
+        "level": "Kyouki",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "afed4604-73b9-4c7d-9831-2abd911956ab",
+        "player": "taiago",
+        "level": "Slaughterhouse",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "1f57b493-480e-4cf7-ac16-260f449ae4a2",
+        "player": "taiago",
+        "level": "Sakupen Circles",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "595ed678-d411-4a88-aff8-29e6683d717b",
+        "player": "taiago",
+        "level": "KOSETSU",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "416fcd99-f283-4d2d-8557-7c023ae8c43f",
+        "player": "taiago",
+        "level": "Firework",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "b2cd8c54-717f-4336-b5c8-1ed1efd1c8ce",
+        "player": "taiago",
+        "level": "poocubed",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "037b7fa2-501c-4a2b-b087-8ce5518ded21",
+        "player": "taiago",
+        "level": "Saul Goodman",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "33d551ad-e3cb-43e7-8352-1df22cf9ebc9",
+        "player": "taiago",
+        "level": "COMBUSTION",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "47ad30b7-2f05-4bc0-8455-b63eeecc6294",
+        "player": "taiago",
+        "level": "Edge of Destiny",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "cafd1248-1862-4899-9468-cf65b1a14c10",
+        "player": "taiago",
+        "level": "Solar Flare",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "1bdaad7b-bdf9-4528-9196-c7685cb85cf8",
+        "player": "taiago",
+        "level": "Mayhem",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "cd41449a-a2f2-4b0c-b832-5112ab5b9662",
+        "player": "taiago",
+        "level": "walter white",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "753f7258-dcd9-4653-95f4-e660c9f18dbd",
+        "player": "taiago",
+        "level": "The Yangire",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "6768fbcd-fdd8-4038-b3e5-066e11c67b94",
+        "player": "taiago",
+        "level": "Midnight",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "5462be75-af9c-4f75-bc31-5af0f8f3c50b",
+        "player": "taiago",
+        "level": "arcturus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "797bafd0-d53e-4a5c-b1ac-1482e6e9e424",
+        "player": "taiago",
+        "level": "Sonic Wave Infinity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "025581a8-fe1c-4198-a6c0-70d4ceb795f3",
+        "player": "taiago",
+        "level": "Tartarus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "09b3d408-9468-4ba1-bddc-b94157c82ea1",
+        "player": "taiago",
+        "level": "Natural Disaster",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "ae4dd9bc-5e67-4ada-a031-b323962654f5",
+        "player": "taiago",
+        "level": "Terminal Rampancy",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "af3a4634-1c49-437b-8ff6-f98432c70dd5",
+        "player": "taiago",
+        "level": "The Golden",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "ac24ea68-87ca-4f4c-bf8e-124b48248468",
+        "player": "taiago",
+        "level": "Oblivion",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "268b47d7-5930-40e0-8646-b0947dc5eb33",
+        "player": "taiago",
+        "level": "Verdant Landscape",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "13a29709-de04-4cc1-a94b-c534dcf923f0",
+        "player": "taiago",
+        "level": "UNKNOWN",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "65965af6-7b7c-47c3-be36-b1a76b5d3486",
+        "player": "taiago",
+        "level": "Shukketsu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "c8fe0b7b-3d6e-4959-9264-2fdb1d79735a",
+        "player": "taiago",
+        "level": "Critical Heat",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "c9f634ed-bad6-4482-a73b-569af77aba7f",
+        "player": "taiago",
+        "level": "Aerial Gleam",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "e5726483-0c6d-45aa-b165-b1faa90f1022",
+        "player": "taiago",
+        "level": "Trueffet",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "fd1cd845-a32a-4987-ae6e-daf6daaeed22",
+        "player": "taiago",
+        "level": "Kenos",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "a4e070be-4921-4da3-b489-43f9ca15c8a4",
+        "player": "taiago",
+        "level": "Fragile",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "c4860489-2815-411a-82c7-0562b3c77e22",
+        "player": "taiago",
+        "level": "Hard Machine",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "0e4a54f8-26ce-4a8c-80dd-c9b2215720ad",
+        "player": "taiago",
+        "level": "Crackhead Circles",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "ea92a433-b987-435f-bb99-236c49855670",
+        "player": "taiago",
+        "level": "Keres",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "f0bd3301-385d-41eb-a0fa-05a881230d42",
+        "player": "taiago",
+        "level": "Promethean",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "de6df579-90c1-441d-b369-3e974c4f07d6",
+        "player": "taiago",
+        "level": "Thinking Space",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "7df9630b-967e-4d2d-a4d5-8135263b68a1",
+        "player": "taiago",
+        "level": "Crimson Planet",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "3b0e51f8-d999-42e4-a85a-20270dcbfe04",
+        "player": "taiago",
+        "level": "Cognition",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "85bafdda-dd2f-4b08-92e7-2a5ac10d326a",
+        "player": "taiago",
+        "level": "Cosmic Cyclone",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "7de1eed4-1d1b-45ea-a1b6-56001f767535",
+        "player": "taiago",
+        "level": "qoUEO",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "2388faec-4d74-4776-8d93-41ec4d6ef800",
+        "player": "taiago",
+        "level": "RUST",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "86da31b2-0143-4156-8c28-2381b67eff8f",
+        "player": "taiago",
+        "level": "Akashic Records",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "b9d77750-33fa-4ba7-bf21-3225551fbc51",
+        "player": "taiago",
+        "level": "Lucid Nightmares",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "fa8711b8-f3a1-461c-9e30-ef4b02fb18b8",
+        "player": "taiago",
+        "level": "SUPERHATEMEWORLD",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "b8d4b810-ab03-42dd-ba67-b5643591e5d9",
+        "player": "taiago",
+        "level": "The Rupture",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "f1cc94d5-9ba2-4b84-a881-6e549682d206",
+        "player": "taiago",
+        "level": "Kappa",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "be2d47e6-1f7b-4dce-afee-8efa196fdb6a",
+        "player": "taiago",
+        "level": "Bloodlust",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "967da7f1-2b24-4759-993f-c9bc26d12f4f",
+        "player": "taiago",
+        "level": "Jesse Pinkman",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "11c3174b-2445-49bd-84ed-c77a58d0e04e",
+        "player": "taiago",
+        "level": "CITRA",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "cc38d87a-02eb-46b6-8cbd-87006d64d0f6",
+        "player": "taiago",
+        "level": "Sigma",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "57e99e52-7c05-4471-a6c3-08e4fd385dfa",
+        "player": "taiago",
+        "level": "Knights of Thunder",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "3b93f0e6-c0a2-4fde-9034-fd6a540290af",
+        "player": "taiago",
+        "level": "the wiener",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "5a12524b-c478-48ae-a09e-d413837b5045",
+        "player": "taiago",
+        "level": "kowareta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "d0e8a193-b5de-4e22-af7b-3023d289864c",
+        "player": "taiago",
+        "level": "Arctic Lights",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "47f22368-2513-451a-9786-b23050ab09fb",
+        "player": "taiago",
+        "level": "CHROMA FINALE",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "fc4355c9-43d3-4f46-9407-c24a5e94ff2d",
+        "player": "taiago",
+        "level": "Aquatic Auroras",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "0904c777-c691-41d6-90f2-573c458ffda6",
+        "player": "taiago",
+        "level": "Hyper Paracosm",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "3ab14060-05d7-41ec-b606-68b9c9659a42",
+        "player": "taiago",
+        "level": "Wasureta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "53e9677c-0f91-4acc-a1ac-797dad0ca91b",
+        "player": "taiago",
+        "level": "Sakupen Hell",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
+    },
+    {
+        "id": "e90b1c7d-bf4f-4b64-b7ea-7969a481fc2b",
+        "player": "taiago",
+        "level": "Hateful Reflection",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "534806438212534282",
+            "username": "taiago"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:36:46.444Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:36:46.444Z"
     }
 ]
