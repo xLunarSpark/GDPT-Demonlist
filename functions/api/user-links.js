@@ -32,10 +32,6 @@ function normalizeDiscordId(value) {
     return String(value ?? '').trim();
 }
 
-function normalizeName(value) {
-    return String(value ?? '').trim();
-}
-
 function isValidDiscordId(value) {
     return /^\d{5,20}$/.test(value);
 }
