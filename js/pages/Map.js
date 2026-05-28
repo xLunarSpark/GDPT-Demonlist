@@ -253,6 +253,7 @@ export default {
         mapSvg: '',
         mapAssetError: '',
         mapElements: null,
+        mapBound: false,
     }),
     computed: {
         hoverStats() {
@@ -350,6 +351,9 @@ export default {
         this.mapElements = new Map();
         await Promise.all([this.loadStats(), this.loadMapSvg()]);
         this.loading = false;
+        this.$nextTick(() => {
+            requestAnimationFrame(() => this.bindMapEvents());
+        });
     },
     methods: {
         async loadStats() {
@@ -440,6 +444,9 @@ export default {
             }
         },
         bindMapEvents() {
+            if (this.mapBound) {
+                return;
+            }
             const container = this.$refs.mapSvgContainer;
             if (!container) {
                 return;
@@ -482,6 +489,7 @@ export default {
                 this.mapElements.set(key, el);
             });
 
+            this.mapBound = true;
             this.syncMapHighlights();
         },
         syncMapHighlights() {

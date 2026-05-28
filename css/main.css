@@ -4,9 +4,12 @@
     --color-background-hover: #eee;
     --color-on-background-hover: black;
     --color-primary: #006600;
+    --color-primary-rgb: 0, 102, 0;
     --color-on-primary: white;
     --color-error: #de0000;
+    --color-error-rgb: 222, 0, 0;
     --color-on-error: white;
+    --color-on-background-rgb: 0, 0, 0;
 }
 
 /* Old header
@@ -36,9 +39,12 @@ header.dark {
     --color-background-hover: #27262c;
     --color-on-background-hover: white;
     --color-primary: #FF0000;
+    --color-primary-rgb: 255, 0, 0;
     --color-on-primary: white;
     --color-error: #de0000;
+    --color-error-rgb: 222, 0, 0;
     --color-on-error: white;
+    --color-on-background-rgb: 255, 255, 255;
 }
 
 html,

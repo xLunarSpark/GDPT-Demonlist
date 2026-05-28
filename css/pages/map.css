@@ -1,12 +1,12 @@
 .page-map {
     position: relative;
     background: var(--color-background);
-    --map-fill: rgba(0, 102, 0, 0.12);
-    --map-stroke: rgba(0, 102, 0, 0.6);
-    --map-highlight: rgba(255, 184, 0, 0.75);
-    --map-highlight-stroke: rgba(255, 184, 0, 1);
-    --map-selected: rgba(239, 68, 68, 0.55);
-    --map-selected-stroke: rgba(239, 68, 68, 1);
+    --map-fill: rgba(var(--color-on-background-rgb), 0.12);
+    --map-stroke: rgba(var(--color-on-background-rgb), 0.55);
+    --map-highlight: rgba(var(--color-primary-rgb), 0.75);
+    --map-highlight-stroke: var(--color-primary);
+    --map-selected: rgba(var(--color-error-rgb), 0.55);
+    --map-selected-stroke: var(--color-error);
 }
 
 .page-map .map-shell {
@@ -90,7 +90,9 @@
     stroke: var(--map-stroke) !important;
     stroke-width: 1.5px !important;
     pointer-events: auto !important; 
-    transition: fill 150ms ease, stroke 150ms ease;
+    transition: fill 150ms ease, stroke 150ms ease, transform 150ms ease;
+    transform-origin: center;
+    transform-box: fill-box;
     cursor: pointer;
 }
 
@@ -98,6 +100,7 @@
 .page-map .map-svg-wrapper svg .map-region.active {
     fill: var(--map-highlight) !important;
     stroke: var(--map-highlight-stroke) !important;
+    transform: scale(1.03);
 }
 
 .page-map .map-svg-wrapper svg .map-region.selected {
@@ -174,15 +177,6 @@
     align-items: center;
     justify-content: center;
     min-height: 12rem;
-}
-
-html.dark .page-map {
-    --map-fill: rgba(255, 255, 255, 0.08);
-    --map-stroke: rgba(255, 255, 255, 0.5);
-    --map-highlight: rgba(255, 120, 0, 0.9);
-    --map-highlight-stroke: rgba(255, 120, 0, 1);
-    --map-selected: rgba(248, 113, 113, 0.9);
-    --map-selected-stroke: rgba(248, 113, 113, 1);
 }
 
 @media (max-width: 1200px) {
