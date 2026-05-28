@@ -11158,5 +11158,24 @@
         "timestamp": "2026-05-28T21:58:46.084Z",
         "reviewed_by": "1462140174669578483",
         "reviewed_at": "2026-05-28T21:58:46.084Z"
+    },
+    {
+        "id": "22dd21fc-4132-404a-bfb0-bd2e01e2b420",
+        "player": "lexrsv",
+        "level": "Erebus (BoldStep)",
+        "video": "https://youtu.be/jzCBPR2ncWI?is=gf_8pvowiKB1myTc",
+        "raw": "https://youtu.be/oICu_v-AM7c?is=8jSTmRzXfRwQBsdQ",
+        "hz": 144,
+        "percent": 100,
+        "note": "Demorei mais tentativas neste nível do q em qualquer outro pra já",
+        "submitted_by": {
+            "id": "990726522899927040",
+            "username": "megadriveleo"
+        },
+        "timestamp": "2026-05-28T13:24:36.199Z",
+        "status": "denied",
+        "review_reason": "raw footage needs to be on google drive",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T22:35:12.219Z"
     }
 ]
