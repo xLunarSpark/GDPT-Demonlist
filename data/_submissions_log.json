@@ -1,1 +1,3368 @@
-[]
+[
+    {
+        "id": "d71c7036-4440-4c64-b9b9-13a8785e1ae8",
+        "player": "lunarspark",
+        "level": "COMBUSTION",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "227e2d67-cfe8-482e-bc04-5c5eb88f30f9",
+        "player": "lunarspark",
+        "level": "The Plunge",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b505908d-055a-422c-8864-688f79b7999b",
+        "player": "lunarspark",
+        "level": "Midnight",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d2b8f40a-889c-45f8-86c0-740967422a0e",
+        "player": "lunarspark",
+        "level": "Sonic Wave Infinity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5aa25866-495f-4dae-9091-cdf34b2646ab",
+        "player": "lunarspark",
+        "level": "Tartarus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "81938f67-7c13-4d3b-b84e-ef32df827c70",
+        "player": "lunarspark",
+        "level": "Delta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d52e5363-422d-4af6-8c6f-387685fa2b7d",
+        "player": "lunarspark",
+        "level": "The Golden",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ca54f7c2-7e4c-444d-87b8-109faad2ee94",
+        "player": "lunarspark",
+        "level": "Oblivion",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "8ea4f994-469c-4f47-9805-0ddfaa7f77e2",
+        "player": "lunarspark",
+        "level": "Verdant Landscape",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e1879e8a-f671-4fc2-9915-41f75a4e5ce6",
+        "player": "lunarspark",
+        "level": "Shukketsu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "37f8b68e-64f6-46df-a707-71ca1387687d",
+        "player": "lunarspark",
+        "level": "Critical Heat",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ef3e5400-078a-4fb0-9fc9-c1b6e0bdeb08",
+        "player": "lunarspark",
+        "level": "Trueffet",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a9c48926-ff32-4f55-84a4-7c034a8d6c1b",
+        "player": "lunarspark",
+        "level": "Judgement Knights",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "28cad02d-2072-4095-8271-21943460d1f8",
+        "player": "lunarspark",
+        "level": "Promethean",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "48c93b4b-7ee0-4daa-9abf-909be3f2f252",
+        "player": "lunarspark",
+        "level": "Thinking Space",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ee65b6f4-98ac-4729-bbe5-6b01e8aa6243",
+        "player": "lunarspark",
+        "level": "Renevant",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "697e3c07-323e-4d47-a80c-43dc0c562da0",
+        "player": "lunarspark",
+        "level": "shimmer (amplitron)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9cf43fe6-705e-4e27-9af9-ce098415f048",
+        "player": "lunarspark",
+        "level": "Axiom Asterism",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9ce014e2-4839-447b-a485-3a782aa4208a",
+        "player": "lunarspark",
+        "level": "Cognition",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7bc4524e-6980-4ac1-8cde-6cdb852025ed",
+        "player": "lunarspark",
+        "level": "Cosmic Cyclone",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0a7bd68c-cb01-40bd-9b5f-2c4b4b667953",
+        "player": "lunarspark",
+        "level": "RUST",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0e95a491-ccf3-41d5-b739-0445226e1ff1",
+        "player": "lunarspark",
+        "level": "Akashic Records",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d8e5fe1d-1ad0-4b49-9508-0521fbba14ec",
+        "player": "lunarspark",
+        "level": "Lucid Nightmares",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "201eabda-9400-4ff2-a9ac-453119187f52",
+        "player": "lunarspark",
+        "level": "Cobwebs",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "743620ea-1754-46d9-8c6a-e016193c8972",
+        "player": "lunarspark",
+        "level": "Shardscapes",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d2371e72-97ea-45f1-99ee-c550d10237e2",
+        "player": "lunarspark",
+        "level": "Omega Interface",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e990f8d6-30ae-4e7e-94e0-ca47051a74cd",
+        "player": "lunarspark",
+        "level": "Descent Into Exile",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e474f14a-4e2a-4178-9e98-8fca4e2e75f7",
+        "player": "lunarspark",
+        "level": "The Rupture",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a36f2300-a462-4c19-8979-fb604b44faf8",
+        "player": "lunarspark",
+        "level": "Kappa",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "35a771f1-e082-4276-8410-3ea3aed15cbc",
+        "player": "lunarspark",
+        "level": "Bloodlust",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b2d37351-a42e-4592-8bb0-5c24e06bbdab",
+        "player": "lunarspark",
+        "level": "Jesse Pinkman",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f448617f-2651-4464-8b51-fcca4160f937",
+        "player": "lunarspark",
+        "level": "Terminux",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "c5c80fad-65e0-445b-9a2d-0def0eae7fc1",
+        "player": "lunarspark",
+        "level": "CITRA",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2ec4c422-3e38-4c0e-b66b-a8a9c4a8c7f3",
+        "player": "lunarspark",
+        "level": "Sigma",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "12ddd437-a1f0-4d51-b307-a918cfd5c652",
+        "player": "lunarspark",
+        "level": "Exosphere",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "909add87-e0b8-4b4f-896d-9f69511b55f9",
+        "player": "lunarspark",
+        "level": "untitled unmastered",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "20eb74d3-327f-468b-9c93-47910349df60",
+        "player": "lunarspark",
+        "level": "Knights of Thunder",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b19377ff-e897-4e46-9ae6-2a44c49a8fcf",
+        "player": "lunarspark",
+        "level": "Cicatrize",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "6b8ec4fd-b617-4d1b-a439-5aa5e4c063e6",
+        "player": "lunarspark",
+        "level": "kowareta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2326a62e-d870-4f7e-a4cb-1941b6bdc7cb",
+        "player": "lunarspark",
+        "level": "Arctic Lights",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7b5351db-3579-4ce4-bb4e-1de7c34141df",
+        "player": "lunarspark",
+        "level": "Plasma Pulse Finale",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d1738557-f047-4e0f-807f-674efdb6979c",
+        "player": "lunarspark",
+        "level": "CHROMA FINALE",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1c494349-39db-4d9e-9897-b96eeb751b0c",
+        "player": "lunarspark",
+        "level": "CRIDIUM",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2a4a62c5-3512-45ee-b641-bd9bfa0fbc9e",
+        "player": "lunarspark",
+        "level": "Aquatic Auroras",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ea844778-8476-478a-93cc-dec50539992a",
+        "player": "lunarspark",
+        "level": "Eternal Moment",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2d9398e8-b310-4f79-933d-21fd2d5fcec4",
+        "player": "lunarspark",
+        "level": "AKIRA",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d293b26c-dcf2-4b5c-92b3-325408126d61",
+        "player": "lunarspark",
+        "level": "Gamma",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7585e93d-efb1-4cc0-9f99-1676e1259c8c",
+        "player": "lunarspark",
+        "level": "Molten Gear",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "3c316d89-783c-49cc-98a3-b44d065de727",
+        "player": "lunarspark",
+        "level": "Wasureta",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ad746c7e-5bf8-43da-894f-6782d325bd12",
+        "player": "lunarspark",
+        "level": "Macabre",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1c8cfc27-9d0e-4fe1-befa-4d6a5d7a3863",
+        "player": "lunarspark",
+        "level": "Cybernetic Crescent",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "41cb37a1-19cc-4a14-bb09-926a62856768",
+        "player": "lunarspark",
+        "level": "Sonic Wave Rebirth",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "6b915d0a-70ee-4f14-8fca-191c2ec18e81",
+        "player": "lunarspark",
+        "level": "Sonic Wave",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "90d32353-b088-49a6-bef2-06fda5dd7069",
+        "player": "lunarspark",
+        "level": "LUMINA",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d7b29ebd-2468-4b6b-a20f-67c38141603c",
+        "player": "lunarspark",
+        "level": "Yatagarasu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5bc18d96-9da6-4d41-ab7c-259b168afd02",
+        "player": "lunarspark",
+        "level": "Twisted Titanium",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5864ef0a-1698-49e1-b89a-bb7e1a849a84",
+        "player": "lunarspark",
+        "level": "Edge of the Blade",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5a97910d-c1ae-47fd-bca2-b05ede5840a4",
+        "player": "lunarspark",
+        "level": "xo",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1fd4fe04-6708-4c0a-8689-97c6cbeab73b",
+        "player": "lunarspark",
+        "level": "GONER",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "20ba5f04-df32-4a4f-a5d4-93fb5e3f8aec",
+        "player": "lunarspark",
+        "level": "Erebus (BoldStep)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d2776305-67ba-4885-98ea-5c616ad3deca",
+        "player": "lunarspark",
+        "level": "Chromatic Haze",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1ac60a32-8943-4d8a-936f-985ed0dc95a0",
+        "player": "lunarspark",
+        "level": "Lucid Chaos",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0a483ce2-ad4d-446f-9bd4-956290e7f4ff",
+        "player": "lunarspark",
+        "level": "Catalyze",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7832387f-8c31-4786-a153-f14b7f537d21",
+        "player": "lunarspark",
+        "level": "Digital Descent",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "bd36d294-023b-4651-a76b-cc3c1846cfd1",
+        "player": "lunarspark",
+        "level": "ZAPHKIEL",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7a8f91fb-7a97-4bbe-9e25-9098ea0948b2",
+        "player": "lunarspark",
+        "level": "Omicron",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "30d37573-d7d7-486f-815e-4331c4f988e0",
+        "player": "lunarspark",
+        "level": "Auroral Darkness",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "54009b0a-eadd-4518-bf3d-b2bfc43081df",
+        "player": "lunarspark",
+        "level": "Tempered Steel",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a44ac9b4-1d04-466c-8934-99ca4128d80d",
+        "player": "lunarspark",
+        "level": "Delta Interface",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d8585189-425f-41e4-bd45-6bc7addaea5b",
+        "player": "lunarspark",
+        "level": "Artificial Ascent",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "8188f973-aec1-4c4b-aec4-3d41c476dbbf",
+        "player": "lunarspark",
+        "level": "Budding Roses",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f8cd9e20-54fa-47b7-8eed-61c61e44c54e",
+        "player": "lunarspark",
+        "level": "Crystal",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "3cd4647b-aa1f-4dc0-8837-da021f002c09",
+        "player": "lunarspark",
+        "level": "Diamond Disco",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2e894cfc-303e-40a2-9f96-8368021aeee6",
+        "player": "lunarspark",
+        "level": "2 1 1",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "786dd7ec-e6a2-4057-b1f3-40b7cbf94fb3",
+        "player": "lunarspark",
+        "level": "Night Rider",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2e7737ff-fc05-4d1f-a033-14f81e6a2b22",
+        "player": "lunarspark",
+        "level": "Black Blizzard",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "abd3e181-1023-4024-85c5-10bc3f08f7c0",
+        "player": "lunarspark",
+        "level": "distraught",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0e781444-26a5-436c-93b8-80acf1368d50",
+        "player": "lunarspark",
+        "level": "Ethereal Artifice",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "faed3b61-6d66-438c-944e-a53d2939b433",
+        "player": "lunarspark",
+        "level": "MISFIRE",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5ebc5152-6eec-4666-adcf-4cc23e04c7dc",
+        "player": "lunarspark",
+        "level": "Faded Dream",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "c0905d93-49dc-4f82-8d4d-ab1e6a32cc08",
+        "player": "lunarspark",
+        "level": "Bausha Vortex",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "4783613c-d1af-4666-bdd0-d6eb671d607a",
+        "player": "lunarspark",
+        "level": "Balengu Vortex",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "15e18cbc-9e0f-48ef-a3be-abe178c7b88f",
+        "player": "lunarspark",
+        "level": "The Hell Field",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7a5a1b7e-a5ff-4e16-8e05-a024346ef651",
+        "player": "lunarspark",
+        "level": "Auditory Breaker",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e3f28b67-1f12-45c5-b35b-770a3f187e8d",
+        "player": "lunarspark",
+        "level": "Hyper Paradox",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "52825f9e-3393-4877-8cd3-f929560e392f",
+        "player": "lunarspark",
+        "level": "Ouroboros Startpos 2",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0a813448-9239-4b79-98d6-596f51d5dc15",
+        "player": "lunarspark",
+        "level": "Audio Expulsion",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2dd3de66-8b74-43c5-ad22-520b995f10bb",
+        "player": "lunarspark",
+        "level": "Dolos",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "56e73051-b031-4fa6-b045-d0a91db09558",
+        "player": "lunarspark",
+        "level": "Anoxysm",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1bc28fc4-a7b4-4af4-a13a-6e06f3f310e0",
+        "player": "lunarspark",
+        "level": "Endless Dream",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9eb54f30-a714-491c-8fb8-d60bece85140",
+        "player": "lunarspark",
+        "level": "Mujigae",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "6ab58774-8520-43e0-86d8-47ddda4ce37f",
+        "player": "lunarspark",
+        "level": "milo",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "3410f9d2-d79d-42b0-8c67-d617049cfbc1",
+        "player": "lunarspark",
+        "level": "ErebuS (Platnuu)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "33dd8c1d-b323-480f-a98f-ab2eb97eeb08",
+        "player": "lunarspark",
+        "level": "Athanatos",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9c87548c-eb87-405f-8f25-f6aeeed396b0",
+        "player": "lunarspark",
+        "level": "Wild Rose",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "693a5ece-aa5a-4cb0-864e-c31749e7ef1c",
+        "player": "lunarspark",
+        "level": "New Record",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "8eae193e-3797-4655-a2f1-3b8492353595",
+        "player": "lunarspark",
+        "level": "Screaming",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "518c0225-b1b5-4da2-8920-8f557e6a54ed",
+        "player": "lunarspark",
+        "level": "Removed Submission",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "cfff30bc-71d7-4a7f-a974-ae26dd7234bb",
+        "player": "lunarspark",
+        "level": "WcropoliX",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ddd6cc43-cb21-4ad4-91fa-0aef0e14f773",
+        "player": "lunarspark",
+        "level": "DARKENED",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "94fdfe8d-83d4-472e-bac6-fff274e6e63c",
+        "player": "lunarspark",
+        "level": "Falcon16",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "c41ab92e-41e0-4300-b82f-c967012cd684",
+        "player": "lunarspark",
+        "level": "Blade of Justice",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b7d97854-b4ae-43b9-8e4c-52f5fdbcdb3f",
+        "player": "lunarspark",
+        "level": "Asmodeus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "45bdd319-83eb-46bd-bb8e-1c4278b597eb",
+        "player": "lunarspark",
+        "level": "Sakupen Hell",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1157d269-2708-460d-ba58-e74fd7161682",
+        "player": "lunarspark",
+        "level": "ACHROMATISM",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b41852e5-0ccd-498d-9e99-4f56762abe92",
+        "player": "lunarspark",
+        "level": "Last Stop",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "22448b7c-73a2-4f63-9725-0ceb7587e041",
+        "player": "lunarspark",
+        "level": "Carcano",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "5d6c075b-631d-4cc9-b846-fe4d9978425c",
+        "player": "lunarspark",
+        "level": "Anahita",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f51feb83-e54f-423b-aded-9d6f98a39608",
+        "player": "lunarspark",
+        "level": "Carbon Fiber",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b0e147bb-4778-4efe-b4e7-e4463713a808",
+        "player": "lunarspark",
+        "level": "Molten Mercury",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f07f7046-876e-4428-b769-a6c53d278efc",
+        "player": "lunarspark",
+        "level": "Aura (Ka1sa)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "beb4b070-f511-4194-afca-2202958e2e9d",
+        "player": "lunarspark",
+        "level": "Biohazard (ARtu)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "c8e99d4d-ce49-48dc-a764-b69f53cf038c",
+        "player": "lunarspark",
+        "level": "GewErbiX",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2b1c6c68-a84d-4711-b9dd-fa39d23dfe02",
+        "player": "lunarspark",
+        "level": "water demon",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e5ac7415-6740-4799-a609-e88e3e05f03c",
+        "player": "lunarspark",
+        "level": "Untitled",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ca57ddb4-3ab2-4399-8284-09ebcbabb155",
+        "player": "lunarspark",
+        "level": "gravity",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e8fa28a6-7624-4339-99bc-c376e18993ea",
+        "player": "lunarspark",
+        "level": "Bloodbath",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "853d5056-b4ab-4835-bf47-1d4e95c1f1a8",
+        "player": "lunarspark",
+        "level": "Idols",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "26ae2583-17af-4fcb-abdc-42e4adf2ae71",
+        "player": "lunarspark",
+        "level": "Motorbreath",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "4cd31069-5bd6-4820-8eca-12d8bc456836",
+        "player": "lunarspark",
+        "level": "moment",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "cfb258f3-c374-43c2-aab0-20d731531787",
+        "player": "lunarspark",
+        "level": "Quaoar (ViPriN)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "6cf869d4-29fe-448c-b7e2-7f7cbab1e3b9",
+        "player": "lunarspark",
+        "level": "ATMarbl",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "244037b0-9805-458e-a90b-69292452ff98",
+        "player": "lunarspark",
+        "level": "Prismatic Haze",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "8a471fdf-5dc1-4f99-8708-f0174cbdb1c3",
+        "player": "lunarspark",
+        "level": "Conical Depression",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "cb47cee7-ff05-4033-a206-5d68be502ff7",
+        "player": "lunarspark",
+        "level": "Inflective",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9fc5b835-984e-41ff-9eba-459363609764",
+        "player": "lunarspark",
+        "level": "QDYNAMIX",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "cfa8647f-c10b-4bce-b05b-6d1cde947dc4",
+        "player": "lunarspark",
+        "level": "Penultimate Phase",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "54e9b8ba-57a6-45b7-ab86-e588601c6966",
+        "player": "lunarspark",
+        "level": "INNARDS",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "afee17bb-4ff3-45ab-b6d7-5dc5ec3279fc",
+        "player": "lunarspark",
+        "level": "lunar",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "4bf5f62c-0c1b-4383-8e03-06b2ef7cf13e",
+        "player": "lunarspark",
+        "level": "Sigma Interface",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "16f5c48e-04d0-4693-9e76-761bad9bc686",
+        "player": "lunarspark",
+        "level": "aftermath",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "593079be-e68c-4621-84a4-d930910c20f5",
+        "player": "lunarspark",
+        "level": "Deflective",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1fb8d26a-bf54-4862-bf37-fa9393d7f6ea",
+        "player": "lunarspark",
+        "level": "Concaved Memories",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "97bc6347-5ca7-456d-b6a9-0a88f9212967",
+        "player": "lunarspark",
+        "level": "KINGSLAYER",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "941cd3bb-0a9e-4201-b360-dccdacfbcb0b",
+        "player": "lunarspark",
+        "level": "Galaxy Gas",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "003305b8-693a-410e-b1ea-0e8faa4c92b1",
+        "player": "lunarspark",
+        "level": "VIRTUE",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2368a710-cbf6-4904-8350-a4e0c3f431d8",
+        "player": "lunarspark",
+        "level": "Reflective",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7351d066-0871-4e13-9900-a38959274266",
+        "player": "lunarspark",
+        "level": "Disastrous Downpour",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a2668430-02b1-42f8-bb3f-44f95cceeb01",
+        "player": "lunarspark",
+        "level": "Armageddon",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "c41729c0-db47-4ead-9c1c-6837b27de785",
+        "player": "lunarspark",
+        "level": "NecropoliX",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "88f28bf3-fd71-4043-acbf-0d1010dc376a",
+        "player": "lunarspark",
+        "level": "nowdead",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "3bbaf40f-2c60-43f2-8b0f-03a54c947e30",
+        "player": "lunarspark",
+        "level": "Artificial Dream",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "fdd8d11b-4825-4719-a7d9-5fb9fba4fd28",
+        "player": "lunarspark",
+        "level": "Fexty",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "fdacf355-fb00-4e57-88e9-e3e3c961c0de",
+        "player": "lunarspark",
+        "level": "Marlboro reds",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0b983339-53e7-48e0-819a-0fafb010724c",
+        "player": "lunarspark",
+        "level": "Acrozis",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0e2a13a0-f3b4-43a4-9d7e-aeb3e2feb9aa",
+        "player": "lunarspark",
+        "level": "ILOVECYAN",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0aa5bbb2-7c43-41f7-b8ab-96955e2fdf64",
+        "player": "lunarspark",
+        "level": "Psychotic",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "775bce62-e17d-456a-9192-833ce86bb477",
+        "player": "lunarspark",
+        "level": "Broken Signal",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "efc9793e-ab21-4435-8ef9-a766b5beb872",
+        "player": "lunarspark",
+        "level": "Volume",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "72f15e87-5c7b-4169-98fc-b77c806ad383",
+        "player": "lunarspark",
+        "level": "Napalm",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "72e7873b-7c52-40b4-b174-7f7f0ea90a54",
+        "player": "lunarspark",
+        "level": "Stellaluna",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "d9b73a80-e737-4d03-83b1-ce63e25e175f",
+        "player": "lunarspark",
+        "level": "Retention",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "6db08310-2528-4628-8c61-9964e202a00a",
+        "player": "lunarspark",
+        "level": "Enlightened memories",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "0b258140-c822-4fa5-a85a-28c9f0e11fdb",
+        "player": "lunarspark",
+        "level": "La Llorona",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a83030a9-553b-4854-b716-b792be7f25b4",
+        "player": "lunarspark",
+        "level": "SHURIMA",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b5139c34-6b5f-416c-9406-e09c1e5a9672",
+        "player": "lunarspark",
+        "level": "Red World Rebirth",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1d03dd9f-ea01-420c-b6b1-6da180a65065",
+        "player": "lunarspark",
+        "level": "Backlights",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9e5bfb7e-cc2f-4444-b081-770299605d25",
+        "player": "lunarspark",
+        "level": "Clown Control",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b5f50772-d316-4e8e-8335-ccd85af21218",
+        "player": "lunarspark",
+        "level": "doradura",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "379ec907-526f-4c3f-8ecf-9d77ec0132d0",
+        "player": "lunarspark",
+        "level": "Deception Dive",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f32052a0-6d98-4385-9ea3-0e5d23b1e081",
+        "player": "lunarspark",
+        "level": "Awakening Horus",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "1c3e53fa-50a0-4f23-a612-672f8e20f8e2",
+        "player": "lunarspark",
+        "level": "Crowd Control",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "ba1dd9e4-c709-4de7-bf3a-858871b77548",
+        "player": "lunarspark",
+        "level": "Allegiance",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "27fbdda0-b05b-4a9c-a5f0-c32a5a90a967",
+        "player": "lunarspark",
+        "level": "BLACKLIGHTS",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "26af006e-5366-4274-b281-be9fdcc85c65",
+        "player": "lunarspark",
+        "level": "iridium",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7a8df39f-b0a9-4029-a579-349d4557f460",
+        "player": "lunarspark",
+        "level": "Robi",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "165f8e2d-b6ac-4136-97b0-a577223a185f",
+        "player": "lunarspark",
+        "level": "The Ultimate Demon",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "bec27da5-14f9-4b0c-84dc-90e2ca9bb70b",
+        "player": "lunarspark",
+        "level": "Hidden in the Sand",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "cbc9bcfb-dfba-4582-bc6a-1425930f15a1",
+        "player": "lunarspark",
+        "level": "Booh",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f19ca187-d551-4d01-a048-9f21e8cdfe0a",
+        "player": "lunarspark",
+        "level": "Disruption",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "3187be24-7ce4-4a45-8b7b-449ce481b5ab",
+        "player": "lunarspark",
+        "level": "Tesseract",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "2d4ded0a-fa11-4ed1-8725-80fd9292642a",
+        "player": "lunarspark",
+        "level": "Reverie",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "9c51ecea-c2ab-45eb-9ba2-2f71ac9ff1ef",
+        "player": "lunarspark",
+        "level": "8o X",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "8a4bbbd5-9104-49ac-94f2-ebf16c44c724",
+        "player": "lunarspark",
+        "level": "Penombre",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "e1568ff7-a3ec-44aa-bb16-8ac246893cfd",
+        "player": "lunarspark",
+        "level": "Anya III",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "be28b996-806c-491a-b2af-a142df6fef5e",
+        "player": "lunarspark",
+        "level": "Forbidden Isle",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b4d6469f-c42f-46c6-a929-257252703b07",
+        "player": "lunarspark",
+        "level": "Cataclysm",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "b414eae9-b619-49a4-9bfa-f2f285ed9807",
+        "player": "lunarspark",
+        "level": "GLISTEN",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "882eeb95-f814-47d0-958c-71a6bea689fa",
+        "player": "lunarspark",
+        "level": "Azurite (Sillow)",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "a0592261-1a81-4713-874b-0c2df5175d54",
+        "player": "lunarspark",
+        "level": "niwa",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "7e477b2f-adcc-47bd-b571-daed3cd5b5c7",
+        "player": "lunarspark",
+        "level": "Raindance",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "173ed121-a2e0-4d91-a427-3605dde91566",
+        "player": "lunarspark",
+        "level": "memories III",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "4d83ac3b-5644-4db6-9d07-bf05ccd12d69",
+        "player": "lunarspark",
+        "level": "Sweater Weather",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "47964363-66fc-4514-8e92-d5b2a02965c4",
+        "player": "lunarspark",
+        "level": "Acu",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "12edd2d5-714b-433e-b48f-18da5b3c6f0b",
+        "player": "lunarspark",
+        "level": "Precipitance",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "f1b9bec9-3674-4c29-97f5-89af8e1fd3d8",
+        "player": "lunarspark",
+        "level": "Red World",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    },
+    {
+        "id": "18bb1ad4-224a-4a03-8b88-81fbebdfab26",
+        "player": "lunarspark",
+        "level": "Delirium Tremens",
+        "video": "migrated://leaderboard",
+        "raw": "migrated",
+        "hz": 0,
+        "percent": 100,
+        "note": "Migrated from leaderboard",
+        "submitted_by": {
+            "id": "341213077183660032",
+            "username": "lunarspark"
+        },
+        "status": "approved",
+        "timestamp": "2026-05-28T10:32:27.230Z",
+        "reviewed_by": "1462140174669578483",
+        "reviewed_at": "2026-05-28T10:32:27.230Z"
+    }
+]
