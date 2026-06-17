@@ -10,6 +10,8 @@
     --color-error-rgb: 222, 0, 0;
     --color-on-error: white;
     --color-on-background-rgb: 0, 0, 0;
+    --theme-transition-duration: 180ms;
+    --theme-transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Old header
@@ -58,6 +60,9 @@ body {
     margin: 0;
     background-color: var(--color-background);
     color: var(--color-on-background);
+    transition:
+        background-color var(--theme-transition-duration) var(--theme-transition-easing),
+        color var(--theme-transition-duration) var(--theme-transition-easing);
 }
 
 header,
@@ -70,6 +75,11 @@ main {
             1fr
         );
     column-gap: 2rem;
+    transition:
+        background-color var(--theme-transition-duration) var(--theme-transition-easing),
+        color var(--theme-transition-duration) var(--theme-transition-easing),
+        border-color var(--theme-transition-duration) var(--theme-transition-easing),
+        box-shadow var(--theme-transition-duration) var(--theme-transition-easing);
 }
 
 header {
@@ -119,4 +129,15 @@ input[type="checkbox"] {
     width: 1.25rem;
     cursor: pointer;
     margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

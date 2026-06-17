@@ -83,6 +83,12 @@
             [v-cloak] { display: none !important; }
             html { background-color: var(--color-background, white); }
             html.dark { background-color: #1c1b1f; }
+            html,
+            body {
+                transition:
+                    background-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
+            }
         </style>
         <script>
             (function() {

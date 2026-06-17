@@ -30,7 +30,7 @@
         </noscript>
         
         <style>
-            html, body { height: 100%; margin: 0; display: flex; flex-direction: column; background: var(--color-background, white); color: var(--color-on-background, black); }
+            html, body { height: 100%; margin: 0; display: flex; flex-direction: column; background: var(--color-background, white); color: var(--color-on-background, black); transition: background-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease), color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease); }
             
             .dark { 
                 color-scheme: dark; 
@@ -55,6 +55,10 @@
                 border-radius: 8px;
                 padding: 2rem;
                 margin-bottom: 2rem;
+                transition:
+                    background-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    box-shadow var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
             }
 
             .admin-card .type-title-sm {
@@ -70,6 +74,7 @@
                 margin-bottom: 0.5rem;
                 color: var(--color-on-background, black);
                 font-weight: bold;
+                transition: color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
             }
 
             input, textarea, select {
@@ -83,7 +88,11 @@
                 margin-bottom: 1.5rem;
                 font-size: 1rem;
                 box-sizing: border-box;
-                transition: border-color 0.2s;
+                transition:
+                    border-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    background-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    box-shadow var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
             }
 
             input:focus, textarea:focus {
@@ -100,6 +109,7 @@
                 margin-top: -1.2rem;
                 margin-bottom: 1.5rem;
                 display: block;
+                transition: color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
             }
 
             .hidden { display: none !important; }
@@ -135,6 +145,12 @@
                 color: var(--color-on-background) !important;
                 border: 2px solid var(--color-primary) !important;
                 box-shadow: none !important;
+                transition:
+                    background-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    border-color var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    box-shadow var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease),
+                    transform var(--theme-transition-duration, 180ms) var(--theme-transition-easing, ease);
             }
 
             .btn-danger {
